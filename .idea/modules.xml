@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/RKD.iml" filepath="$PROJECT_DIR$/.idea/RKD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/wordpress-rkd-site.iml" filepath="$PROJECT_DIR$/.idea/wordpress-rkd-site.iml" />
     </modules>
   </component>
 </project>
