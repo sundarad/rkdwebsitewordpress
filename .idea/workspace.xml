@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1bb6e58-3405-4344-a33f-b3260fa932f1" name="Changes" comment="Dynamic Menu and Logo">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/header.php" afterDir="false" />
+    <list default="true" id="c1bb6e58-3405-4344-a33f-b3260fa932f1" name="Changes" comment="Add top header bar">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/RKD.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +70,7 @@
       <workItem from="1662622908586" duration="78000" />
       <workItem from="1662623250598" duration="76000" />
       <workItem from="1662623559247" duration="3547000" />
-      <workItem from="1662629387572" duration="25000" />
+      <workItem from="1662629387572" duration="965000" />
     </task>
     <task id="LOCAL-00001" summary="Dynamic Menu and Logo">
       <created>1662624914693</created>
@@ -70,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662624914693</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add top header bar">
+      <created>1662629909382</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662629909382</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,7 +106,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Dynamic Menu and Logo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dynamic Menu and Logo" />
+    <MESSAGE value="Add top header bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add top header bar" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>C:\xampp\htdocs\RKD</wordpressPath>
