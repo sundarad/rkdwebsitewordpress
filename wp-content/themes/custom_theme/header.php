@@ -27,7 +27,30 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	    <header id="masthead" class="header header-style-stackcenter">
+            <!-- ttm-topbar-wrapper -->
+            <div class="topbar-wrapper">
+                <div class="container">
+                    <div class="topbar-content">
+                        <ul class="top-contact text-left">
+                            <li><strong>Open Hours :</strong> <span class=""> Sun -Fri 10:00-5:00</span></li>
+                        </ul>
+                        <div class="topbar-right text-end">
+                            <ul class="top-contact">
+                                <li><strong><i class="bi bi-envelope"></i> <a href="mailto:info@rkdholdings.com.np"> info@rkdholdings.com.np</a></li>
+                                <li><i class="bi bi-phone"></i> <a href="tel:061-544440"> 061-544440</a></li>
+                            </ul>
+                            <div class="ttm-social-links-wrapper list-inline">
+                                <ul class="social-icons">
+                                    <li><a href="#"><i class="bi bi-facebook"></i></a>
+                                    </li>
+                                    <li><a href="#"><i class="bi bi-twitter"></i></a>
+                                    </li>
 
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         <div class="header-wrap">
             <div class="container">
                 <div class="row">
