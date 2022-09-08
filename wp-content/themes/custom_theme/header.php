@@ -17,43 +17,127 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/front-assets/bootstrap-icons/bootstrap-icons.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/front-assets/css/style.css" type="text/css">
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'custom_theme' ); ?></a>
+	    <header id="masthead" class="header header-style-stackcenter">
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$custom_theme_description = get_bloginfo( 'description', 'display' );
-			if ( $custom_theme_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $custom_theme_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+        <div class="header-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="widget-left clearfix">
+                            <div class="info-widget">
+                                <div class="info-widget-content"><p>For Emergency call</p><h2>+977 9806555607</h2> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- site-branding -->
+                        <div class="site-branding">
+                            <a class="home-link" href="index.html" title="rkd" rel="home">
+	                            <?php
+	                            			the_custom_logo();
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'custom_theme' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
+	                            				?>
+
+                            </a>
+                        </div><!-- site-branding end -->
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="widget-right clearfix">
+                            <div class="info-widget">
+                                <div class="info-widget-content"><p>Request an</p> <h2>Get Appointment</h2> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <!-- ttm-stickable-header-w -->
+                        <div id="stickable-header" class="stickable-header clearfix">
+                            <div id="site-header-menu" class="site-header-menu">
+                                <div class="site-header-menu-inner stickable-header">
+                                    <div class="container">
+                                        <!--site-navigation -->
+                                        <div id="site-navigation" class="site-navigation">
+                                            <div class="ttm-rt-contact">
+                                                <!-- header-icons -->
+                                                <div class="header-icons ">
+                                                    <div class="header-icon header-search-link">
+                                                        <a href="#" class="sclose"><i class="bi bi-search"></i></a>
+                                                        <!-- <div class="ttm-search-overlay">
+															<form method="get" class="ttm-site-searchform" action="#">
+																<div class="w-search-form-h">
+																	<div class="w-search-form-row">
+																		<div class="w-search-input">
+																			<input type="search" class="field searchform-s" name="s" placeholder="Type Word Then Enter...">
+																			<button type="submit">
+																				<i class="bi bi-search"></i>
+																			</button>
+																		</div>
+																	</div>
+																</div>
+															</form>
+														</div> -->
+                                                    </div>
+                                                </div><!-- header-icons end -->
+                                            </div>
+                                            <!-- <div class="ttm-menu-toggle">
+												<input type="checkbox" id="menu-toggle-form">
+												<label for="menu-toggle-form" class="ttm-menu-toggle-block">
+													<span class="toggle-block toggle-blocks-1"></span>
+													<span class="toggle-block toggle-blocks-2"></span>
+													<span class="toggle-block toggle-blocks-3"></span>
+												</label>
+											</div> -->
+                                            <nav id="site-navigation" class="main-navigation">
+                                                <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'custom_theme' ); ?></button>
+		                                        <?php
+		                                        wp_nav_menu(
+			                                        array(
+				                                        'theme_location' => 'menu-1',
+				                                        'menu_id'        => 'primary-menu',
+				                                        'menu_class'=>'navbar',
+				                                        'menu_id'=>'navbar'
+			                                        )
+		                                        );
+		                                        ?>
+                                        </div><!-- site-navigation end-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- ttm-stickable-header-w end-->
+                    </div><!-- ttm-stickable-header-w end-->
+                </div>
+            </div>
+        </div><!--ttm-header-wrap end -->
+    </header>
+        <!-- ttm-header-wrap -->
+<!--		<div class="site-branding">-->
+<!--			--><?php
+//			the_custom_logo();
+//			if ( is_front_page() && is_home() ) :
+//				?>
+<!--				<h1 class="site-title"><a href="--><?php //echo esc_url( home_url( '/' ) ); ?><!--" rel="home">--><?php //bloginfo( 'name' ); ?><!--</a></h1>-->
+<!--				--><?php
+//			else :
+//				?>
+<!--				<p class="site-title"><a href="--><?php //echo esc_url( home_url( '/' ) ); ?><!--" rel="home">--><?php //bloginfo( 'name' ); ?><!--</a></p>-->
+<!--				--><?php
+//			endif;
+//			$custom_theme_description = get_bloginfo( 'description', 'display' );
+//			if ( $custom_theme_description || is_customize_preview() ) :
+//				?>
+<!--				<p class="site-description">--><?php //echo $custom_theme_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?><!--</p>-->
+<!--			--><?php //endif; ?>
+<!--		</div>-->
+    <!-- .site-branding -->
+
+
 		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+	</div><!-- #masthead -->
