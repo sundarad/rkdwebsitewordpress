@@ -31,7 +31,7 @@
             <div class="topbar-wrapper">
                 <div class="container">
                     <div class="topbar-content">
-                        <ul class="top-contact text-left">
+                        <ul class="top-contact text-left float-start">
                             <li><strong>Open Hours :</strong> <span class=""> Sun -Fri 10:00-5:00</span></li>
                         </ul>
                         <div class="topbar-right text-end">
@@ -57,7 +57,9 @@
                     <div class="col-lg-3">
                         <div class="widget-left clearfix">
                             <div class="info-widget">
-                                <div class="info-widget-content"><p>For Emergency call</p><h2>+977 9806555607</h2> </div>
+                                <div class="info-widget-content">
+                                    <img src="assets/front-assets/images/info-left-arrow.png" alt="">
+                                    <p>For Emergency call</p><h2>+977 9806555607</h2> </div>
                             </div>
                         </div>
                     </div>
@@ -76,7 +78,8 @@
                     <div class="col-lg-3">
                         <div class="widget-right clearfix">
                             <div class="info-widget">
-                                <div class="info-widget-content"><p>Request an</p> <h2>Get Appointment</h2> </div>
+                                <img src="assets/" alt="">
+                                <div class="info-widget-content"><p>Request an</p> <h2>Appointment</h2> </div>
                             </div>
                         </div>
                     </div>

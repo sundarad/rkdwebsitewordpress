@@ -162,11 +162,11 @@ h6 {
         font-size: 28px;
     }
 }
-.topbar-wrapper{background-color: #BCE4CA;}
+.topbar-wrapper{background-color: #BCE4CA; line-height: 50px;}
 .topbar-wrapper .top-contact.text-left {
     position: relative;
-    float: left;
-    line-height: 50px;
+    /*float: left;*/
+    /*line-height: 50px;*/
 }
 .top-contact span{color: #000;}
 .header-wrap{background-color: #fff;}
@@ -243,14 +243,14 @@ h6 {
     text-align: center;
 }
 
-.widget-left .info-widget-content:before {
-    background: url(../img/info-left-arrow.png);
-    left: 0;
-}
-.widget-right .info-widget-content:after {
-    right: 0;
-    background: url(../img/info-right-arrow.png);
-}
+/*.widget-left .info-widget-content:before {*/
+/*    background: url(./assets/front-assets/images/info-left-arrow.png);*/
+/*    left: 0;*/
+/*}*/
+/*.widget-right .info-widget-content:after {*/
+/*    right: 0;*/
+/*    background: url(./assets/front-assets/images/info-right-arrow.png);*/
+/*}*/
 .widget-right .info-widget-content:after {
     position: absolute;
     top: 42px;
