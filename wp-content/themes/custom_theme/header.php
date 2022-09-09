@@ -78,7 +78,7 @@
                     <div class="col-lg-3">
                         <div class="widget-right clearfix">
                             <div class="info-widget">
-                                <img src="assets/" alt="">
+                                <img src="assets/front-assets/images/info-right-arrow.png" alt="">
                                 <div class="info-widget-content"><p>Request an</p> <h2>Appointment</h2> </div>
                             </div>
                         </div>
