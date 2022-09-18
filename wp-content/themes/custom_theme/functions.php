@@ -52,6 +52,11 @@ function custom_theme_setup() {
 			'menu-1' => esc_html__( 'Primary', 'custom_theme' ),
 		)
 	);
+    register_nav_menus(
+        array(
+            'menu-2' => esc_html__( 'Footer', 'custom_theme' ),
+        )
+    );
 
 	/*
 		* Switch default core markup for search form, comment form, and comments
