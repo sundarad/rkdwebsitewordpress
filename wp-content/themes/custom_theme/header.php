@@ -38,7 +38,7 @@
             <div class="topbar-wrapper">
                 <div class="container">
                     <div class="topbar-content">
-                        <ul class="top-contact text-left float-start">
+                        <ul class="top-contact text-left">
                             <li><strong>Open Hours :</strong> <span class=""> Sun -Fri 10:00-5:00</span></li>
                         </ul>
                         <div class="topbar-right text-end">
@@ -66,7 +66,7 @@
                             <div class="info-widget">
                                 <div class="info-widget-content">
 
-                                    <p>For Emergency call</p><h2>+977 9806555607</h2> </div>
+                                    <p>For Emergency call</p><h2><a href="tel: 061-544440">061-544440</a></h2> </div>
                             </div>
                         </div>
                     </div>
@@ -97,28 +97,15 @@
                                 <div class="site-header-menu-inner stickable-header">
                                     <div class="container">
                                         <!--site-navigation -->
-                                        <div id="site-navigation" class="site-navigation">
+                                        <div id="site-navigation" class="navbar d-flex justify-content-center">
                                             <div class="ttm-rt-contact">
                                                 <!-- header-icons -->
-                                                <div class="header-icons ">
-                                                    <div class="header-icon header-search-link">
-                                                        <a href="#" class="sclose"><i class="bi bi-search"></i></a>
-                                                        <!-- <div class="ttm-search-overlay">
-															<form method="get" class="ttm-site-searchform" action="#">
-																<div class="w-search-form-h">
-																	<div class="w-search-form-row">
-																		<div class="w-search-input">
-																			<input type="search" class="field searchform-s" name="s" placeholder="Type Word Then Enter...">
-																			<button type="submit">
-																				<i class="bi bi-search"></i>
-																			</button>
-																		</div>
-																	</div>
-																</div>
-															</form>
-														</div> -->
-                                                    </div>
-                                                </div><!-- header-icons end -->
+<!--                                                <div class="header-icons ">-->
+<!--                                                    <div class="header-icon header-search-link">-->
+<!--                                                        <a href="#" class="sclose"><i class="bi bi-search"></i></a>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+                                                <!-- header-icons end -->
                                             </div>
                                             <!-- <div class="ttm-menu-toggle">
 												<input type="checkbox" id="menu-toggle-form">
