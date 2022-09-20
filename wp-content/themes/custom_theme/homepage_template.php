@@ -669,71 +669,48 @@ if ($the_query->have_posts()) : ?>
                 </div>
 
                 <div class="row">
+                    <?php $args = array(
+                        'post_type' => 'post',
+                        'category_name' => 'director',
+                        'posts_per_page' => -1,
+                        'orderby' => 'date',
+                        'order' => 'DESC'
+                    );
 
-                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="member">
-                            <img src="assets/img/team-1.jpg" class="img-fluid" alt="">
-                            <div class="member-info">
-                                <div class="member-info-content">
-                                    <h4>Walter White</h4>
-                                    <span>Chief Executive Officer</span>
-                                    <div class="social">
-                                        <a href=""><i class="bi bi-twitter"></i></a>
-                                        <a href=""><i class="bi bi-facebook"></i></a>
+                    $the_query = new WP_Query($args);
+                    if ($the_query->have_posts()) : ?>
+                        <div class="container">
+                            <div class="row">
+                                <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+
+                                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                                        <div class="member">
+                                            <a href="<?php the_permalink(); ?>">
+                                                <?php the_post_thumbnail(
+                                                    array( 150, 100 ),
+                                                    array( 'class' => 'img-fluid' )
+                                                ); ?>
+                                            <div class="member-info">
+                                                <div class="member-info-content">
+                                                    <a href="<?php the_permalink(); ?>">
+                                                        <?php the_title(); ?>
+                                                    </a>
+                                                    <span> <?php the_excerpt(); ?></span>
+                                                    <div class="social">
+                                                        <a href=""><i class="bi bi-twitter"></i></a>
+                                                        <a href=""><i class="bi bi-facebook"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
+
+                                <?php endwhile; ?>
                             </div>
                         </div>
-                    </div>
+                    <?php endif; ?>
 
-                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="member">
-                            <img src="assets/img/team-2.jpg" class="img-fluid" alt="">
-                            <div class="member-info">
-                                <div class="member-info-content">
-                                    <h4>Sarah Jhonson</h4>
-                                    <span>Product Manager</span>
-                                    <div class="social">
-                                        <a href=""><i class="bi bi-twitter"></i></a>
-                                        <a href=""><i class="bi bi-facebook"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="member">
-                            <img src="assets/img/team-3.jpg" class="img-fluid" alt="">
-                            <div class="member-info">
-                                <div class="member-info-content">
-                                    <h4>William Anderson</h4>
-                                    <span>CTO</span>
-                                    <div class="social">
-                                        <a href=""><i class="bi bi-twitter"></i></a>
-                                        <a href=""><i class="bi bi-facebook"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                        <div class="member">
-                            <img src="assets/img/team-4.jpg" class="img-fluid" alt="">
-                            <div class="member-info">
-                                <div class="member-info-content">
-                                    <h4>Amanda Jepson</h4>
-                                    <span>Accountant</span>
-                                    <div class="social">
-                                        <a href=""><i class="bi bi-twitter"></i></a>
-                                        <a href=""><i class="bi bi-facebook"></i></a>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                 </div>
 
