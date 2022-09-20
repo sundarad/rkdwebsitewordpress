@@ -38,7 +38,7 @@
             <div class="topbar-wrapper">
                 <div class="container">
                     <div class="topbar-content">
-                        <ul class="top-contact text-left">
+                        <ul class="top-contact text-left float-start">
                             <li><strong>Open Hours :</strong> <span class=""> Sun -Fri 10:00-5:00</span></li>
                         </ul>
                         <div class="topbar-right text-end">
