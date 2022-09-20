@@ -5,23 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b19eca14-e8ad-42f7-87b2-d92cbb13ad62" name="Changes" comment="slider">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/what_we_do.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2022/09/ceo-1005x1024.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2022/09/ceo-1507x1536.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2022/09/ceo-150x150.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2022/09/ceo-2009x2048.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2022/09/ceo-294x300.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2022/09/ceo-768x783.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2022/09/ceo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2022/09/kiran-pokhrel-1229x1536.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2022/09/kiran-pokhrel-150x150.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2022/09/kiran-pokhrel-240x300.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2022/09/kiran-pokhrel-500x500.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2022/09/kiran-pokhrel-768x960.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2022/09/kiran-pokhrel-819x1024.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2022/09/kiran-pokhrel.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_13_2022_10_07_AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_13_2022_10_07_AM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/homepage_template.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/homepage_template.php" afterDir="false" />
     </list>
@@ -89,7 +72,7 @@
       <workItem from="1662703357797" duration="3003000" />
       <workItem from="1663132893715" duration="5049000" />
       <workItem from="1663141664366" duration="6953000" />
-      <workItem from="1663307993645" duration="15946000" />
+      <workItem from="1663307993645" duration="17841000" />
     </task>
     <task id="LOCAL-00001" summary="Dynamic Menu and Logo">
       <created>1662624914693</created>
