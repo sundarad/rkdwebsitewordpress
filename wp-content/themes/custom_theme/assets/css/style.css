@@ -866,6 +866,7 @@ ul.social-icons i{
 .hero {
     width: 100%;
     height: 59vh;
+    text-align: center;
     padding: 0;
     background: var(--color-black);
     background: url("../img/intro-bg.jpg") center center;
@@ -885,7 +886,7 @@ ul.social-icons i{
 .hero h2 {
     color: #413e66;
     margin-bottom: 40px;
-    font-size: 48px;
+    font-size: 45px;
     font-weight: 700;
     -webkit-animation: fadeInDown 1s both 0.2s;
     animation: fadeInDown 1s both 0.2s;
@@ -1225,7 +1226,7 @@ section {
 /* Services Section
 --------------------------------*/
 
-.services.one{margin-top: -2rem; padding:0 0 60px 0;}
+.services.one{margin-top: -2rem; padding:0 0 50px 0;}
 .services.two{padding: 60px 0;}
 #services .box {
     padding: 30px;
