@@ -15,42 +15,46 @@
 <?php $args = array(
     'post_type' => 'post',
     'category_name' => 'services',
-    'posts_per_page' => 6,
+    'posts_per_page' => -1,
     'orderby' => 'date',
     'order' => 'DESC'
 );
 
 $the_query = new WP_Query($args);
 if ($the_query->have_posts()) : ?>
-    <div class="container">
-        <div class="row gy-5">
-            <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-                <div class="col-xl-4 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="500">
-                    <div class="service-item">
-                        <div class="img">
-                            <a href="<?php the_permalink(); ?>">
-                                <?php the_post_thumbnail(
-                                    array( 'class' => 'img-fluid' )
-                                ); ?>
-                            </a>
-                        </div>
-                        <div class="details position-relative">
-                            <div class="icon">
-                                <i class="bi bi-bounding-box-circles"></i>
+<br>
+<br>
+    <section id="services" class="services one">
+        <div class="container">
+            <div class="row gy-5">
+                <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                    <div class="col-xl-4 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="500">
+                        <div class="service-item">
+                            <div class="img">
+                                <a href="<?php the_permalink(); ?>">
+                                    <?php the_post_thumbnail(
+                                        array( 'class' => 'img-fluid' )
+                                    ); ?>
+                                </a>
                             </div>
-                            <a href="#" class="stretched-link">
-                                <h3> <a href="<?php the_permalink(); ?>">
-                                        <?php the_title(); ?>
-                                    </a></h3>
-                            </a>
-                            <p>  <?php the_excerpt(); ?></p>
-                            <a href="#" class="stretched-link"></a>
+                            <div class="details position-relative">
+                                <div class="icon">
+                                    <i class="bi bi-bounding-box-circles"></i>
+                                </div>
+                                <a href="#" class="stretched-link">
+                                    <h3> <a href="<?php the_permalink(); ?>">
+                                            <?php the_title(); ?>
+                                        </a></h3>
+                                </a>
+                                <p>  <?php the_excerpt(); ?></p>
+                                <a href="#" class="stretched-link"></a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-            <?php endwhile; ?>
+                <?php endwhile; ?>
+            </div>
         </div>
-    </div>
+    </section>
 <?php endif; ?>
 <?php get_footer(); ?>

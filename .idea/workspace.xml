@@ -5,11 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b19eca14-e8ad-42f7-87b2-d92cbb13ad62" name="Changes" comment="slider">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_21_2022_12_02_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_21_2022_12_02_PM__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/who_we_are.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2022/09/app1-150x150.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2022/09/app1-296x300.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2022/09/app1-420x270.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2022/09/app1-420x420.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2022/09/app1-420x426.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2022/09/app1-768x779.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2022/09/app1-800x500.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2022/09/app1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2022/09/app2-150x150.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2022/09/app2-300x169.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2022/09/app2-420x236.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2022/09/app2-420x270.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2022/09/app2-420x420.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2022/09/app2-768x432.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2022/09/app2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_21_2022_12_15_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_21_2022_12_15_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/homepage_template.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/homepage_template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/single.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/what_we_do.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/what_we_do.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +42,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />

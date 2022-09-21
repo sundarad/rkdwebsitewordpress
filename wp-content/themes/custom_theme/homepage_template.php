@@ -110,7 +110,7 @@ if ($the_query->have_posts()) : ?>
 
             <?php endwhile; ?>
         </div>
-           <p class="text-extra text-center">Dont hesitate, contact us for better heel services. <a href="services.html"> Explore all services</a></p>
+           <p class="text-extra text-center">Dont hesitate, contact us for better heel services. <a href="/index.php/services/"> Explore all services</a></p>
     </div>
     </section>
 <?php endif; ?>
@@ -134,8 +134,9 @@ if ($the_query->have_posts()) : ?>
                         <div class="about-content" data-aos="fade-left" data-aos-delay="100">
 
                             <h2><?php echo $title_who_we_are;?></h2>
-                            <?php echo $content_who_we_are;?>
-                            </div>
+                        </div>
+                      <p>      <?php echo $content_who_we_are;?>
+                      </p>
                         </div>
                     </div>
                 </div>
@@ -261,35 +262,62 @@ if ($the_query->have_posts()) : ?>
 <!--            </div>-->
 <!--        </section>-->
         <!-- End Services Section -->
+
+
     <!-- ======= Features Section ======= -->
     <section id="features" class="features">
         <div class="container" data-aos="fade-up">
             <header class="section-header">
                 <h3>Investment By</h3>
             </header>
+            <?php
+            $business_platforms = get_post(104);
+            $business_platforms_content = $business_platforms->post_content;
+            $business_platforms_image = get_the_post_thumbnail_url($business_platforms->ID);
+            $business_platforms_title = $business_platforms->post_title;
+            $asset_class= get_post(111);
+            $asset_class_content = $asset_class->post_content;
+            $asset_class_image = get_the_post_thumbnail_url($asset_class->ID);
+            $asset_class_title = $asset_class->post_title;
+            $geography= get_post(113);
+            $geography_content = $geography->post_content;
+            $geography_image = get_the_post_thumbnail_url($geography->ID);
+            $geography_title = $geography->post_title;
+            ?>
             <ul class="nav nav-tabs row gy-4 d-flex">
 
-                <li class="nav-item col-lg-3 col-sm-6 col-xs-12">
+                <li class="nav-item col-lg-3 col-sm-3 col-xs-12">
                     <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+                        <i class="bi bi-binoculars color-cyan"></i>
                         <h4>Sectors</h4>
                     </a>
                 </li><!-- End Tab 1 Nav -->
 
-                <li class="nav-item col-lg-3 col-sm-6 col-xs-12">
+                <li class="nav-item col-lg-3 col-sm-3 col-xs-12">
                     <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
-                        <h4>Business Platforms</h4>
+                        <i class="bi bi-box-seam" style="color: #6610f2;"></i>
+                        <h4><?php
+                            echo $business_platforms_title;
+                            ?></h4>
                     </a>
                 </li><!-- End Tab 2 Nav -->
 
-                <li class="nav-item col-lg-3 col-sm-6 col-xs-12">
+                <li class="nav-item col-lg-3 col-sm-3 col-xs-12">
                     <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
-                        <h4>Asset Class</h4>
+                        <i class="bi bi-brightness-high" style="color: #20c997;"></i>
+                    <h4>     <?php
+                            echo $asset_class_title;
+                            ?>
+                        </h4>
                     </a>
                 </li><!-- End Tab 3 Nav -->
 
-                <li class="nav-item col-lg-3 col-sm-6 col-xs-12">
+                <li class="nav-item col-lg-3 col-sm-3 col-xs-12">
                     <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
-                        <h4>Nostrum</h4>
+                        <i class="bi bi-command" style="color: #df1529;"></i>
+                        <h4><?php
+                            echo $geography_title;
+                            ?></h4>
                     </a>
                 </li><!-- End Tab 4 Nav -->
 
@@ -340,25 +368,10 @@ if ($the_query->have_posts()) : ?>
 
             <div class="tab-pane" id="tab-2">
                 <div class="row gy-4">
-                    <div class="col-lg-8 order-2 order-lg-1">
-                        <h3>Undaesenti</h3>
-                        <p>
-                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                            culpa qui officia deserunt mollit anim id est laborum
-                        </p>
-                        <p class="fst-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.
-                        </p>
-                        <ul>
-                            <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 order-1 order-lg-2 text-center">
+                    <?php
+                    echo $business_platforms_content;
+                    ?>
+                   <div class="col-lg-4 order-1 order-lg-2 text-center">
                         <img src="assets/img/features-2.svg" alt="" class="img-fluid">
                     </div>
                 </div>
@@ -366,24 +379,10 @@ if ($the_query->have_posts()) : ?>
 
             <div class="tab-pane" id="tab-3">
                 <div class="row gy-4">
-                    <div class="col-lg-8 order-2 order-lg-1">
-                        <h3>Pariatur</h3>
-                        <p>
-                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                            culpa qui officia deserunt mollit anim id est laborum
-                        </p>
-                        <ul>
-                            <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
-                        </ul>
-                        <p class="fst-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.
-                        </p>
-                    </div>
-                    <div class="col-lg-4 order-1 order-lg-2 text-center">
+                    <?php
+                    echo $asset_class_content;
+                    ?>
+                  <div class="col-lg-4 order-1 order-lg-2 text-center">
                         <img src="assets/img/features-3.svg" alt="" class="img-fluid">
                     </div>
                 </div>
@@ -391,24 +390,10 @@ if ($the_query->have_posts()) : ?>
 
             <div class="tab-pane" id="tab-4">
                 <div class="row gy-4">
-                    <div class="col-lg-8 order-2 order-lg-1">
-                        <h3>Nostrum</h3>
-                        <p>
-                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                            culpa qui officia deserunt mollit anim id est laborum
-                        </p>
-                        <p class="fst-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua.
-                        </p>
-                        <ul>
-                            <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 order-1 order-lg-2 text-center">
+                    <?php
+                    echo $geography_content;
+                    ?>
+                 <div class="col-lg-4 order-1 order-lg-2 text-center">
                         <img src="assets/img/features-4.svg" alt="" class="img-fluid">
                     </div>
                 </div>
@@ -443,7 +428,7 @@ if ($the_query->have_posts()) : ?>
 
         </div>
     </section><!-- End Features Section -->
-        <!-- ======= Counts Section ======= -->
+
         <section id="counts" class="counts">
             <div class="container" data-aos="fade-up">
 
@@ -641,7 +626,6 @@ if ($the_query->have_posts()) : ?>
             <div class="container" data-aos="fade-up">
                 <div class="section-header">
                     <h3>Board of Directors</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
                 </div>
 
                 <div class="row">

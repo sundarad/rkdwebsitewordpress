@@ -16,7 +16,7 @@ get_header();
 
                 <ol>
                     <li><a href="/index.php">Home</a></li>
-
+                    <li> <?php the_title();?></li>
                 </ol>
             </div>
         </section><!-- End Breadcrumbs -->

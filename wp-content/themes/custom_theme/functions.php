@@ -136,6 +136,7 @@ function custom_theme_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
+
 }
 add_action( 'widgets_init', 'custom_theme_widgets_init' );
 
