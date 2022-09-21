@@ -668,10 +668,12 @@ if ($the_query->have_posts()) : ?>
                                                 ); ?>
                                             <div class="member-info">
                                                 <div class="member-info-content">
-                                                    <a href="<?php the_permalink(); ?>">
-                                                        <?php the_title(); ?>
-                                                    </a>
-                                                    <span> <?php the_excerpt(); ?></span>
+<!--                                                    <a href="--><?php //the_permalink(); ?><!--">-->
+<!--                                                        --><?php //the_title(); ?>
+<!--                                                    </a>-->
+                                                    <h4>Kiran Pokhrel</h4>
+                                                    <span>Director</span>
+<!--                                                    <span> --><?php //the_excerpt(); ?><!--</span>-->
                                                     <div class="social">
                                                         <a href=""><i class="bi bi-twitter"></i></a>
                                                         <a href=""><i class="bi bi-facebook"></i></a>
@@ -720,7 +722,7 @@ if ($the_query->have_posts()) : ?>
 
 
         <!-- ======= Recent Blog Posts Section ======= -->
-        <section id="news" class="recent-blog-posts">
+        <section id="news" class="recent-news-posts">
 
             <div class="container" data-aos="fade-up">
 
@@ -742,9 +744,9 @@ if ($the_query->have_posts()) : ?>
                         <div class="container">
                             <div class="row">
                                 <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-                                    <div class="col-lg-4">
-                                        <div class="what-we-do">
-                                            <div class="what-we-do-image">
+                                    <div class="col-lg-4 col-sm-6 col-xs-12" >
+                                        <div class="post-box">
+                                            <div class="post-image">
                                                 <a href="<?php the_permalink(); ?>">
                                                     <?php the_post_thumbnail(
                                                         array( 150, 100 ),
@@ -752,13 +754,17 @@ if ($the_query->have_posts()) : ?>
                                                     ); ?>
                                                 </a>
                                             </div>
-                                            <div class="what-we-do-title">
-                                                <a href="<?php the_permalink(); ?>">
-                                                    <?php the_title(); ?>
-                                                </a>
-                                            </div>
-                                            <div class="what-we-do-content">
-                                                <?php the_excerpt(); ?>
+                                            <div class="meta">
+                                                <span class="post-date">Tue, July 27</span>
+                                                <span class="post-author"> / Lisa Hunter</span>
+<!--                                                <a href="--><?php //the_permalink(); ?><!--">-->
+<!--                                                    --><?php //the_title(); ?>
+<!--                                                </a>-->
+                                                <div class="what-we-do-content">
+                                                    <h3 class="post-title">Land on sale</h3>
+<!--                                                    --><?php //the_excerpt(); ?>
+                                                </div>
+                                                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
                                             </div>
                                         </div>
                                     </div>

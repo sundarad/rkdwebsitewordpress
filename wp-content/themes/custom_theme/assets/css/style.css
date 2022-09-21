@@ -1901,7 +1901,7 @@ span.price{color: #09AA4E;}
 # Recent Blog Posts
 --------------------------------------------------------------*/
 #news{padding: 60px 0; background-color:#fff;}
-.recent-blog-posts .post-box {
+.recent-news-posts .post-box {
     transition: 0.3s;
     height: 100%;
     overflow: hidden;
@@ -1911,47 +1911,49 @@ span.price{color: #09AA4E;}
     box-shadow: 0 10px 29px 0 rgb(68 88 144 / 10%);
 }
 
-.recent-blog-posts .post-box .post-img {
+.recent-news-posts .post-box .post-image {
     overflow: hidden;
     position: relative;
+    height: 312px;
     border-radius: 10px;
 }
 
-.recent-blog-posts .post-box .post-img img {
+.recent-news-posts .post-box .post-image img {
+    width: 100%;
+    height: 100%;
     transition: 0.5s;
 }
 
-.recent-blog-posts .post-box .meta {
+.recent-news-posts .post-box .meta {
     margin-top: 15px; padding: 0 1rem 0 1rem;
 }
 
-.recent-blog-posts .post-box .meta .post-date {
+.recent-news-posts .post-box .meta .post-date {
     font-size: 15px;
-    font-weight: 400;
-    color:#09AA4E;
+    font-weight: 600;
+    color: var(--primary-color);
 }
 
-.recent-blog-posts .post-box .meta .post-author {
+.recent-news-posts .post-box .meta .post-author {
     font-size: 15px;
-    font-weight: 400;
-    color: var(--color-secondary);
+    font-weight: 500;
+    color: var(--heading-color);
 }
 
-.recent-blog-posts .post-box .post-title {
+.recent-news-posts .post-box .post-title {
     font-size: 24px;
-    color: var(--color-secondary);
     font-weight: 700;
     margin: 15px 0 0 0;
     position: relative;
     transition: 0.3s;
 }
 
-.recent-blog-posts .post-box p {
+.recent-news-posts .post-box p {
     margin: 15px 0 0 0;
     color: rgba(var(--color-secondary-dark-rgb), 0.7);
 }
 
-.recent-blog-posts .post-box .readmore {
+.recent-news-posts .post-box .readmore {
     display: flex;
     align-items: center;
     font-weight: 600;
@@ -1960,17 +1962,17 @@ span.price{color: #09AA4E;}
     margin:0.8rem 0px 0.8rem 0;
 }
 
-.recent-blog-posts .post-box .readmore i {
+.recent-news-posts .post-box .readmore i {
     line-height: 0;
-    margin-left: 4px;
+    margin-left: 6px;
     font-size: 16px;
 }
 
-.recent-blog-posts .post-box:hover .post-title {
-    color: var(--color-primary);
+.recent-news-posts .post-box:hover .post-title {
+    color: var(--primary-color);
 }
 
-.recent-blog-posts .post-box:hover .post-img img {
+.recent-news-posts .post-box:hover .post-image img {
     transform: scale(1.1);
 }
 /*--------------------------------------------------------------
