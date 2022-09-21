@@ -755,16 +755,24 @@ if ($the_query->have_posts()) : ?>
                                                 </a>
                                             </div>
                                             <div class="meta">
-                                                <span class="post-date">Tue, July 27</span>
-                                                <span class="post-author"> / Lisa Hunter</span>
-<!--                                                <a href="--><?php //the_permalink(); ?><!--">-->
-<!--                                                    --><?php //the_title(); ?>
+                                                <span class="post-date">
+                                                    <i class="bi bi-calendar"></i>
+                                                    <?php the_date(); ?>
+                                                </span>
+                                                <span class="post-author"><?php
+
+                                                    $author_id = get_the_author_meta('ID');
+                                                    $author_name = get_the_author_meta('display_name', $author_id);
+                                                    echo $author_name;
+                                                    ?> </span>
+<!--                                                <a href="--><!--">-->
+<!--                                                    -->
 <!--                                                </a>-->
                                                 <div class="what-we-do-content">
-                                                    <h3 class="post-title">Land on sale</h3>
-<!--                                                    --><?php //the_excerpt(); ?>
+                                                    <h3 class="post-title"><?php the_title(); ?></h3>
+
                                                 </div>
-                                                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                                                <a href="<?php the_permalink(); ?>" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
                                             </div>
                                         </div>
                                     </div>
