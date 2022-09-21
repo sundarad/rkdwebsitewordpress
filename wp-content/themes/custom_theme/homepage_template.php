@@ -5,17 +5,17 @@
         <div class="carousel-item active">
             <div class="container">
                 <div class="row justify-content-center gy-6 align-items-center">
-                    <div class="col-lg-6">
-                        <h6>Great Experience</h6>
-                        <h2>Powered by Intellect<br>for Your <span>Business!</span></h2>
-                        <div class="d-flex more-btn">
+                    <div class="col-lg-12">
+                        <h6>COOPTOGOVS</h6>
+                        <h2>TIFL : A fund dedicated for entrepreneurs and innovative market disruptive <span> business ventures </span></h2>
+                        <div class="d-flex justify-content-center more-btn">
                             <a href="#about" class="btn-get-started scrollto">Contact us</a>
-                            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center ms-4"><i class="bi bi-play-circle"></i><span >Watch Video</span></a>
+                            <a href="https://www.youtube.com/watch?v=NJ_GYRPHIeY" class="glightbox btn-watch-video d-flex align-items-center ms-4" target="_blank"><i class="bi bi-play-circle"></i><span >Watch Video</span></a>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-8">
-                        <img src="assets/img/intro-img.svg" alt="" class="img-fluid img">
-                    </div>
+<!--                    <div class="col-lg-6 col-md-8">-->
+<!--                        <img src="assets/img/intro-img.svg" alt="" class="img-fluid img">-->
+<!--                    </div>-->
 
                 </div>
             </div>
@@ -24,17 +24,17 @@
         <div class="carousel-item">
             <div class="container">
                 <div class="row justify-content-center gy-6 align-items-center">
-                    <div class="col-lg-6">
-                        <h6>Great Experience</h6>
-                        <h2>Powered by Intellect<br>for Your <span>Business!</span></h2>
-                        <div class="d-flex more-btn">
+                    <div class="col-lg-12">
+                        <h6>COOPTOGOVS</h6>
+                        <h2> We empower your financial <span>vision</span> </h2>
+                        <div class="d-flex justify-content-center more-btn">
                             <a href="#about" class="btn-get-started scrollto">Contact us</a>
                             <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center ms-3"><i class="bi bi-play-circle"></i><span >Watch Video</span></a>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-8">
-                        <img src="assets/img/intro-img.svg" alt="" class="img-fluid img">
-                    </div>
+<!--                    <div class="col-lg-6 col-md-8">-->
+<!--                        <img src="assets/img/intro-img.svg" alt="" class="img-fluid img">-->
+<!--                    </div>-->
 
                 </div>
             </div>
@@ -43,17 +43,17 @@
         <div class="carousel-item">
             <div class="container">
                 <div class="row justify-content-center gy-6 align-items-center">
-                    <div class="col-lg-6">
-                        <h6>Great Experience</h6>
-                        <h2>Powered by Intellect<br>for Your <span>Business!</span></h2>
-                        <div class="d-flex more-btn">
+                    <div class="col-lg-12">
+                        <h6>COOPTOGOVS</h6>
+                        <h2>RKD Real Estate : Attain the highest ROI possible on your <span> Property</span> </h2>
+                        <div class="d-flex justify-content-center more-btn">
                             <a href="#about" class="btn-get-started scrollto">Contact us</a>
                             <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center ms-3"><i class="bi bi-play-circle"></i><span >Watch Video</span></a>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-8">
-                        <img src="assets/img/intro-img.svg" alt="" class="img-fluid img">
-                    </div>
+<!--                    <div class="col-lg-6 col-md-8">-->
+<!--                        <img src="assets/img/intro-img.svg" alt="" class="img-fluid img">-->
+<!--                    </div>-->
 
                 </div>
             </div>
@@ -97,10 +97,10 @@ if ($the_query->have_posts()) : ?>
                             <div class="icon">
                                 <i class="bi bi-bounding-box-circles"></i>
                             </div>
-                            <a href="#" class="stretched-link">
-                                <h3> <a href="<?php the_permalink(); ?>">
-                                        <?php the_title(); ?>
-                                    </a></h3>
+                            <a href="<?php the_permalink(); ?>" class="stretched-link">
+                                <h3>
+                                        <?php the_title(); ?> 
+                                </h3>
                             </a>
                             <p>  <?php the_excerpt(); ?></p>
                             <a href="#" class="stretched-link"></a>
@@ -289,7 +289,7 @@ if ($the_query->have_posts()) : ?>
 
                 <li class="nav-item col-lg-3 col-sm-6 col-xs-12">
                     <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
-                        <h4>Nostrum</h4>
+                        <h4>Geography</h4>
                     </a>
                 </li><!-- End Tab 4 Nav -->
 
