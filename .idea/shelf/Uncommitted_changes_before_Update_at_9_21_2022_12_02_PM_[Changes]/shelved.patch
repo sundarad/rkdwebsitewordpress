@@ -1,0 +1,1279 @@
+Index: wp-content/themes/custom_theme/homepage_template.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?php /* Template Name: Home Page */ ?>\r\n<?php get_header();?>\r\n    <section id=\"hero\" class=\"hero carousel  carousel-fade\" data-bs-ride=\"carousel\" data-bs-interval=\"5000\">\r\n\r\n        <div class=\"carousel-item active\">\r\n            <div class=\"container\">\r\n                <div class=\"row justify-content-center gy-6 align-items-center\">\r\n                    <div class=\"col-lg-6\">\r\n                        <h6>Great Experience</h6>\r\n                        <h2>Powered by Intellect<br>for Your <span>Business!</span></h2>\r\n                        <div class=\"d-flex more-btn\">\r\n                            <a href=\"#about\" class=\"btn-get-started scrollto\">Contact us</a>\r\n                            <a href=\"https://www.youtube.com/watch?v=LXb3EKWsInQ\" class=\"glightbox btn-watch-video d-flex align-items-center ms-4\"><i class=\"bi bi-play-circle\"></i><span >Watch Video</span></a>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-lg-6 col-md-8\">\r\n                        <img src=\"assets/img/intro-img.svg\" alt=\"\" class=\"img-fluid img\">\r\n                    </div>\r\n\r\n                </div>\r\n            </div>\r\n        </div><!-- End Carousel Item -->\r\n\r\n        <div class=\"carousel-item\">\r\n            <div class=\"container\">\r\n                <div class=\"row justify-content-center gy-6 align-items-center\">\r\n                    <div class=\"col-lg-6\">\r\n                        <h6>Great Experience</h6>\r\n                        <h2>Powered by Intellect<br>for Your <span>Business!</span></h2>\r\n                        <div class=\"d-flex more-btn\">\r\n                            <a href=\"#about\" class=\"btn-get-started scrollto\">Contact us</a>\r\n                            <a href=\"https://www.youtube.com/watch?v=LXb3EKWsInQ\" class=\"glightbox btn-watch-video d-flex align-items-center ms-3\"><i class=\"bi bi-play-circle\"></i><span >Watch Video</span></a>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-lg-6 col-md-8\">\r\n                        <img src=\"assets/img/intro-img.svg\" alt=\"\" class=\"img-fluid img\">\r\n                    </div>\r\n\r\n                </div>\r\n            </div>\r\n        </div><!-- End Carousel Item -->\r\n\r\n        <div class=\"carousel-item\">\r\n            <div class=\"container\">\r\n                <div class=\"row justify-content-center gy-6 align-items-center\">\r\n                    <div class=\"col-lg-6\">\r\n                        <h6>Great Experience</h6>\r\n                        <h2>Powered by Intellect<br>for Your <span>Business!</span></h2>\r\n                        <div class=\"d-flex more-btn\">\r\n                            <a href=\"#about\" class=\"btn-get-started scrollto\">Contact us</a>\r\n                            <a href=\"https://www.youtube.com/watch?v=LXb3EKWsInQ\" class=\"glightbox btn-watch-video d-flex align-items-center ms-3\"><i class=\"bi bi-play-circle\"></i><span >Watch Video</span></a>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-lg-6 col-md-8\">\r\n                        <img src=\"assets/img/intro-img.svg\" alt=\"\" class=\"img-fluid img\">\r\n                    </div>\r\n\r\n                </div>\r\n            </div>\r\n        </div><!-- End Carousel Item -->\r\n\r\n        <a class=\"carousel-control-prev\" href=\"#hero\" role=\"button\" data-bs-slide=\"prev\">\r\n            <span class=\"carousel-control-prev-icon bi bi-chevron-left\" aria-hidden=\"true\"></span>\r\n        </a>\r\n\r\n        <a class=\"carousel-control-next\" href=\"#hero\" role=\"button\" data-bs-slide=\"next\">\r\n            <span class=\"carousel-control-next-icon bi bi-chevron-right\" aria-hidden=\"true\"></span>\r\n        </a>\r\n\r\n        <ol class=\"carousel-indicators\"></ol>\r\n\r\n    </section><!-- End Hero Section -->\r\n<?php $args = array(\r\n    'post_type' => 'post',\r\n    'category_name' => 'services',\r\n    'posts_per_page' => 3,\r\n    'orderby' => 'date',\r\n    'order' => 'DESC'\r\n);\r\n\r\n$the_query = new WP_Query($args);\r\nif ($the_query->have_posts()) : ?>\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>\r\n                <div class=\"col-lg-4\">\r\n                    <div class=\"what-we-do\">\r\n                        <div class=\"what-we-do-image\">\r\n                            <a href=\"<?php the_permalink(); ?>\">\r\n                                <?php the_post_thumbnail(\r\n                                    array( 150, 100 ),\r\n                                    array( 'class' => 'img-fluid' )\r\n                                ); ?>\r\n                            </a>\r\n                        </div>\r\n                        <div class=\"what-we-do-title\">\r\n                            <a href=\"<?php the_permalink(); ?>\">\r\n                                <?php the_title(); ?>\r\n                            </a>\r\n                        </div>\r\n                        <div class=\"what-we-do-content\">\r\n                            <?php the_excerpt(); ?>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n\r\n            <?php endwhile; ?>\r\n        </div>\r\n    </div>\r\n<?php endif; ?>\r\n        <section id=\"about\" class=\"about\">\r\n\r\n            <div class=\"container\" data-aos=\"fade-up\">\r\n                <div class=\"row\">\r\n                    <?php $page_who_we_are= get_post(43);\r\n                    $title_who_we_are=$page_who_we_are->post_title;\r\n                    $link_who_we_are= get_permalink(43);\r\n                    $content_who_we_are=$page_who_we_are->post_content;\r\n                    $image_who_we_are= get_the_post_thumbnail_url(43);\r\n                    ?>\r\n                    <div class=\"col-lg-5 col-md-6\">\r\n                        <div class=\"about-img\" data-aos=\"fade-right\" data-aos-delay=\"100\">\r\n                            <img src=\"<?php echo $image_who_we_are;?>\" alt=\"\">\r\n                        </div>\r\n                    </div>\r\n\r\n                    <div class=\"col-lg-7 col-md-6\">\r\n                        <div class=\"about-content\" data-aos=\"fade-left\" data-aos-delay=\"100\">\r\n\r\n                            <h2><?php echo $title_who_we_are;?></h2>\r\n                            <?php echo $content_who_we_are;?>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n\r\n        </section><!-- End About Section -->\r\n        <section id=\"why-us\" class=\"why-us\">\r\n            <div class=\"container-fluid\" data-aos=\"fade-up\">\r\n                <?php $page_why_us= get_post(51);\r\n                $title_why_us=$page_why_us->post_title;\r\n                $link_why_us= get_permalink(51);\r\n                $content_why_us=$page_why_us->post_content;\r\n                $image_why_us= get_the_post_thumbnail_url(51);\r\n                ?>\r\n                <header class=\"section-header\">\r\n                   <h3><?php echo $title_why_us;?></h3>\r\n                </header>\r\n\r\n                <div class=\"row\">\r\n\r\n                    <div class=\"col-lg-6\" data-aos=\"zoom-in\" data-aos-delay=\"100\">\r\n                        <div class=\"why-us-img\">\r\n                            <img src=\"<?php echo $image_why_us;?>\" alt=\"\" class=\"img-fluid\">\r\n                        </div>\r\n                    </div>\r\n\r\n                    <?php echo $content_why_us;?>\r\n\r\n                </div>\r\n\r\n            </div>\r\n\r\n        </section><!-- End Why Us Section -->\r\n        <section id=\"clients\" class=\"clients\">\r\n            <div class=\"container aos-init aos-animate\" data-aos=\"fade-up\">\r\n                <header class=\"section-header\">\r\n                    <h3>Our Company</h3>\r\n                </header>\r\n                <div class=\"row clients-wrap justify-content-center clearfix aos-init aos-animate\" data-aos=\"fade-up\" >\r\n                    <div class=\"col-lg-12 col-sm-12 col-xs-12\">\r\n                        <div class=\"client-logo\"> <img src=\"<?php echo get_template_directory_uri();?>/assets/img/logo.png\" class=\"img-fluid\" alt=\"\"></div>\r\n                    </div>\r\n                    <div class=\"col-lg-12 col-sm-12 col-xs-12\">\r\n                        <div class=\"client-logo\"> <img src=\"<?php echo get_template_directory_uri();?>/assets/img/tifl.png\" class=\"img-fluid\" alt=\"\"></div>\r\n                    </div>\r\n                    <div class=\"col-lg-4 col-sm-12 col-xs-12\">\r\n                        <div class=\" client-logo\" style=\"width: 440px;\">\r\n                            <img src=\"<?php echo get_template_directory_uri();?>/assets/img/bandipur.png\" class=\"img-fluid\" alt=\"\">\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-lg-4 col-sm-12 col-xs-12\">\r\n                        <div class=\"client-logo\" style=\"width: 440px;\">\r\n                            <img src=\"<?php echo get_template_directory_uri();?>/assets/img/panchase.png\" class=\"img-fluid\" alt=\"\">\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-lg-4 col-sm-12 col-xs-12\">\r\n                        <div class=\"client-logo\" style=\"width: 416px;\">\r\n                            <img src=\"<?php echo get_template_directory_uri();?>/assets/img/bizbazar.png\" class=\"img-fluid\" alt=\"\">\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </section>\r\n        <!-- ======= Services Section ======= -->\r\n<!--        <section id=\"services\" class=\"services section-bg\">-->\r\n<!--            <div class=\"container\" data-aos=\"fade-up\">-->\r\n<!---->\r\n<!--                <header class=\"section-header\">-->\r\n<!--                    <h3>Services</h3>-->\r\n<!--                    <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>-->\r\n<!--                </header>-->\r\n<!---->\r\n<!--                <div class=\"row g-5\">-->\r\n<!---->\r\n<!--                    <div class=\"col-md-6 col-lg-4 wow bounceInUp\" data-aos=\"zoom-in\" data-aos-delay=\"100\">-->\r\n<!--                        <div class=\"box\">-->\r\n<!--                            <div class=\"icon\" style=\"background: #fceef3;\"><i class=\"bi bi-briefcase\" style=\"color: #ff689b;\"></i></div>-->\r\n<!--                            <h4 class=\"title\"><a href=\"\">Lorem Ipsum</a></h4>-->\r\n<!--                            <p class=\"description\">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>-->\r\n<!--                        </div>-->\r\n<!--                    </div>-->\r\n<!--                    <div class=\"col-md-6 col-lg-4\" data-aos=\"zoom-in\" data-aos-delay=\"200\">-->\r\n<!--                        <div class=\"box\">-->\r\n<!--                            <div class=\"icon\" style=\"background: #fff0da;\"><i class=\"bi bi-card-checklist\" style=\"color: #e98e06;\"></i></div>-->\r\n<!--                            <h4 class=\"title\"><a href=\"\">Dolor Sitema</a></h4>-->\r\n<!--                            <p class=\"description\">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>-->\r\n<!--                        </div>-->\r\n<!--                    </div>-->\r\n<!---->\r\n<!--                    <div class=\"col-md-6 col-lg-4\" data-aos=\"zoom-in\" data-aos-delay=\"300\">-->\r\n<!--                        <div class=\"box\">-->\r\n<!--                            <div class=\"icon\" style=\"background: #e6fdfc;\"><i class=\"bi bi-bar-chart\" style=\"color: #3fcdc7;\"></i></div>-->\r\n<!--                            <h4 class=\"title\"><a href=\"\">Sed ut perspiciatis</a></h4>-->\r\n<!--                            <p class=\"description\">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>-->\r\n<!--                        </div>-->\r\n<!--                    </div>-->\r\n<!--                    <div class=\"col-md-6 col-lg-4 wow\" data-aos=\"zoom-in\" data-aos-delay=\"100\">-->\r\n<!--                        <div class=\"box\">-->\r\n<!--                            <div class=\"icon\" style=\"background: #eafde7;\"><i class=\"bi bi-binoculars\" style=\"color:#41cf2e;\"></i></div>-->\r\n<!--                            <h4 class=\"title\"><a href=\"\">Magni Dolores</a></h4>-->\r\n<!--                            <p class=\"description\">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>-->\r\n<!--                        </div>-->\r\n<!--                    </div>-->\r\n<!---->\r\n<!--                    <div class=\"col-md-6 col-lg-4\" data-aos=\"zoom-in\" data-aos-delay=\"200\"\">-->\r\n<!--                    <div class=\" box\">-->\r\n<!--                        <div class=\"icon\" style=\"background: #e1eeff;\"><i class=\"bi bi-brightness-high\" style=\"color: #2282ff;\"></i></div>-->\r\n<!--                        <h4 class=\"title\"><a href=\"\">Nemo Enim</a></h4>-->\r\n<!--                        <p class=\"description\">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>-->\r\n<!--                    </div>-->\r\n<!--                </div>-->\r\n<!---->\r\n<!--                <div class=\"col-md-6 col-lg-4\" data-aos=\"zoom-in\" data-aos-delay=\"300\">-->\r\n<!--                    <div class=\"box\">-->\r\n<!--                        <div class=\"icon\" style=\"background: #ecebff;\"><i class=\"bi bi-calendar4-week\" style=\"color: #8660fe;\"></i></div>-->\r\n<!--                        <h4 class=\"title\"><a href=\"\">Eiusmod Tempor</a></h4>-->\r\n<!--                        <p class=\"description\">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>-->\r\n<!--                    </div>-->\r\n<!--                </div>-->\r\n<!---->\r\n<!--            </div>-->\r\n<!---->\r\n<!--            </div>-->\r\n<!--        </section>-->\r\n        <!-- End Services Section -->\r\n        <!-- ======= Features Section ======= -->\r\n        <section id=\"features\" class=\"features\">\r\n            <div class=\"container\" data-aos=\"fade-up\">\r\n                <header class=\"section-header\">\r\n                    <h3>Investment Portfolio</h3>\r\n                    <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>\r\n                </header>\r\n                <ul class=\"nav nav-tabs row gy-4 d-flex\">\r\n\r\n                    <li class=\"nav-item col-6 col-md-4 col-lg-2\">\r\n                        <a class=\"nav-link active show\" data-bs-toggle=\"tab\" data-bs-target=\"#tab-1\">\r\n                            <i class=\"bi bi-binoculars color-cyan\"></i>\r\n                            <h4>Modinest</h4>\r\n                        </a>\r\n                    </li><!-- End Tab 1 Nav -->\r\n\r\n                    <li class=\"nav-item col-6 col-md-4 col-lg-2\">\r\n                        <a class=\"nav-link\" data-bs-toggle=\"tab\" data-bs-target=\"#tab-2\">\r\n                            <i class=\"bi bi-box-seam color-indigo\"></i>\r\n                            <h4>Undaesenti</h4>\r\n                        </a>\r\n                    </li><!-- End Tab 2 Nav -->\r\n\r\n                    <li class=\"nav-item col-6 col-md-4 col-lg-2\">\r\n                        <a class=\"nav-link\" data-bs-toggle=\"tab\" data-bs-target=\"#tab-3\">\r\n                            <i class=\"bi bi-brightness-high color-teal\"></i>\r\n                            <h4>Pariatur</h4>\r\n                        </a>\r\n                    </li><!-- End Tab 3 Nav -->\r\n\r\n                    <li class=\"nav-item col-6 col-md-4 col-lg-2\">\r\n                        <a class=\"nav-link\" data-bs-toggle=\"tab\" data-bs-target=\"#tab-4\">\r\n                            <i class=\"bi bi-command color-red\"></i>\r\n                            <h4>Nostrum</h4>\r\n                        </a>\r\n                    </li><!-- End Tab 4 Nav -->\r\n\r\n                    <li class=\"nav-item col-6 col-md-4 col-lg-2\">\r\n                        <a class=\"nav-link\" data-bs-toggle=\"tab\" data-bs-target=\"#tab-5\">\r\n                            <i class=\"bi bi-easel color-blue\"></i>\r\n                            <h4>Adipiscing</h4>\r\n                        </a>\r\n                    </li><!-- End Tab 5 Nav -->\r\n\r\n                    <li class=\"nav-item col-6 col-md-4 col-lg-2\">\r\n                        <a class=\"nav-link\" data-bs-toggle=\"tab\" data-bs-target=\"#tab-6\">\r\n                            <i class=\"bi bi-map color-orange\"></i>\r\n                            <h4>Reprehit</h4>\r\n                        </a>\r\n                    </li><!-- End Tab 6 Nav -->\r\n\r\n                </ul>\r\n\r\n                <div class=\"tab-content\">\r\n\r\n                    <div class=\"tab-pane active show\" id=\"tab-1\">\r\n                        <div class=\"row gy-4\">\r\n                            <div class=\"col-lg-8 order-2 order-lg-1\" data-aos=\"fade-up\" data-aos-delay=\"100\">\r\n                                <h3>Modinest</h3>\r\n                                <p class=\"fst-italic\">\r\n                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore\r\n                                    magna aliqua.\r\n                                </p>\r\n                                <ul>\r\n                                    <li><i class=\"bi bi-check-circle-fill\"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>\r\n                                    <li><i class=\"bi bi-check-circle-fill\"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>\r\n                                    <li><i class=\"bi bi-check-circle-fill\"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>\r\n                                </ul>\r\n                                <p>\r\n                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate\r\n                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in\r\n                                    culpa qui officia deserunt mollit anim id est laborum\r\n                                </p>\r\n                            </div>\r\n                            <div class=\"col-lg-4 order-1 order-lg-2 text-center\" data-aos=\"fade-up\" data-aos-delay=\"200\">\r\n                                <img src=\"assets/img/features-1.svg\" alt=\"\" class=\"img-fluid\">\r\n                            </div>\r\n                        </div>\r\n                    </div><!-- End Tab Content 1 -->\r\n\r\n                    <div class=\"tab-pane\" id=\"tab-2\">\r\n                        <div class=\"row gy-4\">\r\n                            <div class=\"col-lg-8 order-2 order-lg-1\">\r\n                                <h3>Undaesenti</h3>\r\n                                <p>\r\n                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate\r\n                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in\r\n                                    culpa qui officia deserunt mollit anim id est laborum\r\n                                </p>\r\n                                <p class=\"fst-italic\">\r\n                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore\r\n                                    magna aliqua.\r\n                                </p>\r\n                                <ul>\r\n                                    <li><i class=\"bi bi-check-circle-fill\"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>\r\n                                    <li><i class=\"bi bi-check-circle-fill\"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>\r\n                                    <li><i class=\"bi bi-check-circle-fill\"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>\r\n                                    <li><i class=\"bi bi-check-circle-fill\"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>\r\n                                </ul>\r\n                            </div>\r\n                            <div class=\"col-lg-4 order-1 order-lg-2 text-center\">\r\n                                <img src=\"assets/img/features-2.svg\" alt=\"\" class=\"img-fluid\">\r\n                            </div>\r\n                        </div>\r\n                    </div><!-- End Tab Content 2 -->\r\n\r\n                    <div class=\"tab-pane\" id=\"tab-3\">\r\n                        <div class=\"row gy-4\">\r\n                            <div class=\"col-lg-8 order-2 order-lg-1\">\r\n                                <h3>Pariatur</h3>\r\n                                <p>\r\n                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate\r\n                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in\r\n                                    culpa qui officia deserunt mollit anim id est laborum\r\n                                </p>\r\n                                <ul>\r\n                                    <li><i class=\"bi bi-check-circle-fill\"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>\r\n                                    <li><i class=\"bi bi-check-circle-fill\"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>\r\n                                    <li><i class=\"bi bi-check-circle-fill\"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>\r\n                                </ul>\r\n                                <p class=\"fst-italic\">\r\n                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore\r\n                                    magna aliqua.\r\n                                </p>\r\n                            </div>\r\n                            <div class=\"col-lg-4 order-1 order-lg-2 text-center\">\r\n                                <img src=\"assets/img/features-3.svg\" alt=\"\" class=\"img-fluid\">\r\n                            </div>\r\n                        </div>\r\n                    </div><!-- End Tab Content 3 -->\r\n\r\n                    <div class=\"tab-pane\" id=\"tab-4\">\r\n                        <div class=\"row gy-4\">\r\n                            <div class=\"col-lg-8 order-2 order-lg-1\">\r\n                                <h3>Nostrum</h3>\r\n                                <p>\r\n                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate\r\n                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in\r\n                                    culpa qui officia deserunt mollit anim id est laborum\r\n                                </p>\r\n                                <p class=\"fst-italic\">\r\n                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore\r\n                                    magna aliqua.\r\n                                </p>\r\n                                <ul>\r\n                                    <li><i class=\"bi bi-check-circle-fill\"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>\r\n                                    <li><i class=\"bi bi-check-circle-fill\"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>\r\n                                    <li><i class=\"bi bi-check-circle-fill\"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>\r\n                                </ul>\r\n                            </div>\r\n                            <div class=\"col-lg-4 order-1 order-lg-2 text-center\">\r\n                                <img src=\"assets/img/features-4.svg\" alt=\"\" class=\"img-fluid\">\r\n                            </div>\r\n                        </div>\r\n                    </div><!-- End Tab Content 4 -->\r\n\r\n                    <div class=\"tab-pane\" id=\"tab-5\">\r\n                        <div class=\"row gy-4\">\r\n                            <div class=\"col-lg-8 order-2 order-lg-1\">\r\n                                <h3>Adipiscing</h3>\r\n                                <p>\r\n                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate\r\n                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in\r\n                                    culpa qui officia deserunt mollit anim id est laborum\r\n                                </p>\r\n                                <p class=\"fst-italic\">\r\n                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore\r\n                                    magna aliqua.\r\n                                </p>\r\n                                <ul>\r\n                                    <li><i class=\"bi bi-check-circle-fill\"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>\r\n                                    <li><i class=\"bi bi-check-circle-fill\"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>\r\n                                    <li><i class=\"bi bi-check-circle-fill\"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>\r\n                                </ul>\r\n                            </div>\r\n                            <div class=\"col-lg-4 order-1 order-lg-2 text-center\">\r\n                                <img src=\"assets/img/features-5.svg\" alt=\"\" class=\"img-fluid\">\r\n                            </div>\r\n                        </div>\r\n                    </div><!-- End Tab Content 5 -->\r\n\r\n                    <div class=\"tab-pane\" id=\"tab-6\">\r\n                        <div class=\"row gy-4\">\r\n                            <div class=\"col-lg-8 order-2 order-lg-1\">\r\n                                <h3>Reprehit</h3>\r\n                                <p>\r\n                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate\r\n                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in\r\n                                    culpa qui officia deserunt mollit anim id est laborum\r\n                                </p>\r\n                                <p class=\"fst-italic\">\r\n                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore\r\n                                    magna aliqua.\r\n                                </p>\r\n                                <ul>\r\n                                    <li><i class=\"bi bi-check-circle-fill\"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>\r\n                                    <li><i class=\"bi bi-check-circle-fill\"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>\r\n                                    <li><i class=\"bi bi-check-circle-fill\"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>\r\n                                </ul>\r\n                            </div>\r\n                            <div class=\"col-lg-4 order-1 order-lg-2 text-center\">\r\n                                <img src=\"assets/img/features-6.svg\" alt=\"\" class=\"img-fluid\">\r\n                            </div>\r\n                        </div>\r\n                    </div><!-- End Tab Content 6 -->\r\n\r\n                </div>\r\n\r\n            </div>\r\n        </section><!-- End Features Section -->\r\n\r\n\r\n        <!-- ======= Counts Section ======= -->\r\n        <section id=\"counts\" class=\"counts\">\r\n            <div class=\"container\" data-aos=\"fade-up\">\r\n\r\n                <div class=\"row gy-4\">\r\n\r\n                    <div class=\"col-lg-3 col-md-6\">\r\n                        <div class=\"count-box\">\r\n                            <i class=\"bi bi-emoji-smile\"></i>\r\n                            <div>\r\n                                <span data-purecounter-start=\"0\" data-purecounter-end=\"232\" data-purecounter-duration=\"1\" class=\"purecounter\"></span>\r\n                                <p>Happy Clients</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n\r\n                    <div class=\"col-lg-3 col-md-6\">\r\n                        <div class=\"count-box\">\r\n                            <i class=\"bi bi-journal-richtext\" style=\"color: #ee6c20;\"></i>\r\n                            <div>\r\n                                <span data-purecounter-start=\"0\" data-purecounter-end=\"521\" data-purecounter-duration=\"1\" class=\"purecounter\"></span>\r\n                                <p>Projects</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n\r\n                    <div class=\"col-lg-3 col-md-6\">\r\n                        <div class=\"count-box\">\r\n                            <i class=\"bi bi-headset\" style=\"color: #15be56;\"></i>\r\n                            <div>\r\n                                <span data-purecounter-start=\"0\" data-purecounter-end=\"1463\" data-purecounter-duration=\"1\" class=\"purecounter\"></span>\r\n                                <p>Hours Of Support</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n\r\n                    <div class=\"col-lg-3 col-md-6\">\r\n                        <div class=\"count-box\">\r\n                            <i class=\"bi bi-people\" style=\"color: #bb0852;\"></i>\r\n                            <div>\r\n                                <span data-purecounter-start=\"0\" data-purecounter-end=\"15\" data-purecounter-duration=\"1\" class=\"purecounter\"></span>\r\n                                <p>Hard Workers</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n\r\n                </div>\r\n\r\n            </div>\r\n        </section><!-- End Counts Section -->\r\n        <!-- ======= ceo Section ======= -->\r\n        <section id=\"about\" class=\"about\">\r\n\r\n            <div class=\"container\" data-aos=\"fade-up\">\r\n                <div class=\"row\">\r\n                    <?php\r\n                    $page_ceo= get_post(58);\r\n                    $ceo_title = $page_ceo->post_title;\r\n                    $ceo_content = $page_ceo->post_content;\r\n                    $ceo_image = get_the_post_thumbnail_url($page_ceo->ID);\r\n                    ?>\r\n                    <div class=\"col-lg-5 col-md-6\">\r\n                        <div class=\"about-img h-100\" data-aos=\"fade-right\" data-aos-delay=\"100\">\r\n                            <img src=\"<?php echo $ceo_image;?>\" alt=\"\" class=\"h-100\">\r\n                        </div>\r\n                    </div>\r\n\r\n                    <div class=\"col-lg-7 col-md-6\">\r\n                        <div class=\"about-content\" data-aos=\"fade-left\" data-aos-delay=\"100\">\r\n                            <h2><?php echo $ceo_title?></h2>\r\n                            <p><?php echo $ceo_content?></p>\r\n                            <div class=\"call-info\">\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n\r\n        </section><!-- End ceo Section -->\r\n\r\n        <!-- ======= Portfolio Section ======= -->\r\n        <section id=\"portfolio\" class=\"portfolio\">\r\n\r\n            <div class=\"container\" data-aos=\"fade-up\">\r\n\r\n                <header class=\"section-header\">\r\n                    <h3>Investment Portfolio</h3>\r\n                    <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>\r\n                </header>\r\n\r\n                <div class=\"row\" data-aos=\"fade-up\" data-aos-delay=\"100\">\r\n                    <div class=\"col-lg-12 d-flex justify-content-center\">\r\n                        <ul id=\"portfolio-flters\">\r\n                            <li data-filter=\"*\" class=\"filter-active\">All</li>\r\n                            <li data-filter=\".filter-app\">App</li>\r\n                            <li data-filter=\".filter-card\">Card</li>\r\n                            <li data-filter=\".filter-web\">Web</li>\r\n                        </ul>\r\n                    </div>\r\n                </div>\r\n\r\n                <div class=\"row gy-4 portfolio-container\" data-aos=\"fade-up\" data-aos-delay=\"200\">\r\n\r\n                    <div class=\"col-lg-4 col-md-6 portfolio-item filter-app\">\r\n                        <div class=\"portfolio-wrap\">\r\n                            <img src=\"assets/img/portfolio/app1.jpg\" class=\"img-fluid\" alt=\"\">\r\n                            <div class=\"portfolio-info\">\r\n                                <h4>App 1</h4>\r\n                                <p>App</p>\r\n                                <div class=\"portfolio-links\">\r\n                                    <a href=\"assets/img/portfolio/app1.jpg\" data-gallery=\"portfolioGallery\" class=\"portfokio-lightbox\" title=\"App 1\"><i class=\"bi bi-plus\"></i></a>\r\n                                    <a href=\"portfolio-details.html\" title=\"More Details\"><i class=\"bi bi-link\"></i></a>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n\r\n                    <div class=\"col-lg-4 col-md-6 portfolio-item filter-web\">\r\n                        <div class=\"portfolio-wrap\">\r\n                            <img src=\"assets/img/portfolio/app2.jpg\" class=\"img-fluid\" alt=\"\">\r\n                            <div class=\"portfolio-info\">\r\n                                <h4>Web 3</h4>\r\n                                <p>Web</p>\r\n                                <div class=\"portfolio-links\">\r\n                                    <a href=\"assets/img/portfolio/app2.jpg\" data-gallery=\"portfolioGallery\" class=\"portfokio-lightbox\" title=\"Web 3\"><i class=\"bi bi-plus\"></i></a>\r\n                                    <a href=\"portfolio-details.html\" title=\"More Details\"><i class=\"bi bi-link\"></i></a>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n\r\n                    <div class=\"col-lg-4 col-md-6 portfolio-item filter-app\">\r\n                        <div class=\"portfolio-wrap\">\r\n                            <img src=\"assets/img/portfolio/app3.jpg\" class=\"img-fluid\" alt=\"\">\r\n                            <div class=\"portfolio-info\">\r\n                                <h4>App 2</h4>\r\n                                <p>App</p>\r\n                                <div class=\"portfolio-links\">\r\n                                    <a href=\"assets/img/portfolio/app3.jpg\" data-gallery=\"portfolioGallery\" class=\"portfokio-lightbox\" title=\"App 2\"><i class=\"bi bi-plus\"></i></a>\r\n                                    <a href=\"portfolio-details.html\" title=\"More Details\"><i class=\"bi bi-link\"></i></a>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n\r\n                    <div class=\"col-lg-4 col-md-6 portfolio-item filter-card\">\r\n                        <div class=\"portfolio-wrap\">\r\n                            <img src=\"assets/img/portfolio/app2.jpg\" class=\"img-fluid\" alt=\"\">\r\n                            <div class=\"portfolio-info\">\r\n                                <h4>Card 2</h4>\r\n                                <p>Card</p>\r\n                                <div class=\"portfolio-links\">\r\n                                    <a href=\"assets/img/portfolio/app2.jpg\" data-gallery=\"portfolioGallery\" class=\"portfokio-lightbox\" title=\"Card 2\"><i class=\"bi bi-plus\"></i></a>\r\n                                    <a href=\"portfolio-details.html\" title=\"More Details\"><i class=\"bi bi-link\"></i></a>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n\r\n                    <div class=\"col-lg-4 col-md-6 portfolio-item filter-web\">\r\n                        <div class=\"portfolio-wrap\">\r\n                            <img src=\"assets/img/portfolio/app3.jpg\" class=\"img-fluid\" alt=\"\">\r\n                            <div class=\"portfolio-info\">\r\n                                <h4>Web 2</h4>\r\n                                <p>Web</p>\r\n                                <div class=\"portfolio-links\">\r\n                                    <a href=\"assets/img/portfolio/app3.jpg\" data-gallery=\"portfolioGallery\" class=\"portfokio-lightbox\" title=\"Web 2\"><i class=\"bi bi-plus\"></i></a>\r\n                                    <a href=\"portfolio-details.html\" title=\"More Details\"><i class=\"bi bi-link\"></i></a>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n\r\n                    <div class=\"col-lg-4 col-md-6 portfolio-item filter-app\">\r\n                        <div class=\"portfolio-wrap\">\r\n                            <img src=\"assets/img/portfolio/app1.jpg\" class=\"img-fluid\" alt=\"\">\r\n                            <div class=\"portfolio-info\">\r\n                                <h4>App 3</h4>\r\n                                <p>App</p>\r\n                                <div class=\"portfolio-links\">\r\n                                    <a href=\"assets/img/portfolio/app1.jpg\" data-gallery=\"portfolioGallery\" class=\"portfokio-lightbox\" title=\"App 3\"><i class=\"bi bi-plus\"></i></a>\r\n                                    <a href=\"portfolio-details.html\" title=\"More Details\"><i class=\"bi bi-link\"></i></a>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n\r\n            </div>\r\n\r\n        </section><!-- End Portfolio Section -->\r\n\r\n\r\n        <!-- ======= Team Section ======= -->\r\n        <section id=\"team\" class=\"team section-bg\">\r\n            <div class=\"container\" data-aos=\"fade-up\">\r\n                <div class=\"section-header\">\r\n                    <h3>Board of Directors</h3>\r\n                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>\r\n                </div>\r\n\r\n                <div class=\"row\">\r\n                    <?php $args = array(\r\n                        'post_type' => 'post',\r\n                        'category_name' => 'director',\r\n                        'posts_per_page' => -1,\r\n                        'orderby' => 'date',\r\n                        'order' => 'DESC'\r\n                    );\r\n\r\n                    $the_query = new WP_Query($args);\r\n                    if ($the_query->have_posts()) : ?>\r\n                        <div class=\"container\">\r\n                            <div class=\"row\">\r\n                                <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>\r\n\r\n                                    <div class=\"col-lg-3 col-md-6\" data-aos=\"fade-up\" data-aos-delay=\"100\">\r\n                                        <div class=\"member\">\r\n                                            <a href=\"<?php the_permalink(); ?>\">\r\n                                                <?php the_post_thumbnail(\r\n                                                    array( 150, 100 ),\r\n                                                    array( 'class' => 'img-fluid' )\r\n                                                ); ?>\r\n                                            <div class=\"member-info\">\r\n                                                <div class=\"member-info-content\">\r\n                                                    <a href=\"<?php the_permalink(); ?>\">\r\n                                                        <?php the_title(); ?>\r\n                                                    </a>\r\n                                                    <span> <?php the_excerpt(); ?></span>\r\n                                                    <div class=\"social\">\r\n                                                        <a href=\"\"><i class=\"bi bi-twitter\"></i></a>\r\n                                                        <a href=\"\"><i class=\"bi bi-facebook\"></i></a>\r\n                                                    </div>\r\n                                                </div>\r\n                                            </div>\r\n                                        </div>\r\n                                    </div>\r\n\r\n                                <?php endwhile; ?>\r\n                            </div>\r\n                        </div>\r\n                    <?php endif; ?>\r\n\r\n\r\n\r\n                </div>\r\n\r\n            </div>\r\n        </section><!-- End Team Section -->\r\n\r\n        <!-- ======= Clients Section ======= -->\r\n        <section id=\"clients\" class=\"clients\">\r\n            <div class=\"container\" data-aos=\"zoom-in\">\r\n\r\n                <header class=\"section-header\">\r\n                    <h3>Our Clients</h3>\r\n                </header>\r\n\r\n                <div class=\"clients-slider swiper\">\r\n                    <div class=\"swiper-wrapper align-items-center\">\r\n                        <div class=\"swiper-slide\"><img src=\"assets/img/clients/client-1.png\" class=\"img-fluid\" alt=\"\"></div>\r\n                        <div class=\"swiper-slide\"><img src=\"assets/img/clients/client-2.png\" class=\"img-fluid\" alt=\"\"></div>\r\n                        <div class=\"swiper-slide\"><img src=\"assets/img/clients/client-3.png\" class=\"img-fluid\" alt=\"\"></div>\r\n                        <div class=\"swiper-slide\"><img src=\"assets/img/clients/client-4.png\" class=\"img-fluid\" alt=\"\"></div>\r\n                        <div class=\"swiper-slide\"><img src=\"assets/img/clients/client-5.png\" class=\"img-fluid\" alt=\"\"></div>\r\n                        <div class=\"swiper-slide\"><img src=\"assets/img/clients/client-6.png\" class=\"img-fluid\" alt=\"\"></div>\r\n                        <div class=\"swiper-slide\"><img src=\"assets/img/clients/client-7.png\" class=\"img-fluid\" alt=\"\"></div>\r\n                        <div class=\"swiper-slide\"><img src=\"assets/img/clients/client-8.png\" class=\"img-fluid\" alt=\"\"></div>\r\n                    </div>\r\n                    <div class=\"swiper-pagination\"></div>\r\n                </div>\r\n\r\n            </div>\r\n        </section><!-- End Clients Section -->\r\n\r\n\r\n        <!-- ======= Recent Blog Posts Section ======= -->\r\n        <section id=\"news\" class=\"recent-blog-posts\">\r\n\r\n            <div class=\"container\" data-aos=\"fade-up\">\r\n\r\n                <header class=\"section-header\">\r\n                    <h3>News</h3>\r\n                </header>\r\n\r\n                <div class=\"row\">\r\n                    <?php $args = array(\r\n                        'post_type' => 'post',\r\n                        'category_name' => 'news',\r\n                        'posts_per_page' => 3,\r\n                        'orderby' => 'date',\r\n                        'order' => 'DESC'\r\n                    );\r\n\r\n                    $the_query = new WP_Query($args);\r\n                    if ($the_query->have_posts()) : ?>\r\n                        <div class=\"container\">\r\n                            <div class=\"row\">\r\n                                <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>\r\n                                    <div class=\"col-lg-4\">\r\n                                        <div class=\"what-we-do\">\r\n                                            <div class=\"what-we-do-image\">\r\n                                                <a href=\"<?php the_permalink(); ?>\">\r\n                                                    <?php the_post_thumbnail(\r\n                                                        array( 150, 100 ),\r\n                                                        array( 'class' => 'img-fluid' )\r\n                                                    ); ?>\r\n                                                </a>\r\n                                            </div>\r\n                                            <div class=\"what-we-do-title\">\r\n                                                <a href=\"<?php the_permalink(); ?>\">\r\n                                                    <?php the_title(); ?>\r\n                                                </a>\r\n                                            </div>\r\n                                            <div class=\"what-we-do-content\">\r\n                                                <?php the_excerpt(); ?>\r\n                                            </div>\r\n                                        </div>\r\n                                    </div>\r\n\r\n                                <?php endwhile; ?>\r\n                            </div>\r\n                        </div>\r\n                    <?php endif; ?>\r\n                </div>\r\n     </section><!-- End Recent Blog Posts Section -->\r\n\r\n\r\n\r\n    </main><!-- End #main -->\r\n\r\n\r\n\r\n</main><!-- End #main -->\r\n<?php get_footer();?>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/wp-content/themes/custom_theme/homepage_template.php b/wp-content/themes/custom_theme/homepage_template.php
+--- a/wp-content/themes/custom_theme/homepage_template.php	(revision 2b51cbe15013b8d29f94e4f07cea60a117a5bb3f)
++++ b/wp-content/themes/custom_theme/homepage_template.php	(date 1663669457503)
+@@ -69,7 +69,10 @@
+ 
+         <ol class="carousel-indicators"></ol>
+ 
+-    </section><!-- End Hero Section -->
++    </section>
++    <!-- End Hero Section -->
++    <section id="services" class="services one">
++        <div class="container aos-init aos-animate" data-aos="fade-up">
+ <?php $args = array(
+     'post_type' => 'post',
+     'category_name' => 'services',
+@@ -81,25 +84,28 @@
+ $the_query = new WP_Query($args);
+ if ($the_query->have_posts()) : ?>
+     <div class="container">
+-        <div class="row">
++        <div class="row gy-5">
+             <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+-                <div class="col-lg-4">
+-                    <div class="what-we-do">
+-                        <div class="what-we-do-image">
++                <div class="col-xl-4 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="500">
++                    <div class="service-item">
++                        <div class="img">
+                             <a href="<?php the_permalink(); ?>">
+                                 <?php the_post_thumbnail(
+-                                    array( 150, 100 ),
+                                     array( 'class' => 'img-fluid' )
+                                 ); ?>
+                             </a>
+                         </div>
+-                        <div class="what-we-do-title">
+-                            <a href="<?php the_permalink(); ?>">
+-                                <?php the_title(); ?>
++                        <div class="details position-relative">
++                            <div class="icon">
++                                <i class="bi bi-bounding-box-circles"></i>
++                            </div>
++                            <a href="#" class="stretched-link">
++                                <h3> <a href="<?php the_permalink(); ?>">
++                                        <?php the_title(); ?>
++                                    </a></h3>
+                             </a>
+-                        </div>
+-                        <div class="what-we-do-content">
+-                            <?php the_excerpt(); ?>
++                            <p>  <?php the_excerpt(); ?></p>
++                            <a href="#" class="stretched-link"></a>
+                         </div>
+                     </div>
+                 </div>
+@@ -108,6 +114,8 @@
+         </div>
+     </div>
+ <?php endif; ?>
++        </div>
++    </section>
+         <section id="about" class="about">
+ 
+             <div class="container" data-aos="fade-up">
+@@ -256,408 +264,381 @@
+ <!--        </section>-->
+         <!-- End Services Section -->
+         <!-- ======= Features Section ======= -->
+-        <section id="features" class="features">
+-            <div class="container" data-aos="fade-up">
+-                <header class="section-header">
+-                    <h3>Investment Portfolio</h3>
+-                    <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+-                </header>
+-                <ul class="nav nav-tabs row gy-4 d-flex">
++    <section id="features" class="features">
++        <div class="container" data-aos="fade-up">
++            <header class="section-header">
++                <h3>Investment By</h3>
++            </header>
++            <ul class="nav nav-tabs row gy-4 d-flex">
+ 
+-                    <li class="nav-item col-6 col-md-4 col-lg-2">
+-                        <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+-                            <i class="bi bi-binoculars color-cyan"></i>
+-                            <h4>Modinest</h4>
+-                        </a>
+-                    </li><!-- End Tab 1 Nav -->
++                <li class="nav-item col-lg-3 col-sm-3 col-xs-12">
++                    <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
++                        <i class="bi bi-binoculars color-cyan"></i>
++                        <h4>Sectors</h4>
++                    </a>
++                </li><!-- End Tab 1 Nav -->
+ 
+-                    <li class="nav-item col-6 col-md-4 col-lg-2">
+-                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+-                            <i class="bi bi-box-seam color-indigo"></i>
+-                            <h4>Undaesenti</h4>
+-                        </a>
+-                    </li><!-- End Tab 2 Nav -->
++                <li class="nav-item col-lg-3 col-sm-3 col-xs-12">
++                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
++                        <i class="bi bi-box-seam" style="color: #6610f2;"></i>
++                        <h4>Business Platforms</h4>
++                    </a>
++                </li><!-- End Tab 2 Nav -->
+ 
+-                    <li class="nav-item col-6 col-md-4 col-lg-2">
+-                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+-                            <i class="bi bi-brightness-high color-teal"></i>
+-                            <h4>Pariatur</h4>
+-                        </a>
+-                    </li><!-- End Tab 3 Nav -->
++                <li class="nav-item col-lg-3 col-sm-3 col-xs-12">
++                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
++                        <i class="bi bi-brightness-high" style="color: #20c997;"></i>
++                        <h4>Asset Class</h4>
++                    </a>
++                </li><!-- End Tab 3 Nav -->
+ 
+-                    <li class="nav-item col-6 col-md-4 col-lg-2">
+-                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
+-                            <i class="bi bi-command color-red"></i>
+-                            <h4>Nostrum</h4>
+-                        </a>
+-                    </li><!-- End Tab 4 Nav -->
++                <li class="nav-item col-lg-3 col-sm-3 col-xs-12">
++                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
++                        <i class="bi bi-command" style="color: #df1529;"></i>
++                        <h4>Nostrum</h4>
++                    </a>
++                </li><!-- End Tab 4 Nav -->
+ 
+-                    <li class="nav-item col-6 col-md-4 col-lg-2">
+-                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-5">
+-                            <i class="bi bi-easel color-blue"></i>
+-                            <h4>Adipiscing</h4>
+-                        </a>
+-                    </li><!-- End Tab 5 Nav -->
+-
+-                    <li class="nav-item col-6 col-md-4 col-lg-2">
+-                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-6">
+-                            <i class="bi bi-map color-orange"></i>
+-                            <h4>Reprehit</h4>
+-                        </a>
+-                    </li><!-- End Tab 6 Nav -->
+ 
+-                </ul>
++            </ul>
+ 
+-                <div class="tab-content">
++            <div class="tab-content">
+ 
+-                    <div class="tab-pane active show" id="tab-1">
+-                        <div class="row gy-4">
+-                            <div class="col-lg-8 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+-                                <h3>Modinest</h3>
+-                                <p class="fst-italic">
+-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+-                                    magna aliqua.
+-                                </p>
+-                                <ul>
+-                                    <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+-                                    <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+-                                    <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+-                                </ul>
+-                                <p>
+-                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+-                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+-                                    culpa qui officia deserunt mollit anim id est laborum
+-                                </p>
++                <div class="tab-pane active show" id="tab-1">
++                    <div class="row g-5" id="services">
++                        <div class="col-md-6 col-lg-4 wow bounceInUp aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
++                            <div class="box">
++                                <div class="icon" style="background: #fceef3;"><i class="bi bi-briefcase" style="color: #ff689b;"></i></div>
++                                <h4 class="title"><a href="">Real state</a></h4>
+                             </div>
+-                            <div class="col-lg-4 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+-                                <img src="assets/img/features-1.svg" alt="" class="img-fluid">
+-                            </div>
+-                        </div>
+-                    </div><!-- End Tab Content 1 -->
++                        </div>
++                        <div class="col-md-6 col-lg-4 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
++                            <div class="box">
++                                <div class="icon" style="background: #fff0da;"><i class="bi bi-card-checklist" style="color: #e98e06;"></i></div>
++                                <h4 class="title"><a href="">Technology</a></h4>
++                            </div>
++                        </div>
++                        <div class="col-md-6 col-lg-4 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300">
++                            <div class="box">
++                                <div class="icon" style="background: #e6fdfc;"><i class="bi bi-bar-chart" style="color: #3fcdc7;"></i></div><h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
++                            </div>
++                        </div>
++                        <div class="col-md-6 col-lg-4 wow aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
++                            <div class="box">
++                                <div class="icon" style="background: #eafde7;"><i class="bi bi-binoculars" style="color:#41cf2e;"></i></div>
++                                <h4 class="title"><a href="">Ecommerce</a></h4>
++                            </div>
++                        </div>
++                        <div class="col-md-6 col-lg-4 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200" "="">
++                        <div class=" box">
++                            <div class="icon" style="background: #e1eeff;"><i class="bi bi-brightness-high" style="color: #2282ff;"></i></div>
++                            <h4 class="title"><a href="">Invetstment Options</a></h4>
++                        </div>
++                    </div>
++                    <div class="col-md-6 col-lg-4 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300">
++                        <div class="box">
++                            <div class="icon" style="background: #ecebff;"><i class="bi bi-calendar4-week" style="color: #8660fe;"></i></div>
++                            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
++                        </div>
++                    </div>
++                </div>
++            </div><!-- End Tab Content 1 -->
+ 
+-                    <div class="tab-pane" id="tab-2">
+-                        <div class="row gy-4">
+-                            <div class="col-lg-8 order-2 order-lg-1">
+-                                <h3>Undaesenti</h3>
+-                                <p>
+-                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+-                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+-                                    culpa qui officia deserunt mollit anim id est laborum
+-                                </p>
+-                                <p class="fst-italic">
+-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+-                                    magna aliqua.
+-                                </p>
+-                                <ul>
+-                                    <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+-                                    <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+-                                    <li><i class="bi bi-check-circle-fill"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
+-                                    <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+-                                </ul>
+-                            </div>
+-                            <div class="col-lg-4 order-1 order-lg-2 text-center">
+-                                <img src="assets/img/features-2.svg" alt="" class="img-fluid">
+-                            </div>
+-                        </div>
+-                    </div><!-- End Tab Content 2 -->
++            <div class="tab-pane" id="tab-2">
++                <div class="row gy-4">
++                    <div class="col-lg-8 order-2 order-lg-1">
++                        <h3>Undaesenti</h3>
++                        <p>
++                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
++                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
++                            culpa qui officia deserunt mollit anim id est laborum
++                        </p>
++                        <p class="fst-italic">
++                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
++                            magna aliqua.
++                        </p>
++                        <ul>
++                            <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
++                            <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
++                            <li><i class="bi bi-check-circle-fill"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
++                            <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
++                        </ul>
++                    </div>
++                    <div class="col-lg-4 order-1 order-lg-2 text-center">
++                        <img src="assets/img/features-2.svg" alt="" class="img-fluid">
++                    </div>
++                </div>
++            </div><!-- End Tab Content 2 -->
+ 
+-                    <div class="tab-pane" id="tab-3">
+-                        <div class="row gy-4">
+-                            <div class="col-lg-8 order-2 order-lg-1">
+-                                <h3>Pariatur</h3>
+-                                <p>
+-                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+-                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+-                                    culpa qui officia deserunt mollit anim id est laborum
+-                                </p>
+-                                <ul>
+-                                    <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+-                                    <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+-                                    <li><i class="bi bi-check-circle-fill"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
+-                                </ul>
+-                                <p class="fst-italic">
+-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+-                                    magna aliqua.
+-                                </p>
+-                            </div>
+-                            <div class="col-lg-4 order-1 order-lg-2 text-center">
+-                                <img src="assets/img/features-3.svg" alt="" class="img-fluid">
+-                            </div>
+-                        </div>
+-                    </div><!-- End Tab Content 3 -->
++            <div class="tab-pane" id="tab-3">
++                <div class="row gy-4">
++                    <div class="col-lg-8 order-2 order-lg-1">
++                        <h3>Pariatur</h3>
++                        <p>
++                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
++                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
++                            culpa qui officia deserunt mollit anim id est laborum
++                        </p>
++                        <ul>
++                            <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
++                            <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
++                            <li><i class="bi bi-check-circle-fill"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
++                        </ul>
++                        <p class="fst-italic">
++                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
++                            magna aliqua.
++                        </p>
++                    </div>
++                    <div class="col-lg-4 order-1 order-lg-2 text-center">
++                        <img src="assets/img/features-3.svg" alt="" class="img-fluid">
++                    </div>
++                </div>
++            </div><!-- End Tab Content 3 -->
+ 
+-                    <div class="tab-pane" id="tab-4">
+-                        <div class="row gy-4">
+-                            <div class="col-lg-8 order-2 order-lg-1">
+-                                <h3>Nostrum</h3>
+-                                <p>
+-                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+-                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+-                                    culpa qui officia deserunt mollit anim id est laborum
+-                                </p>
+-                                <p class="fst-italic">
+-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+-                                    magna aliqua.
+-                                </p>
+-                                <ul>
+-                                    <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+-                                    <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+-                                    <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+-                                </ul>
+-                            </div>
+-                            <div class="col-lg-4 order-1 order-lg-2 text-center">
+-                                <img src="assets/img/features-4.svg" alt="" class="img-fluid">
+-                            </div>
+-                        </div>
+-                    </div><!-- End Tab Content 4 -->
++            <div class="tab-pane" id="tab-4">
++                <div class="row gy-4">
++                    <div class="col-lg-8 order-2 order-lg-1">
++                        <h3>Nostrum</h3>
++                        <p>
++                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
++                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
++                            culpa qui officia deserunt mollit anim id est laborum
++                        </p>
++                        <p class="fst-italic">
++                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
++                            magna aliqua.
++                        </p>
++                        <ul>
++                            <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
++                            <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
++                            <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
++                        </ul>
++                    </div>
++                    <div class="col-lg-4 order-1 order-lg-2 text-center">
++                        <img src="assets/img/features-4.svg" alt="" class="img-fluid">
++                    </div>
++                </div>
++            </div><!-- End Tab Content 4 -->
+ 
+-                    <div class="tab-pane" id="tab-5">
+-                        <div class="row gy-4">
+-                            <div class="col-lg-8 order-2 order-lg-1">
+-                                <h3>Adipiscing</h3>
+-                                <p>
+-                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+-                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+-                                    culpa qui officia deserunt mollit anim id est laborum
+-                                </p>
+-                                <p class="fst-italic">
+-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+-                                    magna aliqua.
+-                                </p>
+-                                <ul>
+-                                    <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+-                                    <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+-                                    <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+-                                </ul>
+-                            </div>
+-                            <div class="col-lg-4 order-1 order-lg-2 text-center">
+-                                <img src="assets/img/features-5.svg" alt="" class="img-fluid">
+-                            </div>
+-                        </div>
+-                    </div><!-- End Tab Content 5 -->
++            <div class="tab-pane" id="tab-5">
++                <div class="row gy-4">
++                    <div class="col-lg-8 order-2 order-lg-1">
++                        <h3>Adipiscing</h3>
++                        <p>
++                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
++                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
++                            culpa qui officia deserunt mollit anim id est laborum
++                        </p>
++                        <p class="fst-italic">
++                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
++                            magna aliqua.
++                        </p>
++                        <ul>
++                            <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
++                            <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
++                            <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
++                        </ul>
++                    </div>
++                    <div class="col-lg-4 order-1 order-lg-2 text-center">
++                        <img src="assets/img/features-5.svg" alt="" class="img-fluid">
++                    </div>
++                </div>
++            </div><!-- End Tab Content 5 -->
+ 
+-                    <div class="tab-pane" id="tab-6">
+-                        <div class="row gy-4">
+-                            <div class="col-lg-8 order-2 order-lg-1">
+-                                <h3>Reprehit</h3>
+-                                <p>
+-                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+-                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+-                                    culpa qui officia deserunt mollit anim id est laborum
+-                                </p>
+-                                <p class="fst-italic">
+-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+-                                    magna aliqua.
+-                                </p>
+-                                <ul>
+-                                    <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+-                                    <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+-                                    <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+-                                </ul>
+-                            </div>
+-                            <div class="col-lg-4 order-1 order-lg-2 text-center">
+-                                <img src="assets/img/features-6.svg" alt="" class="img-fluid">
+-                            </div>
+-                        </div>
+-                    </div><!-- End Tab Content 6 -->
+-
+-                </div>
++        </div>
+ 
+-            </div>
+-        </section><!-- End Features Section -->
++        </div>
++    </section><!-- End Features Section -->
+ 
+-
+-        <!-- ======= Counts Section ======= -->
+-        <section id="counts" class="counts">
+-            <div class="container" data-aos="fade-up">
+-
+-                <div class="row gy-4">
+-
+-                    <div class="col-lg-3 col-md-6">
+-                        <div class="count-box">
+-                            <i class="bi bi-emoji-smile"></i>
+-                            <div>
+-                                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+-                                <p>Happy Clients</p>
+-                            </div>
+-                        </div>
+-                    </div>
+-
+-                    <div class="col-lg-3 col-md-6">
+-                        <div class="count-box">
+-                            <i class="bi bi-journal-richtext" style="color: #ee6c20;"></i>
+-                            <div>
+-                                <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+-                                <p>Projects</p>
+-                            </div>
+-                        </div>
+-                    </div>
+-
+-                    <div class="col-lg-3 col-md-6">
+-                        <div class="count-box">
+-                            <i class="bi bi-headset" style="color: #15be56;"></i>
+-                            <div>
+-                                <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+-                                <p>Hours Of Support</p>
+-                            </div>
+-                        </div>
+-                    </div>
+-
+-                    <div class="col-lg-3 col-md-6">
+-                        <div class="count-box">
+-                            <i class="bi bi-people" style="color: #bb0852;"></i>
+-                            <div>
+-                                <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+-                                <p>Hard Workers</p>
+-                            </div>
+-                        </div>
+-                    </div>
+-
+-                </div>
+-
+-            </div>
+-        </section><!-- End Counts Section -->
+-        <!-- ======= ceo Section ======= -->
+-        <section id="about" class="about">
+-
+-            <div class="container" data-aos="fade-up">
+-                <div class="row">
+-                    <?php
+-                    $page_ceo= get_post(58);
+-                    $ceo_title = $page_ceo->post_title;
+-                    $ceo_content = $page_ceo->post_content;
+-                    $ceo_image = get_the_post_thumbnail_url($page_ceo->ID);
+-                    ?>
+-                    <div class="col-lg-5 col-md-6">
+-                        <div class="about-img h-100" data-aos="fade-right" data-aos-delay="100">
+-                            <img src="<?php echo $ceo_image;?>" alt="" class="h-100">
+-                        </div>
+-                    </div>
+-
+-                    <div class="col-lg-7 col-md-6">
+-                        <div class="about-content" data-aos="fade-left" data-aos-delay="100">
+-                            <h2><?php echo $ceo_title?></h2>
+-                            <p><?php echo $ceo_content?></p>
+-                            <div class="call-info">
+-                            </div>
+-                        </div>
+-                    </div>
+-                </div>
+-            </div>
+-
+-        </section><!-- End ceo Section -->
+-
+-        <!-- ======= Portfolio Section ======= -->
+-        <section id="portfolio" class="portfolio">
++    <!-- ======= Portfolio Section ======= -->
++    <section id="portfolio" class="portfolio">
+ 
+-            <div class="container" data-aos="fade-up">
++        <div class="container" data-aos="fade-up">
+ 
+-                <header class="section-header">
+-                    <h3>Investment Portfolio</h3>
+-                    <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+-                </header>
++            <header class="section-header">
++                <h3>Investment Portfolio</h3>
++            </header>
+ 
+-                <div class="row" data-aos="fade-up" data-aos-delay="100">
+-                    <div class="col-lg-12 d-flex justify-content-center">
+-                        <ul id="portfolio-flters">
+-                            <li data-filter="*" class="filter-active">All</li>
+-                            <li data-filter=".filter-app">App</li>
+-                            <li data-filter=".filter-card">Card</li>
+-                            <li data-filter=".filter-web">Web</li>
+-                        </ul>
+-                    </div>
+-                </div>
++            <div class="row" data-aos="fade-up" data-aos-delay="100">
++                <div class="col-lg-12 d-flex justify-content-center">
++                    <ul id="portfolio-flters">
++                        <li data-filter="*" class="filter-active">All</li>
++                        <li data-filter=".filter-app">App</li>
++                        <li data-filter=".filter-card">Card</li>
++                        <li data-filter=".filter-web">Web</li>
++                    </ul>
++                </div>
++            </div>
+ 
+-                <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
++            <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+ 
+-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+-                        <div class="portfolio-wrap">
+-                            <img src="assets/img/portfolio/app1.jpg" class="img-fluid" alt="">
+-                            <div class="portfolio-info">
+-                                <h4>App 1</h4>
+-                                <p>App</p>
+-                                <div class="portfolio-links">
+-                                    <a href="assets/img/portfolio/app1.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
+-                                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+-                                </div>
+-                            </div>
+-                        </div>
+-                    </div>
++                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
++                    <div class="portfolio-wrap">
++                        <img src="assets/img/portfolio/app1.jpg" class="img-fluid" alt="">
++                        <div class="portfolio-info">
++                            <h4>App 1</h4>
++                            <p>App</p>
++                            <div class="portfolio-links">
++                                <a href="assets/img/portfolio/app1.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
++                                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
++                            </div>
++                        </div>
++                    </div>
++                </div>
+ 
+-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+-                        <div class="portfolio-wrap">
+-                            <img src="assets/img/portfolio/app2.jpg" class="img-fluid" alt="">
+-                            <div class="portfolio-info">
+-                                <h4>Web 3</h4>
+-                                <p>Web</p>
+-                                <div class="portfolio-links">
+-                                    <a href="assets/img/portfolio/app2.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
+-                                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+-                                </div>
+-                            </div>
+-                        </div>
+-                    </div>
++                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
++                    <div class="portfolio-wrap">
++                        <img src="assets/img/portfolio/app2.jpg" class="img-fluid" alt="">
++                        <div class="portfolio-info">
++                            <h4>Web 3</h4>
++                            <p>Web</p>
++                            <div class="portfolio-links">
++                                <a href="assets/img/portfolio/app2.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
++                                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
++                            </div>
++                        </div>
++                    </div>
++                </div>
+ 
+-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+-                        <div class="portfolio-wrap">
+-                            <img src="assets/img/portfolio/app3.jpg" class="img-fluid" alt="">
+-                            <div class="portfolio-info">
+-                                <h4>App 2</h4>
+-                                <p>App</p>
+-                                <div class="portfolio-links">
+-                                    <a href="assets/img/portfolio/app3.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 2"><i class="bi bi-plus"></i></a>
+-                                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+-                                </div>
+-                            </div>
+-                        </div>
+-                    </div>
++                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
++                    <div class="portfolio-wrap">
++                        <img src="assets/img/portfolio/app3.jpg" class="img-fluid" alt="">
++                        <div class="portfolio-info">
++                            <h4>App 2</h4>
++                            <p>App</p>
++                            <div class="portfolio-links">
++                                <a href="assets/img/portfolio/app3.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 2"><i class="bi bi-plus"></i></a>
++                                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
++                            </div>
++                        </div>
++                    </div>
++                </div>
+ 
+-                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+-                        <div class="portfolio-wrap">
+-                            <img src="assets/img/portfolio/app2.jpg" class="img-fluid" alt="">
+-                            <div class="portfolio-info">
+-                                <h4>Card 2</h4>
+-                                <p>Card</p>
+-                                <div class="portfolio-links">
+-                                    <a href="assets/img/portfolio/app2.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
+-                                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+-                                </div>
+-                            </div>
+-                        </div>
+-                    </div>
++                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
++                    <div class="portfolio-wrap">
++                        <img src="assets/img/portfolio/app2.jpg" class="img-fluid" alt="">
++                        <div class="portfolio-info">
++                            <h4>Card 2</h4>
++                            <p>Card</p>
++                            <div class="portfolio-links">
++                                <a href="assets/img/portfolio/app2.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
++                                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
++                            </div>
++                        </div>
++                    </div>
++                </div>
+ 
+-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+-                        <div class="portfolio-wrap">
+-                            <img src="assets/img/portfolio/app3.jpg" class="img-fluid" alt="">
+-                            <div class="portfolio-info">
+-                                <h4>Web 2</h4>
+-                                <p>Web</p>
+-                                <div class="portfolio-links">
+-                                    <a href="assets/img/portfolio/app3.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Web 2"><i class="bi bi-plus"></i></a>
+-                                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+-                                </div>
+-                            </div>
+-                        </div>
+-                    </div>
++                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
++                    <div class="portfolio-wrap">
++                        <img src="assets/img/portfolio/app3.jpg" class="img-fluid" alt="">
++                        <div class="portfolio-info">
++                            <h4>Web 2</h4>
++                            <p>Web</p>
++                            <div class="portfolio-links">
++                                <a href="assets/img/portfolio/app3.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Web 2"><i class="bi bi-plus"></i></a>
++                                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
++                            </div>
++                        </div>
++                    </div>
++                </div>
+ 
+-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+-                        <div class="portfolio-wrap">
+-                            <img src="assets/img/portfolio/app1.jpg" class="img-fluid" alt="">
+-                            <div class="portfolio-info">
+-                                <h4>App 3</h4>
+-                                <p>App</p>
+-                                <div class="portfolio-links">
+-                                    <a href="assets/img/portfolio/app1.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 3"><i class="bi bi-plus"></i></a>
+-                                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+-                                </div>
+-                            </div>
+-                        </div>
+-                    </div>
+-                </div>
++                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
++                    <div class="portfolio-wrap">
++                        <img src="assets/img/portfolio/app1.jpg" class="img-fluid" alt="">
++                        <div class="portfolio-info">
++                            <h4>App 3</h4>
++                            <p>App</p>
++                            <div class="portfolio-links">
++                                <a href="assets/img/portfolio/app1.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 3"><i class="bi bi-plus"></i></a>
++                                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
++                            </div>
++                        </div>
++                    </div>
++                </div>
++            </div>
+ 
+-            </div>
++        </div>
+ 
+-        </section><!-- End Portfolio Section -->
++    </section><!-- End Portfolio Section -->
++        <!-- ======= Counts Section ======= -->
++        <section id="counts" class="counts">
++            <div class="container" data-aos="fade-up">
++
++                <div class="row gy-4">
++
++                    <div class="col-lg-3 col-md-6">
++                        <div class="count-box">
++                            <i class="bi bi-emoji-smile"></i>
++                            <div>
++                                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
++                                <p>Happy Clients</p>
++                            </div>
++                        </div>
++                    </div>
++
++                    <div class="col-lg-3 col-md-6">
++                        <div class="count-box">
++                            <i class="bi bi-journal-richtext" style="color: #ee6c20;"></i>
++                            <div>
++                                <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
++                                <p>Projects</p>
++                            </div>
++                        </div>
++                    </div>
++
++                    <div class="col-lg-3 col-md-6">
++                        <div class="count-box">
++                            <i class="bi bi-headset" style="color: #15be56;"></i>
++                            <div>
++                                <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
++                                <p>Hours Of Support</p>
++                            </div>
++                        </div>
++                    </div>
++
++                    <div class="col-lg-3 col-md-6">
++                        <div class="count-box">
++                            <i class="bi bi-people" style="color: #bb0852;"></i>
++                            <div>
++                                <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
++                                <p>Hard Workers</p>
++                            </div>
++                        </div>
++                    </div>
++
++                </div>
++
++            </div>
++        </section><!-- End Counts Section -->
++        <!-- ======= ceo Section ======= -->
++        <section id="about" class="about">
++
++            <div class="container" data-aos="fade-up">
++                <div class="row">
++                    <?php
++                    $page_ceo= get_post(58);
++                    $ceo_title = $page_ceo->post_title;
++                    $ceo_content = $page_ceo->post_content;
++                    $ceo_image = get_the_post_thumbnail_url($page_ceo->ID);
++                    ?>
++                    <div class="col-lg-5 col-md-6">
++                        <div class="about-img h-100" data-aos="fade-right" data-aos-delay="100">
++                            <img src="<?php echo $ceo_image;?>" alt="" class="h-100">
++                        </div>
++                    </div>
++
++                    <div class="col-lg-7 col-md-6">
++                        <div class="about-content" data-aos="fade-left" data-aos-delay="100">
++                            <h2><?php echo $ceo_title?></h2>
++                            <p><?php echo $ceo_content?></p>
++                            <div class="call-info">
++                            </div>
++                        </div>
++                    </div>
++                </div>
++            </div>
++
++        </section><!-- End ceo Section -->
+ 
+ 
+         <!-- ======= Team Section ======= -->
+@@ -727,14 +708,14 @@
+ 
+                 <div class="clients-slider swiper">
+                     <div class="swiper-wrapper align-items-center">
+-                        <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+-                        <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+-                        <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+-                        <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+-                        <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+-                        <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+-                        <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+-                        <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
++                        <div class="swiper-slide"><img src="<?php echo get_template_directory_uri();?>/assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
++                        <div class="swiper-slide"><img src="<?php echo get_template_directory_uri();?>/assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
++                        <div class="swiper-slide"><img src="<?php echo get_template_directory_uri();?>/assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
++                        <div class="swiper-slide"><img src="<?php echo get_template_directory_uri();?>/assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
++                        <div class="swiper-slide"><img src="<?php echo get_template_directory_uri();?>/assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
++                        <div class="swiper-slide"><img src="<?php echo get_template_directory_uri();?>/assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
++                        <div class="swiper-slide"><img src="<?php echo get_template_directory_uri();?>/assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
++                        <div class="swiper-slide"><img src="<?php echo get_template_directory_uri();?>/assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+                     </div>
+                     <div class="swiper-pagination"></div>
+                 </div>
+Index: wp-content/themes/custom_theme/footer.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?php\r\n/**\r\n * The template for displaying the footer\r\n *\r\n * Contains the closing of the #content div and all content after.\r\n *\r\n * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials\r\n *\r\n * @package custom_theme\r\n */\r\n\r\n?>\r\n<!-- footer Start -->\r\n<footer id=\"footer\" class=\"section-bg\">\r\n    <div class=\"footer-top\">\r\n        <div class=\"container\">\r\n\r\n            <div class=\"row\">\r\n\r\n                <div class=\"col-lg-3\">\r\n\r\n                    <div class=\"footer-info\">\r\n                        <h3>About Us</h3>\r\n                        <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>\r\n                    </div>\r\n\r\n                    <!-- <div class=\"footer-newsletter\">\r\n                      <h4>Our Newsletter</h4>\r\n                      <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem.</p>\r\n                      <form action=\"\" method=\"post\">\r\n                        <input type=\"email\" name=\"email\"><input type=\"submit\" value=\"Subscribe\">\r\n                      </form>\r\n                    </div> -->\r\n\r\n                </div>\r\n\r\n                <div class=\"col-lg-3\">\r\n                    <div class=\"footer-links\">\r\n                        <h3>Useful Links</h3>\r\n                        <?php\r\n                        wp_nav_menu(\r\n                            array(\r\n                                'theme_location' => 'menu-2',\r\n                                'menu_id'        => 'primary-menu',\r\n                                'menu_class'=>'footer-links',\r\n                            )\r\n                        );\r\n                        ?>\r\n                    </div>\r\n\r\n                </div>\r\n                <div class=\"col-lg-3\">\r\n                    <h3>Latest News</h3>\r\n                    <ul class=\"footer-news\">\r\n                        <div id=\"gridcontainer\">\r\n                            <?php\r\n                            $counter = 1; //start counter\r\n\r\n                            $grids = 2; //Grids per row\r\n\r\n                            global $query_string; //Need this to make pagination work\r\n\r\n\r\n                            /*Setting up our custom query (In here we are setting it to show 12 posts per page and eliminate all sticky posts) */\r\n                            query_posts($query_string . '&caller_get_posts=1&posts_per_page=3');\r\n\r\n\r\n                            if(have_posts()) :  while(have_posts()) :  the_post();\r\n                            ?>\r\n                            <?php\r\n                            //Show the left hand side column\r\n                            if($counter == 1) :\r\n                            ?>\r\n                            <div class=\"griditemleft\">\r\n                                <div class=\"griditemleftcontent\">\r\n                                    <div class=\"griditemleftcontentimage\">\r\n                                        <a href=\"<?php the_permalink(); ?>\">\r\n\r\n                                            <?php the_post_thumbnail(\r\n                                                array( 150, 100 ),\r\n                                                array( 'class' => 'img-fluid' )\r\n                                            ); ?>\r\n                                        </a>\r\n                                    </div>\r\n                                    <div class=\"griditemleftcontenttitle\">\r\n                                        <a href=\"<?php the_permalink(); ?>\">\r\n                                            <?php the_title(); ?>\r\n                                        </a>\r\n                                    </div>\r\n                                    <div class=\"griditemleftcontentdate\">\r\n                                        <?php the_time('F j, Y'); ?>\r\n                                    </div>\r\n\r\n                                    <?php\r\n                                    //Show the right hand side column\r\n                                    elseif($counter == $grids) :\r\n                                        ?>\r\n                                        <div class=\"griditemright\">\r\n                                            <div class=\"griditemrightcontent\">\r\n                                                <div class=\"griditemrightcontentimage\">\r\n                                                    <a href=\"<?php the_permalink(); ?>\">\r\n                                                        <?php the_post_thumbnail(\r\n                                                            array( 150, 100 ),\r\n                                                            array( 'class' => 'img-fluid' )\r\n                                                        ); ?>\r\n                                                    </a>\r\n                                                </div>\r\n                                                <div class=\"griditemrightcontenttitle\">\r\n                                                    <a href=\"<?php the_permalink(); ?>\">\r\n                                                        <?php the_title(); ?>\r\n                                                    </a>\r\n                                                </div>\r\n                                                <div class=\"griditemrightcontentdate\">\r\n                                                    <?php the_time('F j, Y'); ?>\r\n                                                </div>\r\n\r\n                                            </div>\r\n                                        </div>\r\n                                        <?php\r\n\r\n                                    endif;\r\n                                    ?>\r\n                                    <?php\r\n                                    $counter++;\r\n                                    endwhile;\r\n                                    //Pagination can go here if you want it.\r\n                                    endif;\r\n                                    ?>\r\n                                </div>\r\n\r\n                            </div>\r\n                        </div>\r\n\r\n\r\n                    </ul>\r\n                </div>\r\n                <div class=\"col-lg-3\">\r\n                    <div class=\"footer-links\">\r\n                        <h3>Contact Us</h3>\r\n                        <p>\r\n                            Sabhagriha Chowk, Pokhara, Nepal <br>\r\n                            <a href=\"tel:061544440\"> <strong>Phone :</strong> 061544440</a><br>\r\n                            <a href=\"mailto:info@rkdrealestate.com.np\"> <strong>Email :</strong>info@rkdrealestate.com.np</a>\r\n                        </p>\r\n                    </div>\r\n                    <div class=\"social-links\">\r\n                        <a href=\"#\" class=\"twitter\"><i class=\"bi bi-twitter\"></i></a>\r\n                        <a href=\"#\" class=\"facebook\"><i class=\"bi bi-facebook\"></i></a>\r\n                        <a href=\"#\" class=\"youtube\"><i class=\"bi bi-youtube\"></i></a>\r\n                    </div>\r\n\r\n                </div>\r\n\r\n            </div>\r\n\r\n\r\n        </div>\r\n\r\n\r\n\r\n    </div>\r\n\r\n    </div>\r\n    </div>\r\n\r\n    <div class=\"container\">\r\n        <div class=\"copyright\">\r\n            &copy; Copyright <strong>RKD</strong>. All Rights Reserved\r\n        </div>\r\n        <div class=\"credits\">\r\n\r\n            Designed by <a href=\"#\">RKD</a>\r\n        </div>\r\n    </div>\r\n</footer><!-- End  Footer -->\r\n\r\n\r\n<?php wp_footer(); ?>\r\n<!-- Vendor JS Files -->\r\n<script src=<?php echo get_template_directory_uri();?>/assets/vendor/purecounter/purecounter_vanilla.js\"></script>\r\n<!--<script src=\"--><?php //echo get_template_directory_uri();?><!--/assets/vendor/aos/aos.js\"></script>-->\r\n<script src=\"<?php echo get_template_directory_uri();?>/assets/vendor/bootstrap/js/bootstrap.bundle.min.js\"></script>\r\n<script src=\"<?php echo get_template_directory_uri();?>/assets/vendor/glightbox/js/glightbox.min.js\"></script>\r\n<script src=\"<?php echo get_template_directory_uri();?>/assets/vendor/isotope-layout/isotope.pkgd.min.js\"></script>\r\n<script src=\"<?php echo get_template_directory_uri();?>/assets/vendor/swiper/swiper-bundle.min.js\"></script>\r\n<script src=\"<?php echo get_template_directory_uri();?>/assets/vendor/php-email-form/validate.js\"></script>\r\n\r\n<!-- Template Main JS File -->\r\n<script src=\"<?php echo get_template_directory_uri();?>/assets/js/main.js\"></script>\r\n\r\n</body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/wp-content/themes/custom_theme/footer.php b/wp-content/themes/custom_theme/footer.php
+--- a/wp-content/themes/custom_theme/footer.php	(revision 2b51cbe15013b8d29f94e4f07cea60a117a5bb3f)
++++ b/wp-content/themes/custom_theme/footer.php	(date 1663669874401)
+@@ -20,8 +20,12 @@
+                 <div class="col-lg-3">
+ 
+                     <div class="footer-info">
+-                        <h3>About Us</h3>
+-                        <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
++                        <?php $post_about= get_post(82);
++                        $post_about_content = $post_about->post_content;
++                        $post_about_title = $post_about->post_title;
++                        ?>
++                        <h3><?php echo $post_about_title  ?></h3>
++                        <p><?php echo $post_about_content  ?></p>
+                     </div>
+ 
+                     <!-- <div class="footer-newsletter">
+@@ -52,85 +56,35 @@
+                 <div class="col-lg-3">
+                     <h3>Latest News</h3>
+                     <ul class="footer-news">
+-                        <div id="gridcontainer">
+-                            <?php
+-                            $counter = 1; //start counter
+-
+-                            $grids = 2; //Grids per row
+ 
+-                            global $query_string; //Need this to make pagination work
+-
+-
+-                            /*Setting up our custom query (In here we are setting it to show 12 posts per page and eliminate all sticky posts) */
+-                            query_posts($query_string . '&caller_get_posts=1&posts_per_page=3');
+-
+-
+-                            if(have_posts()) :  while(have_posts()) :  the_post();
+-                            ?>
+-                            <?php
+-                            //Show the left hand side column
+-                            if($counter == 1) :
+-                            ?>
+-                            <div class="griditemleft">
+-                                <div class="griditemleftcontent">
+-                                    <div class="griditemleftcontentimage">
+-                                        <a href="<?php the_permalink(); ?>">
+-
++                        <?php
++                        $args = array(
++                            'post_type' => 'post',
++                            'posts_per_page' => 2,
++                            'category_name' => 'news',
++                        );?>
++                        <?php $the_query = new WP_Query( $args ); ?>
++                        <?php if ( $the_query->have_posts() ) : ?>
++                            <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
++                                <li>
++                                    <a href="<?php the_permalink(); ?>">
++                                        <div class="footer-news-img">
+                                             <?php the_post_thumbnail(
+-                                                array( 150, 100 ),
+                                                 array( 'class' => 'img-fluid' )
+                                             ); ?>
+-                                        </a>
+-                                    </div>
+-                                    <div class="griditemleftcontenttitle">
+-                                        <a href="<?php the_permalink(); ?>">
+-                                            <?php the_title(); ?>
+-                                        </a>
+-                                    </div>
+-                                    <div class="griditemleftcontentdate">
+-                                        <?php the_time('F j, Y'); ?>
+-                                    </div>
+-
+-                                    <?php
+-                                    //Show the right hand side column
+-                                    elseif($counter == $grids) :
+-                                        ?>
+-                                        <div class="griditemright">
+-                                            <div class="griditemrightcontent">
+-                                                <div class="griditemrightcontentimage">
+-                                                    <a href="<?php the_permalink(); ?>">
+-                                                        <?php the_post_thumbnail(
+-                                                            array( 150, 100 ),
+-                                                            array( 'class' => 'img-fluid' )
+-                                                        ); ?>
+-                                                    </a>
+-                                                </div>
+-                                                <div class="griditemrightcontenttitle">
+-                                                    <a href="<?php the_permalink(); ?>">
+-                                                        <?php the_title(); ?>
+-                                                    </a>
+-                                                </div>
+-                                                <div class="griditemrightcontentdate">
+-                                                    <?php the_time('F j, Y'); ?>
+-                                                </div>
+-
+-                                            </div>
+-                                        </div>
+-                                        <?php
+-
+-                                    endif;
+-                                    ?>
+-                                    <?php
+-                                    $counter++;
+-                                    endwhile;
+-                                    //Pagination can go here if you want it.
+-                                    endif;
+-                                    ?>
+-                                </div>
+-
+-                            </div>
+-                        </div>
+-
++                                        </div>
++                                        <div class="footer-news-content">
++                            <span class="content-meta"><?php echo get_the_date( 'F j, Y' );
++                                ?></span>
++                                            <h4><?php the_title(); ?></h4>
++                                        </div>
++                                    </a>
++                                </li>
++                            <?php endwhile; ?>
++                            <?php wp_reset_postdata(); ?>
++                        <?php else : ?>
++                            <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
++                        <?php endif; ?>
+ 
+                     </ul>
+                 </div>
+@@ -174,7 +128,6 @@
+     </div>
+ </footer><!-- End  Footer -->
+ 
+-
+ <?php wp_footer(); ?>
+ <!-- Vendor JS Files -->
+ <script src=<?php echo get_template_directory_uri();?>/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+Index: wp-content/themes/custom_theme/page.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?php\r\n/**\r\n * The template for displaying all pages\r\n *\r\n * This is the template that displays all pages by default.\r\n * Please note that this is the WordPress construct of pages\r\n * and that other 'pages' on your WordPress site may use a\r\n * different template.\r\n *\r\n * @link https://developer.wordpress.org/themes/basics/template-hierarchy/\r\n *\r\n * @package custom_theme\r\n */\r\n\r\nget_header();\r\n?>\r\n\r\n\t<main id=\"primary\" class=\"site-main\">\r\n\r\n\t\t<?php\r\n\t\twhile ( have_posts() ) :\r\n\t\t\tthe_post();\r\n\r\n\t\t\tget_template_part( 'template-parts/content', 'page' );\r\n\r\n\t\t\t// If comments are open or we have at least one comment, load up the comment template.\r\n\t\t\tif ( comments_open() || get_comments_number() ) :\r\n\t\t\t\tcomments_template();\r\n\t\t\tendif;\r\n\r\n\t\tendwhile; // End of the loop.\r\n\t\t?>\r\n\r\n\t</main><!-- #main -->\r\n\r\n<?php\r\nget_sidebar();\r\nget_footer();\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/wp-content/themes/custom_theme/page.php b/wp-content/themes/custom_theme/page.php
+--- a/wp-content/themes/custom_theme/page.php	(revision 2b51cbe15013b8d29f94e4f07cea60a117a5bb3f)
++++ b/wp-content/themes/custom_theme/page.php	(date 1663671616098)
+@@ -23,6 +23,7 @@
+ 
+ 			get_template_part( 'template-parts/content', 'page' );
+ 
++
+ 			// If comments are open or we have at least one comment, load up the comment template.
+ 			if ( comments_open() || get_comments_number() ) :
+ 				comments_template();
+@@ -34,5 +35,5 @@
+ 	</main><!-- #main -->
+ 
+ <?php
+-get_sidebar();
++
+ get_footer();
+Index: wp-content/themes/custom_theme/what_we_do.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?php /* Template Name: What We do */ ?>\r\n<?php get_header();?>\r\n<!-- ======= Breadcrumbs ======= -->\r\n<section id=\"breadcrumbs\" class=\"breadcrumbs\">\r\n    <div class=\"container\">\r\n\r\n        <ol>\r\n            <li><a href=\"/index.php\">Home</a></li>\r\n            <li>What we do</li>\r\n        </ol>\r\n        <h2>What we do</h2>\r\n\r\n    </div>\r\n</section><!-- End Breadcrumbs -->\r\n<?php $args = array(\r\n    'post_type' => 'post',\r\n    'category_name' => 'services',\r\n    'posts_per_page' => 6,\r\n    'orderby' => 'date',\r\n    'order' => 'DESC'\r\n);\r\n\r\n$the_query = new WP_Query($args);\r\nif ($the_query->have_posts()) : ?>\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>\r\n                <div class=\"col-lg-4\">\r\n                    <div class=\"what-we-do\">\r\n                        <div class=\"what-we-do-image\">\r\n                            <a href=\"<?php the_permalink(); ?>\">\r\n                                <?php the_post_thumbnail(\r\n                                    array( 150, 100 ),\r\n                                    array( 'class' => 'img-fluid' )\r\n                                ); ?>\r\n                            </a>\r\n                        </div>\r\n                        <div class=\"what-we-do-title\">\r\n                            <a href=\"<?php the_permalink(); ?>\">\r\n                                <?php the_title(); ?>\r\n                            </a>\r\n                        </div>\r\n                        <div class=\"what-we-do-content\">\r\n                            <?php the_excerpt(); ?>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n\r\n            <?php endwhile; ?>\r\n        </div>\r\n    </div>\r\n<?php endif; ?>\r\n<?php get_footer(); ?>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/wp-content/themes/custom_theme/what_we_do.php b/wp-content/themes/custom_theme/what_we_do.php
+--- a/wp-content/themes/custom_theme/what_we_do.php	(revision 2b51cbe15013b8d29f94e4f07cea60a117a5bb3f)
++++ b/wp-content/themes/custom_theme/what_we_do.php	(date 1663660367501)
+@@ -23,25 +23,28 @@
+ $the_query = new WP_Query($args);
+ if ($the_query->have_posts()) : ?>
+     <div class="container">
+-        <div class="row">
++        <div class="row gy-5">
+             <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+-                <div class="col-lg-4">
+-                    <div class="what-we-do">
+-                        <div class="what-we-do-image">
++                <div class="col-xl-4 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="500">
++                    <div class="service-item">
++                        <div class="img">
+                             <a href="<?php the_permalink(); ?>">
+                                 <?php the_post_thumbnail(
+-                                    array( 150, 100 ),
+                                     array( 'class' => 'img-fluid' )
+                                 ); ?>
+                             </a>
+                         </div>
+-                        <div class="what-we-do-title">
+-                            <a href="<?php the_permalink(); ?>">
+-                                <?php the_title(); ?>
++                        <div class="details position-relative">
++                            <div class="icon">
++                                <i class="bi bi-bounding-box-circles"></i>
++                            </div>
++                            <a href="#" class="stretched-link">
++                                <h3> <a href="<?php the_permalink(); ?>">
++                                        <?php the_title(); ?>
++                                    </a></h3>
+                             </a>
+-                        </div>
+-                        <div class="what-we-do-content">
+-                            <?php the_excerpt(); ?>
++                            <p>  <?php the_excerpt(); ?></p>
++                            <a href="#" class="stretched-link"></a>
+                         </div>
+                     </div>
+                 </div>
+Index: wp-content/themes/custom_theme/search.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?php\r\n/**\r\n * The template for displaying search results pages\r\n *\r\n * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result\r\n *\r\n * @package custom_theme\r\n */\r\n\r\nget_header();\r\n?>\r\n\r\n\t<main id=\"primary\" class=\"site-main\">\r\n\r\n\t\t<?php if ( have_posts() ) : ?>\r\n\r\n\t\t\t<header class=\"page-header\">\r\n\t\t\t\t<h1 class=\"page-title\">\r\n\t\t\t\t\t<?php\r\n\t\t\t\t\t/* translators: %s: search query. */\r\n\t\t\t\t\tprintf( esc_html__( 'Search Results for: %s', 'custom_theme' ), '<span>' . get_search_query() . '</span>' );\r\n\t\t\t\t\t?>\r\n\t\t\t\t</h1>\r\n\t\t\t</header><!-- .page-header -->\r\n\r\n\t\t\t<?php\r\n\t\t\t/* Start the Loop */\r\n\t\t\twhile ( have_posts() ) :\r\n\t\t\t\tthe_post();\r\n\r\n\t\t\t\t/**\r\n\t\t\t\t * Run the loop for the search to output the results.\r\n\t\t\t\t * If you want to overload this in a child theme then include a file\r\n\t\t\t\t * called content-search.php and that will be used instead.\r\n\t\t\t\t */\r\n\t\t\t\tget_template_part( 'template-parts/content', 'search' );\r\n\r\n\t\t\tendwhile;\r\n\r\n\t\t\tthe_posts_navigation();\r\n\r\n\t\telse :\r\n\r\n\t\t\tget_template_part( 'template-parts/content', 'none' );\r\n\r\n\t\tendif;\r\n\t\t?>\r\n\r\n\t</main><!-- #main -->\r\n\r\n<?php\r\nget_sidebar();\r\nget_footer();\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/wp-content/themes/custom_theme/search.php b/wp-content/themes/custom_theme/search.php
+--- a/wp-content/themes/custom_theme/search.php	(revision 2b51cbe15013b8d29f94e4f07cea60a117a5bb3f)
++++ b/wp-content/themes/custom_theme/search.php	(date 1663740927804)
+@@ -49,5 +49,4 @@
+ 	</main><!-- #main -->
+ 
+ <?php
+-get_sidebar();
+ get_footer();
+Index: wp-content/themes/custom_theme/single.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?php\r\n/**\r\n * The template for displaying all single posts\r\n *\r\n * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post\r\n *\r\n * @package custom_theme\r\n */\r\n\r\nget_header();\r\n?>\r\n\r\n\t<main id=\"primary\" class=\"site-main\">\r\n\r\n\t\t<?php\r\n\t\twhile ( have_posts() ) :\r\n\t\t\tthe_post();\r\n\r\n\t\t\tget_template_part( 'template-parts/content', get_post_type() );\r\n\r\n\t\t\tthe_post_navigation(\r\n\t\t\t\tarray(\r\n\t\t\t\t\t'prev_text' => '<span class=\"nav-subtitle\">' . esc_html__( 'Previous:', 'custom_theme' ) . '</span> <span class=\"nav-title\">%title</span>',\r\n\t\t\t\t\t'next_text' => '<span class=\"nav-subtitle\">' . esc_html__( 'Next:', 'custom_theme' ) . '</span> <span class=\"nav-title\">%title</span>',\r\n\t\t\t\t)\r\n\t\t\t);\r\n\r\n\t\t\t// If comments are open or we have at least one comment, load up the comment template.\r\n\t\t\tif ( comments_open() || get_comments_number() ) :\r\n\t\t\t\tcomments_template();\r\n\t\t\tendif;\r\n\r\n\t\tendwhile; // End of the loop.\r\n\t\t?>\r\n\r\n\t</main><!-- #main -->\r\n\r\n<?php\r\nget_sidebar();\r\nget_footer();\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/wp-content/themes/custom_theme/single.php b/wp-content/themes/custom_theme/single.php
+--- a/wp-content/themes/custom_theme/single.php	(revision 2b51cbe15013b8d29f94e4f07cea60a117a5bb3f)
++++ b/wp-content/themes/custom_theme/single.php	(date 1663740795370)
+@@ -9,32 +9,88 @@
+ 
+ get_header();
+ ?>
++    <main id="main">
++        <!-- ======= Breadcrumbs ======= -->
++        <section class="breadcrumbs">
++            <div class="container">
++
++                <ol>
++                    <li><a href="/index.php">Home</a></li>
++
++                </ol>
++            </div>
++        </section><!-- End Breadcrumbs -->
++        <!-- ======= Blog Details Section ======= -->
++        <section id="blog" class="blog">
++            <div class="container" data-aos="fade-up" data-aos-delay="100">
++
++                <div class="row g-5">
+ 
+-	<main id="primary" class="site-main">
++                    <div class="col-lg-8">
++
++                        <article class="blog-details">
++
++                            <div class="post-img">
++
++                                <?php  the_post_thumbnail(
++                                     array( 500, 400),
++                                    array( 'class' => 'img-fluid'
++                                    ),
++                                ); ?>
++
++                            </div>
++
++                            <h3><?php the_title(); ?></h3>
++
++                            <div class="meta-top">
++                                <ul>
++                                    <li class="d-flex align-items-center"><i class="bi bi-person"></i>
++                                        <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>">
++                                            <?php the_author(); ?>
++                                        </a>
++                                   </li>
++                                    <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a>
++                                            <?php the_date(); ?>
++                                        </a></li>
++                                </ul>
++                            </div><!-- End meta top -->
++
++                            <div class="content">
++                                <?php the_content(); ?>
++
++                            </div><!-- End post content -->
++
++                            <div class="meta-bottom">
++                                <i class="bi bi-folder"></i>
++                                <ul class="cats"><?php the_category(); ?>
++                                </ul>
++
++                                <i class="bi bi-tags"></i>
++                                <ul class="tags">
++                                    <?php the_tags(); ?>
++                                </ul>
++                            </div><!-- End meta bottom -->
++
++                        </article><!-- End blog post -->
++
++
++                    </div>
++
++                    <div class="col-lg-4">
++                        <?php get_sidebar(); ?>
++                    </div>
++                </div>
++
++            </div>
++        </section><!-- End Blog Details Section -->
++
++
++
++
++
++    </main><!-- End #main -->
++
++
+ 
+-		<?php
+-		while ( have_posts() ) :
+-			the_post();
+-
+-			get_template_part( 'template-parts/content', get_post_type() );
+-
+-			the_post_navigation(
+-				array(
+-					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'custom_theme' ) . '</span> <span class="nav-title">%title</span>',
+-					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'custom_theme' ) . '</span> <span class="nav-title">%title</span>',
+-				)
+-			);
+-
+-			// If comments are open or we have at least one comment, load up the comment template.
+-			if ( comments_open() || get_comments_number() ) :
+-				comments_template();
+-			endif;
+-
+-		endwhile; // End of the loop.
+-		?>
+-
+-	</main><!-- #main -->
+-
+ <?php
+-get_sidebar();
+ get_footer();
+Index: .idea/misc.xml
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+deleted file mode 100644
+--- a/.idea/misc.xml	(revision 2b51cbe15013b8d29f94e4f07cea60a117a5bb3f)
++++ /dev/null	(revision 2b51cbe15013b8d29f94e4f07cea60a117a5bb3f)
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="SwUserDefinedSpecifications">
+-    <option name="specTypeByUrl">
+-      <map />
+-    </option>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"b19eca14-e8ad-42f7-87b2-d92cbb13ad62\" name=\"Changes\" comment=\"slider\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/wp-content/themes/custom_theme/homepage_template.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/wp-content/themes/custom_theme/homepage_template.php\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\">\r\n    <execution />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2ENk6IN6DQ7UpYMhrNzBkmioLaT\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"ASKED_ADD_EXTERNAL_FILES\": \"true\",\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"last_opened_file_path\": \"C:/xampp/htdocs/wordpress-rkd-site/wp-content/themes/custom_theme\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"settings.editor.selected.configurable\": \"preferences.pluginManager\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\xampp\\htdocs\\wordpress-rkd-site\\wp-content\\themes\\custom_theme\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"b19eca14-e8ad-42f7-87b2-d92cbb13ad62\" name=\"Changes\" comment=\"Add top header bar\" />\r\n      <created>1662443254846</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1662443254846</updated>\r\n      <workItem from=\"1662443258994\" duration=\"1351000\" />\r\n      <workItem from=\"1662527817703\" duration=\"29000\" />\r\n      <workItem from=\"1662547476051\" duration=\"34000\" />\r\n      <workItem from=\"1662547523533\" duration=\"68000\" />\r\n      <workItem from=\"1662615603679\" duration=\"6257000\" />\r\n      <workItem from=\"1662622853457\" duration=\"52000\" />\r\n      <workItem from=\"1662622908586\" duration=\"78000\" />\r\n      <workItem from=\"1662623250598\" duration=\"76000\" />\r\n      <workItem from=\"1662623559247\" duration=\"3547000\" />\r\n      <workItem from=\"1662629387572\" duration=\"965000\" />\r\n      <workItem from=\"1662703357797\" duration=\"3003000\" />\r\n      <workItem from=\"1663132893715\" duration=\"5049000\" />\r\n      <workItem from=\"1663141664366\" duration=\"6953000\" />\r\n      <workItem from=\"1663307993645\" duration=\"17841000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Dynamic Menu and Logo\">\r\n      <created>1662624914693</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1662624914693</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Add top header bar\">\r\n      <created>1662629909382</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1662629909382</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"slider\">\r\n      <created>1663045718622</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1663045718622</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"4\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n    <MESSAGE value=\"Dynamic Menu and Logo\" />\r\n    <MESSAGE value=\"Add top header bar\" />\r\n    <MESSAGE value=\"slider\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"slider\" />\r\n  </component>\r\n  <component name=\"WordPressConfiguration\" enabled=\"true\">\r\n    <wordpressPath>C:\\xampp\\htdocs\\RKD</wordpressPath>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 2b51cbe15013b8d29f94e4f07cea60a117a5bb3f)
++++ b/.idea/workspace.xml	(date 1663741065059)
+@@ -5,8 +5,14 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="b19eca14-e8ad-42f7-87b2-d92cbb13ad62" name="Changes" comment="slider">
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/footer.php" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/homepage_template.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/homepage_template.php" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/page.php" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/search.php" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/single.php" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/what_we_do.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/what_we_do.php" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -17,6 +23,19 @@
+     <execution />
+   </component>
+   <component name="Git.Settings">
++    <excluded-from-favorite>
++      <branch-storage>
++        <map>
++          <entry type="LOCAL">
++            <value>
++              <list>
++                <branch-info repo="$PROJECT_DIR$" source="master" />
++              </list>
++            </value>
++          </entry>
++        </map>
++      </branch-storage>
++    </excluded-from-favorite>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="MarkdownSettingsMigration">
+@@ -72,7 +91,7 @@
+       <workItem from="1662703357797" duration="3003000" />
+       <workItem from="1663132893715" duration="5049000" />
+       <workItem from="1663141664366" duration="6953000" />
+-      <workItem from="1663307993645" duration="17841000" />
++      <workItem from="1663307993645" duration="28427000" />
+     </task>
+     <task id="LOCAL-00001" summary="Dynamic Menu and Logo">
+       <created>1662624914693</created>

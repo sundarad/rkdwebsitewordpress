@@ -20,8 +20,12 @@
                 <div class="col-lg-3">
 
                     <div class="footer-info">
-                        <h3>About Us</h3>
-                        <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+                        <?php $post_about= get_post(82);
+                        $post_about_content = $post_about->post_content;
+                        $post_about_title = $post_about->post_title;
+                        ?>
+                        <h3><?php echo $post_about_title  ?></h3>
+                        <p><?php echo $post_about_content  ?></p>
                     </div>
 
                     <!-- <div class="footer-newsletter">
@@ -52,85 +56,35 @@
                 <div class="col-lg-3">
                     <h3>Latest News</h3>
                     <ul class="footer-news">
-                        <div id="gridcontainer">
-                            <?php
-                            $counter = 1; //start counter
 
-                            $grids = 2; //Grids per row
-
-                            global $query_string; //Need this to make pagination work
-
-
-                            /*Setting up our custom query (In here we are setting it to show 12 posts per page and eliminate all sticky posts) */
-                            query_posts($query_string . '&caller_get_posts=1&posts_per_page=3');
-
-
-                            if(have_posts()) :  while(have_posts()) :  the_post();
-                            ?>
-                            <?php
-                            //Show the left hand side column
-                            if($counter == 1) :
-                            ?>
-                            <div class="griditemleft">
-                                <div class="griditemleftcontent">
-                                    <div class="griditemleftcontentimage">
-                                        <a href="<?php the_permalink(); ?>">
-
+                        <?php
+                        $args = array(
+                            'post_type' => 'post',
+                            'posts_per_page' => 2,
+                            'category_name' => 'news',
+                        );?>
+                        <?php $the_query = new WP_Query( $args ); ?>
+                        <?php if ( $the_query->have_posts() ) : ?>
+                            <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                                <li>
+                                    <a href="<?php the_permalink(); ?>">
+                                        <div class="footer-news-img">
                                             <?php the_post_thumbnail(
-                                                array( 150, 100 ),
                                                 array( 'class' => 'img-fluid' )
                                             ); ?>
-                                        </a>
-                                    </div>
-                                    <div class="griditemleftcontenttitle">
-                                        <a href="<?php the_permalink(); ?>">
-                                            <?php the_title(); ?>
-                                        </a>
-                                    </div>
-                                    <div class="griditemleftcontentdate">
-                                        <?php the_time('F j, Y'); ?>
-                                    </div>
-
-                                    <?php
-                                    //Show the right hand side column
-                                    elseif($counter == $grids) :
-                                        ?>
-                                        <div class="griditemright">
-                                            <div class="griditemrightcontent">
-                                                <div class="griditemrightcontentimage">
-                                                    <a href="<?php the_permalink(); ?>">
-                                                        <?php the_post_thumbnail(
-                                                            array( 150, 100 ),
-                                                            array( 'class' => 'img-fluid' )
-                                                        ); ?>
-                                                    </a>
-                                                </div>
-                                                <div class="griditemrightcontenttitle">
-                                                    <a href="<?php the_permalink(); ?>">
-                                                        <?php the_title(); ?>
-                                                    </a>
-                                                </div>
-                                                <div class="griditemrightcontentdate">
-                                                    <?php the_time('F j, Y'); ?>
-                                                </div>
-
-                                            </div>
                                         </div>
-                                        <?php
-
-                                    endif;
-                                    ?>
-                                    <?php
-                                    $counter++;
-                                    endwhile;
-                                    //Pagination can go here if you want it.
-                                    endif;
-                                    ?>
-                                </div>
-
-                            </div>
-                        </div>
-
+                                        <div class="footer-news-content">
+                            <span class="content-meta"><?php echo get_the_date( 'F j, Y' );
+                                ?></span>
+                                            <h4><?php the_title(); ?></h4>
+                                        </div>
+                                    </a>
+                                </li>
+                            <?php endwhile; ?>
+                            <?php wp_reset_postdata(); ?>
+                        <?php else : ?>
+                            <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
+                        <?php endif; ?>
 
                     </ul>
                 </div>
@@ -173,7 +127,6 @@
         </div>
     </div>
 </footer><!-- End  Footer -->
-
 
 <?php wp_footer(); ?>
 <!-- Vendor JS Files -->
