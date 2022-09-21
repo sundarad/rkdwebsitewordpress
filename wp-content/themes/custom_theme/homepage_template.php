@@ -80,7 +80,8 @@
 
 $the_query = new WP_Query($args);
 if ($the_query->have_posts()) : ?>
-    <div class="container">
+    <section id="services" class="services one">
+       <div class="container">
         <div class="row gy-5">
             <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
                 <div class="col-xl-4 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="500">
@@ -109,7 +110,9 @@ if ($the_query->have_posts()) : ?>
 
             <?php endwhile; ?>
         </div>
+           <p class="text-extra text-center">Dont hesitate, contact us for better heel services. <a href="services.html"> Explore all services</a></p>
     </div>
+    </section>
 <?php endif; ?>
         <section id="about" class="about">
 

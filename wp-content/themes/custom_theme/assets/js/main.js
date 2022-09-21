@@ -1,9 +1,9 @@
 /**
-* Template Name: FlexStart - v1.10.1
-* Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+ * Template Name: FlexStart - v1.10.1
+ * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+ * Author: BootstrapMade.com
+ * License: https://bootstrapmade.com/license/
+ */
 (function() {
   "use strict";
 
@@ -31,7 +31,7 @@
   }
 
   /**
-   * Easy on scroll event listener 
+   * Easy on scroll event listener
    */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
@@ -90,7 +90,21 @@
     window.addEventListener('load', headerScrolled)
     onscroll(document, headerScrolled)
   }
+  /**
+   * Auto generate the hero carousel indicators
+   */
+  let heroCarouselIndicators = document.querySelector('#hero .carousel-indicators');
+  if (heroCarouselIndicators) {
+    let heroCarouselItems = document.querySelectorAll('#hero .carousel-item')
 
+    heroCarouselItems.forEach((item, index) => {
+      if (index === 0) {
+        heroCarouselIndicators.innerHTML += `<li data-bs-target="#hero" data-bs-slide-to="${index}" class="active"></li>`;
+      } else {
+        heroCarouselIndicators.innerHTML += `<li data-bs-target="#hero" data-bs-slide-to="${index}"></li>`;
+      }
+    });
+  }
   /**
    * Back to top button
    */
@@ -220,17 +234,17 @@
 
   });
 
-   /**
+  /**
    * Initiate glightbox
    */
-    const glightbox = GLightbox({
-      selector: '.glightbox'
-    });
-  
-    /**
+  const glightbox = GLightbox({
+    selector: '.glightbox'
+  });
 
   /**
-   * Initiate portfolio lightbox 
+
+   /**
+   * Initiate portfolio lightbox
    */
   const portfolioLightbox = GLightbox({
     selector: '.portfokio-lightbox'
@@ -296,7 +310,7 @@
   });
 
   /**
-   * Initiate Pure Counter 
+   * Initiate Pure Counter
    */
   new PureCounter();
 
