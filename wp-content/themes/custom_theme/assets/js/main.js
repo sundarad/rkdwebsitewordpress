@@ -313,5 +313,5 @@
    * Initiate Pure Counter
    */
   new PureCounter();
-
+  AOS.init();
 })();
