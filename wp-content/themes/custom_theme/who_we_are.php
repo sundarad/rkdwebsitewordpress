@@ -66,6 +66,102 @@ $image_core_values= get_the_post_thumbnail_url(101);
 
         </div>
     </section>
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+        <div class="container" data-aos="fade-up">
+            <header class="section-header">
+                <h3>We Creating Solutions For Your Organization</h3>
+                <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+            </header>
+            <?php
+            $our_mission= get_post(133);
+            $title_our_mission=$our_mission->post_title;
+            $link_our_mission= get_permalink($our_mission->ID );
+            $content_our_mission=$our_mission->post_content;
+            $image_our_mission= get_the_post_thumbnail_url($our_mission->ID);
+            $our_vision= get_post(135);
+            $title_our_vision=$our_vision->post_title;
+            $link_our_vision= get_permalink($our_vision->ID );
+            $content_our_vision=$our_vision->post_content;
+            $image_our_vision= get_the_post_thumbnail_url($our_vision->ID);
+            $our_strategies= get_post(107);
+            $title_our_strategies=$our_strategies->post_title;
+            $link_our_strategies= get_permalink($our_strategies->ID );
+            $content_our_strategies=$our_strategies->post_content;
+            $image_our_strategies= get_the_post_thumbnail_url($our_strategies->ID);
+
+
+            ?>
+            <ul class="nav nav-tabs row gy-4 d-flex">
+
+                <li class="nav-item col-lg-4 col-sm-4 col-xs-12">
+                    <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+                        <i class="bi bi-binoculars color-cyan"></i>
+                        <h4><?php echo $title_our_mission;?></h4>
+                    </a>
+                </li><!-- End Tab 1 Nav -->
+
+                <li class="nav-item col-lg-4 col-sm-4 col-xs-12">
+                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+                        <i class="bi bi-box-seam color-indigo"></i>
+                        <h4><?php echo $title_our_vision;?></h4>
+                    </a>
+                </li><!-- End Tab 2 Nav -->
+
+                <li class="nav-item col-lg-4 col-sm-4 col-xs-12">
+                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+                        <i class="bi bi-brightness-high color-teal"></i>
+                        <h4><?php echo $title_our_strategies;?></h4>
+                    </a>
+                </li><!-- End Tab 3 Nav -->
+            </ul>
+
+            <div class="tab-content">
+
+                <div class="tab-pane active show" id="tab-1">
+                    <div class="row gy-4">
+                        <div class="col-lg-8 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+                            <p>
+                                <?php echo $content_our_mission;?>
+                            </p>
+                        </div>
+                        <div class="col-lg-4 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+                            <img src="<?php echo $image_our_mission;?>" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div><!-- End Tab Content 1 -->
+
+                <div class="tab-pane" id="tab-2">
+                    <div class="row gy-4">
+                        <div class="col-lg-8 order-2 order-lg-1">
+                            <p>
+                                <?php echo $content_our_vision;?>
+                            </p>
+                        </div>
+                        <div class="col-lg-4 order-1 order-lg-2 text-center">
+                            <img src="<?php echo $image_our_vision;?>" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div><!-- End Tab Content 2 -->
+
+                <div class="tab-pane" id="tab-3">
+                    <div class="row gy-4">
+                        <div class="col-lg-8 order-2 order-lg-1">
+                            <p>
+                                <?php echo $content_our_strategies;?>
+                            </p>
+                        </div>
+                        <div class="col-lg-4 order-1 order-lg-2 text-center">
+                            <img src="<?php echo $image_our_strategies;?>" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div><!-- End Tab Content 3 -->
+
+
+            </div>
+
+        </div>
+    </section><!-- End Features Section -->
 
 <?php $args = array(
     'post_type' => 'post',

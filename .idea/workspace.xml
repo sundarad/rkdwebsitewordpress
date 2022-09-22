@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b19eca14-e8ad-42f7-87b2-d92cbb13ad62" name="Changes" comment="slider">
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2022/09/tifl-150x150.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2022/09/tifl.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_22_2022_11_39_AM_[Changes]/shelved.patch" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_22_2022_11_39_AM_[Changes]/shelved.patch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_22_2022_11_39_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_22_2022_11_39_AM__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/contact us.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/investment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/media_center.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/homepage_template.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/homepage_template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/who_we_are.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/who_we_are.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

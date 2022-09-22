@@ -155,6 +155,12 @@ function custom_theme_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'custom_theme_scripts' );
 
+add_action( 'wp_enqueue_scripts', 'add_aos_animation' );
+function add_aos_animation() {
+    wp_enqueue_style('AOS_animate', get_template_directory_uri() . '/assets/vendor/aos/aos.css', false, null);
+    wp_enqueue_script('AOS', get_template_directory_uri() . '/assets/vendor/aos/aos.js', false, null, true);
+    wp_enqueue_script('theme-js', get_template_directory_uri() . '/assets/js/main.js', array( 'AOS' ), null, true);
+}
 /**
  * Implement the Custom Header feature.
  */
