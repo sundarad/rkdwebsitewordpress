@@ -134,11 +134,8 @@ if ($the_query->have_posts()) : ?>
                         <div class="about-content" data-aos="fade-left" data-aos-delay="100">
 
                             <h2><?php echo $title_who_we_are;?></h2>
-<!--                             --><?php //echo $content_who_we_are;?>
-
-                            <ul>
-                                <li> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                            </ul>
+                             <?php echo $content_who_we_are;?>
+                            
                             </div>
                         </div>
                     </div>

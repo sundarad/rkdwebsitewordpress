@@ -1174,10 +1174,6 @@ section {
     padding: 0;
 }
 
-#about .about-content ul li {
-    padding-bottom: 10px;
-}
-
 #about .about-content ul li i {
     font-size: 20px;
     padding-right: 4px;
@@ -1325,9 +1321,9 @@ section {
     margin: 10px 0 0 0;
     color: var(--heading-color);
 }
-
+.features .nav-link:hover h4{ color:var(--primary-color);}
 .features .nav-link:hover {
-    color:var(--primary-color); border: 1px solid var(--primary-color);
+    border: 1px solid var(--primary-color);
 }
 
 .features .nav-link.active , .contact .nav-link.active {
