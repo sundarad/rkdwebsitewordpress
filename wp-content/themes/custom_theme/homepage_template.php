@@ -6,7 +6,7 @@
             <div class="container">
                 <div class="row justify-content-center gy-6 align-items-center">
                     <div class="col-lg-12">
-                        <h6>COOPTOGOVS</h6>
+                        <h6>COOP2GOVS</h6>
                         <h2>TIFL : A fund dedicated for entrepreneurs and innovative market disruptive <span> business ventures </span></h2>
                         <div class="d-flex justify-content-center more-btn">
                             <a href="#about" class="btn-get-started scrollto">Contact us</a>
@@ -25,7 +25,7 @@
             <div class="container">
                 <div class="row justify-content-center gy-6 align-items-center">
                     <div class="col-lg-12">
-                        <h6>COOPTOGOVS</h6>
+                        <h6>COOP2GOVS</h6>
                         <h2> We empower your financial <span>vision</span> </h2>
                         <div class="d-flex justify-content-center more-btn">
                             <a href="#about" class="btn-get-started scrollto">Contact us</a>
@@ -44,7 +44,7 @@
             <div class="container">
                 <div class="row justify-content-center gy-6 align-items-center">
                     <div class="col-lg-12">
-                        <h6>COOPTOGOVS</h6>
+                        <h6>COOP2GOVS</h6>
                         <h2>RKD Real Estate : Attain the highest ROI possible on your <span> Property</span> </h2>
                         <div class="d-flex justify-content-center more-btn">
                             <a href="#about" class="btn-get-started scrollto">Contact us</a>

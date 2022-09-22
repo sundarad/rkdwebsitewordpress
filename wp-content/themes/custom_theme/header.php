@@ -29,44 +29,44 @@
     <link href="<?php echo get_template_directory_uri();?>/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri();?>/assets/css/style.css" rel="stylesheet">
 
-
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	    <header id="masthead" class="header header-style-stackcenter">
-            <!-- ttm-topbar-wrapper -->
-            <div class="topbar-wrapper">
-                <div class="container">
-                    <div class="topbar-content">
-                        <ul class="top-contact text-left float-start">
-                            <li><strong>Open Hours :</strong> <span class=""> Sun -Fri 10:00-5:00</span></li>
-                        </ul>
-                        <div class="topbar-right text-end">
-                            <ul class="top-contact">
-                                <li><strong><i class="bi bi-envelope"></i> <a href="mailto:info@rkdholdings.com.np"> info@rkdholdings.com.np</a></li>
-                                <li><i class="bi bi-phone"></i> <a href="tel:061-544440"> 061-544440</a></li>
-                            </ul>
-                            <div class="ttm-social-links-wrapper list-inline">
-                                <ul class="social-icons">
-                                    <li><a href="#"><i class="bi bi-facebook"></i></a>
-                                    </li>
-                                    <li><a href="#"><i class="bi bi-twitter"></i></a>
-                                    </li>
 
-                                </ul>
-                            </div>
+    <header id="masthead" class="header header-style-stackcenter ">
+        <!-- ttm-topbar-wrapper -->
+        <div class="topbar-wrapper">
+            <div class="container">
+                <div class="topbar-content">
+                    <ul class="top-contact text-left float-start">
+                        <li><strong>Open Hours :</strong> <span class=""> Sun -Fri 10:00-5:00</span></li>
+                    </ul>
+                    <div class="topbar-right text-end">
+                        <ul class="top-contact">
+                            <li><strong><i class="bi bi-envelope"></i> <a href="mailto:info@rkdholdings.com.np"> info@rkdholdings.com.np</a></li>
+                            <li><i class="bi bi-phone"></i> <a href="tel:061-544440"> 061-544440</a></li>
+                        </ul>
+                        <div class="ttm-social-links-wrapper list-inline">
+                            <ul class="social-icons">
+                                <li><a href="https://www.facebook.com/rkdholdings"  target="_blank"><i class="bi bi-facebook me-2"></i></a>
+                                </li>
+                                <li><a href="https://twitter.com/rkdrealestate" target="_blank"><i class="bi bi-twitter" ></i></a>
+                                </li>
+
+                            </ul>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div><!--topbar-wrapper end -->
+        <!-- header-wrap -->
         <div class="header-wrap">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-xs-12 col-sm-12 ">
                         <div class="widget-left clearfix">
                             <div class="info-widget">
-                                <div class="info-widget-content">
-
-                                    <p>For Emergency call</p><h2><a href="tel: 061-544440">061-544440</a></h2> </div>
+                                <div class="info-widget-content"><p>For Emergency call</p><h2><a href="tel:061-544440">061-544440</a></h2> </div>
                             </div>
                         </div>
                     </div>
@@ -74,10 +74,10 @@
                         <!-- site-branding -->
                         <div class="site-branding">
                             <a class="home-link" href="index.html" title="rkd" rel="home">
-	                            <?php
-	                            			the_custom_logo();
+                                <?php
+                                the_custom_logo();
 
-	                            				?>
+                                ?>
 
                             </a>
                         </div><!-- site-branding end -->
@@ -85,7 +85,6 @@
                     <div class="col-lg-3">
                         <div class="widget-right clearfix">
                             <div class="info-widget">
-
                                 <div class="info-widget-content"><p>Request an</p> <h2>Appointment</h2> </div>
                             </div>
                         </div>
@@ -100,11 +99,11 @@
                                         <div id="site-navigation" class="navbar d-flex justify-content-center">
                                             <div class="ttm-rt-contact">
                                                 <!-- header-icons -->
-<!--                                                <div class="header-icons ">-->
-<!--                                                    <div class="header-icon header-search-link">-->
-<!--                                                        <a href="#" class="sclose"><i class="bi bi-search"></i></a>-->
-<!--                                                    </div>-->
-<!--                                                </div>-->
+                                                <!--                                                <div class="header-icons ">-->
+                                                <!--                                                    <div class="header-icon header-search-link">-->
+                                                <!--                                                        <a href="#" class="sclose"><i class="bi bi-search"></i></a>-->
+                                                <!--                                                    </div>-->
+                                                <!--                                                </div>-->
                                                 <!-- header-icons end -->
                                             </div>
                                             <!-- <div class="ttm-menu-toggle">
@@ -115,16 +114,16 @@
 													<span class="toggle-block toggle-blocks-3"></span>
 												</label>
 											</div> -->
-		                                        <?php
-		                                        wp_nav_menu(
-			                                        array(
-				                                        'theme_location' => 'menu-1',
-				                                        'menu_id'        => 'primary-menu',
-				                                        'menu_class'=>'navbar',
+                                            <?php
+                                            wp_nav_menu(
+                                                array(
+                                                    'theme_location' => 'menu-1',
+                                                    'menu_id'        => 'primary-menu',
+                                                    'menu_class'=>'navbar',
 
-			                                        )
-		                                        );
-		                                        ?>
+                                                )
+                                            );
+                                            ?>
 
                                         </div><!-- site-navigation end-->
                                     </div>
@@ -134,5 +133,5 @@
                     </div><!-- ttm-stickable-header-w end-->
                 </div>
             </div>
-        </div><!--ttm-header-wrap end -->
+        </div><!--header-wrap end -->
     </header>
