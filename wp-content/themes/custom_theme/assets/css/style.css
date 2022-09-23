@@ -696,7 +696,9 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
     display: flex;
     flex-direction: column;
     justify-content: center;
-    z-index: -1;
+    overflow: visible;
+    position: static;
+
 }
 @media (max-width: 640px) {
     .hero .container {
@@ -1057,7 +1059,7 @@ section {
 /* Services Section
 --------------------------------*/
 
-.services.one{margin-top: -3rem; padding:0 0 45px 0;}
+.services.one{margin-top: -3rem; padding:0 0 45px 0; z-index: 9;}
 .services.two{padding: 60px 0;}
 #services .box {
     padding: 30px;
