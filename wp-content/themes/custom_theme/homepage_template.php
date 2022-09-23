@@ -9,7 +9,7 @@
                         <h6>COOP2GOVS</h6>
                         <h2>TIFL : A fund dedicated for entrepreneurs and innovative market disruptive <span> business ventures </span></h2>
                         <div class="d-flex justify-content-center more-btn">
-                            <a href="#about" class="btn-get-started scrollto">Contact us</a>
+                            <a href="contact us.php" class="btn-get-started scrollto">Contact us</a>
                             <a href="https://www.youtube.com/watch?v=NJ_GYRPHIeY" class="glightbox btn-watch-video d-flex align-items-center ms-4" target="_blank"><i class="bi bi-play-circle"></i><span >Watch Video</span></a>
                         </div>
                     </div>
