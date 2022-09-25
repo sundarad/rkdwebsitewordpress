@@ -5,13 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b19eca14-e8ad-42f7-87b2-d92cbb13ad62" name="Changes" comment="slider">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_23_2022_12_48_PM_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_23_2022_12_48_PM__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/icon-block/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/icon-block/build/block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/icon-block/build/editor.asset.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/icon-block/build/editor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/icon-block/build/index.asset.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/icon-block/build/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/icon-block/build/style.asset.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/icon-block/build/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/icon-block/icon-block.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/icon-block/languages/icon-block.pot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/icon-block/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/layout-grid/block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/layout-grid/blocks/layout-grid.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/layout-grid/editor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/layout-grid/index.asset.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/layout-grid/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/layout-grid/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/layout-grid/license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/layout-grid/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/layout-grid/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/homepage_template.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/homepage_template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/single.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/what_we_do.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/what_we_do.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/who_we_are.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/who_we_are.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
