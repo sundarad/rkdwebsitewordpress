@@ -597,7 +597,6 @@ if ($the_query->have_posts()) : ?>
             <div class="container" data-aos="fade-up">
                 <div class="section-header">
                     <h3>Board of Directors</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
                 </div>
 
                 <div class="row">
@@ -615,7 +614,7 @@ if ($the_query->have_posts()) : ?>
                             <div class="row">
                                 <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
 
-                                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="col-lg-3 col-md-6 col-xs-12" data-aos="fade-up" data-aos-delay="100">
                                         <div class="member">
                                             <a href="<?php the_permalink(); ?>">
                                                 <?php the_post_thumbnail(
@@ -624,16 +623,9 @@ if ($the_query->have_posts()) : ?>
                                                 ); ?>
                                             <div class="member-info">
                                                 <div class="member-info-content">
-<!--                                                    <a href="--><?php //the_permalink(); ?><!--">-->
-<!--                                                        --><?php //the_title(); ?>
-<!--                                                    </a>-->
-                                                    <h4>Kiran Pokhrel</h4>
-                                                    <span>Director</span>
-<!--                                                    <span> --><?php //the_excerpt(); ?><!--</span>-->
-                                                    <div class="social">
-                                                        <a href=""><i class="bi bi-twitter"></i></a>
-                                                        <a href=""><i class="bi bi-facebook"></i></a>
-                                                    </div>
+                                                    <h4><?php the_permalink(); ?></h4>
+                                                    <span><?php the_title(); ?></span>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -644,10 +636,7 @@ if ($the_query->have_posts()) : ?>
                         </div>
                     <?php endif; ?>
 
-
-
                 </div>
-
             </div>
         </section><!-- End Team Section -->
 
