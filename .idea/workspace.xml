@@ -7,6 +7,11 @@
     <list default="true" id="b19eca14-e8ad-42f7-87b2-d92cbb13ad62" name="Changes" comment="slider">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/what_we_do.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/what_we_do.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/who_we_are.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/who_we_are.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +42,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/wordpress-rkd-site/wp-content/themes/custom_theme&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/wamp64/www/rkd-website&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -75,7 +80,8 @@
       <workItem from="1663141664366" duration="6953000" />
       <workItem from="1663307993645" duration="15946000" />
       <workItem from="1663822434578" duration="6476000" />
-      <workItem from="1663910949493" duration="3875000" />
+      <workItem from="1663910949493" duration="6232000" />
+      <workItem from="1664080843980" duration="6352000" />
     </task>
     <task id="LOCAL-00001" summary="Dynamic Menu and Logo">
       <created>1662624914693</created>

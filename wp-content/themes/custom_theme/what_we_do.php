@@ -24,7 +24,7 @@ $the_query = new WP_Query($args);
 if ($the_query->have_posts()) : ?>
 <br>
 <br>
-    <section id="services" class="services one">
+    <section id="services" class="services two">
         <div class="container">
             <div class="row gy-5">
                 <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>

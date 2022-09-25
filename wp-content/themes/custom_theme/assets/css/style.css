@@ -328,7 +328,7 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
     line-height: 27px;
     margin-bottom: 0px;
     font-weight: 700;
-    color: #09AA4E;
+    color: var(--primary-color);
 }
 .site-branding {
     float: none;
@@ -439,6 +439,7 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
     padding-left: 30px;
 }
 .topbar-right a{color: #000;}
+.topbar-right a:hover{ color: var(--primary-color);}
 
 
 
@@ -1000,8 +1001,8 @@ section {
 /*    padding-right: 4px;*/
 /*    color: #09AA4E;*/
 /*}*/
-#about .about-content ul li p{margin: 0 0 0 0;}
-#about .about-content ul li::before{
+#about ul li p{margin: 0 0 0 0;}
+#about  ul li::before{
     content: "\f26b";
     display: inline-block;
     color: var(--primary-color);
@@ -2842,7 +2843,7 @@ ul.footer-news li a{display: flex;}
     padding: 40px;
     background-color: #f5faff;
 }
-
+.about .our-story p{color: var(--text-color);}
 @media (min-width: 991px) {
     .about .our-story {
         padding-right: 35%;
@@ -2877,7 +2878,7 @@ ul.footer-news li a{display: flex;}
     display: flex;
     align-items: center;
 }
-
+.about ul li p{color: var(--text-color);}
 .about ul i {
     font-size: 20px;
     margin-right: 4px;
@@ -2919,20 +2920,16 @@ ul.footer-news li a{display: flex;}
 --------------------------------------------------------------*/
 .alt-services{padding: 60px 0;}
 .alt-services .img-bg {
-    background-size: cover;
-    background-position: center center;
-    min-height: 400px;
+    max-height: 100%;
 }
-
 .alt-services h3 {
     font-size: 28px;
     font-weight: 700;
-    color: var(--color-secondary);
+    color: var(--heading-color);
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
 }
-
 .alt-services h3:after {
     content: "";
     position: absolute;
@@ -2976,12 +2973,12 @@ ul.footer-news li a{display: flex;}
 }
 
 .alt-services .icon-box h4 a {
-    color: #000;
+    color: var(--heading-color);
     transition: 0.3s;
 }
 
 .alt-services .icon-box h4 a:hover {
-    color: #09AA4E;
+    color: var(--primary-color);
 }
 
 .alt-services .icon-box p {

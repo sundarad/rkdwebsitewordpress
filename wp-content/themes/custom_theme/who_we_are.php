@@ -51,6 +51,8 @@ $content_core_values=$page_core_values->post_content;
 $image_core_values= get_the_post_thumbnail_url(101);
 
 ?>
+    <!-- ======= core values Section ======= -->
+    <section id="alt-services" class="alt-services">
         <div class="container" data-aos="fade-up">
 
             <div class="row justify-content-around gy-4">
@@ -60,8 +62,6 @@ $image_core_values= get_the_post_thumbnail_url(101);
                 <?php
                 echo $content_core_values;
                 ?>
-
-
             </div>
 
         </div>
@@ -96,21 +96,18 @@ $image_core_values= get_the_post_thumbnail_url(101);
 
                 <li class="nav-item col-lg-4 col-sm-4 col-xs-12">
                     <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
-                        <i class="bi bi-binoculars color-cyan"></i>
                         <h4><?php echo $title_our_mission;?></h4>
                     </a>
                 </li><!-- End Tab 1 Nav -->
 
                 <li class="nav-item col-lg-4 col-sm-4 col-xs-12">
                     <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
-                        <i class="bi bi-box-seam color-indigo"></i>
                         <h4><?php echo $title_our_vision;?></h4>
                     </a>
                 </li><!-- End Tab 2 Nav -->
 
                 <li class="nav-item col-lg-4 col-sm-4 col-xs-12">
                     <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
-                        <i class="bi bi-brightness-high color-teal"></i>
                         <h4><?php echo $title_our_strategies;?></h4>
                     </a>
                 </li><!-- End Tab 3 Nav -->

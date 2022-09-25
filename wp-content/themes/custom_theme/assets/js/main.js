@@ -1,9 +1,4 @@
-/**
- * Template Name: FlexStart - v1.10.1
- * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
- * Author: BootstrapMade.com
- * License: https://bootstrapmade.com/license/
- */
+
 (function() {
   "use strict";
 
@@ -247,7 +242,7 @@
    * Initiate portfolio lightbox
    */
   const portfolioLightbox = GLightbox({
-    selector: '.portfokio-lightbox'
+    selector: '.portfolio-lightbox'
   });
 
   /**

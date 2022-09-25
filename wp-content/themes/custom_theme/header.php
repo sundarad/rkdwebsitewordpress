@@ -106,14 +106,7 @@
                                                 <!--                                                </div>-->
                                                 <!-- header-icons end -->
                                             </div>
-                                            <!-- <div class="ttm-menu-toggle">
-												<input type="checkbox" id="menu-toggle-form">
-												<label for="menu-toggle-form" class="ttm-menu-toggle-block">
-													<span class="toggle-block toggle-blocks-1"></span>
-													<span class="toggle-block toggle-blocks-2"></span>
-													<span class="toggle-block toggle-blocks-3"></span>
-												</label>
-											</div> -->
+
                                             <?php
                                             wp_nav_menu(
                                                 array(
