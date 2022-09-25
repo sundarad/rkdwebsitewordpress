@@ -32,9 +32,10 @@ if ($the_query->have_posts()) : ?>
                         <div class="service-item">
                             <div class="img">
                                 <a href="<?php the_permalink(); ?>">
-                                    <?php the_post_thumbnail(
-                                        array( 'class' => 'img-fluid' )
-                                    ); ?>
+                                    <?php
+                                    $services_image = get_the_post_thumbnail_url(get_the_ID());
+                                    ?>
+                                    <img src="<?php echo $services_image; ?>" alt="" class="img-fluid">
                                 </a>
                             </div>
                             <div class="details position-relative">

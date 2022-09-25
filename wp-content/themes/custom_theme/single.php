@@ -32,11 +32,10 @@ get_header();
 
                             <div class="post-img">
 
-                                <?php  the_post_thumbnail(
-                                     array( 500, 400),
-                                    array( 'class' => 'img-fluid'
-                                    ),
-                                ); ?>
+                               <?php
+                               $image=get_the_post_thumbnail_url(get_the_ID());
+                               ?>
+                                <img src="<?php echo $image;?>" class="img-fluid" alt="">
 
                             </div>
 
