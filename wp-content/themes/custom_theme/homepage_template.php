@@ -384,35 +384,7 @@ if ($the_query->have_posts()) : ?>
 
         </div>
     </section><!-- End Counts Section -->
-    <!-- ======= ceo Section ======= -->
-    <section id="about" class="about">
 
-        <div class="container" data-aos="fade-up">
-            <div class="row">
-                <?php
-                $page_ceo= get_post(58);
-                $ceo_title = $page_ceo->post_title;
-                $ceo_content = $page_ceo->post_content;
-                $ceo_image = get_the_post_thumbnail_url($page_ceo->ID);
-                ?>
-                <div class="col-lg-5 col-md-6">
-                    <div class="about-img h-100" data-aos="fade-right" data-aos-delay="100">
-                        <img src="<?php echo $ceo_image;?>" alt="" class="h-100">
-                    </div>
-                </div>
-
-                <div class="col-lg-7 col-md-6">
-                    <div class="about-content" data-aos="fade-left" data-aos-delay="100">
-                        <h2><?php echo $ceo_title?></h2>
-                        <p><?php echo $ceo_content?></p>
-                        <div class="call-info">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section><!-- End ceo Section -->
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
@@ -479,7 +451,35 @@ if ($the_query->have_posts()) : ?>
 
     </section><!-- End Portfolio Section -->
 
+    <!-- ======= ceo Section ======= -->
+    <section id="about" class="about">
 
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <?php
+                $page_ceo= get_post(58);
+                $ceo_title = $page_ceo->post_title;
+                $ceo_content = $page_ceo->post_content;
+                $ceo_image = get_the_post_thumbnail_url($page_ceo->ID);
+                ?>
+                <div class="col-lg-5 col-md-6">
+                    <div class="about-img h-100" data-aos="fade-right" data-aos-delay="100">
+                        <img src="<?php echo $ceo_image;?>" alt="" class="h-100">
+                    </div>
+                </div>
+
+                <div class="col-lg-7 col-md-6">
+                    <div class="about-content" data-aos="fade-left" data-aos-delay="100">
+                        <h2><?php echo $ceo_title?></h2>
+                        <p><?php echo $ceo_content?></p>
+                        <div class="call-info">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section><!-- End ceo Section -->
     <!-- ======= Team Section ======= -->
     <section id="team" class="team section-bg">
         <div class="container" data-aos="fade-up">
@@ -502,13 +502,13 @@ if ($the_query->have_posts()) : ?>
                         <div class="row">
                             <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
 
-                                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                                        <div class="member">
-                                            <a href="<?php the_permalink(); ?>">
-                                                <?php
-                                                $director_image = get_the_post_thumbnail_url(get_the_ID());
+                                    <div class="col-lg-3 col-md-6 col-xs-12" data-aos="fade-up" data-aos-delay="100">
+                                        <a href="<?php the_permalink(); ?>">
+                                            <?php
+                                            $director_image = get_the_post_thumbnail_url(get_the_ID());
 
-                                                ?>
+                                            ?>
+                                        <div class="member">
                                                 <img src="<?php echo $director_image;?>" class="img-fluid" alt="">
                                                 <div class="member-info">
                                                     <div class="member-info-content">
@@ -518,6 +518,7 @@ if ($the_query->have_posts()) : ?>
                                                     </div>
                                                 </div>
                                         </div>
+                                        </a>
                                     </div>
 
                                 </div>
@@ -584,19 +585,18 @@ if ($the_query->have_posts()) : ?>
                         <div class="row">
                             <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
                                 <div class="col-lg-4 col-sm-6 col-xs-12" >
+                                    <a href="<?php the_permalink(); ?>">
+                                        <?php
+                                        $news_image = get_the_post_thumbnail_url(get_the_ID());
+                                        ?>
                                     <div class="post-box">
                                         <div class="post-image">
-                                            <a href="<?php the_permalink(); ?>">
-                                                <?php
-                                                $news_image = get_the_post_thumbnail_url(get_the_ID());
-                                                ?>
                                                 <img src="<?php echo $news_image;?>" class="img-fluid" alt="">
-                                            </a>
+
                                         </div>
                                         <div class="meta">
                                                 <span class="post-date">
-                                                    <i class="bi bi-calendar"></i>
-                                                    <?php the_date(); ?>
+                                                    <?php the_date(); ?> /
                                                 </span>
                                             <span class="post-author"><?php
 
@@ -614,6 +614,7 @@ if ($the_query->have_posts()) : ?>
                                             <a href="<?php the_permalink(); ?>" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
                                         </div>
                                     </div>
+                                    </a>
                                 </div>
 
                             <?php endwhile; ?>
