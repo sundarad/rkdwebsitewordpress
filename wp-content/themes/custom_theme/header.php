@@ -50,7 +50,7 @@
                             <ul class="social-icons">
                                 <li><a href="https://www.facebook.com/rkdholdings"  target="_blank"><i class="bi bi-facebook me-2"></i></a>
                                 </li>
-                                <li><a href="https://twitter.com/rkdrealestate" target="_blank"><i class="bi bi-youtube" ></i></a>
+                                <li><a href="https://www.youtube.com/channel/UCxh0z_rSb870U6gZ235uOmQ" target="_blank"><i class="bi bi-youtube" ></i></a>
                                 </li>
 
                             </ul>
@@ -92,12 +92,12 @@
                     <div class="col-lg-12">
                         <!-- ttm-stickable-header-w -->
                         <div id="stickable-header" class="stickable-header clearfix">
-                            <div id="site-header-menu" class="site-header-menu">
-                                <div class="site-header-menu-inner stickable-header">
-                                    <div class="container">
+                            <div id="site-header-menu" class="site-header-menu ">
+                                <div class="site-header-menu-inner stickable-header ">
+                                    <div class="container ">
                                         <!--site-navigation -->
-                                        <div id="site-navigation" class="navbar d-flex justify-content-center">
-                                            <div class="ttm-rt-contact">
+                                        <div id="site-navigation navbar_top" class="navbar  d-flex justify-content-center">
+                                            <div class="ttm-rt-contact ">
                                                 <!-- header-icons -->
                                                 <!--                                                <div class="header-icons ">-->
                                                 <!--                                                    <div class="header-icon header-search-link">-->

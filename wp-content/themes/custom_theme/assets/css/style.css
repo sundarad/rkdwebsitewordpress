@@ -2250,6 +2250,7 @@ span.price{color: #09AA4E;}
 .member img{
     width: 100%;
     height: 261px;
+    object-fit: cover;
 }
 #team .member .member-info {
     display: flex;
@@ -2879,12 +2880,15 @@ ul.footer-news li a{display: flex;}
     padding: 5px 0;
     display: flex;
     align-items: center;
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 500;
 }
 .about ul li p{color: var(--text-color);}
 .about ul i {
     font-size: 20px;
     margin-right: 4px;
-    color: #09AA4E;
+    color: var(--primary-color);
 }
 
 .about .watch-video i {
@@ -2904,10 +2908,10 @@ ul.footer-news li a{display: flex;}
     color: #09AA4E;
 }
 
-.about .about-company-img {
-    min-height: 600px;
-    background-size: cover;
-    background-position: center;
+.about .about-company-img img{
+    width: 100%;
+    height: 600px;
+   object-fit: cover;
 }
 
 @media (min-width: 992px) {
@@ -2916,37 +2920,36 @@ ul.footer-news li a{display: flex;}
         top: 0;
         right: 0;
     }
+
 }
 /*--------------------------------------------------------------
 # Alt Services Section
 --------------------------------------------------------------*/
 .alt-services{padding: 60px 0;}
-.alt-services .img-bg {
-    max-height: 100%;
-}
+.alt-services .img-bg {max-height: 100%;}
+.alt-services .img-bg img{height: 100%; object-fit: cover;}
 .alt-services h3 {
     font-size: 28px;
     font-weight: 700;
     color: var(--heading-color);
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+    margin-bottom: 12px;
     position: relative;
 }
-.alt-services h3:after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 50px;
-    height: 3px;
-    background: var(--color-primary);
-    left: 0;
-    bottom: 0;
-}
+/*.alt-services h3:after {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    display: block;*/
+/*    width: 50px;*/
+/*    height: 3px;*/
+/*    background: var(--primary-color);*/
+/*    left: 0;*/
+/*    bottom: 0;*/
+/*}*/
 
 .alt-services .icon-box {
-    margin-top: 50px;
+    margin-top: 20px;
 }
-
+.alt-services .icon-box:first-child{margin-top: 0;}
 .alt-services .icon-box i {
     display: flex;
     align-items: center;
@@ -3060,7 +3063,7 @@ ul.footer-news li a{display: flex;}
 }
 
 .services .service-item:hover .details .icon i {
-    color: var(--color-primary);
+    color: var(--primary-color);
 }
 
 .services .service-item:hover .img img {

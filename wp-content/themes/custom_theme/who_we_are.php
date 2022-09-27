@@ -71,7 +71,7 @@ $image_core_values= get_the_post_thumbnail_url(101);
         <div class="container" data-aos="fade-up">
             <header class="section-header">
                 <h3>We Creating Solutions For Your Organization</h3>
-                <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+
             </header>
             <?php
             $our_mission= get_post(133);
@@ -118,7 +118,7 @@ $image_core_values= get_the_post_thumbnail_url(101);
                 <div class="tab-pane active show" id="tab-1">
                     <div class="row gy-4">
                         <div class="col-lg-8 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-                            <p>
+
                                 <?php echo $content_our_mission;?>
                             </p>
                         </div>
@@ -172,7 +172,7 @@ $the_query = new WP_Query($args);
 if ($the_query->have_posts()) : ?>
     <br>
     <br>
-    <section id="services" class="services one">
+    <section id="services" class="services two">
         <div class="container">
             <div class="row gy-5">
                 <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
@@ -190,9 +190,9 @@ if ($the_query->have_posts()) : ?>
                                     <i class="bi bi-bounding-box-circles"></i>
                                 </div>
                                 <a href="#" class="stretched-link">
-                                    <h3> <a href="<?php the_permalink(); ?>">
+                                    <h3>
                                             <?php the_title(); ?>
-                                        </a></h3>
+                                    </h3>
                                 </a>
                                 <p>  <?php the_excerpt(); ?></p>
                                 <a href="#" class="stretched-link"></a>
@@ -241,10 +241,7 @@ if ($the_query->have_posts()) : ?>
                                                         <?php the_title(); ?>
                                                     </a>
                                                     <span> <?php the_excerpt(); ?></span>
-                                                    <div class="social">
-                                                        <a href=""><i class="bi bi-twitter"></i></a>
-                                                        <a href=""><i class="bi bi-facebook"></i></a>
-                                                    </div>
+
                                                 </div>
                                             </div>
                                     </div>

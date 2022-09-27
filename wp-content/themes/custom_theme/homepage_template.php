@@ -99,9 +99,9 @@ if ($the_query->have_posts()) : ?>
                                     <i class="bi bi-bounding-box-circles"></i>
                                 </div>
                                 <a href="#" class="stretched-link">
-                                    <h3> <a href="<?php the_permalink(); ?>">
-                                            <?php the_title(); ?>
-                                        </a></h3>
+                                    <h3>
+                                        <?php the_title(); ?>
+                                    </h3>
                                 </a>
                                 <p>  <?php the_excerpt(); ?></p>
                                 <a href="#" class="stretched-link"></a>
@@ -111,7 +111,7 @@ if ($the_query->have_posts()) : ?>
 
                 <?php endwhile; ?>
             </div>
-            <p class="text-extra text-center mt-5 mb-0">Dont hesitate, contact us for better heel services. <a href="/services/"> Explore all services</a></p>
+            <p class="text-extra text-center mt-5 mb-0">Dont hesitate, contact us for better heel services. <a href="/services/" target="_blank"> Explore all services</a></p>
         </div>
     </section>
 <?php endif; ?>
@@ -135,7 +135,7 @@ if ($the_query->have_posts()) : ?>
                     <div class="about-content" data-aos="fade-left" data-aos-delay="100">
 
                         <h2><?php echo $title_who_we_are;?></h2>
-                        <?php echo $content_who_we_are;?>
+                        <p><?php echo $content_who_we_are;?></p>
 
                     </div>
                 </div>
@@ -543,7 +543,6 @@ if ($the_query->have_posts()) : ?>
                                                 <img src="<?php echo $director_image;?>" class="img-fluid" alt="">
                                                 <div class="member-info">
                                                     <div class="member-info-content">
-
                                                         <h4><?php the_title(); ?></h4>
                                                         <span><?php the_content();?></span>
                                                     </div>

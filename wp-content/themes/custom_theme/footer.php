@@ -94,13 +94,12 @@
                         <p>
                             Sabhagriha Chowk, Pokhara, Nepal <br>
                             <a href="tel:061544440"> <strong>Phone :</strong> 061544440</a><br>
-                            <a href="mailto:info@rkdrealestate.com.np"> <strong>Email :</strong>info@rkdrealestate.com.np</a>
+                            <a href="mailto:info@rkdrealestate.com.np"> <strong>Email : </strong>info@rkdrealestate.com.np</a>
                         </p>
                     </div>
                     <div class="social-links">
-                        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="youtube"><i class="bi bi-youtube"></i></a>
+                        <a href="https://www.facebook.com/rkdholdings" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.youtube.com/channel/UCxh0z_rSb870U6gZ235uOmQ"  target="_blank" class="youtube"><i class="bi bi-youtube"></i></a>
                     </div>
 
                 </div>
