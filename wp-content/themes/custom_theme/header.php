@@ -39,7 +39,7 @@
             <div class="container">
                 <div class="topbar-content">
                     <ul class="top-contact text-left float-start">
-                        <li><strong>Open Hours :</strong> <span class=""> Sun -Fri 10:00-5:00</span></li>
+                        <li><strong>Open Hours :</strong> <span class=""> Sun - Fri 10:00-5:00</span></li>
                     </ul>
                     <div class="topbar-right text-end">
                         <ul class="top-contact">
@@ -50,7 +50,7 @@
                             <ul class="social-icons">
                                 <li><a href="https://www.facebook.com/rkdholdings"  target="_blank"><i class="bi bi-facebook me-2"></i></a>
                                 </li>
-                                <li><a href="https://twitter.com/rkdrealestate" target="_blank"><i class="bi bi-twitter" ></i></a>
+                                <li><a href="https://twitter.com/rkdrealestate" target="_blank"><i class="bi bi-youtube" ></i></a>
                                 </li>
 
                             </ul>

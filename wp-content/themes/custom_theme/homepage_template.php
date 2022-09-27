@@ -387,7 +387,7 @@ if ($the_query->have_posts()) : ?>
 
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
+    <section id="portfolio" class="portfolio features">
 
         <div class="container" data-aos="fade-up">
 
@@ -444,7 +444,39 @@ if ($the_query->have_posts()) : ?>
                 </section>
             <?php endif; ?>
 
+            <ul class="nav nav-tabs row gy-4 d-flex" id="portfolio-flters">
 
+                <li class="nav-item nav-link active show col-lg-3 col-sm-6 col-xs-12" data-bs-toggle="tab" data-bs-target="#tab-1">
+                    <h4>All</h4>
+                </li><!-- End Tab 1 Nav -->
+
+                <li class="nav-item  nav-link  col-lg-3 col-sm-6 col-xs-12" data-bs-toggle="tab" data-bs-target="#tab-2">
+                        <h4>Queen Tower</h4>
+                </li><!-- End Tab 2 Nav -->
+
+                <li class="nav-item nav-link col-lg-3 col-sm-6 col-xs-12" data-bs-toggle="tab" data-bs-target="#tab-3">
+                        <h4>Cablecar</h4>
+                </li><!-- End Tab 3 Nav -->
+
+
+            </ul>
+
+            <div class="tab-content">
+
+                <div class="tab-pane active show" id="tab-1">
+                </div>
+
+                <div class="tab-pane" id="tab-2">
+                </div>
+                <div class="tab-pane" id="tab-3">
+                    <?php echo $by_asset_classes_content;?>
+                </div>
+                <div class="tab-pane" id="tab-4">
+                    <?php echo $by_geography_content;?>
+                </div>
+
+
+            </div>
         </div>
 
         </div>
@@ -501,7 +533,6 @@ if ($the_query->have_posts()) : ?>
                     <div class="container">
                         <div class="row">
                             <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-
                                     <div class="col-lg-3 col-md-6 col-xs-12" data-aos="fade-up" data-aos-delay="100">
                                         <a href="<?php the_permalink(); ?>">
                                             <?php
@@ -521,15 +552,10 @@ if ($the_query->have_posts()) : ?>
                                         </a>
                                     </div>
 
-                                </div>
-
                             <?php endwhile; ?>
                         </div>
                     </div>
                 <?php endif; ?>
-
-
-
             </div>
 
         </div>
