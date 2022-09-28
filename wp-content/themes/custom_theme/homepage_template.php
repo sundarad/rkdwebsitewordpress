@@ -75,7 +75,7 @@
     'category_name' => 'services',
     'posts_per_page' => 3,
     'orderby' => 'date',
-    'order' => 'DESC'
+    'order' => 'ASC'
 );
 
 $the_query = new WP_Query($args);
@@ -90,8 +90,11 @@ if ($the_query->have_posts()) : ?>
                                 <a href="<?php the_permalink(); ?>">
                                     <?php
                                     $service_image = get_the_post_thumbnail_url(get_the_ID());
+                                    $_content_e = get_the_excerpt();
+                                    //remove the paragraph tags
+                                    $_content_e = strip_tags($_content_e);
                                     ?>
-                                    <img src="<?php echo $service_image; ?>" alt="service image">
+                                    <img src="<?php echo $service_image; ?>" alt="<?php echo $_content_e?>">
                                 </a>
                             </div>
                             <div class="details position-relative">
@@ -124,10 +127,13 @@ if ($the_query->have_posts()) : ?>
                 $link_who_we_are= get_permalink(43);
                 $content_who_we_are=$page_who_we_are->post_content;
                 $image_who_we_are= get_the_post_thumbnail_url(43);
+                $_content_e = get_the_excerpt();
+                //remove the paragraph tags
+                $_content_e = strip_tags($_content_e);
                 ?>
                 <div class="col-lg-5 col-md-6">
                     <div class="about-img" data-aos="fade-right" data-aos-delay="100">
-                        <img src="<?php echo $image_who_we_are;?>" alt="">
+                        <img src="<?php echo $image_who_we_are;?>" alt="<?php echo $_content_e?>">
                     </div>
                 </div>
 
@@ -144,64 +150,64 @@ if ($the_query->have_posts()) : ?>
         </div>
 
     </section><!-- End About Section -->
-<!--    <section id="why-us" class="why-us">-->
-<!--        <div class="container-fluid" data-aos="fade-up">-->
-<!--            --><?php //$page_why_us= get_post(51);
+    <!--    <section id="why-us" class="why-us">-->
+    <!--        <div class="container-fluid" data-aos="fade-up">-->
+    <!--            --><?php //$page_why_us= get_post(51);
 //            $title_why_us=$page_why_us->post_title;
 //            $link_why_us= get_permalink(51);
 //            $content_why_us=$page_why_us->post_content;
 //            $image_why_us= get_the_post_thumbnail_url(51);
 //            ?>
+    <!--            <header class="section-header">-->
+    <!--                <h3>--><?php //echo $title_why_us;?><!--</h3>-->
+    <!--            </header>-->
+    <!---->
+    <!--            <div class="row">-->
+    <!---->
+    <!--                <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">-->
+    <!--                    <div class="why-us-img">-->
+    <!--                        <img src="--><?php //echo $image_why_us;?><!--" alt="" class="img-fluid">-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!---->
+    <!--                --><?php //echo $content_why_us;?>
+    <!---->
+    <!--            </div>-->
+    <!---->
+    <!--        </div>-->
+    <!---->
+    <!--    </section>-->
+    <!-- End Why Us Section -->
+<!--    <section id="clients" class="clients">-->
+<!--        <div class="container aos-init aos-animate" data-aos="fade-up">-->
 <!--            <header class="section-header">-->
-<!--                <h3>--><?php //echo $title_why_us;?><!--</h3>-->
+<!--                <h3>Our Company</h3>-->
 <!--            </header>-->
-<!---->
-<!--            <div class="row">-->
-<!---->
-<!--                <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">-->
-<!--                    <div class="why-us-img">-->
-<!--                        <img src="--><?php //echo $image_why_us;?><!--" alt="" class="img-fluid">-->
+<!--            <div class="row clients-wrap justify-content-center clearfix aos-init aos-animate" data-aos="fade-up" >-->
+<!--                <div class="col-lg-12 col-sm-12 col-xs-12">-->
+<!--                    <div class="client-logo"> <img src="--><?php //echo get_template_directory_uri();?><!--/assets/img/logo.png" class="img-fluid" alt=""></div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-12 col-sm-12 col-xs-12">-->
+<!--                    <div class="client-logo"> <img src="--><?php //echo get_template_directory_uri();?><!--/assets/img/tifl.png" class="img-fluid" alt=""></div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-4 col-sm-12 col-xs-12">-->
+<!--                    <div class=" client-logo" style="width: 440px;">-->
+<!--                        <img src="--><?php //echo get_template_directory_uri();?><!--/assets/img/bandipur.png" class="img-fluid" alt="">-->
 <!--                    </div>-->
 <!--                </div>-->
-<!---->
-<!--                --><?php //echo $content_why_us;?>
-<!---->
+<!--                <div class="col-lg-4 col-sm-12 col-xs-12">-->
+<!--                    <div class="client-logo" style="width: 440px;">-->
+<!--                        <img src="--><?php //echo get_template_directory_uri();?><!--/assets/img/panchase.png" class="img-fluid" alt="">-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-4 col-sm-12 col-xs-12">-->
+<!--                    <div class="client-logo" style="width: 416px;">-->
+<!--                        <img src="--><?php //echo get_template_directory_uri();?><!--/assets/img/bizbazar.png" class="img-fluid" alt="">-->
+<!--                    </div>-->
+<!--                </div>-->
 <!--            </div>-->
-<!---->
 <!--        </div>-->
-<!---->
 <!--    </section>-->
-    <!-- End Why Us Section -->
-    <section id="clients" class="clients">
-        <div class="container aos-init aos-animate" data-aos="fade-up">
-            <header class="section-header">
-                <h3>Our Company</h3>
-            </header>
-            <div class="row clients-wrap justify-content-center clearfix aos-init aos-animate" data-aos="fade-up" >
-                <div class="col-lg-12 col-sm-12 col-xs-12">
-                    <div class="client-logo"> <img src="<?php echo get_template_directory_uri();?>/assets/img/logo.png" class="img-fluid" alt=""></div>
-                </div>
-                <div class="col-lg-12 col-sm-12 col-xs-12">
-                    <div class="client-logo"> <img src="<?php echo get_template_directory_uri();?>/assets/img/tifl.png" class="img-fluid" alt=""></div>
-                </div>
-                <div class="col-lg-4 col-sm-12 col-xs-12">
-                    <div class=" client-logo" style="width: 440px;">
-                        <img src="<?php echo get_template_directory_uri();?>/assets/img/bandipur.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-12 col-xs-12">
-                    <div class="client-logo" style="width: 440px;">
-                        <img src="<?php echo get_template_directory_uri();?>/assets/img/panchase.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-12 col-xs-12">
-                    <div class="client-logo" style="width: 416px;">
-                        <img src="<?php echo get_template_directory_uri();?>/assets/img/bizbazar.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- ======= Services Section ======= -->
     <!--        <section id="services" class="services section-bg">-->
     <!--            <div class="container" data-aos="fade-up">-->
@@ -395,55 +401,6 @@ if ($the_query->have_posts()) : ?>
                 <h3>Investment Portfolio</h3>
             </header>
 
-            <div class="row" data-aos="fade-up" data-aos-delay="100">
-                <div class="col-lg-12 d-flex justify-content-center">
-                    <ul id="portfolio-flters">
-                        <li data-filter="*" class="filter-active">All</li>
-                        <li data-filter=".filter-app">App</li>
-                        <li data-filter=".filter-card">Card</li>
-                        <li data-filter=".filter-web">Web</li>
-                    </ul>
-                </div>
-            </div>
-            <?php $args = array(
-                'post_type' => 'post',
-                'category_name' => 'investment-portfolio',
-                'posts_per_page' => 3,
-                'orderby' => 'date',
-                'order' => 'DESC'
-            );
-
-            $the_query = new WP_Query($args);
-            if ($the_query->have_posts()) : ?>
-                <section id="services" class="services one">
-                    <div class="container">
-                        <div class="row gy-5">
-                            <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-                            <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
-                                <?php
-
-                                $portfolio_image = get_the_post_thumbnail_url(get_the_ID());
-                                ?>
-                                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                                    <div class="portfolio-wrap">
-                                        <img src="<?php echo $portfolio_image;?>" class="img-fluid" alt="">
-                                        <div class="portfolio-info">
-                                            <h4><?php the_title(); ?></h4>
-                                            <p><?php get_the_content();?></p>
-                                            <div class="portfolio-links">
-                                                <a href="<?php echo $portfolio_image?>" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
-                                                <a href="<?php the_permalink(); ?>" title="More Details"><i class="bi bi-link"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <?php endwhile; ?>
-                            </div>
-                        </div>
-                </section>
-            <?php endif; ?>
-
             <ul class="nav nav-tabs row gy-4 d-flex" id="portfolio-flters">
 
                 <li class="nav-item nav-link active show col-lg-3 col-sm-6 col-xs-12" data-bs-toggle="tab" data-bs-target="#tab-1">
@@ -451,11 +408,11 @@ if ($the_query->have_posts()) : ?>
                 </li><!-- End Tab 1 Nav -->
 
                 <li class="nav-item  nav-link  col-lg-3 col-sm-6 col-xs-12" data-bs-toggle="tab" data-bs-target="#tab-2">
-                        <h4>Queen Tower</h4>
+                    <h4>Queen Tower</h4>
                 </li><!-- End Tab 2 Nav -->
 
                 <li class="nav-item nav-link col-lg-3 col-sm-6 col-xs-12" data-bs-toggle="tab" data-bs-target="#tab-3">
-                        <h4>Cablecar</h4>
+                    <h4>Cablecar</h4>
                 </li><!-- End Tab 3 Nav -->
 
 
@@ -464,6 +421,92 @@ if ($the_query->have_posts()) : ?>
             <div class="tab-content">
 
                 <div class="tab-pane active show" id="tab-1">
+                    <?php $args = array(
+                        'post_type' => 'post',
+                        'category_name' => 'investment-portfolio',
+                        'posts_per_page' => 3,
+                        'orderby' => 'date',
+                        'order' => 'DESC'
+                    );
+
+                    $the_query = new WP_Query($args);
+                    if ($the_query->have_posts()) : ?>
+                        <section id="services" class="services one">
+                            <div class="container">
+                                <div class="row gy-5">
+                                    <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                                    <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+                                        <?php
+
+                                        $portfolio_image = get_the_post_thumbnail_url(get_the_ID());
+                                        $_content_e = get_the_excerpt();
+                                        //remove the paragraph tags
+                                        $_content_e = strip_tags($_content_e);
+                                        ?>
+                                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                                            <div class="portfolio-wrap">
+                                                <img src="<?php echo $portfolio_image;?>" class="img-fluid" alt="<?php echo $_content_e?>">
+                                                <div class="portfolio-info">
+                                                    <h4><?php the_title(); ?></h4>
+                                                    <p><?php get_the_content();?></p>
+                                                    <div class="portfolio-links">
+                                                        <a href="<?php echo $portfolio_image?>" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
+                                                        <a href="<?php the_permalink(); ?>" title="More Details"><i class="bi bi-link"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <?php endwhile; ?>
+                                    </div>
+                                </div>
+                        </section>
+                    <?php endif; ?>
+                </div>
+
+                <div class="tab-pane" id="tab-2">
+                    <div>
+                        <?php $args = array(
+                        'post_type' => 'post',
+                        'category_name' => 'queen-tower',
+                        'posts_per_page' => 3,
+                        'orderby' => 'date',
+                        'order' => 'DESC'
+                    );
+
+                    $the_query = new WP_Query($args);
+                    if ($the_query->have_posts()) : ?>
+                        <section id="services" class="services one">
+                            <div class="container">
+                                <div class="row gy-5">
+                                    <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                                    <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+                                        <?php
+
+                                        $portfolio_image = get_the_post_thumbnail_url(get_the_ID());
+                                        $_content_e = get_the_excerpt();
+                                        //remove the paragraph tags
+                                        $_content_e = strip_tags($_content_e);
+                                        ?>
+                                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                                            <div class="portfolio-wrap">
+                                                <img src="<?php echo $portfolio_image;?>" class="img-fluid" alt="<?php echo $_content_e?>">
+                                                <div class="portfolio-info">
+                                                    <h4><?php the_title(); ?></h4>
+                                                    <p><?php get_the_content();?></p>
+                                                    <div class="portfolio-links">
+                                                        <a href="<?php echo $portfolio_image?>" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
+                                                        <a href="<?php the_permalink(); ?>" title="More Details"><i class="bi bi-link"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <?php endwhile; ?>
+                                    </div>
+                                </div>
+                        </section>
+                    <?php endif; ?>
 
                     <?php $args = array(
                         'post_type' => 'post',
@@ -505,15 +548,55 @@ if ($the_query->have_posts()) : ?>
                     <?php endif; ?>
 
                 </div>
+                </div>
 
-                <div class="tab-pane" id="tab-2">
-                </div>
                 <div class="tab-pane" id="tab-3">
-                    <?php echo $by_asset_classes_content;?>
+                    <?php $args = array(
+                        'post_type' => 'post',
+                        'category_name' => 'investment-portfolio',
+                        'posts_per_page' => 3,
+                        'orderby' => 'date',
+                        'order' => 'DESC'
+                    );
+
+                    $the_query = new WP_Query($args);
+                    if ($the_query->have_posts()) : ?>
+                        <section id="services" class="services one">
+                            <div class="container">
+                                <div class="row gy-5">
+                                    <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                                    <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+                                        <?php
+
+                                        $portfolio_image = get_the_post_thumbnail_url(get_the_ID());
+                                        $_content_e = get_the_excerpt();
+                                        //remove the paragraph tags
+                                        $_content_e = strip_tags($_content_e);
+                                        ?>
+                                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                                            <div class="portfolio-wrap">
+                                                <img src="<?php echo $portfolio_image;?>" class="img-fluid" alt="<?php echo $_content_e?>">
+                                                <div class="portfolio-info">
+                                                    <h4><?php the_title(); ?></h4>
+                                                    <p><?php get_the_content();?></p>
+                                                    <div class="portfolio-links">
+                                                        <a href="<?php echo $portfolio_image?>" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
+                                                        <a href="<?php the_permalink(); ?>" title="More Details"><i class="bi bi-link"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <?php endwhile; ?>
+                                    </div>
+                                </div>
+                        </section>
+                    <?php endif; ?>
                 </div>
-                <div class="tab-pane" id="tab-4">
-                    <?php echo $by_geography_content;?>
-                </div>
+<!--                <div class="tab-pane" id="tab-4">-->
+<!--                    -->
+<!--                    --><?php //echo $by_geography_content;?>
+<!--                </div>-->
 
 
             </div>
@@ -533,10 +616,13 @@ if ($the_query->have_posts()) : ?>
                 $ceo_title = $page_ceo->post_title;
                 $ceo_content = $page_ceo->post_content;
                 $ceo_image = get_the_post_thumbnail_url($page_ceo->ID);
+               $_content_e = get_the_excerpt($page_ceo->ID);
+                //remove the paragraph tags
+                $_content_e = strip_tags($_content_e);
                 ?>
                 <div class="col-lg-5 col-md-6">
                     <div class="about-img h-100" data-aos="fade-right" data-aos-delay="100">
-                        <img src="<?php echo $ceo_image;?>" alt="" class="h-100">
+                        <img src="<?php echo $ceo_image;?>" alt="<?php echo $_content_e?>" class="h-100">
                     </div>
                 </div>
 
@@ -565,7 +651,7 @@ if ($the_query->have_posts()) : ?>
                     'category_name' => 'director',
                     'posts_per_page' => -1,
                     'orderby' => 'date',
-                    'order' => 'DESC'
+                    'order' => 'ASC'
                 );
 
                 $the_query = new WP_Query($args);
@@ -573,23 +659,33 @@ if ($the_query->have_posts()) : ?>
                     <div class="container">
                         <div class="row">
                             <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-                                    <div class="col-lg-3 col-md-6 col-xs-12" data-aos="fade-up" data-aos-delay="100">
-                                        <a href="<?php the_permalink(); ?>">
-                                            <?php
-                                            $director_image = get_the_post_thumbnail_url(get_the_ID());
+                                <div class="col-lg-3 col-md-6 col-xs-12" data-aos="fade-up" data-aos-delay="100">
+                                    <a href="<?php the_permalink(); ?>">
+                                        <?php
+                                        $director_image = get_the_post_thumbnail_url(get_the_ID());
+                                        //get the excerpt
+                                        $director_content_e = get_the_excerpt();
+                                        //remove the paragraph tags
+                                        $director_content_e = strip_tags($director_content_e);
 
-                                            ?>
+                                        ?>
                                         <div class="member">
-                                                <img src="<?php echo $director_image;?>" class="img-fluid" alt="">
-                                                <div class="member-info">
-                                                    <div class="member-info-content">
-                                                        <h4><?php the_title(); ?></h4>
-                                                        <span><?php the_content();?></span>
-                                                    </div>
+                                            <img src="<?php echo $director_image;?>" class="img-fluid" alt="<?php echo $director_content_e;?>">
+                                            <div class="member-info">
+                                                <div class="member-info-content">
+                                                    <h4><?php the_title(); ?></h4>
+                                                    <?php
+                                                    //get the post content
+                                                    $director_content = get_the_content();
+                                                    //remove the paragraph tags
+                                                    $position = strip_tags($director_content);
+                                                    ?>
+                                                    <span><?php echo $position;?></span>
                                                 </div>
+                                            </div>
                                         </div>
-                                        </a>
-                                    </div>
+                                    </a>
+                                </div>
 
                             <?php endwhile; ?>
                         </div>
@@ -601,29 +697,30 @@ if ($the_query->have_posts()) : ?>
     </section><!-- End Team Section -->
 
     <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients">
-        <div class="container" data-aos="zoom-in">
-
-            <header class="section-header">
-                <h3>Our Clients</h3>
-            </header>
-
-            <div class="clients-slider swiper">
-                <div class="swiper-wrapper align-items-center">
-                    <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-                    <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-                    <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-                    <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-                    <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-                    <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-                    <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-                    <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-
-        </div>
-    </section><!-- End Clients Section -->
+    <!--    <section id="clients" class="clients">-->
+    <!--        <div class="container" data-aos="zoom-in">-->
+    <!---->
+    <!--            <header class="section-header">-->
+    <!--                <h3>Our Clients</h3>-->
+    <!--            </header>-->
+    <!---->
+    <!--            <div class="clients-slider swiper">-->
+    <!--                <div class="swiper-wrapper align-items-center">-->
+    <!--                    <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>-->
+    <!--                    <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>-->
+    <!--                    <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>-->
+    <!--                    <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>-->
+    <!--                    <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>-->
+    <!--                    <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>-->
+    <!--                    <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>-->
+    <!--                    <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>-->
+    <!--                </div>-->
+    <!--                <div class="swiper-pagination"></div>-->
+    <!--            </div>-->
+    <!---->
+    <!--        </div>-->
+    <!--    </section>-->
+    <!-- End Clients Section -->
 
 
     <!-- ======= Recent Blog Posts Section ======= -->
@@ -653,32 +750,35 @@ if ($the_query->have_posts()) : ?>
                                     <a href="<?php the_permalink(); ?>">
                                         <?php
                                         $news_image = get_the_post_thumbnail_url(get_the_ID());
+                                        $_content_e = get_the_excerpt();
+                                        //remove the paragraph tags
+                                        $_content_e = strip_tags($_content_e);
                                         ?>
-                                    <div class="post-box">
-                                        <div class="post-image">
-                                                <img src="<?php echo $news_image;?>" class="img-fluid" alt="">
+                                        <div class="post-box">
+                                            <div class="post-image">
+                                                <img src="<?php echo $news_image;?>" class="img-fluid" alt="<?php echo $_content_e?>">
 
-                                        </div>
-                                        <div class="meta">
+                                            </div>
+                                            <div class="meta">
                                                 <span class="post-date">
                                                     <?php the_date(); ?> /
                                                 </span>
-                                            <span class="post-author"><?php
+                                                <span class="post-author"><?php
 
-                                                $author_id = get_the_author_meta('ID');
-                                                $author_name = get_the_author_meta('display_name', $author_id);
-                                                echo $author_name;
-                                                ?> </span>
-                                            <!--                                                <a href="--><!--">-->
-                                            <!--                                                    -->
-                                            <!--                                                </a>-->
-                                            <div class="what-we-do-content">
-                                                <h3 class="post-title"><?php the_title(); ?></h3>
+                                                    $author_id = get_the_author_meta('ID');
+                                                    $author_name = get_the_author_meta('display_name', $author_id);
+                                                    echo $author_name;
+                                                    ?> </span>
+                                                <!--                                                <a href="--><!--">-->
+                                                <!--                                                    -->
+                                                <!--                                                </a>-->
+                                                <div class="what-we-do-content">
+                                                    <h3 class="post-title"><?php the_title(); ?></h3>
 
+                                                </div>
+                                                <a href="<?php the_permalink(); ?>" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
                                             </div>
-                                            <a href="<?php the_permalink(); ?>" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
                                         </div>
-                                    </div>
                                     </a>
                                 </div>
 

@@ -75,6 +75,18 @@
                     </div>
                 <?php endif; ?>
             </div>
-    </section><!-- End Recent Blog Posts Section -->
 
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+
+        <div class="container" data-aos="fade-up">
+
+            <header class="section-header">
+                <h3>Gallery Portfolio</h3>
+            </header>
+            <?php echo do_shortcode("[pfhub_portfolio id='2']"); ?>
+        </div>
+
+    </section><!-- End Portfolio Section -->
 <?php get_footer();?>
