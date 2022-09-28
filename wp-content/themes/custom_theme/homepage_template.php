@@ -28,7 +28,7 @@
                         <h6>COOPTOGOVS</h6>
                         <h2> We empower your financial <span>vision</span> </h2>
                         <div class="d-flex justify-content-center more-btn">
-                            <a href="/contact-us-2/" class="btn-get-started scrollto">Contact us</a>
+                            <a href="/contact-us-2/" class="btn-get-started">Contact us</a>
                             <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center ms-3"><i class="bi bi-play-circle"></i><span >Watch Video</span></a>
                         </div>
                     </div>
@@ -334,6 +334,7 @@ if ($the_query->have_posts()) : ?>
 
         </div>
     </section><!-- End Features Section -->
+
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts">
         <div class="container" data-aos="fade-up">
@@ -507,6 +508,7 @@ if ($the_query->have_posts()) : ?>
                 </div>
 
                 <div class="tab-pane" id="tab-2">
+                    gg
                 </div>
                 <div class="tab-pane" id="tab-3">
                     <?php echo $by_asset_classes_content;?>
@@ -517,6 +519,7 @@ if ($the_query->have_posts()) : ?>
 
 
             </div>
+
         </div>
 
         </div>
@@ -601,29 +604,30 @@ if ($the_query->have_posts()) : ?>
     </section><!-- End Team Section -->
 
     <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients">
-        <div class="container" data-aos="zoom-in">
-
-            <header class="section-header">
-                <h3>Our Clients</h3>
-            </header>
-
-            <div class="clients-slider swiper">
-                <div class="swiper-wrapper align-items-center">
-                    <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-                    <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-                    <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-                    <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-                    <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-                    <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-                    <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-                    <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-
-        </div>
-    </section><!-- End Clients Section -->
+<!--    <section id="clients" class="clients">-->
+<!--        <div class="container" data-aos="zoom-in">-->
+<!---->
+<!--            <header class="section-header">-->
+<!--                <h3>Our Clients</h3>-->
+<!--            </header>-->
+<!---->
+<!--            <div class="clients-slider swiper">-->
+<!--                <div class="swiper-wrapper align-items-center">-->
+<!--                    <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>-->
+<!--                    <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>-->
+<!--                    <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>-->
+<!--                    <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>-->
+<!--                    <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>-->
+<!--                    <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>-->
+<!--                    <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>-->
+<!--                    <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>-->
+<!--                </div>-->
+<!--                <div class="swiper-pagination"></div>-->
+<!--            </div>-->
+<!---->
+<!--        </div>-->
+<!--    </section>-->
+    <!-- End Clients Section -->
 
 
     <!-- ======= Recent Blog Posts Section ======= -->
@@ -688,10 +692,6 @@ if ($the_query->have_posts()) : ?>
                 <?php endif; ?>
             </div>
     </section><!-- End Recent Blog Posts Section -->
-
-
-
-    </main><!-- End #main -->
 
 
 

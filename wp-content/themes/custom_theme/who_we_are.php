@@ -256,5 +256,6 @@ if ($the_query->have_posts()) : ?>
 
         </div>
     </section>
+
     <!-- End Team Section -->
 <?php get_footer();?>
