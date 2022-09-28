@@ -464,6 +464,46 @@ if ($the_query->have_posts()) : ?>
             <div class="tab-content">
 
                 <div class="tab-pane active show" id="tab-1">
+
+                    <?php $args = array(
+                        'post_type' => 'post',
+                        'category_name' => 'investment-portfolio',
+                        'posts_per_page' => 3,
+                        'orderby' => 'date',
+                        'order' => 'DESC'
+                    );
+
+                    $the_query = new WP_Query($args);
+                    if ($the_query->have_posts()) : ?>
+                        <section id="services" class="services one">
+                            <div class="container">
+                                <div class="row gy-5">
+                                    <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                                    <div class="row gy-5 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+                                        <?php
+
+                                        $portfolio_image = get_the_post_thumbnail_url(get_the_ID());
+                                        ?>
+                                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                                            <div class="portfolio-wrap">
+                                                <img src="<?php echo $portfolio_image;?>" class="img-fluid" alt="">
+                                                <div class="portfolio-info">
+                                                    <h4><?php the_title(); ?></h4>
+                                                    <p><?php get_the_content();?></p>
+                                                    <div class="portfolio-links">
+                                                        <a href="<?php echo $portfolio_image?>" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
+                                                        <a href="<?php the_permalink(); ?>" title="More Details"><i class="bi bi-link"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <?php endwhile; ?>
+                                    </div>
+                                </div>
+                        </section>
+                    <?php endif; ?>
+
                 </div>
 
                 <div class="tab-pane" id="tab-2">

@@ -37,28 +37,34 @@
         <!-- ttm-topbar-wrapper -->
         <div class="topbar-wrapper">
             <div class="container">
-                <div class="topbar-content">
-                    <ul class="top-contact text-left float-start">
-                        <li><strong>Open Hours :</strong> <span class=""> Sun - Fri 10:00-5:00</span></li>
-                    </ul>
-                    <div class="topbar-right text-end">
-                        <ul class="top-contact">
-                            <li><strong><i class="bi bi-envelope"></i> <a href="mailto:info@rkdholdings.com.np"> info@rkdholdings.com.np</a></li>
-                            <li><i class="bi bi-phone"></i> <a href="tel:061-544440"> 061-544440</a></li>
-                        </ul>
-                        <div class="ttm-social-links-wrapper list-inline">
-                            <ul class="social-icons">
-                                <li><a href="https://www.facebook.com/rkdholdings"  target="_blank"><i class="bi bi-facebook me-2"></i></a>
-                                </li>
-                                <li><a href="https://www.youtube.com/channel/UCxh0z_rSb870U6gZ235uOmQ" target="_blank"><i class="bi bi-youtube" ></i></a>
-                                </li>
-
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="topbar-menu">
+                            <ul class="top-contact text-left float-start">
+                                <li><strong>Open Hours :</strong> <span class=""> Sun - Fri 10:00-5:00</span></li>
                             </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="topbar-right text-end">
+                            <ul class="top-contact">
+                                <li><strong><i class="bi bi-envelope"></i> <a href="mailto:info@rkdholdings.com.np"> info@rkdholdings.com.np</a></li>
+                                <li><i class="bi bi-phone"></i> <a href="tel:061-544440"> 061-544440</a></li>
+                            </ul>
+                            <div class="ttm-social-links-wrapper list-inline">
+                                <ul class="social-icons">
+                                    <li><a href="https://www.facebook.com/rkdholdings"  target="_blank"><i class="bi bi-facebook me-2"></i></a>
+                                    </li>
+                                    <li><a href="https://www.youtube.com/channel/UCxh0z_rSb870U6gZ235uOmQ" target="_blank"><i class="bi bi-youtube" ></i></a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div><!--topbar-wrapper end -->
+        </div>
+        <!--topbar-wrapper end -->
         <!-- header-wrap -->
         <div class="header-wrap">
             <div class="container">
