@@ -172,7 +172,7 @@ $the_query = new WP_Query($args);
 if ($the_query->have_posts()) : ?>
     <br>
     <br>
-    <section id="services" class="services two">
+    <section id="services" class="services one">
         <div class="container">
             <div class="row gy-5">
                 <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
@@ -180,9 +180,13 @@ if ($the_query->have_posts()) : ?>
                         <div class="service-item">
                             <div class="img">
                                 <a href="<?php the_permalink(); ?>">
-                                    <?php the_post_thumbnail(
-                                        array( 'class' => 'img-fluid' )
-                                    ); ?>
+                                    <?php
+                                    $service_image = get_the_post_thumbnail_url(get_the_ID());
+                                    $_content_e = get_the_excerpt();
+                                    //remove the paragraph tags
+                                    $_content_e = strip_tags($_content_e);
+                                    ?>
+                                    <img src="<?php echo $service_image; ?>" alt="<?php echo $_content_e?>">
                                 </a>
                             </div>
                             <div class="details position-relative">
@@ -191,10 +195,10 @@ if ($the_query->have_posts()) : ?>
                                 </div>
                                 <a href="#" class="stretched-link">
                                     <h3>
-                                            <?php the_title(); ?>
+                                        <?php the_title(); ?>
                                     </h3>
                                 </a>
-                                <p>  <?php the_excerpt(); ?></p>
+                                <p>  <?php the_content(); ?></p>
                                 <a href="#" class="stretched-link"></a>
                             </div>
                         </div>
@@ -202,11 +206,11 @@ if ($the_query->have_posts()) : ?>
 
                 <?php endwhile; ?>
             </div>
+            <p class="text-extra text-center mt-5 mb-0">Dont hesitate, contact us for better heel services. <a href="/services/" target="_blank"> Explore all services</a></p>
         </div>
     </section>
 <?php endif; ?>
     <!-- End Alt Services Section -->
-    <!-- ======= Team Section ======= -->
     <section id="team" class="team section-bg">
         <div class="container" data-aos="fade-up">
             <div class="section-header">
@@ -219,7 +223,7 @@ if ($the_query->have_posts()) : ?>
                     'category_name' => 'director',
                     'posts_per_page' => -1,
                     'orderby' => 'date',
-                    'order' => 'DESC'
+                    'order' => 'ASC'
                 );
 
                 $the_query = new WP_Query($args);
@@ -231,14 +235,24 @@ if ($the_query->have_posts()) : ?>
                                     <a href="<?php the_permalink(); ?>">
                                         <?php
                                         $director_image = get_the_post_thumbnail_url(get_the_ID());
+                                        //get the excerpt
+                                        $director_content_e = get_the_excerpt();
+                                        //remove the paragraph tags
+                                        $director_content_e = strip_tags($director_content_e);
 
                                         ?>
                                         <div class="member">
-                                            <img src="<?php echo $director_image;?>" class="img-fluid" alt="">
+                                            <img src="<?php echo $director_image;?>" class="img-fluid" alt="<?php echo $director_content_e;?>">
                                             <div class="member-info">
                                                 <div class="member-info-content">
                                                     <h4><?php the_title(); ?></h4>
-                                                    <span><?php the_content();?></span>
+                                                    <?php
+                                                    //get the post content
+                                                    $director_content = get_the_content();
+                                                    //remove the paragraph tags
+                                                    $position = strip_tags($director_content);
+                                                    ?>
+                                                    <span><?php echo $position;?></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -249,13 +263,10 @@ if ($the_query->have_posts()) : ?>
                         </div>
                     </div>
                 <?php endif; ?>
-
-
-
             </div>
 
         </div>
-    </section>
+    </section><!-- End Team Section -->
 
-    <!-- End Team Section -->
+
 <?php get_footer();?>

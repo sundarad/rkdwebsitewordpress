@@ -127,13 +127,13 @@ if ($the_query->have_posts()) : ?>
                 $link_who_we_are= get_permalink(43);
                 $content_who_we_are=$page_who_we_are->post_content;
                 $image_who_we_are= get_the_post_thumbnail_url(43);
-                $_content_e = get_the_excerpt();
+                $wh_content_e = get_the_excerpt($page_who_we_are);
                 //remove the paragraph tags
-                $_content_e = strip_tags($_content_e);
+                $wh_content_e = strip_tags($wh_content_e);
                 ?>
                 <div class="col-lg-5 col-md-6">
                     <div class="about-img" data-aos="fade-right" data-aos-delay="100">
-                        <img src="<?php echo $image_who_we_are;?>" alt="<?php echo $_content_e?>">
+                        <img src="<?php echo $image_who_we_are;?>" alt="<?php echo $wh_content_e?>">
                     </div>
                 </div>
 
