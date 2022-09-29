@@ -14,11 +14,8 @@
 <footer id="footer" class="section-bg">
     <div class="footer-top">
         <div class="container">
-
             <div class="row">
-
                 <div class="col-lg-3">
-
                     <div class="footer-info">
                         <?php $post_about= get_post(82);
                         $post_about_content = $post_about->post_content;
@@ -27,17 +24,7 @@
                         <h3><?php echo $post_about_title  ?></h3>
                         <p><?php echo $post_about_content  ?></p>
                     </div>
-
-                    <!-- <div class="footer-newsletter">
-                      <h4>Our Newsletter</h4>
-                      <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem.</p>
-                      <form action="" method="post">
-                        <input type="email" name="email"><input type="submit" value="Subscribe">
-                      </form>
-                    </div> -->
-
                 </div>
-
                 <div class="col-lg-3">
                     <div class="footer-links">
                         <h3>Useful Links</h3>
@@ -51,7 +38,6 @@
                         );
                         ?>
                     </div>
-
                 </div>
                 <div class="col-lg-3">
                     <h3>Latest News</h3>
@@ -91,8 +77,7 @@
                 <div class="col-lg-3">
                     <div class="footer-links">
                         <h3>Contact Us</h3>
-                        <p>
-                            Sabhagriha Chowk, Pokhara, Nepal <br>
+                        <p>Sabhagriha Chowk, Pokhara, Nepal <br>
                             <a href="tel:061544440"> <strong>Phone :</strong> 061544440</a><br>
                             <a href="mailto:info@rkdrealestate.com.np"> <strong>Email : </strong>info@rkdrealestate.com.np</a>
                         </p>
@@ -101,27 +86,15 @@
                         <a href="https://www.facebook.com/rkdholdings" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
                         <a href="https://www.youtube.com/channel/UCxh0z_rSb870U6gZ235uOmQ"  target="_blank" class="youtube"><i class="bi bi-youtube"></i></a>
                     </div>
-
                 </div>
-
             </div>
-
-
         </div>
-
-
-
     </div>
-
-    </div>
-    </div>
-
     <div class="container">
         <div class="copyright">
             &copy; Copyright <strong>RKD</strong>. All Rights Reserved
         </div>
         <div class="credits">
-
             Designed by <a href="#">RKD</a>
         </div>
     </div>
