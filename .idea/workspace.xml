@@ -6,15 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b19eca14-e8ad-42f7-87b2-d92cbb13ad62" name="Changes" comment="slider">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_21_2022_12_02_PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_21_2022_12_15_PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_21_2022_12_46_PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_21_2022_4_40_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_21_2022_4_40_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-config.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/homepage_template.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/homepage_template.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/who_we_are.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/who_we_are.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +80,7 @@
       <workItem from="1664254656967" duration="14371000" />
       <workItem from="1664341321582" duration="5685000" />
       <workItem from="1664356634889" duration="1440000" />
-      <workItem from="1664427370404" duration="2355000" />
+      <workItem from="1664427370404" duration="4131000" />
     </task>
     <task id="LOCAL-00001" summary="Dynamic Menu and Logo">
       <created>1662624914693</created>
