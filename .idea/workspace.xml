@@ -5,204 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b19eca14-e8ad-42f7-87b2-d92cbb13ad62" name="Changes" comment="slider">
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/2/controls.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/2/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/3/controls.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/3/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/4/border1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/4/border2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/4/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/5/border.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/5/controls.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/5/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/5/loading_background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/05-bottom-line.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/arrow.dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/arrow.light.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/border.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/close.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/close.popup.dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/close.popup.light.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/controls.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/delete.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/delete1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/delete2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/delete3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/divider.line.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/dragable.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/edit-icon1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/edit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/edit1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/edit2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/edit3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/fields.opt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/gradient.black.to.white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/icon-img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/icon-video.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/icon-video_blue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/loading-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/loading-resp.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/loading.white.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/loading_background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/loading_dark.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/menu.dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/menu.light.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/move.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/nav-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/nav.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/next.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/noimage.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/open-close.dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/open-close.light.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/overlay.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/play.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/play.vimeo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/play.youtube.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/plus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/portfolio-active-left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/portfolio-active.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/portfolio-passive.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/portfolio-pro-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/prev.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/remove.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/smallicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/stop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/store-next.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/store-prev.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/stverlist.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/stverlist2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/video.icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/view_list.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/view_thumbs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/zoom.dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/admin/zoom.light.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/defaultImages/projects/autumn-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/defaultImages/projects/designer-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/defaultImages/projects/designer-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/defaultImages/projects/designer-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/defaultImages/projects/drone-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/defaultImages/projects/drone-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/defaultImages/projects/drone-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/defaultImages/projects/headphone-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/defaultImages/projects/headphone-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/defaultImages/projects/headphone-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/defaultImages/projects/huawei-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/defaultImages/projects/huawei-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/defaultImages/projects/huawei-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/defaultImages/projects/music-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/defaultImages/projects/music-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/defaultImages/projects/music-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/defaultImages/projects/portfolio-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/defaultImages/projects/portfolio-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/defaultImages/projects/portfolio-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/defaultImages/projects/volkswagen-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/defaultImages/projects/volkswagen-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/defaultImages/projects/volkswagen-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/jscolor/arrow.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/jscolor/cross.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/jscolor/hs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/jscolor/hv.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/loading/loading-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/loading/loading-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/loading/loading-3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/loading/loading-4.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/loading/loading-5.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/loading/loading-6.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/loading/loading-7.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/loading/loading-8.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/images/loading/loading-9.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/js/admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/js/classie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/js/custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/js/elastic_grid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/js/froogaloop2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/js/jquery.colorbox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/js/jquery.easing.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/js/jquery.elastislide.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/js/jquery.hoverdir.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/js/jquery.liquid-slider.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/js/jquery.pfhubPortfolioNeon.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/js/jquery.touchSwipe.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/js/jscolor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/js/lightbox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/js/modernizr.custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/js/shortcode.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/js/simple-slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/js/view-content-popup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/js/view-content-slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/js/view-elastic-grid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/js/view-grid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/js/view-image-grid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/js/view-list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/js/view-masonry.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/style/admin.style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/style/animate.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/style/christmas.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/style/colorbox-1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/style/colorbox-2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/style/colorbox-3.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/style/colorbox-4.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/style/colorbox-5.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/style/elastic_grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/style/jquery-ui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/style/lightbox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/style/liquid-slider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/style/portfolio-all.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/style/responsive_lightbox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/style/simple-slider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/assets/style/style2-os.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/lib/autoload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/lib/composer/ClassLoader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/lib/composer/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/lib/composer/autoload_classmap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/lib/composer/autoload_namespaces.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/lib/composer/autoload_psr4.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/lib/composer/autoload_real.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/lib/composer/autoload_static.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/lib/composer/installed.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/src/Admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/src/AdminGrids.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/src/AdminLightboxSettings.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/src/Ajax.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/src/ElementorWidget.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/src/Frontend.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/src/Helpers/GridHelper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/src/Install.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/src/PfhubPortfolio.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/src/PortfolioWidget.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/src/views/admin-add-video.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/src/views/admin-edit-video.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/src/views/admin-grid-images.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/src/views/admin-grids.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/src/views/admin-lb-settings.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/src/views/admin-licensing-banner.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/src/views/admin-popup.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/src/views/admin-settings.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/src/views/view-content-popup-css.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/src/views/view-content-popup.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/src/views/view-content-slider-css.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/src/views/view-content-slider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/src/views/view-elastic-grid-css.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/src/views/view-elastic-grid.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/src/views/view-grid-css.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/src/views/view-grid.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/src/views/view-image-grid-css.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/src/views/view-image-grid.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/src/views/view-list-css.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/src/views/view-list.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/src/views/view-masonry-css.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/uber-grid/src/views/view-masonry.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_21_2022_12_02_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_21_2022_12_15_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_21_2022_12_46_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_21_2022_4_40_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_21_2022_4_40_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-config.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/homepage_template.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/homepage_template.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/media_center.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/media_center.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/custom_theme/who_we_are.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/custom_theme/who_we_are.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -275,6 +87,8 @@
       <workItem from="1664080843980" duration="6352000" />
       <workItem from="1664254656967" duration="14371000" />
       <workItem from="1664341321582" duration="5685000" />
+      <workItem from="1664356634889" duration="1440000" />
+      <workItem from="1664427370404" duration="2355000" />
     </task>
     <task id="LOCAL-00001" summary="Dynamic Menu and Logo">
       <created>1662624914693</created>
@@ -329,7 +143,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/wp-content/themes/custom_theme/homepage_template.php</url>
-          <line>574</line>
+          <line>532</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
