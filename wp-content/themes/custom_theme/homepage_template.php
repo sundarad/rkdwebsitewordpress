@@ -28,7 +28,7 @@
                         <h6>COOPTOGOVS</h6>
                         <h2> We empower your financial <span>vision</span> </h2>
                         <div class="d-flex justify-content-center more-btn">
-                            <a href="/contact-us-2/" class="btn-get-started scrollto">Contact us</a>
+                            <a href="/contact-us-2/" class="btn-get-started">Contact us</a>
                             <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center ms-3"><i class="bi bi-play-circle"></i><span >Watch Video</span></a>
                         </div>
                     </div>
@@ -340,6 +340,7 @@ if ($the_query->have_posts()) : ?>
 
         </div>
     </section><!-- End Features Section -->
+
     <!-- ======= Counts Section ======= -->
 <?php
 $key_figures=get_post(373);
@@ -508,6 +509,7 @@ $key_figures_content=$key_figures->post_content;
                 </div>
                 </div>
 
+
                 <div class="tab-pane" id="tab-3">
                     <?php $args = array(
                         'post_type' => 'post',
@@ -558,12 +560,134 @@ $key_figures_content=$key_figures->post_content;
 
 
             </div>
+
         </div>
 
         </div>
 
     </section><!-- End Portfolio Section -->
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio features">
+        <div class="container" data-aos="fade-up">
+            <header class="section-header">
+                <h3>Investment Portfolio</h3>
+            </header>
+            <ul class="nav nav-tabs row gy-4 d-flex" id="portfolio-flters">
 
+                <li class="nav-item nav-link active show col-lg-3 col-sm-6 col-xs-12" data-bs-toggle="tab" data-bs-target="#tab-one">
+                    <h4>All</h4>
+                </li><!-- End Tab 1 Nav -->
+
+                <li class="nav-item  nav-link  col-lg-3 col-sm-6 col-xs-12" data-bs-toggle="tab" data-bs-target="#tab-two">
+                    <h4>Queen Tower</h4>
+                </li><!-- End Tab 2 Nav -->
+
+                <li class="nav-item nav-link col-lg-3 col-sm-6 col-xs-12" data-bs-toggle="tab" data-bs-target="#tab-three">
+                    <h4>Cablecar</h4>
+                </li><!-- End Tab 3 Nav -->
+
+
+            </ul>
+
+            <div class="tab-content">
+
+                <div class="tab-pane active show" id="tab-one">
+                    <div class="row g-5" >
+                        <div class="col-md-6 col-lg-4 wow bounceInUp aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="box">
+                                <div class="icon" style="background: #fceef3;"><i class="bi bi-briefcase" style="color: #ff689b;"></i></div>
+                                <h4 class="title"><a href="">Real state</a></h4>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="box">
+                                <div class="icon" style="background: #fff0da;"><i class="bi bi-card-checklist" style="color: #e98e06;"></i></div>
+                                <h4 class="title"><a href="">Technology</a></h4>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="box">
+                                <div class="icon" style="background: #e6fdfc;"><i class="bi bi-bar-chart" style="color: #3fcdc7;"></i></div><h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 wow aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="box">
+                                <div class="icon" style="background: #eafde7;"><i class="bi bi-binoculars" style="color:#41cf2e;"></i></div>
+                                <h4 class="title"><a href="">Ecommerce</a></h4>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
+                            <div class=" box">
+                                <div class="icon" style="background: #e1eeff;"><i class="bi bi-brightness-high" style="color: #2282ff;"></i></div>
+                                <h4 class="title"><a href="">Invetstment Options</a></h4>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="box">
+                                <div class="icon" style="background: #ecebff;"><i class="bi bi-calendar4-week" style="color: #8660fe;"></i></div>
+                                <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End Tab Content 1 -->
+
+                <div class="tab-pane" id="tab-two">
+                    <div class="row gy-4">
+                        <div class="col-lg-8 order-2 order-lg-1">
+                            <h3>Undaesenti</h3>
+                            <p>
+                                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                culpa qui officia deserunt mollit anim id est laborum
+                            </p>
+                            <p class="fst-italic">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                magna aliqua.
+                            </p>
+                            <ul>
+                                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 order-1 order-lg-2 text-center">
+                            <img src="assets/img/features-2.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div><!-- End Tab Content 2 -->
+
+                <div class="tab-pane" id="tab-three">
+                    <div class="row gy-4">
+                        <div class="col-lg-8 order-2 order-lg-1">
+                            <h3>Pariatur</h3>
+                            <p>
+                                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                culpa qui officia deserunt mollit anim id est laborum
+                            </p>
+                            <ul>
+                                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                                <li><i class="bi bi-check-circle-fill"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
+                            </ul>
+                            <p class="fst-italic">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                magna aliqua.
+                            </p>
+                        </div>
+                        <div class="col-lg-4 order-1 order-lg-2 text-center">
+                            <img src="assets/img/features-3.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div><!-- End Tab Content 3 -->
+
+
+
+            </div>
+
+        </div>
+    </section><!-- End Features Section -->
     <!-- ======= ceo Section ======= -->
     <section id="about" class="about">
 
@@ -654,32 +778,6 @@ $key_figures_content=$key_figures->post_content;
         </div>
     </section><!-- End Team Section -->
 
-    <!-- ======= Clients Section ======= -->
-    <!--    <section id="clients" class="clients">-->
-    <!--        <div class="container" data-aos="zoom-in">-->
-    <!---->
-    <!--            <header class="section-header">-->
-    <!--                <h3>Our Clients</h3>-->
-    <!--            </header>-->
-    <!---->
-    <!--            <div class="clients-slider swiper">-->
-    <!--                <div class="swiper-wrapper align-items-center">-->
-    <!--                    <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>-->
-    <!--                    <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>-->
-    <!--                    <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>-->
-    <!--                    <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>-->
-    <!--                    <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>-->
-    <!--                    <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>-->
-    <!--                    <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>-->
-    <!--                    <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>-->
-    <!--                </div>-->
-    <!--                <div class="swiper-pagination"></div>-->
-    <!--            </div>-->
-    <!---->
-    <!--        </div>-->
-    <!--    </section>-->
-    <!-- End Clients Section -->
-
 
     <!-- ======= Recent Blog Posts Section ======= -->
     <section id="news" class="recent-news-posts">
@@ -746,10 +844,6 @@ $key_figures_content=$key_figures->post_content;
                 <?php endif; ?>
             </div>
     </section><!-- End Recent Blog Posts Section -->
-
-
-
-    </main><!-- End #main -->
 
 
 
