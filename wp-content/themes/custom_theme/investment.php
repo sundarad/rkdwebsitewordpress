@@ -6,9 +6,15 @@
 
         <ol>
             <li><a href="/index.php">Home</a></li>
-            <li>What we do</li>
+            <li><?php
+                echo get_the_title();
+                ?></li>
         </ol>
-        <h2>What we do</h2>
+        <h2>
+            <?php
+            echo get_the_title();
+            ?>
+        </h2>
 
     </div>
 </section><!-- End Breadcrumbs -->
