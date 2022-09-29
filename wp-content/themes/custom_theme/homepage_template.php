@@ -392,7 +392,6 @@ if ($the_query->have_posts()) : ?>
         </div>
     </section><!-- End Counts Section -->
 
-
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio features">
 
@@ -793,20 +792,31 @@ if ($the_query->have_posts()) : ?>
                                         $director_content_e = strip_tags($director_content_e);
 
                                         ?>
+<!--                                        <div class="member">-->
+<!--                                            <img src="--><?php //echo $director_image;?><!--" class="img-fluid" alt="--><?php //echo $director_content_e;?><!--">-->
+<!--                                            <div class="member-info">-->
+<!--                                                <div class="member-info-content">-->
+<!--                                                    <h4>--><?php //the_title(); ?><!--</h4>-->
+<!--                                                    --><?php
+//                                                    //get the post content
+//                                                    $director_content = get_the_content();
+//                                                    //remove the paragraph tags
+//                                                    $position = strip_tags($director_content);
+//                                                    ?>
+<!--                                                    <span>--><?php //echo $position;?><!--</span>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
                                         <div class="member">
                                             <img src="<?php echo $director_image;?>" class="img-fluid" alt="<?php echo $director_content_e;?>">
-                                            <div class="member-info">
-                                                <div class="member-info-content">
-                                                    <h4><?php the_title(); ?></h4>
-                                                    <?php
-                                                    //get the post content
-                                                    $director_content = get_the_content();
-                                                    //remove the paragraph tags
-                                                    $position = strip_tags($director_content);
-                                                    ?>
-                                                    <span><?php echo $position;?></span>
-                                                </div>
-                                            </div>
+                                            <h4><?php the_title(); ?></h4>
+                                            <?php
+                                            //get the post content
+                                            $director_content = get_the_content();
+                                            //remove the paragraph tags
+                                            $position = strip_tags($director_content);
+                                            ?>
+                                            <span><?php echo $position;?></span>
                                         </div>
                                     </a>
                                 </div>
@@ -819,7 +829,6 @@ if ($the_query->have_posts()) : ?>
 
         </div>
     </section><!-- End Team Section -->
-
 
     <!-- ======= Recent Blog Posts Section ======= -->
     <section id="news" class="recent-news-posts">

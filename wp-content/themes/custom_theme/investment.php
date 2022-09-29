@@ -24,8 +24,11 @@ $the_query = new WP_Query($args);
 if ($the_query->have_posts()) : ?>
 <br>
 <br>
-    <section id="services" class="services one">
+    <section id="services" class="services two">
         <div class="container">
+            <header class="section-header">
+                <h3>Featured Investment </h3>
+            </header>
             <div class="row gy-5">
                 <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
                     <div class="col-xl-4 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="500">
