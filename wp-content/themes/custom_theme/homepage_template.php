@@ -766,7 +766,9 @@ $key_figures_content=$key_figures->post_content;
 <!--                                            </div>-->
 <!--                                        </div>-->
                                         <div class="member">
-                                            <img src="<?php echo $director_image;?>" class="img-fluid" alt="<?php echo $director_content_e;?>">
+                                            <div class="member-img">
+                                                <img src="<?php echo $director_image;?>" class="img-fluid" alt="<?php echo $director_content_e;?>">
+                                            </div>
                                             <h4><?php the_title(); ?></h4>
                                             <?php
                                             //get the post content
