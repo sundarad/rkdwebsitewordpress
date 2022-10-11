@@ -487,7 +487,6 @@ $key_figures_content=$key_figures->post_content;
 
                                                     $author_id = get_the_author_meta('ID');
                                                     $author_name = get_the_author_meta('display_name', $author_id);
-                                                    echo $author_name;
                                                     ?> </span>
                                                 <!--                                                <a href="--><!--">-->
                                                 <!--                                                    -->
