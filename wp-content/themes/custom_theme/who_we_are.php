@@ -163,7 +163,7 @@ $image_core_values= get_the_post_thumbnail_url(101);
 <?php $args = array(
     'post_type' => 'post',
     'category_name' => 'services',
-    'posts_per_page' => -1,
+    'posts_per_page' =>6,
     'orderby' => 'date',
     'order' => 'DESC'
 );
