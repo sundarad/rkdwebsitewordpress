@@ -231,7 +231,7 @@ if ($the_query->have_posts()) : ?>
                     <div class="container">
                         <div class="row">
                             <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-                                <div class="col-lg-3 col-md-6 col-xs-12" data-aos="fade-up" data-aos-delay="100">
+                                <div class="col-lg-3 col-md-6 col-xs-12" data-aos="fade-up" data-aos-delay="100" >
                                     <a href="<?php the_permalink(); ?>">
                                         <?php
                                         $director_image = get_the_post_thumbnail_url(get_the_ID());
@@ -242,7 +242,9 @@ if ($the_query->have_posts()) : ?>
 
                                         ?>
                                         <div class="member">
-                                            <img src="<?php echo $director_image;?>" class="img-fluid" alt="<?php echo $director_content_e;?>">
+                                            <div class="member-img">
+                                                <img src="<?php echo $director_image;?>" class="img-fluid" alt="<?php echo $director_content_e;?>">
+                                            </div>
                                             <div class="member-info">
                                                 <div class="member-info-content">
                                                     <h4><?php the_title(); ?></h4>
@@ -267,6 +269,8 @@ if ($the_query->have_posts()) : ?>
 
         </div>
     </section><!-- End Team Section -->
+
+
 
 
 <?php get_footer();?>

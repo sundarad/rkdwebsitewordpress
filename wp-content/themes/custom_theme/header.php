@@ -91,7 +91,8 @@
                     <div class="col-lg-3">
                         <div class="widget-right clearfix">
                             <div class="info-widget">
-                                <div class="info-widget-content"><p>Request an</p> <h2>Appointment</h2> </div>
+
+                                <div class="info-widget-content"><a href="/contact-us-2/"><p>Request an</p> <h2>Appointment</h2></a> </div>
                             </div>
                         </div>
                     </div>

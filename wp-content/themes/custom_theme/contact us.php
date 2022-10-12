@@ -86,38 +86,7 @@
 
                             </div>
 
-                            <div class="col-lg-6">
-                                <form action="forms/contact.php" method="post" class="php-email-form">
-                                    <div class="row gy-4">
-
-                                        <div class="col-md-6">
-                                            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-                                        </div>
-
-                                        <div class="col-md-6 ">
-                                            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-                                        </div>
-
-                                        <div class="col-md-12">
-                                            <input type="text" class="form-control" name="subject" placeholder="Subject" required>
-                                        </div>
-
-                                        <div class="col-md-12">
-                                            <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
-                                        </div>
-
-                                        <div class="col-md-12 text-center">
-                                            <div class="loading">Loading</div>
-                                            <div class="error-message"></div>
-                                            <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                                            <button type="submit">Send Message</button>
-                                        </div>
-
-                                    </div>
-                                </form>
-
-                            </div>
+                           <?php echo do_shortcode('[wpforms id="453"]'); ?>
 
                         </div>
                         <div class="map">
@@ -164,38 +133,7 @@
 
                             </div>
 
-                            <div class="col-lg-6">
-                                <form action="forms/contact.php" method="post" class="php-email-form">
-                                    <div class="row gy-4">
-
-                                        <div class="col-md-6">
-                                            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-                                        </div>
-
-                                        <div class="col-md-6 ">
-                                            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-                                        </div>
-
-                                        <div class="col-md-12">
-                                            <input type="text" class="form-control" name="subject" placeholder="Subject" required>
-                                        </div>
-
-                                        <div class="col-md-12">
-                                            <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
-                                        </div>
-
-                                        <div class="col-md-12 text-center">
-                                            <div class="loading">Loading</div>
-                                            <div class="error-message"></div>
-                                            <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                                            <button type="submit">Send Message</button>
-                                        </div>
-
-                                    </div>
-                                </form>
-
-                            </div>
+                            <?php echo do_shortcode('[wpforms id="453"]'); ?>
 
                         </div>
                         <div class="map">
@@ -242,95 +180,13 @@
 
                             </div>
 
-                            <div class="col-lg-6">
-                                <form action="forms/contact.php" method="post" class="php-email-form">
-                                    <div class="row gy-4">
-
-                                        <div class="col-md-6">
-                                            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-                                        </div>
-
-                                        <div class="col-md-6 ">
-                                            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-                                        </div>
-
-                                        <div class="col-md-12">
-                                            <input type="text" class="form-control" name="subject" placeholder="Subject" required>
-                                        </div>
-
-                                        <div class="col-md-12">
-                                            <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
-                                        </div>
-
-                                        <div class="col-md-12 text-center">
-                                            <div class="loading">Loading</div>
-                                            <div class="error-message"></div>
-                                            <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                                            <button type="submit">Send Message</button>
-                                        </div>
-
-                                    </div>
-                                </form>
-
-                            </div>
+                            <?php echo do_shortcode('[wpforms id="453"]'); ?>
 
                         </div>
                         <div class="map">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.835617944286!2d83.97917772977642!3d28.212306454038295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995954eb23ff771%3A0x18dba0b1c6d00f1c!2sBandipur%20Cable%20Car%20and%20Tourism%20Limited%20Corporate%20Office!5e0!3m2!1sen!2snp!4v1663310433149!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div><!-- End Google Maps -->
                     </div><!-- End Tab Content 3 -->
-
-                    <div class="tab-pane" id="tab-4">
-                        <div class="row gy-4">
-                            <div class="col-lg-8 order-2 order-lg-1">
-                                <h3>Nostrum</h3>
-                                <p>
-                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                    culpa qui officia deserunt mollit anim id est laborum
-                                </p>
-                                <p class="fst-italic">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                    magna aliqua.
-                                </p>
-                                <ul>
-                                    <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-4 order-1 order-lg-2 text-center">
-                                <img src="assets/img/features-4.svg" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                    </div><!-- End Tab Content 4 -->
-
-                    <div class="tab-pane" id="tab-5">
-                        <div class="row gy-4">
-                            <div class="col-lg-8 order-2 order-lg-1">
-                                <h3>Adipiscing</h3>
-                                <p>
-                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                    culpa qui officia deserunt mollit anim id est laborum
-                                </p>
-                                <p class="fst-italic">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                    magna aliqua.
-                                </p>
-                                <ul>
-                                    <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-4 order-1 order-lg-2 text-center">
-                                <img src="assets/img/features-5.svg" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                    </div><!-- End Tab Content 5 -->
-
                 </div>
 
 
