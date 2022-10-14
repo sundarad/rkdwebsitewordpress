@@ -107,14 +107,12 @@ if ($the_query->have_posts()) : ?>
                                     </h3>
                                 </a>
                                 <p>  <?php the_content(); ?></p>
-                                <a href="#" class="stretched-link"></a>
                             </div>
                         </div>
                     </div>
 
                 <?php endwhile; ?>
             </div>
-            <p class="text-extra text-center mt-5 mb-0">Dont hesitate, contact us for better heel services. <a href="/services/" target="_blank"> Explore all services</a></p>
         </div>
     </section>
 <?php endif; ?>
@@ -341,6 +339,7 @@ if ($the_query->have_posts()) : ?>
         </div>
     </section><!-- End Features Section -->
 
+
     <!-- ======= Counts Section ======= -->
 <?php
 $key_figures=get_post(373);
@@ -382,6 +381,169 @@ $key_figures_content=$key_figures->post_content;
         </div>
 
     </section><!-- End ceo Section -->
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio features">
+        <div class="container" data-aos="fade-up">
+            <header class="section-header">
+                <h3>Investment Portfolio</h3>
+            </header>
+            <ul class="nav nav-tabs row gy-4 d-flex" id="portfolio-flters">
+
+                <li class="nav-item nav-link active show col-lg-3 col-sm-6 col-xs-12" data-bs-toggle="tab" data-bs-target="#tab-one">
+                    <h4>All</h4>
+                </li><!-- End Tab 1 Nav -->
+
+                <li class="nav-item  nav-link  col-lg-3 col-sm-6 col-xs-12" data-bs-toggle="tab" data-bs-target="#tab-two">
+                    <h4>Technology</h4>
+                </li><!-- End Tab 2 Nav -->
+
+                <li class="nav-item nav-link col-lg-3 col-sm-6 col-xs-12" data-bs-toggle="tab" data-bs-target="#tab-three">
+                    <h4>Hospitality and Tourism</h4>
+                </li><!-- End Tab 3 Nav -->
+
+
+
+            </ul>
+
+            <div class="tab-content">
+
+                <div class="tab-pane active show" id="tab-one">
+                    <?php $args = array(
+                        'post_type' => 'post',
+                        'category_name' => 'investment-portfolio',
+                        'posts_per_page' => -1,
+                        'orderby' => 'date',
+                        'order' => 'DESC'
+                    );
+
+                    $the_query = new WP_Query($args);
+                    if ($the_query->have_posts()) : ?>
+                        <section id="services" class="services one">
+                            <div class="container">
+                                <div class="row gy-5">
+                                    <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                                    <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+                                        <?php
+
+                                        $portfolio_image = get_the_post_thumbnail_url(get_the_ID());
+                                        $_content_e = get_the_excerpt();
+                                        //remove the paragraph tags
+                                        $_content_e = strip_tags($_content_e);
+                                        ?>
+                                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                                            <div class="portfolio-wrap">
+                                                <img src="<?php echo $portfolio_image;?>" class="img-fluid" alt="<?php echo $_content_e?>">
+                                                <div class="portfolio-info">
+                                                    <h4><?php the_title(); ?></h4>
+                                                    <p><?php get_the_content();?></p>
+                                                    <div class="portfolio-links">
+                                                        <a href="<?php echo $portfolio_image?>" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
+                                                        <a href="<?php the_permalink(); ?>" title="More Details"><i class="bi bi-link"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <?php endwhile; ?>
+                                    </div>
+                        </section>
+                    <?php endif; ?>
+                </div>
+                <!-- End Tab Content 1 -->
+
+                <div class="tab-pane" id="tab-two">
+                    <?php $args = array(
+                        'post_type' => 'post',
+                        'category_name' => 'technology',
+                        'posts_per_page' => -1,
+                        'orderby' => 'date',
+                        'order' => 'DESC'
+                    );
+
+                    $the_query = new WP_Query($args);
+                    if ($the_query->have_posts()) : ?>
+                        <section id="services" class="services one">
+                            <div class="container">
+                                <div class="row gy-5">
+                                    <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                                    <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+                                        <?php
+
+                                        $portfolio_image = get_the_post_thumbnail_url(get_the_ID());
+                                        $_content_e = get_the_excerpt();
+                                        //remove the paragraph tags
+                                        $_content_e = strip_tags($_content_e);
+                                        ?>
+                                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                                            <div class="portfolio-wrap">
+                                                <img src="<?php echo $portfolio_image;?>" class="img-fluid" alt="<?php echo $_content_e?>">
+                                                <div class="portfolio-info">
+                                                    <h4><?php the_title(); ?></h4>
+                                                    <p><?php get_the_content();?></p>
+                                                    <div class="portfolio-links">
+                                                        <a href="<?php echo $portfolio_image?>" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
+                                                        <a href="<?php the_permalink(); ?>" title="More Details"><i class="bi bi-link"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <?php endwhile; ?>
+                                    </div>
+                        </section>
+                    <?php endif; ?>
+                </div><!-- End Tab Content 2 -->
+
+                <div class="tab-pane" id="tab-three">
+                    <?php $args = array(
+                        'post_type' => 'post',
+                        'category_name' => 'hospitality-and-tourism',
+                        'posts_per_page' => -1,
+                        'orderby' => 'date',
+                        'order' => 'DESC'
+                    );
+
+                    $the_query = new WP_Query($args);
+                    if ($the_query->have_posts()) : ?>
+                        <section id="services" class="services one">
+                            <div class="container">
+                                <div class="row gy-5">
+                                    <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                                    <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+                                        <?php
+
+                                        $portfolio_image = get_the_post_thumbnail_url(get_the_ID());
+                                        $_content_e = get_the_excerpt();
+                                        //remove the paragraph tags
+                                        $_content_e = strip_tags($_content_e);
+                                        ?>
+                                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                                            <div class="portfolio-wrap">
+                                                <img src="<?php echo $portfolio_image;?>" class="img-fluid" alt="<?php echo $_content_e?>">
+                                                <div class="portfolio-info">
+                                                    <h4><?php the_title(); ?></h4>
+                                                    <p><?php get_the_content();?></p>
+                                                    <div class="portfolio-links">
+                                                        <a href="<?php echo $portfolio_image?>" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
+                                                        <a href="<?php the_permalink(); ?>" title="More Details"><i class="bi bi-link"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <?php endwhile; ?>
+                                    </div>
+                        </section>
+                    <?php endif; ?>
+                </div><!-- End Tab Content 3 -->
+
+
+
+            </div>
+
+        </div>
+    </section><!-- End Features Section -->
+
     <!-- ======= Team Section ======= -->
     <section id="team" class="team section-bg">
         <div class="container" data-aos="fade-up">
@@ -481,7 +643,7 @@ $key_figures_content=$key_figures->post_content;
                                             </div>
                                             <div class="meta">
                                                 <span class="post-date">
-                                                    <?php the_date(); ?> /
+                                                    <?php the_date(); ?>
                                                 </span>
                                                 <span class="post-author"><?php
 

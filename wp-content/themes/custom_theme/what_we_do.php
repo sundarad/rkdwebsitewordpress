@@ -15,7 +15,7 @@
 <?php $args = array(
     'post_type' => 'post',
     'category_name' => 'services',
-    'posts_per_page' => -1,
+    'posts_per_page' => 6,
     'orderby' => 'date',
     'order' => 'DESC'
 );
@@ -36,7 +36,7 @@ if ($the_query->have_posts()) : ?>
                                     $services_image = get_the_post_thumbnail_url(get_the_ID());
                                     ?>
                                     <img src="<?php echo $services_image; ?>" alt="" class="img-fluid">
-                                </a>
+
                             </div>
                             <div class="details position-relative">
                                 <div class="icon">
@@ -47,9 +47,10 @@ if ($the_query->have_posts()) : ?>
                                         <?php the_title(); ?>
                                     </h3>
                                 </a>
-                                <p>  <?php the_excerpt(); ?></p>
+                                <p>  <?php the_content(); ?></p>
                                 <a href="#" class="stretched-link"></a>
                             </div>
+                            </a>
                         </div>
                     </div>
 
