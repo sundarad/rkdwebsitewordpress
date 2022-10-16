@@ -16,7 +16,7 @@
     --primary-color:#09AA4E;
     --secondary-color:#BCE4CA;
     --heading-color: #413e66;
-    --text-color: #4f565a;
+    --text-color: #14141c;
     --bgcolor: #fff;
 }
 /* width */
@@ -50,7 +50,7 @@ a:hover,
 a:active,
 a:focus,
 
-p {font-weight: 500; padding: 0; color: #3f4244;   text-align: justify ;}
+p {font-weight: 500; padding: 0; color: var(--text-color);   text-align: justify ;}
 p.text-extra{font-weight: 600;}
 p.text-extra a{ color: #413e66; transition: all 0.3s ease-in-out 0s; text-decoration: underline;}
 p.text-extra a:hover{color: var(--primary-color);}
@@ -700,6 +700,11 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
     .hero .container {
         padding: 0 60px;
     }
+    .hero .carousel-control-next-icon, .hero .carousel-control-prev-icon{
+        width: 30px !important;
+        height: 30px  !important;
+        font-size: 16px;
+    }
 }
 /*.hero h2 {*/
 /*    color: #413e66;*/
@@ -709,13 +714,13 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
 /*    -webkit-animation: fadeInDown 1s both 0.2s;*/
 /*    animation: fadeInDown 1s both 0.2s;*/
 /*}*/
-/*@media (max-width: 768px) {*/
-/*    .hero h2 {*/
-/*        font-size: 30px;*/
-/*    }*/
-/*    .more-btn{display: block !important;}*/
-/*    .hero .btn-get-started{margin: 0  0 0.5rem 0;}*/
-/*}*/
+@media (max-width: 768px) {
+   .hero h2 {
+       font-size: 22px;
+    }
+  .more-btn{display: block !important;}
+    .hero .btn-get-started{margin: 0  0 0.5rem 0;}
+}
 /*.hero p {*/
 /*    color: var(--color-secondary-light);*/
 /*    -webkit-animation: fadeInDown 1s both 0.4s;*/
@@ -723,13 +728,13 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
 /*    font-weight: 500;*/
 /*    margin-bottom: 30px;*/
 /*}*/
-/*.hero h2 span {*/
-/*    color: #09AA4E;*/
-/*    -webkit-animation: fadeInDown 1s both 0.4s;*/
-/*    animation: fadeInDown 1s both 0.4s;*/
-/*    font-weight: 500;*/
-/*    margin-bottom: 30px;*/
-/*}*/
+.hero h2 span {
+   color: #09AA4E;
+   -webkit-animation: fadeInDown 1s both 0.4s;
+   animation: fadeInDown 1s both 0.4s;
+   font-weight: 500;
+   margin-bottom: 30px;
+}
 
 .hero .img {
     float: right;
@@ -997,7 +1002,7 @@ section {
 /*}*/
 #about ul li p{margin: 0 0 0 0;}
 #about  ul li::before{
-    content: "\f26b";
+    content: "\f598";
     display: inline-block;
     color: var(--primary-color);
     font-family: bootstrap-icons !important;
@@ -1121,7 +1126,7 @@ section {
 # Features Section
 --------------------------------------------------------------*/
 .features .nav-tabs, .contact .nav-tabs {
-    border: 0;
+    border: 0; margin: auto;
 }
 
 .features .nav-link, .contact .nav-link {
@@ -1177,7 +1182,21 @@ section {
 .features .tab-pane ul li {
     padding-bottom: 10px;
 }
+.features .tab-pane ul li::before{
+    content: "\f142";
+    display: inline-block;
+    color: var(--primary-color);
+    font-family: bootstrap-icons !important;
+    font-style: normal;
+    font-size: 19px;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -0.125em;
+    margin-right: 0.5rem;
 
+}
 .features .tab-pane ul i {
     font-size: 24px;
     margin-right: 4px;
@@ -1262,7 +1281,7 @@ section {
     display: block;
     font-weight: 600;
     color: var(--primary-color);
-    margin: 0.5rem 0 0 0;
+    margin: 0.5rem 0 0.2rem 0;
 }
 
 .counts .count-box p {
@@ -1369,6 +1388,7 @@ section {
 .portfolio .portfolio-wrap {
     transition: 0.3s;
     position: relative;
+    margin: 2.5rem 0 0 0;
     overflow: hidden;
     z-index: 1;
     background: rgba(255, 255, 255, 0.75);
@@ -2659,7 +2679,7 @@ ul.footer-news li a{display: flex;}
 .about .our-story p{color: var(--text-color);}
 @media (min-width: 991px) {
     .about .our-story {
-        padding-right: 35%;
+        padding-right: 15%;
     }
 }
 
@@ -2670,7 +2690,7 @@ ul.footer-news li a{display: flex;}
 }
 
 .about .our-story h3 {
-    font-size: 36px;
+    /* font-size: 36px; */
     font-weight: 700;
     margin-bottom: 20px;
     color: var(--heading-color);
@@ -2783,7 +2803,7 @@ ul.footer-news li a{display: flex;}
 
 .alt-services .icon-box h4 {
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     font-size: 18px;
 }
 
@@ -2795,7 +2815,6 @@ ul.footer-news li a{display: flex;}
 .alt-services .icon-box h4 a:hover {
     color: var(--primary-color);
 }
-
 .alt-services .icon-box p {
     line-height: 24px;
     font-size: 14px;
@@ -2858,7 +2877,7 @@ ul.footer-news li a{display: flex;}
     font-size: 14px;
     margin-bottom: 0;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }

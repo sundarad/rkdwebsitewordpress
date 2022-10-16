@@ -103,7 +103,7 @@
                                 <div class="site-header-menu-inner stickable-header ">
                                     <div class="container ">
                                         <!--site-navigation -->
-                                        <div id="site-navigation navbar_top" class="navbar  d-flex justify-content-center">
+                                        <nav id=" navbar_top" class="navbar  d-flex justify-content-center">
                                             <div class="ttm-rt-contact ">
                                                 <!-- header-icons -->
                                                 <!--                                                <div class="header-icons ">-->
@@ -124,7 +124,7 @@
                                             );
                                             ?>
 
-                                        </div><!-- site-navigation end-->
+                                        </nav><!-- site-navigation end-->
                                     </div>
                                 </div>
                             </div>
@@ -134,3 +134,21 @@
             </div>
         </div><!--header-wrap end -->
     </header>
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+		
+		window.addEventListener('scroll', function() {
+	       
+			if (window.scrollY > 200) {
+				document.getElementById('navbar_top').classList.add('fixed-top');
+				// add padding top to show content behind navbar
+				navbar_height = document.querySelector('.navbar').offsetHeight;
+				document.body.style.paddingTop = navbar_height + 'px';
+			} else {
+			 	document.getElementById('navbar_top').classList.remove('fixed-top');
+				 // remove padding top from body
+				document.body.style.paddingTop = '0';
+			} 
+		});
+	}); 
+</script>

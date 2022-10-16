@@ -27,7 +27,7 @@
         <div class="row position-relative">
 
 
-            <div class="col-lg-7 about-company-img" ;">
+            <div class="col-lg-6 about-company-img" ;">
                 <img src="<?php echo $image_who_we_are; ?>" class="img-fluid" alt="">
         </div>
 
@@ -172,7 +172,7 @@ $the_query = new WP_Query($args);
 if ($the_query->have_posts()) : ?>
     <br>
     <br>
-    <section id="services" class="services one">
+    <section id="services" class="services two">
         <div class="container">
             <div class="row gy-5">
                 <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
@@ -206,7 +206,7 @@ if ($the_query->have_posts()) : ?>
 
                 <?php endwhile; ?>
             </div>
-            <p class="text-extra text-center mt-5 mb-0">Dont hesitate, contact us for better heel services. <a href="/services/" target="_blank"> Explore all services</a></p>
+           
         </div>
     </section>
 <?php endif; ?>

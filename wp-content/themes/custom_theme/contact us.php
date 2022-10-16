@@ -79,7 +79,7 @@
                                         <div class="info-box">
                                             <i class="bi bi-clock"></i>
                                             <h3>Open Hours</h3>
-                                            <p>Monday - Friday<br>9:00AM - 05:00PM</p>
+                                            <p>Sunday - Friday<br>9:00AM - 05:00PM</p>
                                         </div>
                                     </div>
                                 </div>
@@ -126,7 +126,7 @@
                                         <div class="info-box">
                                             <i class="bi bi-clock"></i>
                                             <h3>Open Hours</h3>
-                                            <p>Monday - Friday<br>9:00AM - 05:00PM</p>
+                                            <p>Sunday - Friday<br>9:00AM - 05:00PM</p>
                                         </div>
                                     </div>
                                 </div>
@@ -173,7 +173,7 @@
                                         <div class="info-box">
                                             <i class="bi bi-clock"></i>
                                             <h3>Open Hours</h3>
-                                            <p>Monday - Friday<br>9:00AM - 05:00PM</p>
+                                            <p>Sunday - Friday<br>9:00AM - 05:00PM</p>
                                         </div>
                                     </div>
                                 </div>
