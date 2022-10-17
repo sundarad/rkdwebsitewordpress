@@ -422,7 +422,7 @@ $key_figures_content=$key_figures->post_content;
                             <div class="container">
                                 <div class="row gy-5">
                                     <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-                                    <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+                                    <div class="col-lg-12 portfolio-container" data-aos="fade-up" data-aos-delay="200">
                                         <?php
 
                                         $portfolio_image = get_the_post_thumbnail_url(get_the_ID());

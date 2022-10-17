@@ -1271,11 +1271,11 @@ section {
     padding: 30px;
     width: 100%;
     background: #fff;
-    box-shadow: 0 0 30px rgba(1, 41, 112, 0.08);
+    box-shadow: 0px 0 5px rgb(1 41 112 / 8%);
     transition: 0.3s;
     border-radius: 10px;
 }
-.count .count-box:hover{
+.counts .count-box:hover{
     box-shadow: 0px 0 30px rgb(1 41 112 / 8%);
 }
 .counts .count-box i {
@@ -1284,7 +1284,7 @@ section {
     color: var(--secondary-color);
     transform: scale(1.1);
 }
-.count .count-box:hover .counts .count-box i{
+.counts .count-box:hover .counts .count-box i{
     transform: scale(1);
 }
 .counts .count-box span {
