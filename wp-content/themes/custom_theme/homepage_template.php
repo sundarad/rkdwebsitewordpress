@@ -393,7 +393,7 @@ $key_figures_content=$key_figures->post_content;
                     <h4>All</h4>
                 </li><!-- End Tab 1 Nav -->
 
-                <li class="nav-item  nav-link  col-lg-3 col-sm-6 col-xs-12" data-bs-toggle="tab" data-bs-target="#tab-two">
+                <li class="nav-item  nav-link col-lg-3 col-sm-6 col-xs-12 " data-bs-toggle="tab" data-bs-target="#tab-two">
                     <h4>Technology</h4>
                 </li><!-- End Tab 2 Nav -->
 
@@ -430,7 +430,7 @@ $key_figures_content=$key_figures->post_content;
                                         //remove the paragraph tags
                                         $_content_e = strip_tags($_content_e);
                                         ?>
-                                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                                        <div class="col-lg-3 col-md-6 portfolio-item filter-app">
                                             <div class="portfolio-wrap">
                                                 <img src="<?php echo $portfolio_image;?>" class="img-fluid" alt="<?php echo $_content_e?>">
                                                 <div class="portfolio-info">
@@ -446,6 +446,8 @@ $key_figures_content=$key_figures->post_content;
 
                                         <?php endwhile; ?>
                                     </div>
+                                </div>
+                            </div>   
                         </section>
                     <?php endif; ?>
                 </div>

@@ -1074,7 +1074,7 @@ section {
     overflow: hidden;
 }
 #services .box {
-    padding: 30px;
+    padding: 15px;
     position: relative;
     overflow: hidden;
     background: #fff;
@@ -1083,19 +1083,23 @@ section {
     text-align: center;
     height: 100%;
 }
-
+.downloads .box{
+    padding: 15px;
+}
 #services .box:hover {
     transform: scale(1.1);
 }
 
 .box .icon {
     margin: 0 auto 15px auto;
-    padding-top: 20px;
+    padding-top: 16px;
     display: inline-block;
     text-align: center;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 #services .icon i {
@@ -1126,7 +1130,7 @@ section {
 # Features Section
 --------------------------------------------------------------*/
 .features .nav-tabs, .contact .nav-tabs {
-    border: 0; margin: auto;
+    border: 0;
 }
 
 .features .nav-link, .contact .nav-link {
@@ -1258,7 +1262,7 @@ section {
 # Counts
 --------------------------------------------------------------*/
 .counts {
-    padding: 70px 0 60px;
+    padding: 70px 0 60px; background-color: var(--secondary-color);
 }
 
 .counts .count-box {
@@ -1268,14 +1272,21 @@ section {
     width: 100%;
     background: #fff;
     box-shadow: 0 0 30px rgba(1, 41, 112, 0.08);
+    transition: 0.3s;
+    border-radius: 10px;
 }
-
+.count .count-box:hover{
+    box-shadow: 0px 0 30px rgb(1 41 112 / 8%);
+}
 .counts .count-box i {
     font-size: 40px;
     line-height: 0;
     color: var(--secondary-color);
+    transform: scale(1.1);
 }
-
+.count .count-box:hover .counts .count-box i{
+    transform: scale(1);
+}
 .counts .count-box span {
     font-size: 28px;
     display: block;
@@ -1341,12 +1352,12 @@ section {
 /* Features Section
 --------------------------------*/
 #features {
-    padding: 80px 0; background-color: #fff;
+    padding: 80px 0;
 }
 
 #features h4 {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 /*--------------------------------------------------------------
@@ -1354,7 +1365,6 @@ section {
 --------------------------------------------------------------*/
 #portfolio{padding: 60px 0;}
 .portfolio #portfolio-flters {
-    margin: 0 auto 25px auto;
     list-style: none;
     text-align: center;
     border-radius: 50px;
@@ -1364,7 +1374,7 @@ section {
 .portfolio #portfolio-flters li {
     cursor: pointer;
     display: inline-block;
-    padding: 8px 20px 10px 20px;
+    padding: 8px 10px 10px 10px;
     font-size: 15px;
     font-weight: 600;
     line-height: 1;
@@ -2673,13 +2683,13 @@ ul.footer-news li a{display: flex;}
 }
 
 .about .our-story {
-    padding: 40px;
+    padding: 25px;
     background-color: #f5faff;
 }
 .about .our-story p{color: var(--text-color);}
 @media (min-width: 991px) {
     .about .our-story {
-        padding-right: 15%;
+        padding-right: 16%;
     }
 }
 
@@ -2722,7 +2732,7 @@ ul.footer-news li a{display: flex;}
 }
 
 .about .watch-video i , .about .watch-video :hover i{
-    font-size: 32px;
+    font-size: 29px;
     transition: 0.3s;
     color: var(--primary-color) !important;
 }
@@ -2740,7 +2750,7 @@ ul.footer-news li a{display: flex;}
 
 .about .about-company-img img{
     width: 100%;
-    height: 600px;
+    height: 550px;
    object-fit: cover;
 }
 
