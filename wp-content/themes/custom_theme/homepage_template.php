@@ -272,7 +272,7 @@ if ($the_query->have_posts()) : ?>
     <section id="features" class="features">
         <div class="container" data-aos="fade-up">
             <header class="section-header">
-                <h3>Investment By</h3>
+                <h3>Investment <strong>By</strong></h3>
             </header>
             <?php
             $by_sector=get_post(161);
@@ -385,25 +385,33 @@ $key_figures_content=$key_figures->post_content;
     <section id="portfolio" class="portfolio features">
         <div class="container" data-aos="fade-up">
             <header class="section-header">
-                <h3>Investment Portfolio</h3>
+                <h3>Investment <strong>Portfolio</strong></h3>
             </header>
-            <ul class="nav nav-tabs row gy-4 d-flex" id="portfolio-flters">
+            <ul class="nav nav-tabs mt-3 d-flex justify-content-center" id="portfolio-flters">
 
-                <li class="nav-item nav-link active show col-lg-3 col-sm-6 col-xs-12" data-bs-toggle="tab" data-bs-target="#tab-one">
-                    <h4>All</h4>
+                <li class="nav-item nav-link active show filter-active" data-bs-toggle="tab" data-bs-target="#tab-one">
+                    <h6>All</h6>
                 </li><!-- End Tab 1 Nav -->
-
-                <li class="nav-item  nav-link col-lg-3 col-sm-6 col-xs-12 " data-bs-toggle="tab" data-bs-target="#tab-two">
-                    <h4>Technology</h4>
+                <li class="nav-item  nav-link" data-bs-toggle="tab" data-bs-target="#tab-two">
+                    <h6>Real Estate</h6>
+                </li><!-- End Tab 2 Nav -->
+                <li class="nav-item  nav-link" data-bs-toggle="tab" data-bs-target="#tab-two">
+                    <h6>Technology</h6>
                 </li><!-- End Tab 2 Nav -->
 
-                <li class="nav-item nav-link col-lg-3 col-sm-6 col-xs-12" data-bs-toggle="tab" data-bs-target="#tab-three">
-                    <h4>Hospitality and Tourism</h4>
+                <li class="nav-item nav-link " data-bs-toggle="tab" data-bs-target="#tab-three">
+                    <h6>Hospitality and Tourism</h6>
                 </li><!-- End Tab 3 Nav -->
 
 
 
             </ul>
+            <!-- <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul> -->
 
             <div class="tab-content">
 
@@ -550,7 +558,7 @@ $key_figures_content=$key_figures->post_content;
     <section id="team" class="team section-bg">
         <div class="container" data-aos="fade-up">
             <div class="section-header">
-                <h3>Board of Directors</h3>
+                <h3>Board of <strong>Directors</strong></h3>
             </div>
 
             <div class="row">

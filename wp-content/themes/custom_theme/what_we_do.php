@@ -5,7 +5,7 @@
     <div class="container">
 
         <ol>
-            <li><a href="/index.php">Home</a></li>
+            <li><a href="/index.php"> <i class="bi bi-house"></i> Home</a></li>
             <li>What we do</li>
         </ol>
         <h2>What we do</h2>
@@ -26,6 +26,9 @@ if ($the_query->have_posts()) : ?>
 <br>
     <section id="services" class="services two">
         <div class="container">
+        <header class="section-header">
+          <h3>Our Core <strong>Services</strong></h3>
+        </header>
             <div class="row gy-5">
                 <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
                     <div class="col-xl-4 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="500">
@@ -57,6 +60,50 @@ if ($the_query->have_posts()) : ?>
                 <?php endwhile; ?>
             </div>
         </div>
+    </section>
+    <section id="more-services">
+         <div class="container aos-init aos-animate" data-aos="fade-up">
+
+        <header class="section-header">
+          <h3>More <strong>Services</strong></h3>
+        </header>
+
+    <div class="row gy-5">
+
+      <div class="col-xl-4 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="500">
+        <div class="service-item">
+            <div class="icon">
+                <i class="bi bi-house-door"></i>
+            </div>
+            <h3>Ropeway Engineering</h3>
+            <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-4 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="600">
+      <div class="service-item">
+            <div class="icon">
+                <i class="bi bi-house-door"></i>
+            </div>
+            <h4>ROPEWAY CONSTRUCTION</h4>
+            <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-4 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="700">
+      <div class="service-item">
+            <div class="icon">
+                <i class="bi bi-person"></i>
+            </div>
+            <h4>ROPEWAY CONSULTANT</h4>
+            <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+        </div>
+      </div><!-- End Service Item -->
+      <!-- <p class="text-extra text-center">Dont hesitate, contact us for better heel services. <a href="services.html"> Explore all services</a></p> -->
+
+    </div>
+      
+  </div>
     </section>
 <?php endif; ?>
 <?php get_footer(); ?>
