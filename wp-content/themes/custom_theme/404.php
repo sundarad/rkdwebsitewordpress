@@ -16,7 +16,7 @@ get_header();
             <div class="container d-flex justify-content-center">
                 <div class="row">
                     <div class="col-lg-12">
-                        <img src="assets/img/404.gif" class="d-block" alt="">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/img/404.gif" class="d-block" alt="">
                         <a href="index.php">
                             <button class="btn-get-started">Go Back</button>
                         </a>
