@@ -137,8 +137,9 @@ if ($the_query->have_posts()) : ?>
 
                 <div class="col-lg-7 col-md-6">
                     <div class="about-content" data-aos="fade-left" data-aos-delay="100">
-
-                        <h2><?php echo $title_who_we_are;?></h2>
+                        <header class="section-header" >
+                            <h3 style="text-align:left;">Who <strong>we are</strong> </h3>  
+                        </header>
                         <p><?php echo $content_who_we_are;?></p>
 
                     </div>
@@ -371,7 +372,9 @@ $key_figures_content=$key_figures->post_content;
 
                 <div class="col-lg-7 col-md-6">
                     <div class="about-content" data-aos="fade-left" data-aos-delay="100">
-                        <h2><?php echo $ceo_title?></h2>
+                        <header class="section-header">
+                           <h3>Message<strong> from President</strong></h3>
+                        </header>
                         <p><?php echo $ceo_content?></p>
                         <div class="call-info">
                         </div>

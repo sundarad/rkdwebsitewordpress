@@ -71,7 +71,6 @@ $image_core_values= get_the_post_thumbnail_url(101);
         <div class="container" data-aos="fade-up">
             <header class="section-header">
                 <h3>We Creating Solutions For <strong>Your Organization</strong></h3>
-
             </header>
             <?php
             $our_mission= get_post(133);
@@ -149,7 +148,7 @@ $image_core_values= get_the_post_thumbnail_url(101);
 
         </div>
     </section><!-- End Features Section -->
-    <section id="features" class="features">
+    <section id="features" class="features about-company">
         <div class="container" data-aos="fade-up">
             <header class="section-header">
                 <h3>We Creating Solutions For <strong>Your Organization</strong></h3>
@@ -183,13 +182,13 @@ $image_core_values= get_the_post_thumbnail_url(101);
                 <!-- End Tab 1 Nav -->
 
                 <li class="nav-item col-lg-6 col-sm-4 col-xs-12">
-                    <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-2">
+                    <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-newone">
                         <h4>About us</h4>
                     </a>
                 </li><!-- End Tab 2 Nav -->
 
                 <li class="nav-item col-lg-6 col-sm-4 col-xs-12">
-                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-newtwo">
                         <h4>Investments</h4>
                     </a>
                 </li><!-- End Tab 3 Nav -->
@@ -199,7 +198,7 @@ $image_core_values= get_the_post_thumbnail_url(101);
 
                 <!-- End Tab Content 1 -->
 
-                <div class="tab-pane active show" id="tab-2">
+                <div class="tab-pane active show" id="tab-newone">
                     <div class="row gy-4">
                         <div class="col-lg-12 order-2 order-lg-1">
                              <p>देशले अधिकारको नाममा गरेका सम्पूर्ण आन्दोलनहरू समापन गरेको र आर्थिक अभियान नै अबको एजेण्डा हो भनेर अभिव्यक्त गरेको छ । राष्ट्र र राज्यको यस्तो खालको निष्कर्षलाई नागरिक स्तरबाट नै समर्थन गर्नुपर्दछ, प्रवद्र्धन  गर्नुपर्दछ भन्ने निष्कर्षमा हामी केही युवा व्यवसायीहरू पुग्यौँ । ‘राज्यको चाहनाः आम समुदायको चाहना’ सम्बोधन गर्नका लागि  सामान्य पहलकदमी र सामान्य बाटोको खाकाले मात्र पुग्दैन ।  यसका लागि घनीभूत अभियान नै चलाउनु पर्दछ । सो अभियानमा हजारौं व्यक्ति र लगानीकर्ताहरू एकीकृत र समायोजित हुनुपर्छ । बल्ल मात्र सार्थक रूपमा आर्थिक क्रान्तिको बहस छेड्न सकिन्छ भन्ने ठम्याईका साथ २०७२ सालमा आरकेडी रियल स्टेट एण्ड कन्स्ट्रक्सन लि. नामको सार्वजनिक कम्पनी स्थापना गर्ने ठोस निचोडमा पुग्यौँ । रियल स्टेटको नामको सार्वजनिक  कम्पनी स्थापना र सञ्चालनका आआफ्ना खालका जोखिमहरू थिए । सँगसँगै सार्वजनिक कम्पनीको अभ्याससमेत नगरिएको परिप्रेक्ष्यमा ठूलो बहसको माझ कम्पनी दर्ता भएको थियो । सुरुवातदेखि छलफल गरी केही महत्वपूर्ण साझेदारहरूले सार्वजनिक कम्पनी भनेपछि अगाडि बढ्ने आँट गर्ने कुरैभएन । निजहरूलाई स–सम्मान विदा गर्दैगर्दा केही नयाँ साझेदार  साथीहरूले अबको निकास  यसैबाट सम्भव छ, फराकिलो आर्थिक दायरा बनाउने नेतृत्वदायी भूमिकासमेत खेल्ने साहस र आँट गर्नुपर्नेछ भन्ने हौसलाका साथ संस्थापक सञ्चालक ९ जना रहेर आरकेडी स्थापना हुन पुगेको थियो । सार्वजनिक कम्पनीको जटिलताका विषयमा जानकार रहँदारहँदै पनि कम्पनीले केही पाउन केही  गुमाउन तयार हुनुपर्दछ । हामी अगाडि बढ्न सक्यौं भने आर्थिक अभियान नेतृत्व गर्ने अवसर छ । साथै  आर्थिक स्वतन्त्रताको जग बसाउने अवसर पनि रहन्छ । यो अवसर कम्पनीको सफलताले मात्र दिन सक्छ । दुर्भाग्यवश, असफल हुने भनेको पनि वर्तमान अवस्थाभन्दा पनि विकसित हुनु हो भन्ने  निष्कर्षमा पुग्यौँ । हामीसँग  सामूहिक रूपमा कार्य गरेका इतिहासको अध्ययन,सहकारीमार्फत्पाचौँ हजार व्यक्तिहरूसँग गरेको समझदारी, लगानी र व्यवस्थापनको आफ्नै अनुभव र विकासको सफलताले सहकारीबाट मात्र आर्थिक अभियानको नेतृत्व गर्न सकिँदैन भन्ने ठोस निष्कर्ष निकाली  सहकारीसहितको कर्पाेरेट क्षेत्रबाट समृद्धिको अभियान, आर्थिक क्याम्पियन, औद्योगिक क्याम्पियन, उत्पादन क्याम्पियन गराउन सकिन्छ भन्ने कम्पनीको बुझाई हो । यसले मात्र दीर्घकालीन कम्पनीहरू र सयौं सहायक  कम्पनीहरूको प्रवद्र्धन गर्दै पर्यटन पूर्वाधार क्षेत्र र आर्थिक उपार्जनको पूर्वाधार निर्माणको क्षेत्रमा उल्लेखनीय योगदान पु¥याउन सक्छ भन्ने हाम्रो तीव्र चाहना र निष्कर्ष रहेको थियो । यो कम्पनी समूह स्थापना पूर्वको उर्वरभूमि २०६५ साल देखिको श्री बिहानी बचत तथा ऋण सहकारी संस्था लि. को गतिविधिहरूको संश्लेषण हो । कम्पनीका संस्थापक ९ जना सञ्चालक र अधिकांश प्रवद्र्धकहरू समेत निज संस्थामा प्रवद्र्धनका लागि कम्पनीमा सहभागी हुनु यसको गतिलो प्रमाण हो ।</p>
@@ -209,8 +208,8 @@ $image_core_values= get_the_post_thumbnail_url(101);
                                 <h3>Hierarchy <strong>structure</strong></h3>
                               </header>
                               <p>आरकेडी होल्डिबस् बन्ने प्रक्रिया सुरु भएको छ । रियल स्टेटलाई मात्र आधार मानेको कम्पनीलाई अझ व्यापक रूपमा अन्य कम्पनी संस्थापन, प्रवर्धन र एक्विजिसन गर्ने हैसियतमा अझ बलियो बनाउन साधारण सभाको म्यान्डेट मुताबिक कार्य भएको छ । आफ्ना उद्देश्यहरू समेत थप गरेकोछ । जसअन्तर्गतः १) उत्पादनमूलक एवम्प्रविधिमूलक उद्योगहरू प्रवर्धन गर्ने र व्यवसायिक रूपमा स्वपुँजी लगानी गर्ने । २) एस्क्रो सेवा प्रदान गर्ने साथै लगानी प्रवर्धन गर्ने । ३) निर्माण तथा रियल स्टेटको इभेन्ट व्यवस्थापन गर्ने । ४) परियोजना बैंक स्थापना मार्फत् परियोजना डिपिआरसहित प्याकेज उत्पादन गरी बिक्री गर्ने उद्देश्यहरू राखिएको छ । जुन दीर्घकालीन हिसाबले चिरस्थायी बन्ने आधार स्तम्भको कोशेढुंगा बन्न सक्दछ भन्ने कम्पनीको निष्कर्ष रहेको छ । आरकेडी होल्डिबस् भएपश्चात् कम्पनी समूहको चेन यसप्रकार रहनेछ ।</p>
-                             <div class="">
-                                <img src="assets/img/sub.jpg" alt="">
+                             <div class="d-flex justify-content-center">
+                                <img src="<?php echo get_template_directory_uri();?>/assets/img/sub.jpg" alt="">
                              </div>
                            
                             </div>
@@ -221,16 +220,15 @@ $image_core_values= get_the_post_thumbnail_url(101);
                     </div>
                 </div><!-- End Tab Content 2 -->
 
-                <div class="tab-pane" id="tab-3">
-                    <div class="row gy-4">
-                        <div class="col-lg-8 order-2 order-lg-1">
-                            <p>
-                                <?php echo $content_our_strategies;?>
-                            </p>
+                <div class="tab-pane" id="tab-newtwo">
+                <div class="row gy-4">
+                        <div class="col-lg-12 order-2 order-lg-1">
+                        <div class="d-flex justify-content-center">
+                                <img src="<?php echo get_template_directory_uri();?>/assets/img/summary.jpg" alt="">
+                             </div>
                         </div>
-                        <div class="col-lg-4 order-1 order-lg-2 text-center">
-                            <img src="<?php echo $image_our_strategies;?>" alt="" class="img-fluid">
-                        </div>
+
+                
                     </div>
                 </div><!-- End Tab Content 3 -->
 
