@@ -6,7 +6,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&family=Quicksand:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
 /* body {
   background: #fff;
   color: #444;
@@ -106,7 +106,7 @@ body {
     font-size: 15px;
     line-height: 25px;
     /* color: #000; */
-    background-color: #f5faff;
+    background-color: #f5f8fd;
     letter-spacing: 0;
 }
 
@@ -121,13 +121,12 @@ p.text-extra a{ color: #413e66; transition: all 0.3s ease-in-out 0s; text-decora
 p.text-extra a:hover{color: var(--primary-color);}
 
 h1, h2, h3, h4, h5,h6 {
-    font-family: "Quicksand", sans-serif;
-    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
     margin: 0 0 20px 0;
     padding: 0;
     color: var(--heading-color);
 }
-h6{ color: var(--heading-color); }
+h6{ color: var(--bgcolor); font-family: 'Bubblegum Sans', cursive; }
 p.card-text{color: #687076; margin: 1rem 0 1rem 0;}
 ul{padding: 0 0 0 0;}
 ul li{list-style: none;}
@@ -761,8 +760,26 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
     justify-content: center;
     overflow: visible;
     position: static;
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 90px;
 
 }
+.hero:before {
+    position: absolute;
+    content: '';
+    background: #09aa4e82;
+    width: 100%;
+    height: 62vh;
+    left: 0px;
+    /* top: 32px; */
+    background: #71b100;
+    background: -webkit-gradient(linear, left top, right top, from(#09aa4e ), to(#0071b0));
+    background: linear-gradient(to right,  #0071b0 0%,  #09aa4e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$theme-color-1", endColorstr="$theme-color-2", GradientType=1 );
+    opacity: 0.6;
+
+}
+
 @media (max-width: 640px) {
     .hero .container {
         padding: 0 60px;
@@ -796,7 +813,7 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
 /*    margin-bottom: 30px;*/
 /*}*/
 .hero h2 span {
-   color: #09AA4E;
+   color: var(--bgcolor);
    -webkit-animation: fadeInDown 1s both 0.4s;
    animation: fadeInDown 1s both 0.4s;
    font-weight: 500;
@@ -822,7 +839,8 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
     animation: fadeInUp 1s both 0.6s;
     color:  var(--primary-color);
     background-color: #BCE4CA;
-    border: 1px solid  var(--primary-color);
+    background: linear-gradient(to right, #BCE4CA 0%, #09AA4E 135%, #BCE4CA 100%);
+    /* border: 1px solid  var(--primary-color); */
 }
 .hero .btn-get-started:hover {
     background:  var(--primary-color);
@@ -833,14 +851,14 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
     justify-content: start;
 }
 .hero .btn-watch-video i {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-size: 32px;
     transition: 0.3s;
     line-height: 0;
     margin-right: 8px;
 }
 .hero .btn-watch-video:hover span{
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 @media (min-width: 640px) {
     .hero .carousel-control-prev {
@@ -1129,7 +1147,7 @@ section {
 /* Services Section
 --------------------------------*/
 
-.services.one{margin-top: -3rem; padding:0 0 45px 0; z-index: 9;}
+.services.one{margin-top: -3rem; padding:0 0 45px 0; z-index: 9; position: relative;}
 .services.two{padding: 60px 0;}
 .services.two .services .details p{
     line-height: 24px;
@@ -1246,14 +1264,13 @@ section {
 .features .nav-link i {font-size: 25px;line-height: 0;}
 .features .nav-link h4, .contact .nav-link h4 {
     font-size: 20px;
-    font-weight: 600;
     margin: 10px 0 0 0;
     color: var(--heading-color);
 }
 .features .nav-link:hover h4{ color:var(--primary-color);}
-.features .nav-link:hover {border: 1px solid var(--primary-color);}
+.features .nav-link:hover {background-color: var(--secondary-color); }
 
-.features .nav-link.active , .contact .nav-link.active {transition: 0.3s;background: #BCE4CA;border-color: var(--primary-color);
+.features .nav-link.active , .contact .nav-link.active {transition: 0.3s;background: #BCE4CA;border-color: var(--secondary-color); color: var(--primary-color) !important;
 }
 
 .features .nav-link.active h4, .contact .nav-link.active h4 {
@@ -1357,11 +1374,25 @@ section {
 # Counts
 --------------------------------------------------------------*/
 .counts {
-    padding: 70px 0 60px; background-color: var(--secondary-color);
+    padding: 70px 0 60px; background-color: var(--secondary-color); position: relative;
+}
+.counts::before{
+    position: absolute;
+    content: '';
+    background: #09aa4e82;
+    width: 100%;
+    height: 62vh;
+    left: 0px;
+    top: 0;
+    background: #71b100;
+    background: -webkit-gradient(linear, left top, right top, from(#09aa4e ), to(#0071b0));
+    background: linear-gradient(to right,  #0071b0 0%,  #09aa4e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$theme-color-1", endColorstr="$theme-color-2", GradientType=1 );
+    opacity: 0.7;
 }
 
 .counts .count-box {
-    display: flex;
+    display: flex; justify-content: center; align-items: center;
     padding: 30px;
     width: 100%;
     background: #fff;
@@ -1451,7 +1482,6 @@ section {
 }
 
 #features h4 {
-    font-weight: 600;
     font-size: 20px;
 }
 
@@ -1469,21 +1499,21 @@ section {
 .portfolio #portfolio-flters li {
     cursor: pointer;
     display: inline-block;
-    padding: 8px 10px 9px 10px;
+    padding:8px 15px 9px 15px;
     font-size: 15px;
     font-weight: 600;
     line-height: 1;
-    color: #444444;
     margin: 0 4px 8px 4px;
     transition: 0.3s;
     border-radius: 6px;
-    border: 1px solid #f5faff;
+    color: var(--heading-color);
 }
 .portfolio #portfolio-flters li h6{margin:  0 0 0 0;}
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-    color: var(--primary-color);
-    border-color: var(--primary-color);
+   background-color: var(--secondary-color);
+   color: var(--primary-color);
+
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -3239,7 +3269,6 @@ ul.footer-news li a{display: flex;}
   
   .faq .content h4 {
     font-size: 20px;
-    font-weight: 700;
     margin-top: 5px;
   }
   
@@ -3267,7 +3296,6 @@ ul.footer-news li a{display: flex;}
   
   .faq .accordion-button {
     padding: 15px 40px 20px 25px;
-    font-weight: 600;
     border: 0;
     font-size: 18px;
     color: var(--color-default);

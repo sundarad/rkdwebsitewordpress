@@ -68,6 +68,7 @@
         </a>
 
         <ol class="carousel-indicators"></ol>
+        
 
     </section><!-- End Hero Section -->
 <?php $args = array(
@@ -393,17 +394,17 @@ $key_figures_content=$key_figures->post_content;
             <ul class="nav nav-tabs mt-3 d-flex justify-content-center" id="portfolio-flters">
 
                 <li class="nav-item nav-link active show filter-active" data-bs-toggle="tab" data-bs-target="#tab-one">
-                    <h6>All</h6>
+                   All
                 </li><!-- End Tab 1 Nav -->
                 <li class="nav-item  nav-link" data-bs-toggle="tab" data-bs-target="#tab-two">
-                    <h6>Real Estate</h6>
+                   Real Estate
                 </li><!-- End Tab 2 Nav -->
                 <li class="nav-item  nav-link" data-bs-toggle="tab" data-bs-target="#tab-two">
-                    <h6>Technology</h6>
+                    Technology
                 </li><!-- End Tab 2 Nav -->
 
                 <li class="nav-item nav-link " data-bs-toggle="tab" data-bs-target="#tab-three">
-                    <h6>Hospitality and Tourism</h6>
+                   Hospitality and Tourism
                 </li><!-- End Tab 3 Nav -->
 
 
@@ -431,9 +432,9 @@ $key_figures_content=$key_figures->post_content;
                     if ($the_query->have_posts()) : ?>
                         <section id="services" class="services one">
                             <div class="container">
-                                <div class="row gy-5">
+                                <div class="row gy-5 portfolio-container">
                                     <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-                                    <div class="col-lg-12 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+                            
                                         <?php
 
                                         $portfolio_image = get_the_post_thumbnail_url(get_the_ID());
@@ -453,8 +454,7 @@ $key_figures_content=$key_figures->post_content;
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-
+                                         </div>
                                         <?php endwhile; ?>
                                     </div>
                                 </div>
@@ -487,7 +487,7 @@ $key_figures_content=$key_figures->post_content;
                                         //remove the paragraph tags
                                         $_content_e = strip_tags($_content_e);
                                         ?>
-                                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                                        <div class="col-lg-3 col-md-6 portfolio-item filter-app">
                                             <div class="portfolio-wrap">
                                                 <img src="<?php echo $portfolio_image;?>" class="img-fluid" alt="<?php echo $_content_e?>">
                                                 <div class="portfolio-info">
@@ -624,7 +624,7 @@ $key_figures_content=$key_figures->post_content;
         <div class="container" data-aos="fade-up">
 
             <header class="section-header">
-                <h3>News</h3>
+                <h3>News & <strong>Events</strong></h3>
             </header>
 
             <div class="row">

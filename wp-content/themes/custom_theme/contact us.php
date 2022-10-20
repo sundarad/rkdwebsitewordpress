@@ -9,7 +9,7 @@
             <div class="container">
 
                 <ol>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html"><i class="bi bi-house"></i> Home</a></li>
                     <li>Contact</li>
                 </ol>
                 <h2>Contact Us</h2>
