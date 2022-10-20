@@ -1222,7 +1222,6 @@ section {
 }
 
 #services .title {
-    font-weight: 700;
     margin-bottom: 15px;
     font-size: 18px;
 }
@@ -1381,7 +1380,7 @@ section {
     content: '';
     background: #09aa4e82;
     width: 100%;
-    height: 62vh;
+    height: 27vh;
     left: 0px;
     top: 0;
     background: #71b100;
@@ -1401,7 +1400,7 @@ section {
     border-radius: 10px;
 }
 .count-content{margin-left: 1rem;}
-.counts .count-box:hover{
+ .count-box:hover{
     box-shadow: 0px 0 30px rgb(1 41 112 / 8%);
 }
 .counts .count-box i {
@@ -1410,10 +1409,10 @@ section {
     color: var(--secondary-color);
     transform: scale(1.1);
 }
-.counts .count-box:hover .counts .count-box i{
+ .count-box:hover  .count-box i{
     transform: scale(1);
 }
-.counts .count-box span {
+ .count-box span {
     font-size: 28px;
     display: block;
     font-weight: 600;
@@ -2496,12 +2495,11 @@ span.price{color:  var(--primary-color);}
 #footer {
     padding: 0 0 30px 0;
     font-size: 14px;
-    background: #BCE4CA;
+    background: linear-gradient(to right, #BCE4CA 53%, #09aa4e 83%)
 }
 
 #footer .footer-top {
     padding: 60px 0 30px 0;
-    background: #BCE4CA;
 }
 .footer-top ul li i{
     font-size: 0.7rem;
@@ -2875,8 +2873,8 @@ ul.footer-news li a{display: flex;}
 
 .about .about-company-img img{
     width: 100%;
-    height: 550px;
-   object-fit: cover;
+    height: 525px;
+   object-fit: contain;
 }
 
 @media (min-width: 992px) {

@@ -502,7 +502,9 @@ $key_figures_content=$key_figures->post_content;
                                         </div>
 
                                         <?php endwhile; ?>
+                                      </div>
                                     </div>
+                               </div>
                         </section>
                     <?php endif; ?>
                 </div><!-- End Tab Content 2 -->
@@ -546,6 +548,7 @@ $key_figures_content=$key_figures->post_content;
 
                                         <?php endwhile; ?>
                                     </div>
+                               </div>
                         </section>
                     <?php endif; ?>
                 </div><!-- End Tab Content 3 -->
