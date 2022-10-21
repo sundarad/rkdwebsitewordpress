@@ -350,7 +350,7 @@ $key_figures_content=$key_figures->post_content;
     <section id="counts" class="counts">
         <?php echo $key_figures_content;?>
   </section><!-- End Counts Section -->
-    <!-- End Features Section -->
+
     <!-- ======= ceo Section ======= -->
     <section id="about" class="about">
 
@@ -457,8 +457,7 @@ $key_figures_content=$key_figures->post_content;
                                          </div>
                                         <?php endwhile; ?>
                                     </div>
-                                </div>
-                            </div>   
+                                </div>   
                         </section>
                     <?php endif; ?>
                 </div>
@@ -477,11 +476,9 @@ $key_figures_content=$key_figures->post_content;
                     if ($the_query->have_posts()) : ?>
                         <section id="services" class="services one">
                             <div class="container">
-                                <div class="row gy-5">
+                                <div class="row gy-5 portfolio-container">
                                     <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-                                    <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
                                         <?php
-
                                         $portfolio_image = get_the_post_thumbnail_url(get_the_ID());
                                         $_content_e = get_the_excerpt();
                                         //remove the paragraph tags
@@ -500,11 +497,9 @@ $key_figures_content=$key_figures->post_content;
                                                 </div>
                                             </div>
                                         </div>
-
                                         <?php endwhile; ?>
                                       </div>
                                     </div>
-                               </div>
                         </section>
                     <?php endif; ?>
                 </div><!-- End Tab Content 2 -->
@@ -524,7 +519,6 @@ $key_figures_content=$key_figures->post_content;
                             <div class="container">
                                 <div class="row gy-5">
                                     <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-                                    <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
                                         <?php
 
                                         $portfolio_image = get_the_post_thumbnail_url(get_the_ID());
@@ -556,7 +550,6 @@ $key_figures_content=$key_figures->post_content;
 
 
             </div>
-
         </div>
     </section><!-- End Features Section -->
 
