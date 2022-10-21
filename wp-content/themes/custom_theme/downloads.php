@@ -5,12 +5,11 @@
 <!-- ======= Breadcrumbs ======= -->
 <section id="breadcrumbs" class="breadcrumbs">
     <div class="container">
-
+    <h2>Documents</h2>
         <ol>
             <li><a href="/index.php"> <i class="bi bi-house"></i> Home</a></li>
             <li>Documents</li>
         </ol>
-        <h2>Documents</h2>
 
     </div>
 </section><!-- End Breadcrumbs -->

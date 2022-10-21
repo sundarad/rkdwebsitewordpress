@@ -7,12 +7,11 @@
         <!-- ======= Breadcrumbs ======= -->
         <section class="breadcrumbs">
             <div class="container">
-
+            <h2>Contact Us</h2>
                 <ol>
                     <li><a href="index.html"><i class="bi bi-house"></i> Home</a></li>
                     <li>Contact</li>
                 </ol>
-                <h2>Contact Us</h2>
 
             </div>
         </section><!-- End Breadcrumbs -->

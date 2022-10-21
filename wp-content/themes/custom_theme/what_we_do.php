@@ -3,12 +3,11 @@
 <!-- ======= Breadcrumbs ======= -->
 <section id="breadcrumbs" class="breadcrumbs">
     <div class="container">
-
+    <h2>What we do</h2>
         <ol>
             <li><a href="/index.php"> <i class="bi bi-house"></i> Home</a></li>
             <li>What we do</li>
         </ol>
-        <h2>What we do</h2>
 
     </div>
 </section><!-- End Breadcrumbs -->
@@ -83,7 +82,7 @@ if ($the_query->have_posts()) : ?>
       <div class="col-xl-4 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="600">
       <div class="service-item">
             <div class="icon">
-                <i class="bi bi-house-door"></i>
+                <i class="bi bi-joystick"></i>
             </div>
             <h4>ROPEWAY CONSTRUCTION</h4>
             <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
@@ -93,7 +92,7 @@ if ($the_query->have_posts()) : ?>
       <div class="col-xl-4 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="700">
       <div class="service-item">
             <div class="icon">
-                <i class="bi bi-person"></i>
+                <i class="bi bi-door-closed"></i>
             </div>
             <h4>ROPEWAY CONSULTANT</h4>
             <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>

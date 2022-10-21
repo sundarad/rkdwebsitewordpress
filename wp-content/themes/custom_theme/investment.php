@@ -3,18 +3,17 @@
 <!-- ======= Breadcrumbs ======= -->
 <section id="breadcrumbs" class="breadcrumbs">
     <div class="container">
-
+    <h2>
+            <?php
+            echo get_the_title();
+            ?>
+        </h2>
         <ol>
             <li><a href="/index.php">Home</a></li>
             <li><?php
                 echo get_the_title();
                 ?></li>
         </ol>
-        <h2>
-            <?php
-            echo get_the_title();
-            ?>
-        </h2>
 
     </div>
 </section><!-- End Breadcrumbs -->
