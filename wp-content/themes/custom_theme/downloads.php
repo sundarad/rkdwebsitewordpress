@@ -7,7 +7,7 @@
     <div class="container">
     <h2>Documents</h2>
         <ol>
-            <li><a href="/index.php"> <i class="bi bi-house"></i> Home</a></li>
+            <li><a href="/index.php"> <i class="bi bi-house-fill"></i> Home</a></li>
             <li>Documents</li>
         </ol>
 
@@ -25,7 +25,7 @@
             <div class="content">
               <h3>Important <strong>Documents</strong></h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+               We can download some important documents from here
               </p>
             </div>
 

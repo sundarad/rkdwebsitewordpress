@@ -9,7 +9,7 @@
             ?>
         </h2>
         <ol>
-            <li><a href="/index.php">Home</a></li>
+            <li><a href="/index.php">  <i class="bi bi-house-fill"></i> Home</a></li>
             <li><?php
                 echo get_the_title();
                 ?></li>

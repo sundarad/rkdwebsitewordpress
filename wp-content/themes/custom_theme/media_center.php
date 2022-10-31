@@ -7,7 +7,7 @@
         <div class="container">
 
             <ol>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html"> <i class="bi bi-house-fill"></i> Home</a></li>
                 <li>News</li>
             </ol>
             <h2>Our News</h2>
