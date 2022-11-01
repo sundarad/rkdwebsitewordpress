@@ -773,7 +773,7 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
     height: 62vh;
     text-align: center;
     padding: 0;
-    background: url("../img/intro-bg.jpg") center center no-repeat;
+    background: url("../img/bg1.jpg") center center no-repeat;
     background-size: cover;
     /*position: relative;*/
     display: flex;
@@ -796,8 +796,11 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
     background: -webkit-gradient(linear, left top, right top, from(#09aa4e ), to(#0071b0));
     background: linear-gradient(to right,  #0071b0 0%,  #09aa4e 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$theme-color-1", endColorstr="$theme-color-2", GradientType=1 );
-    opacity: 0.6;
+    opacity: 0.45;
 
+}
+.hero h2{
+    color: var(--bgcolor);
 }
 
 @media (max-width: 640px) {
@@ -866,7 +869,6 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
     background:  var(--primary-color);
     color: var(--secondary-color);
 }
-.more-btn span{color: #413e66;}
 .hero .carousel-control-prev {
     justify-content: start;
 }
