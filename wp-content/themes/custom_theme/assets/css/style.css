@@ -510,6 +510,7 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
 
 
 
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -559,6 +560,7 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {color: var(--primary-color);}
+.current-menu-item a{color: var(--primary-color);}
 
 .navbar .dropdown ul {
     display: block;
