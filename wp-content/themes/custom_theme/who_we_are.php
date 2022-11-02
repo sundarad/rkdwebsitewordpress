@@ -7,7 +7,7 @@
     <div class="container">
         <h2>Who we are</h2>
         <ol>
-            <li><a href="/index.php"><i class="bi bi-house"></i> Home</a></li>
+            <li><a href="/index.php"><i class="bi bi-house-fill"></i> Home</a></li>
             <li>Who we are</li>
         </ol>
 

@@ -14,7 +14,7 @@
 } */
 :root{
     --primary-color:#09AA4E;
-    --secondary-color:#BCE4CA;
+    --secondary-color: #09aa4e63;
     --heading-color: #413e66;
     --text-color: #14141c;
     --bgcolor: #fff;
@@ -166,10 +166,33 @@ ul li{list-style: none;}
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
-    padding: 15px 0;
-    background: #012970;
+    padding:6rem 0 6rem 0;
+    background: var(--secondary-color);
     min-height: 40px;
     color: #fff;
+    background: url("../img/inner1.jpg") center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.breadcrumbs:before{
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+.breadcrumbs:before {
+    position: absolute;
+    content: '';
+    background: #09aa4e82;
+    width: 100%;
+    left: 0px;
+    /* top: 32px; */
+    background: -webkit-gradient(linear, left top, right top, from(#09aa4e ), to(#0071b0));
+    background: linear-gradient(to right,  #0071b0 0%,  #09aa4e 71%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$theme-color-1", endColorstr="$theme-color-2", GradientType=1 );
+    opacity: 0.3;
+
 }
 
 @media (max-width: 992px) {
@@ -181,7 +204,6 @@ ul li{list-style: none;}
 .breadcrumbs h2 {
     font-size: 30px;
     font-weight: 500;
-    color: var(--bgcolor);
     margin: 0 0 0 0;
 }
 
@@ -195,26 +217,26 @@ ul li{list-style: none;}
 }
 
 .breadcrumbs ol a {
-    color: #fff;
+    color: var(--heading-color);
     transition: 0.3s;
 }
 
 .breadcrumbs ol a:hover {
     text-decoration: underline;
 }
-
+.breadcrumbs ol i{margin: 0 0.2rem 0 0; color: var(--primary-color);}
 .breadcrumbs ol li+li {
-    padding-left: 10px; color: var(--secondary-color);
+    padding-left: 10px; color: var(--primary-color);
 }
 
 .breadcrumbs ol li+li::before {
     display: inline-block;
     padding-right: 10px;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     content: "/";
 }
 ul.social-icons i{
-    width: 40px; height: 35px; background-color: var(--secondary-color); color: var(--primary-color); border: 1px solid var(--primary-color); padding: 0.4rem; border-radius: 4px;
+    width: 40px; height: 35px;  color: var(--primary-color); border: 1px solid var(--primary-color); padding: 0.4rem; border-radius: 4px;
 }
 ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgcolor);}
 /*--------------------------------------------------------------
@@ -287,17 +309,15 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
     #about .about-img img{height: 570px;}
     #header .logo {font-size: 28px;}
 }
-.topbar-wrapper{background-color: #BCE4CA;  line-height: 50px;}
+.topbar-wrapper{background-color: var(--secondary-color);  line-height: 50px;}
 .topbar-wrapper .top-contact.text-left {
     position: relative;
     /* float: left;
     line-height: 50px; */
 }
 .top-contact span{color: #000; font-weight: 600;}
-.header-wrap{background-color: #fff;}
-.header-wrap .stickable-header {
-    display: block;
-    border-top: 2px solid #f1f1f1;
+.header-wrap{background-color: var(--bgcolor);}
+.header-wrap .stickable-header {  display: block;  border-top: 2px solid #f1f1f1;
 }
 .top-contact {
     list-style: none;
@@ -755,7 +775,7 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
     height: 62vh;
     text-align: center;
     padding: 0;
-    background: url("../img/intro-bg.jpg") center center no-repeat;
+    background: url("../img/bg1.jpg") center center no-repeat;
     background-size: cover;
     /*position: relative;*/
     display: flex;
@@ -775,12 +795,14 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
     height: 62vh;
     left: 0px;
     /* top: 32px; */
-    background: #71b100;
     background: -webkit-gradient(linear, left top, right top, from(#09aa4e ), to(#0071b0));
     background: linear-gradient(to right,  #0071b0 0%,  #09aa4e 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$theme-color-1", endColorstr="$theme-color-2", GradientType=1 );
-    opacity: 0.6;
+    opacity: 0.45;
 
+}
+.hero h2{
+    color: var(--bgcolor);
 }
 
 @media (max-width: 640px) {
@@ -840,21 +862,19 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
     transition: 0.5s;
     -webkit-animation: fadeInUp 1s both 0.6s;
     animation: fadeInUp 1s both 0.6s;
-    color:  var(--primary-color);
-    background-color: #BCE4CA;
+    color: #fff;
+    background-color: #09aa4e94;
     /* background: linear-gradient(to right, #BCE4CA 0%, #09AA4E 135%, #BCE4CA 100%); */
     /* border: 1px solid  var(--primary-color); */
 }
 .hero .btn-get-started:hover {
     background:  var(--primary-color);
-    color: #BCE4CA;
+    color: var(--secondary-color);
 }
-.more-btn span{color: #413e66;}
 .hero .carousel-control-prev {
     justify-content: start;
 }
 .hero .btn-watch-video i {
-    color: var(--secondary-color);
     font-size: 32px;
     transition: 0.3s;
     line-height: 0;
@@ -881,8 +901,7 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
     background: none;
     font-size: 26px;
     line-height: 0;
-    background: var(--secondary-color);
-    color: var(--primary-color);
+    background:#09aa4e94;
     border-radius: 50px;
     width: 50px;
     height: 50px;
@@ -1041,7 +1060,7 @@ section {
 /* main-service*/
 .icon-arrow{width: 30px; height: 30px; border-radius: 50%; text-align: center; display: flex; border: 1px solid  var(--primary-color);
     justify-content: center;
-    align-items: center; margin: auto; background-color: #BCE4CA; color:  var(--primary-color); }
+    align-items: center; margin: auto; background-color: var(--secondary-color); color:  var(--primary-color); }
 #main-services .card{transition: all .4s ease;}
 #main-services .card:hover{transform: translateY(-10px);}
 #main-services .card:hover .icon-arrow{
@@ -1052,7 +1071,7 @@ section {
 /* About Us Section
 --------------------------------*/
 #about {
-    padding: 80px 0; background-color: #fff;
+    padding: 80px 0; background-color: var(--bgcolor);
 }
 
 #about .about-content {
@@ -1272,7 +1291,7 @@ section {
 .features .nav-link:hover h4{ color:var(--primary-color);}
 .features .nav-link:hover {background-color: var(--secondary-color); }
 
-.features .nav-link.active , .contact .nav-link.active {transition: 0.3s;background: #BCE4CA;border-color: var(--secondary-color); color: var(--primary-color) !important;
+.features .nav-link.active , .contact .nav-link.active {transition: 0.3s;background: var(--secondary-color) ;border-color: var(--secondary-color); color: var(--primary-color) !important;
 }
 
 .features .nav-link.active h4, .contact .nav-link.active h4 {
@@ -1436,7 +1455,7 @@ section {
 /* Call To Action Section
 --------------------------------*/
 #call-to-action {
-    background: #BCE4CA;
+    background: var(--secondary-color);
     background-size: cover;
     padding: 40px 0;
 }
@@ -1877,7 +1896,7 @@ section {
     height: 22px;
     line-height: 22px;
     padding: 0 15px;
-    background: #BCE4CA;
+    background: var(--secondary-color);
     font-size: 12px;
     font-weight: 600;
     display: inline-block;
@@ -2201,7 +2220,7 @@ span.price{color:  var(--primary-color);}
 }
 
 .blog .sidebar .search-form form button:hover {
-    background: var(--primary-color); color: #fff;
+    background: var(--primary-color); color: var(--bgcolor);
 }
 
 .blog .sidebar .categories ul {
@@ -2285,8 +2304,8 @@ span.price{color:  var(--primary-color);}
 
 .blog .sidebar .tags ul a:hover {
     color: var(--primary-color);
-    border: 1px solid #BCE4CA;
-    background: #BCE4CA;
+    border: 1px solid var(--secondary-color);
+    background: var(--secondary-color);
 }
 
 .blog .sidebar .tags ul a span {
@@ -2303,7 +2322,7 @@ span.price{color:  var(--primary-color);}
 
 #team .member {
     text-align: center;
-    background: #fff;
+    background: var(--bgcolor);
     margin: 1.5rem 0 0 0;
     border-radius: 10px;
     padding: 15px;
@@ -2328,7 +2347,7 @@ span.price{color:  var(--primary-color);}
 }
 
 #team .member h4 {
-    font-weight: 700;
+    font-weight: 600;
     margin-top: 16px;
     margin-bottom: 2px;
     font-size: 20px;
@@ -2530,7 +2549,6 @@ span.price{color:  var(--primary-color);}
     font-size: 13px;
     line-height: 24px;
     margin-bottom: 0;
-    color: #535074;
 }
 
 #footer .footer-top .social-links a {
