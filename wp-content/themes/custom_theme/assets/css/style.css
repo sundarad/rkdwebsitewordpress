@@ -1202,7 +1202,7 @@ section {
     box-shadow: 5px 5px 25px rgb(72 86 100 / 12%);
     padding: 2rem 2rem 2rem 2rem; text-align: center;
     border: 1px solid #f6f6f6; position: relative;
-    background-color: var(--bgcolor);
+    background-color: #09aa4e33;
 }
 #more-services .service-item::before {
     position: absolute;
@@ -2517,7 +2517,7 @@ span.price{color:  var(--primary-color);}
 #footer {
     padding: 0 0 30px 0;
     font-size: 14px;
-    background: linear-gradient(to right, #BCE4CA 53%, #09aa4e 83%)
+    background: #09aa4e85;
 }
 
 #footer .footer-top {
@@ -3274,7 +3274,7 @@ ul.footer-news li a{display: flex;}
     background-position: center center;
     min-height: 460px;
 }
-#downloads .accordion-item ul li a{color: var(--text-color);}
+#downloads .accordion-item ul li a{color: var(--heading-color);}
 @media (max-width: 991px) {
     .faq {
       padding: 0;
@@ -3331,7 +3331,7 @@ ul.footer-news li a{display: flex;}
   }
   
   .faq .file-icon {
-    margin: 0 0.4rem 0 0;
+    margin: 0 0.6rem 0 0;
     font-size: 15px;
     color: var(--primary-color);
   }
@@ -3351,7 +3351,7 @@ ul.footer-news li a{display: flex;}
     border-top: 1px dashed #b1becb;
   }
   .faq .accordion-body ul li{
-    padding: 0.3rem 0 0.3rem 0;
+    padding: 0.5rem 0 0.5rem 0;
   }
  #search{padding: 60px 0;}
   .values .box {

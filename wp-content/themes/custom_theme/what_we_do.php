@@ -71,38 +71,61 @@ if ($the_query->have_posts()) : ?>
 
       <div class="col-xl-4 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="500">
         <div class="service-item">
-            <div class="icon">
-                <i class="bi bi-house-door"></i>
-            </div>
             <h3>Ropeway Engineering</h3>
-            <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+            <div class="icon">
+              <img src="<?php echo get_template_directory_uri();?>/assets/img/more-service/engineering.png" alt="">
+            </div>
         </div>
       </div><!-- End Service Item -->
 
       <div class="col-xl-4 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="600">
       <div class="service-item">
+            
+            <h4>Ropeway Construction</h4>
             <div class="icon">
-                <i class="bi bi-joystick"></i>
+              <img src="<?php echo get_template_directory_uri();?>/assets/img/more-service/sketch.png" alt="">
             </div>
-            <h4>ROPEWAY CONSTRUCTION</h4>
-            <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
         </div>
       </div><!-- End Service Item -->
 
       <div class="col-xl-4 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="700">
       <div class="service-item">
+            <h4>Ropeway Consultant</h4>
             <div class="icon">
-                <i class="bi bi-door-closed"></i>
+               <img src="<?php echo get_template_directory_uri();?>/assets/img/more-service/brainstorming.png"  alt="">
             </div>
-            <h4>ROPEWAY CONSULTANT</h4>
-            <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
         </div>
       </div><!-- End Service Item -->
-      <!-- <p class="text-extra text-center">Dont hesitate, contact us for better heel services. <a href="services.html"> Explore all services</a></p> -->
+      <div class="col-xl-4 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="500">
+        <div class="service-item">
+            <h4>Cablecar Equipment  Supply</h4>
+            <div class="icon">
+              <img src="<?php echo get_template_directory_uri();?>/assets/img/more-service/machine.png"  alt="">
+            </div>
+        </div>
+      </div><!-- End Service Item -->
 
+      <div class="col-xl-4 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="600">
+      <div class="service-item">
+            
+            <h4>Investment Diversify</h4>
+            <div class="icon">
+              <img src="<?php echo get_template_directory_uri();?>/assets/img/more-service/profits.png" alt="">
+            </div>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-4 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="700">
+      <div class="service-item">
+            <h4>Detail Project Report(DPR)</h4>
+            <div class="icon">
+               <img src="<?php echo get_template_directory_uri();?>/assets/img/more-service/dashboard.png" alt="">
+            </div>
+        </div>
+      </div><!-- End Service Item -->
     </div>
       
-  </div>
+      </div>
     </section>
 <?php endif; ?>
 <?php get_footer(); ?>
