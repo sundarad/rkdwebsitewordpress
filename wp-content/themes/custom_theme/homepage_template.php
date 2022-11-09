@@ -6,7 +6,8 @@
             <div class="container">
                 <div class="row justify-content-center gy-6 align-items-center">
                     <div class="col-lg-12">
-                        <h6>COOPTOGOVS</h6>
+                        <a href="" class="btn btn-coops">COOP2GOVS</a>
+                       
                         <h2>TIFL : A fund dedicated for entrepreneurs and innovative market disruptive <span> business ventures </span></h2>
                         <div class="d-flex justify-content-center more-btn">
                             <a href="/contact-us-2/" class="btn-get-started scrollto">Contact us</a>
@@ -25,7 +26,7 @@
             <div class="container">
                 <div class="row justify-content-center gy-6 align-items-center">
                     <div class="col-lg-12">
-                        <h6>COOPTOGOVS</h6>
+                    <a href="" class="btn btn-coops">COOP2GOVS</a>
                         <h2> We empower your financial <span>vision</span> </h2>
                         <div class="d-flex justify-content-center more-btn">
                             <a href="/contact-us-2/" class="btn-get-started">Contact us</a>
@@ -44,7 +45,7 @@
             <div class="container">
                 <div class="row justify-content-center gy-6 align-items-center">
                     <div class="col-lg-12">
-                        <h6>COOPTOGOVS</h6>
+                    <a href="" class="btn btn-coops">COOP2GOVS</a>
                         <h2>RKD Real Estate : Attain the highest ROI possible on your <span> Property</span> </h2>
                         <div class="d-flex justify-content-center more-btn">
                             <a href="/contact-us-2/" class="btn-get-started scrollto">Contact us</a>
@@ -178,36 +179,36 @@ if ($the_query->have_posts()) : ?>
     <!---->
     <!--    </section>-->
     <!-- End Why Us Section -->
-<!--    <section id="clients" class="clients">-->
-<!--        <div class="container aos-init aos-animate" data-aos="fade-up">-->
-<!--            <header class="section-header">-->
-<!--                <h3>Our Company</h3>-->
-<!--            </header>-->
-<!--            <div class="row clients-wrap justify-content-center clearfix aos-init aos-animate" data-aos="fade-up" >-->
-<!--                <div class="col-lg-12 col-sm-12 col-xs-12">-->
-<!--                    <div class="client-logo"> <img src="--><?php //echo get_template_directory_uri();?><!--/assets/img/logo.png" class="img-fluid" alt=""></div>-->
-<!--                </div>-->
-<!--                <div class="col-lg-12 col-sm-12 col-xs-12">-->
-<!--                    <div class="client-logo"> <img src="--><?php //echo get_template_directory_uri();?><!--/assets/img/tifl.png" class="img-fluid" alt=""></div>-->
-<!--                </div>-->
-<!--                <div class="col-lg-4 col-sm-12 col-xs-12">-->
-<!--                    <div class=" client-logo" style="width: 440px;">-->
-<!--                        <img src="--><?php //echo get_template_directory_uri();?><!--/assets/img/bandipur.png" class="img-fluid" alt="">-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="col-lg-4 col-sm-12 col-xs-12">-->
-<!--                    <div class="client-logo" style="width: 440px;">-->
-<!--                        <img src="--><?php //echo get_template_directory_uri();?><!--/assets/img/panchase.png" class="img-fluid" alt="">-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="col-lg-4 col-sm-12 col-xs-12">-->
-<!--                    <div class="client-logo" style="width: 416px;">-->
-<!--                        <img src="--><?php //echo get_template_directory_uri();?><!--/assets/img/bizbazar.png" class="img-fluid" alt="">-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
+   <section id="clients" class="clients">
+       <div class="container aos-init aos-animate" data-aos="fade-up">
+           <header class="section-header">
+               <h3>Our  <strong>Company</strong></h3>
+           </header>
+           <div class="row clients-wrap justify-content-center clearfix aos-init aos-animate" data-aos="fade-up" >
+               <div class="col-lg-12 col-sm-12 col-xs-12">
+                   <div class="client-logo"> <img src="<?php echo get_template_directory_uri();?>/assets/img/logo.png" class="img-fluid" alt=""></div>
+               </div>
+               <div class="col-lg-12 col-sm-12 col-xs-12">
+                   <div class="client-logo"> <img src="<?php echo get_template_directory_uri();?>/assets/img/tifl.png" class="img-fluid" alt=""></div>
+               </div>
+               <div class="col-lg-4 col-sm-12 col-xs-12">
+                   <div class=" client-logo" style="width: 440px;">
+                       <img src="<?php echo get_template_directory_uri();?>/assets/img/bandipur.png" class="img-fluid" alt="">
+                   </div>
+               </div>
+               <div class="col-lg-4 col-sm-12 col-xs-12">
+                   <div class="client-logo" style="width: 440px;">
+                       <img src="<?php echo get_template_directory_uri();?>/assets/img/panchase.png" class="img-fluid" alt="">
+                   </div>
+               </div>
+               <div class="col-lg-4 col-sm-12 col-xs-12">
+                   <div class="client-logo" style="width: 416px;">
+                       <img src="<?php echo get_template_directory_uri();?> /assets/img/bizbazar.png" class="img-fluid" alt="">
+                   </div>
+               </div>
+           </div>
+        </div>
+   </section>
     <!-- ======= Services Section ======= -->
     <!--        <section id="services" class="services section-bg">-->
     <!--            <div class="container" data-aos="fade-up">-->

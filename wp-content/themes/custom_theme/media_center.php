@@ -76,7 +76,7 @@
                 <?php endif; ?>
             </div>
 
-
+    </section>
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
 

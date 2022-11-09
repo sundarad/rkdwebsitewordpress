@@ -70,7 +70,7 @@ $image_core_values= get_the_post_thumbnail_url(101);
     <section id="features" class="features">
         <div class="container" data-aos="fade-up">
             <header class="section-header">
-                <h3>We Creating Solutions For <strong>Your Organization</strong></h3>
+                <h3>We Creating Solutions For <strong>Our Organization</strong></h3>
             </header>
             <?php
             $our_mission= get_post(133);
@@ -151,7 +151,7 @@ $image_core_values= get_the_post_thumbnail_url(101);
     <section id="features" class="features about-company">
         <div class="container" data-aos="fade-up">
             <header class="section-header">
-                <h3>We Creating Solutions For <strong>Your Organization</strong></h3>
+                <h3>We Creating Solutions For <strong>Our Organization</strong></h3>
             </header>
             <?php
             $our_mission= get_post(133);
