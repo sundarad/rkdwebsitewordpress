@@ -67,10 +67,10 @@ $image_core_values= get_the_post_thumbnail_url(101);
         </div>
     </section>
     <!-- ======= Features Section ======= -->
-    <section id="features" class="features">
+    <section id="features" class="features strategy">
         <div class="container" data-aos="fade-up">
             <header class="section-header">
-                <h3>We Creating Solutions For <strong>Our Organization</strong></h3>
+                <h3>Our strategic <strong>pillars</strong></h3>
             </header>
             <?php
             $our_mission= get_post(133);
@@ -93,20 +93,21 @@ $image_core_values= get_the_post_thumbnail_url(101);
             ?>
             <ul class="nav nav-tabs row gy-4 d-flex">
 
-                <!-- <li class="nav-item col-lg-4 col-sm-4 col-xs-12">
-                    <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
-                        <h4><?php echo $title_our_mission;?></h4>
-                    </a>
-                </li> -->
-                <!-- End Tab 1 Nav -->
+            
 
-                <li class="nav-item col-lg-6 col-sm-4 col-xs-12">
-                    <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-2">
+                <li class="nav-item col-lg-4 col-sm-4 col-xs-12">
+                    <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
                         <h4><?php echo $title_our_vision;?></h4>
                     </a>
-                </li><!-- End Tab 2 Nav -->
+                </li><!-- End Tab 1 Nav -->
+                <li class="nav-item col-lg-4 col-sm-4 col-xs-12">
+                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+                        <h4>Policy & Program</h4>
+                    </a>
+                </li>
+                <!-- End Tab 2 Nav -->
 
-                <li class="nav-item col-lg-6 col-sm-4 col-xs-12">
+                <li class="nav-item col-lg-4 col-sm-4 col-xs-12">
                     <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
                         <h4><?php echo $title_our_strategies;?></h4>
                     </a>
@@ -115,11 +116,9 @@ $image_core_values= get_the_post_thumbnail_url(101);
 
             <div class="tab-content">
 
-                <!-- End Tab Content 1 -->
-
-                <div class="tab-pane active show" id="tab-2">
+                <div class="tab-pane active show" id="tab-1">
                     <div class="row gy-4">
-                        <div class="col-lg-8 order-2 order-lg-1">
+                        <div class="col-lg-12 order-2 order-lg-1">
                             <p>
                                 <?php echo $content_our_vision;?>
                             </p>
@@ -128,25 +127,243 @@ $image_core_values= get_the_post_thumbnail_url(101);
                             <img src="<?php echo $image_our_vision;?>" alt="" class="img-fluid">
                         </div>
                     </div>
-                </div><!-- End Tab Content 2 -->
+                </div><!-- End Tab Content 1 -->
 
+                <div class="tab-pane" id="tab-2">
+                    <div class="row gy-4">
+                        <div class="col-lg-12 col-sm-12 order-2 order-lg-1">
+                          <ul>
+                            <li>&nbsp;रियल स्टेट सम्बन्धी पब्लिक कम्पनीको अवधारणाबाट कम्पनीको दायरा फराकिलो बनाएर भविष्यमा आउने अवसरहरुको अधिकतम उपयोग गर्ने र आय आर्जन गर्ने नीति कम्पनीले लिएको छ ।</li>
+                            <li>&nbsp;समुदाय र लगानीकर्तालाई आर्थिक बहसमा सहभागी गरेर उद्यंम अभियान अगाडी बढाउँदै कम्पनीको बजार प्रवद्र्धन क्षमतालाई दिगो बनाउनेनीति लिएकोछ ।</li>
+                            <li>&nbsp;रियल स्टेटको बजारलाई आधुनिक र भरपर्दो ढङ्गबाट व्यवस्थापन गरि दरिलो मुख्य कम्पनीको रुपमा स्थापित हुने र अनेकौसहायक कम्पनीको प्रवद्र्धन गरि आय आर्जनको क्षेत्र विस्तार गर्ने नीति लिएको छ ।</li>
+                            <li>&nbsp; सहायक कम्पनीहरुको माध्यमबाट केबलकार परियोजना र पर्यटन पुर्वाधारयुक्त आयोजनाको कार्यदिशा अंगाल्ने छ ।</li>
+                            <li>&nbsp;लगानीको वातावरणको लागि उपयुक्त एजेण्डामा कार्यक्रम बनाउनेछ ।</li>
+                            <li>&nbsp;परियोजना मार्फत् केबलकार र पर्यटन बजारलाई प्रर्वद्र्धन गरि आर्थिक पारदर्शिता दिन सक्ने विकास गर्न तयारी गर्नै छ ।</li>
+                            <li>&nbsp;लगानीकर्तालाई लाभांश बाड्न सक्ने गरि सहायक कम्पनीलाई परिचालित गर्ने छ ।</li>
+                            <li>&nbsp;कम्पनीले एकिकृत लगानीको चेन बनाउने अन्तिम गृहकार्य गरेको छ । कम्पनी अझ विशुद्घ अविभावक कम्पनीको रुपमा रहेर आफनो सहायक कम्पनी टुरिजम इन्भेष्टमेन्ट फण्ड लि का चेनमा अन्य सहायक कम्पनीहरुलाई परिणत गरेर व्यवस्थित गतिविधमा लाग्ने तयारी गरेको छ ।</li>
+                            <li>&nbsp;पर्यटन पुर्वाधारयुक्त केबलकार परियोजना यसप्रकार अगाडी बढ्ने छन् ।</li>
+                          </ul>
+                        </div>    
+                    </div>
+                </div><!-- End Tab Content 2 -->
                 <div class="tab-pane" id="tab-3">
                     <div class="row gy-4">
-                        <div class="col-lg-8 order-2 order-lg-1">
-                            <p>
-                                <?php echo $content_our_strategies;?>
-                            </p>
+                        <div class="col-lg-12 col-sm-12 order-2 order-lg-1">
+                                <h4>सैद्धान्तिक कार्यक्रम</h4>
+                           <div class="accordion accordion-flush" id="faqlist">
+                             <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                               <h3 class="accordion-header">
+                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                                 <i class="bi bi-arrow-right-square-fill"></i> योजनावद्ध लक्ष्यको पहिलो पाँच वर्ष</button>
+                               </h3>
+                               <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                  <div class="accordion-body">
+                                  </div>
+                               </div>
+                         </div><!-- # Faq item-->
+
+<div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+  <h3 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+    <i class="bi bi-arrow-right-square-fill"></i> अल्पकालीनलक्ष्य दोश्रो पाँचवर्ष </button>
+  </h3>
+  <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+  <div class="accordion-body">
+    </div>
+  </div>
+</div><!-- # Faq item-->
+
+<div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+  <h3 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+        <i class="bi bi-arrow-right-square-fill"></i> मध्यकालीनलक्ष्य तेश्रो ५ वर्ष
+    </button>
+  </h3>
+  <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+  <div class="accordion-body">
+    </div>
+  </div>
+</div><!-- # Faq item-->
+
+<div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+  <h3 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+    <i class="bi bi-folder-plus file-icon"></i>
+    दिर्घकालिनचौथो पाँच वर्ष
+    </button>
+  </h3>
+  <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+  <div class="accordion-body">
+    </div>
+  </div>
+</div><!-- # Faq item-->
+    <h4>नाफा वितरणको रणनिती</h4>
+<div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+  <h3 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+        <i class="bi bi-arrow-right-square-fill"></i>योजनावद्ध लक्ष्यको पहिलो पाँच वर्ष
+    </button>
+  </h3>
+  <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+    <div class="accordion-body">
+    </div>
+  </div>
+</div><!-- # Faq item-->
+<div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+  <h3 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-6">
+       <i class="bi bi-arrow-right-square-fill"></i>अल्पकालीनलक्ष्य दोश्रो पाँचवर्ष
+    </button>
+  </h3>
+  <div id="faq-content-6" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+  <div class="accordion-body">
+    </div>
+  </div>
+</div><!-- # Faq item-->
+<div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+  <h3 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-7">
+        <i class="bi bi-arrow-right-square-fill"></i> मध्यकालीनलक्ष्य तेश्रो ५ वर्ष
+    </button>
+  </h3>
+  <div id="faq-content-7" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+    <div class="accordion-body">
+    </div>
+  </div>
+</div><!-- # Faq item-->
+<div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+  <h3 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-8">
+       <i class="bi bi-arrow-right-square-fill"></i> दिर्घकालिनचौथो पाँच वर्ष
+    </button>
+  </h3>
+  <div id="faq-content-8" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+  <div class="accordion-body">
+    </div>
+  </div>
+</div><!-- # Faq item-->
+
+<h4>शेयर पुँजी</h4>
+<div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+  <h3 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-9">
+       <i class="bi bi-arrow-right-square-fill"></i> योजनावद्ध लक्ष्यको पहिलो पाँच वर्ष
+    </button>
+  </h3>
+  <div id="faq-content-9" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+  <div class="accordion-body">
+    </div>
+  </div>
+</div><!-- # Faq item-->
+<div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+  <h3 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-10">
+       <i class="bi bi-arrow-right-square-fill"></i>अल्पकालीनलक्ष्य दोश्रो पाँचवर्ष
+    </button>
+  </h3>
+  <div id="faq-content-10" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+  <div class="accordion-body">
+    </div>
+  </div>
+</div><!-- # Faq item-->
+<div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+  <h3 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-11">
+    <i class="bi bi-arrow-right-square-fill"></i> मध्यकालीनलक्ष्य तेश्रो ५ वर्ष</button>
+  </h3>
+  <div id="faq-content-11" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+  <div class="accordion-body">
+    </div>
+  </div>
+</div><!-- # Faq item-->
+<div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+  <h3 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-12">
+      <i class="bi bi-arrow-right-square-fill"></i> दिर्घकालिनचौथो पाँच वर्ष
+    </button>
+  </h3>
+  <div id="faq-content-12" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+    <div class="accordion-body">
+    </div>
+  </div>
+</div><!-- # Faq item-->
+</div>
+<h4>रोजगारी</h4>
+          <div class="elementor-widget-container">
+								<table>
+                                    <thead>
+                                        <tr>
+                                            <th>क्र.सं.</th>
+                                            <th>वर्ष</th><th>कार्य योजना</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td> १</td>
+                                            <td align="justify">योजनावद्ध पहिलो वर्ष</td>
+                                            <td>१०००</td>
+                                        </tr>
+                                        <tr>
+                                            <td>२</td>
+                                            <td align="justify">अल्पकालीन दोस्रो वर्ष</td>
+                                            <td>१००००</td>
+                                        </tr>
+                                        <tr>
+                                            <td>३</td>
+                                            <td align="justify">मध्यकालीन तेस्रो वर्ष</td>
+                                            <td>२००००</td>
+                                        </tr>
+                                        <tr>
+                                            <td>४</td>
+                                            <td align="justify">दीर्घकालीन चौथो वर्ष</td>
+                                            <td>४५०००</td>
+                                        </tr>
+                                    </tbody>
+                                </table>		
+          </div>
+          <h4>शेयरधनी संख्या</h4>
+          <div class="elementor-widget-container">
+								<table>
+                                    <thead>
+                                        <tr><th>क्र.सं.</th>
+                                        <th>वर्ष</th>
+                                        <th>कार्य योजना</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>१</strong></td>
+                                        <td align="justify">योजनावद्ध पहिलो वर्ष&nbsp;</td>
+                                        <td>१०,००० जना</td>
+                                    </tr>
+                                    <tr>
+                                        <td>२</td>
+                                        <td align="justify">अल्पकालीन दोस्रो वर्ष</td>
+                                        <td>८०,००० जना</td>
+                                    </tr>
+                                    <tr>
+                                        <td>३</td>
+                                        <td align="justify">मध्यकालीन तेस्रो वर्ष</td>
+                                        <td>३,६०,००० जना</td>
+                                    </tr>
+                                    <tr>
+                                        <td>४</td>
+                                        <td align="justify">दीर्घकालीन चौथो वर्ष</td>
+                                        <td>१४,००,००० जना&nbsp;</td>
+                                    </tr>
+                                </tbody>
+                            </table>						
                         </div>
+                       </div>
+                       </div>
                         <div class="col-lg-4 order-1 order-lg-2 text-center">
                             <img src="<?php echo $image_our_strategies;?>" alt="" class="img-fluid">
                         </div>
                     </div>
                 </div><!-- End Tab Content 3 -->
-
-
+       
             </div>
-
-        </div>
+         </div>
     </section><!-- End Features Section -->
     <section id="features" class="features about-company">
         <div class="container" data-aos="fade-up">
@@ -204,13 +421,13 @@ $image_core_values= get_the_post_thumbnail_url(101);
                              <p>देशले अधिकारको नाममा गरेका सम्पूर्ण आन्दोलनहरू समापन गरेको र आर्थिक अभियान नै अबको एजेण्डा हो भनेर अभिव्यक्त गरेको छ । राष्ट्र र राज्यको यस्तो खालको निष्कर्षलाई नागरिक स्तरबाट नै समर्थन गर्नुपर्दछ, प्रवद्र्धन  गर्नुपर्दछ भन्ने निष्कर्षमा हामी केही युवा व्यवसायीहरू पुग्यौँ । ‘राज्यको चाहनाः आम समुदायको चाहना’ सम्बोधन गर्नका लागि  सामान्य पहलकदमी र सामान्य बाटोको खाकाले मात्र पुग्दैन ।  यसका लागि घनीभूत अभियान नै चलाउनु पर्दछ । सो अभियानमा हजारौं व्यक्ति र लगानीकर्ताहरू एकीकृत र समायोजित हुनुपर्छ । बल्ल मात्र सार्थक रूपमा आर्थिक क्रान्तिको बहस छेड्न सकिन्छ भन्ने ठम्याईका साथ २०७२ सालमा आरकेडी रियल स्टेट एण्ड कन्स्ट्रक्सन लि. नामको सार्वजनिक कम्पनी स्थापना गर्ने ठोस निचोडमा पुग्यौँ । रियल स्टेटको नामको सार्वजनिक  कम्पनी स्थापना र सञ्चालनका आआफ्ना खालका जोखिमहरू थिए । सँगसँगै सार्वजनिक कम्पनीको अभ्याससमेत नगरिएको परिप्रेक्ष्यमा ठूलो बहसको माझ कम्पनी दर्ता भएको थियो । सुरुवातदेखि छलफल गरी केही महत्वपूर्ण साझेदारहरूले सार्वजनिक कम्पनी भनेपछि अगाडि बढ्ने आँट गर्ने कुरैभएन । निजहरूलाई स–सम्मान विदा गर्दैगर्दा केही नयाँ साझेदार  साथीहरूले अबको निकास  यसैबाट सम्भव छ, फराकिलो आर्थिक दायरा बनाउने नेतृत्वदायी भूमिकासमेत खेल्ने साहस र आँट गर्नुपर्नेछ भन्ने हौसलाका साथ संस्थापक सञ्चालक ९ जना रहेर आरकेडी स्थापना हुन पुगेको थियो । सार्वजनिक कम्पनीको जटिलताका विषयमा जानकार रहँदारहँदै पनि कम्पनीले केही पाउन केही  गुमाउन तयार हुनुपर्दछ । हामी अगाडि बढ्न सक्यौं भने आर्थिक अभियान नेतृत्व गर्ने अवसर छ । साथै  आर्थिक स्वतन्त्रताको जग बसाउने अवसर पनि रहन्छ । यो अवसर कम्पनीको सफलताले मात्र दिन सक्छ । दुर्भाग्यवश, असफल हुने भनेको पनि वर्तमान अवस्थाभन्दा पनि विकसित हुनु हो भन्ने  निष्कर्षमा पुग्यौँ । हामीसँग  सामूहिक रूपमा कार्य गरेका इतिहासको अध्ययन,सहकारीमार्फत्पाचौँ हजार व्यक्तिहरूसँग गरेको समझदारी, लगानी र व्यवस्थापनको आफ्नै अनुभव र विकासको सफलताले सहकारीबाट मात्र आर्थिक अभियानको नेतृत्व गर्न सकिँदैन भन्ने ठोस निष्कर्ष निकाली  सहकारीसहितको कर्पाेरेट क्षेत्रबाट समृद्धिको अभियान, आर्थिक क्याम्पियन, औद्योगिक क्याम्पियन, उत्पादन क्याम्पियन गराउन सकिन्छ भन्ने कम्पनीको बुझाई हो । यसले मात्र दीर्घकालीन कम्पनीहरू र सयौं सहायक  कम्पनीहरूको प्रवद्र्धन गर्दै पर्यटन पूर्वाधार क्षेत्र र आर्थिक उपार्जनको पूर्वाधार निर्माणको क्षेत्रमा उल्लेखनीय योगदान पु¥याउन सक्छ भन्ने हाम्रो तीव्र चाहना र निष्कर्ष रहेको थियो । यो कम्पनी समूह स्थापना पूर्वको उर्वरभूमि २०६५ साल देखिको श्री बिहानी बचत तथा ऋण सहकारी संस्था लि. को गतिविधिहरूको संश्लेषण हो । कम्पनीका संस्थापक ९ जना सञ्चालक र अधिकांश प्रवद्र्धकहरू समेत निज संस्थामा प्रवद्र्धनका लागि कम्पनीमा सहभागी हुनु यसको गतिलो प्रमाण हो ।</p>
                               <p>यो कम्पनी समूहको संस्थापनमा सहकारी क्षेत्रको उल्लेखनीय योगदान रहेको छ । साथसाथै श्री बिहानी ५ औं हजार तत्कालीन शेयरधनीहरूको पसिना, मिहेनत र विचार आदर्श समेतले निर्णायक रूपमा भूमिका खेलेको छ । फलस्वरुप सार्वजनिक कम्पनी खोल्ने अवधारणाले मूर्त रूप प्राप्त गर्न सकेको हो । मुख्य सहायक तर निर्णायक निचोडमा पुग्दा यो कम्पनी स्वदेशमा रहने निम्न र मध्यम वर्गका नेपालीजन र विदेशमा पसिना बगाएका निम्न र मध्यम वर्गका प्रवासी नेपालीहरू बिच अनुभव, सिप, श्रम, सामाजिक उद्यम र पँुजीको एकीकृत सम्पादनको अभिव्यक्तिको रूपमा स्थापना भएको हो । सोहीअनुसार संसारभरि आफ्नो उपस्थितिलाई दरिलोदेखिने गरी प्रकाशित गरेको छ । अन्ततः यो कम्पनी समूह समग्र पक्षका व्यवसायिक चाहनाहरू र सबै पक्षहरू समेटिएको नेपाली निम्न मध्यम वर्गको नेतृत्व रहेको बृहत्तर कम्पनी समूह हो । यसको उद्देश्य सामूहिक आर्थिक मुक्ति र राष्ट्रको समृद्धिबाहेक केही पनि रहेको छैन । यो दीर्घकालीन बाटो तय गरेको कम्पनी स्थापना गर्दा कम्पनीका संस्थापक सञ्चालक (१) रामचन्द्र शर्मा (२) किरण पोखरेल (३) रामप्रसाद शर्मा (४)धर्मराज भण्डारी (५) धन प्रसाद पाध्या (६) हरि प्रसाद गौतम (७)अम्बिका प्रसाद पौडेल (८) सन्तोष अधिकारी (९) विष्णु पुन रहनु भएको थियो । आज तिनै ९ जना युवाहरूले स्थापना गरेको कम्पनी यो समूहगत कम्पनीको नेतृत्वदायी स्थानमा हुनु ठूलो गर्व र गौरवको कुरा बन्न पुगेको छ ।</p>
                               <p>इतिहास दोहोरिँदैन निरन्तर विकास हुने गर्दछ । जसको ज्वलन्त उदाहरण कष्टपूर्ण घडीमा कम्पनीलाई थप उर्जाका साथ नयाँ जीवन दिने एकीकृत साहस नै हो । यसै उद्घोषका साथ कम्पनीले केवलकार बनाउने बृहत्तर  उद्देश्यसहित पञ्चासे केलवकार एण्ड टुर्स लि. संस्थापनको कार्यनीति लियो । यो कार्यनीतिलाई सफल बनाउनका लागि चिन्तामणि शर्मा, प्रेम शर्मा सुवेदी, प्रेम गिरी, कमल बस्नेत, कृष्ण बहादुर ढकाल, कृष्ण तिवारी र अमृत पौडेल लगायतको समूहले गतिलो योगदान गरेकोछ । इतिहासको पाइला रोकिँदैन बरु झन्व्यवस्थित बन्दै अगाडि बढ्छ । यही क्रममा पर्यटकीय नगरी बन्दीपुरमा पर्यटन पूर्वाधारयुक्त केवलकार परियोजना अगाडि बढाउने अवसर पक्रने गरी बन्दीपुर केवलकार प्रा.लि. कम्पनीले प्राप्ति गर्ने सौभाग्य पायो । यस कदममा  त्तारानाथ उपाध्याय, कृष्ण अधिकारी, शिव प्रसाद शर्माका साथै स्वदेश र विदेशमा बस्ने नेपाली मनहरूले अभियानलाई थप समृद्ध सुसम्पन्न पार्दै लगेको कम्पनीको विकसित इतिहास आज अझ गर्व गर्नलायक बनेको छ । गर्वमा रमाउनुभन्दा पनि यथार्थ योगदान दिनु आजको आवश्यकता हो भन्ने निष्कर्षमा कम्पनी समूह पुगेको छ । आरकेडी समूह सीमित स्वार्थ र सीमित व्यक्तिहरूको आर्थिक उपाजर्नको साधनको लागिभन्दा पनि समग्र देशलाई उद्वेलित गर्ने अभियान बन्नुपर्छ भन्ने यसको दृष्टिकोण हो । आरकेडी समूह “सामाजिक व्यवसाय” को निर्विकल्प पहिचान हो ।</p>
-                              <header class="section-header">
+                              <!-- <header class="section-header">
                                 <h3>Hierarchy <strong>structure</strong></h3>
                               </header>
                               <p>आरकेडी होल्डिबस् बन्ने प्रक्रिया सुरु भएको छ । रियल स्टेटलाई मात्र आधार मानेको कम्पनीलाई अझ व्यापक रूपमा अन्य कम्पनी संस्थापन, प्रवर्धन र एक्विजिसन गर्ने हैसियतमा अझ बलियो बनाउन साधारण सभाको म्यान्डेट मुताबिक कार्य भएको छ । आफ्ना उद्देश्यहरू समेत थप गरेकोछ । जसअन्तर्गतः १) उत्पादनमूलक एवम्प्रविधिमूलक उद्योगहरू प्रवर्धन गर्ने र व्यवसायिक रूपमा स्वपुँजी लगानी गर्ने । २) एस्क्रो सेवा प्रदान गर्ने साथै लगानी प्रवर्धन गर्ने । ३) निर्माण तथा रियल स्टेटको इभेन्ट व्यवस्थापन गर्ने । ४) परियोजना बैंक स्थापना मार्फत् परियोजना डिपिआरसहित प्याकेज उत्पादन गरी बिक्री गर्ने उद्देश्यहरू राखिएको छ । जुन दीर्घकालीन हिसाबले चिरस्थायी बन्ने आधार स्तम्भको कोशेढुंगा बन्न सक्दछ भन्ने कम्पनीको निष्कर्ष रहेको छ । आरकेडी होल्डिबस् भएपश्चात् कम्पनी समूहको चेन यसप्रकार रहनेछ ।</p>
                              <div class="d-flex justify-content-center">
                                 <img src="<?php echo get_template_directory_uri();?>/assets/img/sub.jpg" alt="">
-                             </div>
+                             </div> -->
                            
                             </div>
 
@@ -224,7 +441,7 @@ $image_core_values= get_the_post_thumbnail_url(101);
                 <div class="row gy-4">
                         <div class="col-lg-12 order-2 order-lg-1">
                         <div class="d-flex justify-content-center">
-                                <img src="<?php echo get_template_directory_uri();?>/assets/img/summary.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri();?>/assets/img/summary.png" alt="">
                              </div>
                         </div>
 

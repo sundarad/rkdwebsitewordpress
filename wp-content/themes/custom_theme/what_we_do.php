@@ -123,6 +123,14 @@ if ($the_query->have_posts()) : ?>
             </div>
         </div>
       </div><!-- End Service Item -->
+      <div class="col-xl-4 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="500">
+        <div class="service-item">
+            <h3>Ecommerce</h3>
+            <div class="icon">
+              <img src="<?php echo get_template_directory_uri();?>/assets/img/more-service/ecommerce.png" alt="">
+            </div>
+        </div>
+      </div><!-- End Service Item -->
     </div>
       
       </div>

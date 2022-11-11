@@ -1,13 +1,30 @@
 <?php /* Template Name: Home Page */ ?>
 <?php get_header();?>
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-toggle="modal">
+      <div class="modal-dialog">
+            <div class="modal-content" >
+                <div class="modal-header">
+                  <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" title="Close"></button>
+                </div>
+               <div class="modal-body">
+                     <!-- <img src="<?php echo get_template_directory_uri();?>/assets/img/ilami-program.jpg" width="100%"  alt=""> -->
+                      <h3 class="text-center">Salami and Ilami promo video</h3>
+                     <div class="embed-responsive embed-responsive-16by9">
+                     <iframe width="100%" height="350" src="https://www.youtube.com/embed/_c23FGU1Cao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+	           </div>
+            </div>
+      </div>
+</div>
     <section id="hero" class="hero carousel  carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
         <div class="carousel-item active">
             <div class="container">
                 <div class="row justify-content-center gy-6 align-items-center">
                     <div class="col-lg-12">
-                        <a href="" class="btn btn-coops">COOP2GOVS</a>
-                       
+                        <a href="" class="btn btn-coops">COOP2GOVS</a>               
                         <h2>TIFL : A fund dedicated for entrepreneurs and innovative market disruptive <span> business ventures </span></h2>
                         <div class="d-flex justify-content-center more-btn">
                             <a href="/contact-us-2/" class="btn-get-started scrollto">Contact us</a>
@@ -186,15 +203,21 @@ if ($the_query->have_posts()) : ?>
            </header>
            <div class="row clients-wrap justify-content-center clearfix aos-init aos-animate" data-aos="fade-up" >
                <div class="col-lg-12 col-sm-12 col-xs-12">
-                   <div class="client-logo"> <img src="<?php echo get_template_directory_uri();?>/assets/img/logo.png" class="img-fluid" alt=""></div>
+                    <a href="index.php">
+                      <div class="client-logo"> <img src="<?php echo get_template_directory_uri();?>/assets/img/logo.png" class="img-fluid" alt=""></div>
+                    </a>
                </div>
                <div class="col-lg-12 col-sm-12 col-xs-12">
-                   <div class="client-logo"> <img src="<?php echo get_template_directory_uri();?>/assets/img/tifl.png" class="img-fluid" alt=""></div>
+                    <a href="https://tifl.com.np/" target="_blank">
+                      <div class="client-logo"> <img src="<?php echo get_template_directory_uri();?>/assets/img/tifl.png" class="img-fluid" alt=""></div>
+                    </a>
                </div>
                <div class="col-lg-4 col-sm-12 col-xs-12">
-                   <div class=" client-logo" style="width: 440px;">
+                  <a href="https://bandipurcablecar.com.np/" target="_blank">
+                    <div class=" client-logo" style="width: 440px;">
                        <img src="<?php echo get_template_directory_uri();?>/assets/img/bandipur.png" class="img-fluid" alt="">
-                   </div>
+                    </div>
+                  </a>
                </div>
                <div class="col-lg-4 col-sm-12 col-xs-12">
                    <div class="client-logo" style="width: 440px;">
@@ -202,9 +225,11 @@ if ($the_query->have_posts()) : ?>
                    </div>
                </div>
                <div class="col-lg-4 col-sm-12 col-xs-12">
-                   <div class="client-logo" style="width: 416px;">
+                  <a href="https://bizbazar.com.np/" target="_blank">
+                    <div class="client-logo" style="width: 416px;">
                        <img src="<?php echo get_template_directory_uri();?> /assets/img/bizbazar.png" class="img-fluid" alt="">
-                   </div>
+                    </div>
+                  </a>
                </div>
            </div>
         </div>
@@ -393,7 +418,6 @@ $key_figures_content=$key_figures->post_content;
                 <h3>Investment <strong>Portfolio</strong></h3>
             </header>
             <ul class="nav nav-tabs mt-3 d-flex justify-content-center" id="portfolio-flters">
-
                 <li class="nav-item nav-link active show filter-active" data-bs-toggle="tab" data-bs-target="#tab-one">
                    All
                 </li><!-- End Tab 1 Nav -->
@@ -407,9 +431,6 @@ $key_figures_content=$key_figures->post_content;
                 <li class="nav-item nav-link " data-bs-toggle="tab" data-bs-target="#tab-three">
                    Hospitality and Tourism
                 </li><!-- End Tab 3 Nav -->
-
-
-
             </ul>
             <!-- <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
@@ -684,3 +705,18 @@ $key_figures_content=$key_figures->post_content;
 
     </main><!-- End #main -->
 <?php get_footer();?>
+
+<script>
+	$(document).ready(function(){
+		$("#exampleModalCenter").modal('show');
+    $('#exampleModalCenter').modal({backdrop: 'static', keyboard: false})  
+
+	});
+</script>
+<script>
+  $("#exampleModalCenter").on("show", function () {
+  $("body").addClass("modal-open");
+}).on("hidden", function () {
+  $("body").removeClass("modal-open")
+});
+</script>
