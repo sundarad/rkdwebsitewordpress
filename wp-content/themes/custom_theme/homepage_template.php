@@ -424,9 +424,6 @@ $key_figures_content=$key_figures->post_content;
                 <li class="nav-item  nav-link" data-bs-toggle="tab" data-bs-target="#tab-two">
                    Real Estate
                 </li><!-- End Tab 2 Nav -->
-                <li class="nav-item  nav-link" data-bs-toggle="tab" data-bs-target="#tab-two">
-                    Technology
-                </li><!-- End Tab 2 Nav -->
 
                 <li class="nav-item nav-link " data-bs-toggle="tab" data-bs-target="#tab-three">
                    Hospitality and Tourism
@@ -488,7 +485,7 @@ $key_figures_content=$key_figures->post_content;
                 <div class="tab-pane" id="tab-two">
                     <?php $args = array(
                         'post_type' => 'post',
-                        'category_name' => 'technology',
+                        'category_name' => 'realstate',
                         'posts_per_page' => -1,
                         'orderby' => 'date',
                         'order' => 'DESC'
@@ -568,6 +565,50 @@ $key_figures_content=$key_figures->post_content;
                         </section>
                     <?php endif; ?>
                 </div><!-- End Tab Content 3 -->
+
+                <div class="tab-pane" id="tab-four">
+                    <?php $args = array(
+                        'post_type' => 'post',
+                        'category_name' => 'technology',
+                        'posts_per_page' => -1,
+                        'orderby' => 'date',
+                        'order' => 'DESC'
+                    );
+
+                    $the_query = new WP_Query($args);
+                    if ($the_query->have_posts()) : ?>
+                        <section id="services" class="services one">
+                            <div class="container">
+                                <div class="row gy-5">
+                                    <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                                        <?php
+
+                                        $portfolio_image = get_the_post_thumbnail_url(get_the_ID());
+                                        $_content_e = get_the_excerpt();
+                                        //remove the paragraph tags
+                                        $_content_e = strip_tags($_content_e);
+                                        ?>
+                                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                                            <div class="portfolio-wrap">
+                                                <img src="<?php echo $portfolio_image;?>" class="img-fluid" alt="<?php echo $_content_e?>">
+                                                <div class="portfolio-info">
+                                                    <h4><?php the_title(); ?></h4>
+                                                    <p><?php get_the_content();?></p>
+                                                    <div class="portfolio-links">
+                                                        <a href="<?php echo $portfolio_image?>" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
+                                                        <a href="<?php the_permalink(); ?>" title="More Details"><i class="bi bi-link"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <?php endwhile; ?>
+                                    </div>
+                               </div>
+                        </section>
+                    <?php endif; ?>
+                </div><!-- End Tab Content 3 -->
+
 
 
 
