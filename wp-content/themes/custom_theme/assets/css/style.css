@@ -771,14 +771,13 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
     transform: translateY(40px);
     transition: transform .3s;
 }
-.hero {
+/* .hero {
     width: 100%;
     height: 62vh;
     text-align: center;
     padding: 0;
     background: url("../img/ilami.jpg") center center no-repeat;
     background-size: cover;
-    /*position: relative;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -795,7 +794,6 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
     width: 100%;
     height: 62vh;
     left: 0px;
-    /* top: 32px; */
     background: -webkit-gradient(linear, left top, right top, from(#09aa4e ), to(#0071b0));
     background: linear-gradient(to right,  #0071b0 0%,  #09aa4e 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$theme-color-1", endColorstr="$theme-color-2", GradientType=1 );
@@ -816,14 +814,7 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
         font-size: 16px;
     }
 }
-/*.hero h2 {*/
-/*    color: #413e66;*/
-/*    margin-bottom: 40px;*/
-/*    font-size: 45px;*/
-/*    font-weight: 700;*/
-/*    -webkit-animation: fadeInDown 1s both 0.2s;*/
-/*    animation: fadeInDown 1s both 0.2s;*/
-/*}*/
+
 @media (max-width: 768px) {
    .hero h2 {
        font-size: 22px;
@@ -838,29 +829,7 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
    font-weight: 500;
    margin-bottom: 30px;
 }
-
-.hero .img {
-    float: right;
-    width: 65%;
-    margin-bottom: 40px;
-    -webkit-animation: fadeInDownLite 1s both;
-    animation: fadeInDownLite 1s both;
-}
- .btn-get-started {
-    /* font-weight: 600; */
-    font-size: 16px;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 8px 32px;
-    border-radius: 5px;
-    transition: 0.5s;
-    -webkit-animation: fadeInUp 1s both 0.6s;
-    animation: fadeInUp 1s both 0.6s;
-    color: #fff;
-    background-color: #09aa4e94;
-    /* background: linear-gradient(to right, #BCE4CA 0%, #09AA4E 135%, #BCE4CA 100%); */
-    /* border: 1px solid  var(--primary-color); */
-}
+ */
 .modal-dialog {
     max-width: 700px;
 }
@@ -869,78 +838,7 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
     padding-top: 4rem;
    
 }
-.hero .btn-get-started:hover {
-    background:  transparent;
-    color: var(--primary-color); border: 1px solid var(--primary-color);
-}
-.hero .carousel-control-prev {
-    justify-content: start;
-}
-.hero .btn-watch-video i {
-    font-size: 32px;
-    transition: 0.3s;
-    line-height: 0;
-    margin-right: 8px;
-}
-/* .hero .btn-watch-video:hover span{
-    color: var(--secondary-color);
-} */
-@media (min-width: 640px) {
-    .hero .carousel-control-prev {
-        padding-left: 15px;
-    }
-}
-.hero .carousel-control-next {
-    justify-content: end;
-}
-@media (min-width: 640px) {
-    .hero .carousel-control-next {
-        padding-right: 15px;
-    }
-}
-.carousel-indicators{position: relative; margin: 5rem 0 0 0;}
-.hero .carousel-control-next-icon, .hero .carousel-control-prev-icon {
-    background: none;
-    font-size: 26px;
-    line-height: 0;
-    background:#09aa4e94;
-    border-radius: 50px;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.hero .carousel-control-next-icon {
-    padding-left: 3px;
-}
-.hero .carousel-control-prev-icon {
-    padding-right: 3px;
-}
-.hero .carousel-control-prev, .hero .carousel-control-next {
-    transition: 0.3s;
-}
-.hero .carousel-control-prev:focus, .hero .carousel-control-next:focus {
-    opacity: 0.5;
-}
-.hero .carousel-control-prev:hover, .hero .carousel-control-next:hover {
-    opacity: 0.9;
-}
-.hero .carousel-indicators li {
-    cursor: pointer;
-    /*background: rgba(0, 1, 0, );*/
-    overflow: hidden;
-    border: 0;
-    width: 12px;
-    height: 12px;
-    border-radius: 50px;
-    opacity: 0.6;
-    transition: 0.3s;
-}
-.hero .carousel-indicators li.active {
-    opacity: 1;
-    background: var(--primary-color);
-}
+
 @-webkit-keyframes fadeIn {
     from {
         opacity: 0;
@@ -1017,7 +915,201 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
         transform: translate3d(0, 0, 0);
     }
 }
-
+#hero {
+    width: 100%;
+    height: 62vh;
+    background-color: rgba(63, 73, 83, 0.8);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  #hero .carousel,
+  #hero .carousel-inner,
+  #hero .carousel-item,
+  #hero .carousel-item::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+  
+  #hero .carousel-item {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  #hero .carousel-item::before {
+    content: "";
+    background-color: rgba(30, 35, 40, 0.6);
+  }
+  
+  #hero .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top: 70px;
+    left: 50px;
+    right: 50px;
+  }
+  
+  #hero .container {
+    text-align: center;
+  }
+  
+  #hero h2 {
+    color: var(--bgcolor);
+    -webkit-animation: fadeInDown 1s both 0.6s;
+    animation: fadeInDown 1s both 0.6s;
+    margin-bottom: 20px;
+    font-size: 48px;
+    font-weight: 700;
+  }
+  
+  #hero p {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+    margin: 0 auto 30px auto;
+    color: #fff;
+  }
+  
+  #hero .carousel-inner .carousel-item {
+    transition-property: opacity;
+    background-position: center top;
+  }
+  
+  #hero .carousel-inner .carousel-item,
+  #hero .carousel-inner .active.carousel-item-start,
+  #hero .carousel-inner .active.carousel-item-end {
+    opacity: 0;
+  }
+  
+  #hero .carousel-inner .active,
+  #hero .carousel-inner .carousel-item-next.carousel-item-start,
+  #hero .carousel-inner .carousel-item-prev.carousel-item-end {
+    opacity: 1;
+    transition: 0.5s;
+  }
+  
+  #hero .carousel-inner .carousel-item-next,
+  #hero .carousel-inner .carousel-item-prev,
+  #hero .carousel-inner .active.carousel-item-start,
+  #hero .carousel-inner .active.carousel-item-end {
+    left: 0;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  #hero .carousel-control-next-icon,
+  #hero .carousel-control-prev-icon {
+    background: none;
+    font-size: 30px;
+    line-height: 0;
+    width: auto;
+    height: auto;
+    background: #09aa4e94;
+    border-radius: 50px;
+    transition: 0.3s;
+    color: rgba(255, 255, 255, 0.5);
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #hero .carousel-control-next-icon:hover,
+  #hero .carousel-control-prev-icon:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  #hero .carousel-indicators li {
+    cursor: pointer;
+    background: #fff;
+    overflow: hidden;
+    border: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+  
+  #hero .carousel-indicators li.active {
+    opacity: 1;
+    background: var(--primary-color);
+  }
+  
+  #hero .btn-get-started {
+    /* font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 4px;
+    transition: 0.5s;
+    line-height: 1;
+    color: #fff;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+     */
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 32px;
+    border-radius: 5px;
+    transition: 0.5s;
+    -webkit-animation: fadeInUp 1s both 0.6s;
+    animation: fadeInUp 1s both 0.6s;
+    color: var(--bgcolor);
+    background-color: #09aa4e94;
+    
+  }
+  
+  #hero .btn-get-started:hover {
+    background: var(--secondary-color); color: var(--primary-color);
+  }
+  #hero .btn-watch-video i {
+    font-size: 32px;
+    transition: 0.3s;
+    line-height: 0;
+    margin-right: 8px;
+}
+.btn-watch-video:hover{color: var(--bgcolor);}
+  @media (max-width: 992px) {
+    #hero {
+      height: 100vh;
+    }
+  
+    #hero .carousel-container {
+      top: 8px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #hero h2 {
+      font-size: 28px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+  
+    #hero .carousel-control-prev,
+    #hero .carousel-control-next {
+      width: 5%;
+    }
+  }
+  
+  @media (max-height: 500px) {
+    #hero {
+      height: 120vh;
+    }
+  }
+  
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/

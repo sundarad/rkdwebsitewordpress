@@ -18,77 +18,71 @@
             </div>
       </div>
 </div>
-    <section id="hero" class="hero carousel  carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+  
+    <!-- Hero Section start -->
+    <section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-        <div class="carousel-item active">
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image:url(<?php echo get_template_directory_uri();?>/assets/img/bg1.jpg)">
+          <div class="carousel-container">
             <div class="container">
-                <div class="row justify-content-center gy-6 align-items-center">
-                    <div class="col-lg-12">
-                        <a href="" class="btn btn-coops">COOP2GOVS</a>               
-                        <h2>TIFL : A fund dedicated for entrepreneurs and innovative market disruptive <span> business ventures </span></h2>
-                        <div class="d-flex justify-content-center more-btn">
+              <h2 class="animate__animated animate__fadeInDown">TIFL : A fund dedicated for entrepreneurs and innovative market disruptive <span> business ventures </span></h2>
+                        <div class="d-flex justify-content-center more-btn  animate__animated animate__fadeInUp scrollto">
                             <a href="/contact-us-2/" class="btn-get-started scrollto">Contact us</a>
                             <a href="https://www.youtube.com/watch?v=IrX-Xd4gOHU" class="glightbox btn-watch-video d-flex align-items-center ms-4" target="_blank"><i class="bi bi-play-circle"></i><span >Watch Video</span></a>
                         </div>
-                    </div>
-                    <!--                    <div class="col-lg-6 col-md-8">-->
-                    <!--                        <img src="assets/img/intro-img.svg" alt="" class="img-fluid img">-->
-                    <!--                    </div>-->
+              <!-- <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p> -->
 
-                </div>
             </div>
-        </div><!-- End Carousel Item -->
+          </div>
+        </div>
 
-        <div class="carousel-item">
+        <!-- Slide 2 -->
+       <a href="https://drive.google.com/drive/folders/1cs94tJy2bu7aGuxl8UlfHjxdkbLSv3VJ" target="_blank">
+       <div class="carousel-item" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/img/salamii.png)">
+          <div class="carousel-container">
             <div class="container">
-                <div class="row justify-content-center gy-6 align-items-center">
-                    <div class="col-lg-12">
-                    <a href="" class="btn btn-coops">COOP2GOVS</a>
-                        <h2> We empower your financial <span>vision</span> </h2>
-                        <div class="d-flex justify-content-center more-btn">
+              <h2 class="animate__animated animate__fadeInDown"> We empower your financial <span>vision</span> </h2>
+                        <div class="d-flex justify-content-center more-btn animate__animated animate__fadeInUp">
                             <a href="/contact-us-2/" class="btn-get-started">Contact us</a>
                             <a href="https://www.youtube.com/watch?v=IrX-Xd4gOHU" class="glightbox btn-watch-video d-flex align-items-center ms-3"><i class="bi bi-play-circle"></i><span >Watch Video</span></a>
                         </div>
-                    </div>
-                    <!--                    <div class="col-lg-6 col-md-8">-->
-                    <!--                        <img src="assets/img/intro-img.svg" alt="" class="img-fluid img">-->
-                    <!--                    </div>-->
-
-                </div>
+          
             </div>
-        </div><!-- End Carousel Item -->
+          </div>
+        </div>
+       </a>
 
-        <div class="carousel-item">
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url(<?php echo get_template_directory_uri();?>/assets/img/bg1.jpg)">
+          <div class="carousel-container">
             <div class="container">
-                <div class="row justify-content-center gy-6 align-items-center">
-                    <div class="col-lg-12">
-                    <a href="" class="btn btn-coops">COOP2GOVS</a>
-                        <h2>RKD Real Estate : Attain the highest ROI possible on your <span> Property</span> </h2>
-                        <div class="d-flex justify-content-center more-btn">
+              <h2 class="animate__animated animate__fadeInDown">RKD Real Estate : Attain the highest ROI possible on your <span> Property</span> </h2>
+                        <div class="d-flex justify-content-center more-btn animate__animated animate__fadeInUp">
                             <a href="/contact-us-2/" class="btn-get-started scrollto">Contact us</a>
                             <a href="https://www.youtube.com/watch?v=IrX-Xd4gOHU" class="glightbox btn-watch-video d-flex align-items-center ms-3"><i class="bi bi-play-circle"></i><span >Watch Video</span></a>
                         </div>
-                    </div>
-                    <!--                    <div class="col-lg-6 col-md-8">-->
-                    <!--                        <img src="assets/img/intro-img.svg" alt="" class="img-fluid img">-->
-                    <!--                    </div>-->
-
-                </div>
             </div>
-        </div><!-- End Carousel Item -->
+          </div>
+        </div>
 
-        <a class="carousel-control-prev" href="#hero" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-        </a>
+      </div>
 
-        <a class="carousel-control-next" href="#hero" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-        </a>
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
 
-        <ol class="carousel-indicators"></ol>
-        
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
 
-    </section><!-- End Hero Section -->
+    </div>
+  </section><!-- End Hero -->
 <?php $args = array(
     'post_type' => 'post',
     'category_name' => 'services',
