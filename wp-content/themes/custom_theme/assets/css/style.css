@@ -112,10 +112,9 @@ body {
 }
 
 a {color: var(--primary-color); text-decoration: none; transition: 0.5s;}
-a:hover,
+/* a:hover,
 a:active,
-a:focus,
-
+a:focus, */
 p {font-weight: 400; padding: 0; color: var(--text-color);   text-align: justify ;}
 p.text-extra{font-weight: 600;}
 p.text-extra a{ color: #413e66; transition: all 0.3s ease-in-out 0s; text-decoration: underline;}
@@ -1266,7 +1265,7 @@ section {
 
 .services.one{margin-top: -3rem; padding:0 0 45px 0; z-index: 9; position: relative;}
 .services.two{padding: 60px 0;}
-.services.two .services .details{height: 265px;}
+.services.two .services .details{height: 265px !important;}
 .services.two .services .details p{
     line-height: 24px;
     font-size: 14px;
@@ -2472,22 +2471,7 @@ span.price{color:  var(--primary-color);}
     opacity: 1;
 }
 
-#clients .swiper-pagination {
-    margin-top: 20px;
-    position: relative;
-}
 
-#clients .swiper-pagination .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background-color: #fff;
-    opacity: 1;
-    border: 1px solid #1bb1dc;
-}
-
-#clients .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #1bb1dc;
-}
 
 /* clients */
 .clients .client-logo {
@@ -2670,7 +2654,7 @@ span.price{color:  var(--primary-color);}
 }
 
 @media (max-width: 574px) {
-    .btn-watch-video{margin: auto;}
+    .btn-watch-video{margin: 0.8rem auto;}
     .more-btn {display: inline-block !important;   text-align: center; }
     #footer .footer-top .social-links a {  margin-bottom: 25px; }
 }
@@ -3084,7 +3068,7 @@ ul.footer-news li a{display: flex;}
     transition: 0.6s;
 }
 
-.services .details {
+#services .services .details {
     padding: 40px 25px;
     margin: -35px 30px 0 30px;
     transition: all ease-in-out 0.3s;
@@ -3128,7 +3112,7 @@ ul.footer-news li a{display: flex;}
     font-size: 14px;
     margin-bottom: 0;
     display: -webkit-box;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 7;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
