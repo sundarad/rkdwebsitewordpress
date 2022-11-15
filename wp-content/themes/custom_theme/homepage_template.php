@@ -221,7 +221,7 @@ if ($the_query->have_posts()) : ?>
                <div class="col-lg-4 col-sm-12 col-xs-12">
                   <a href="https://bizbazar.com.np/" target="_blank">
                     <div class="client-logo" style="width: 416px;">
-                       <img src="<?php echo get_template_directory_uri();?> /assets/img/bizbazar.png" class="img-fluid" alt="">
+                       <img src="<?php echo get_template_directory_uri();?>/assets/img/bizbazar.png" class="img-fluid" alt="">
                     </div>
                   </a>
                </div>
