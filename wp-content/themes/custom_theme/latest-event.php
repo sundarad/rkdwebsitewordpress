@@ -5,10 +5,10 @@
 <!-- ======= Breadcrumbs ======= -->
 <section id="breadcrumbs" class="breadcrumbs">
     <div class="container">
-    <h2>Documents</h2>
+    <h2>ILAMI Scheme- RKD Holdings Limited (RKD) in Collab with Bizbazar</h2>
         <ol>
             <li><a href="/index.php"> <i class="bi bi-house-fill"></i> Home</a></li>
-            <li>Documents</li>
+            <li>ILAMI Scheme- RKD Holdings Limited (RKD) in Collab with Bizbazar</li>
         </ol>
 
     </div>
@@ -37,42 +37,6 @@
                  <p>00971504823072- Krishna Bahadur Dhakal (Asia Continent)</p>
                  <p>00610431443794- Santosh Adhikari (Australia and Africa Continent)</p>
              </div> 
-             <ul class="nav nav-tabs row d-flex mt-4 mb-4">
-
-        <li class="nav-item col-lg-4 col-sm-3 col-xs-12">
-          <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
-            <h4>For Nepal</h4>
-          </a>
-        </li><!-- End Tab 1 Nav -->
-
-        <li class="nav-item col-lg-4 col-sm-3 col-xs-12">
-          <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
-            <h4>For Foreign Countries</h4>
-          </a>
-        </li><!-- End Tab 2 Nav -->
-
-
-      </ul>
-
-      <div class="tab-content">
-               
-        <div class="tab-pane active show" id="tab-1">
-          <div class="row">
-                 <p>9802815798 - Chintamani Sharma (Lumbini, Karnali, Sudurpaschim Area)</p>
-                 <p>9802815794 - Dharma Raj Bhandari (Gandaki Province)</p>
-                 <p>9802816969 - Prem Giri (Bagmati, Madhesh and Province 1)</p>
-          </div>
-    
-        </div><!-- End Tab Content 1 -->
-
-        <div class="tab-pane" id="tab-2">
-          <div class="row">
-                 <p>00971504823072- Krishna Bahadur Dhakal (Asia Continent)</p>
-                 <p>00610431443794- Santosh Adhikari (Australia and Africa Continent)</p>    
-          </div>
-        </div><!-- End Tab Content 2 -->
-
-      </div>
            </div>
        </div>
    </div>
