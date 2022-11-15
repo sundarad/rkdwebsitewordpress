@@ -11,7 +11,7 @@
                      <!-- <img src="<?php echo get_template_directory_uri();?>/assets/img/ilami-program.jpg" width="100%"  alt=""> -->
                       <h3 class="text-center">Salami and Ilami promo video</h3>
                      <div class="embed-responsive embed-responsive-16by9">
-                     <iframe width="100%" height="350" src="https://www.youtube.com/embed/_c23FGU1Cao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                       <iframe width="100%" height="350" src="https://www.youtube.com/embed/_c23FGU1Cao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
 
 	           </div>
@@ -142,13 +142,13 @@ if ($the_query->have_posts()) : ?>
                 //remove the paragraph tags
                 $wh_content_e = strip_tags($wh_content_e);
                 ?>
-                <div class="col-lg-5 col-md-6">
+                <div class="col-lg-5 col-sm-12">
                     <div class="about-img" data-aos="fade-right" data-aos-delay="100">
                         <img src="<?php echo $image_who_we_are;?>" alt="<?php echo $wh_content_e?>">
                     </div>
                 </div>
 
-                <div class="col-lg-7 col-md-6">
+                <div class="col-lg-7 col-sm-12">
                     <div class="about-content" data-aos="fade-left" data-aos-delay="100">
                         <header class="section-header" >
                             <h3 style="text-align:left;">Who <strong>we are</strong> </h3>  
@@ -385,13 +385,13 @@ $key_figures_content=$key_figures->post_content;
                 //remove the paragraph tags
                 $_content_e = strip_tags($_content_e);
                 ?>
-                <div class="col-lg-5 col-md-6">
+                <div class="col-lg-5 col-sm-12">
                     <div class="about-img h-100" data-aos="fade-right" data-aos-delay="100">
                         <img src="<?php echo $ceo_image;?>" alt="<?php echo $_content_e?>" class="h-100">
                     </div>
                 </div>
 
-                <div class="col-lg-7 col-md-6">
+                <div class="col-lg-7 col-sm-12">
                     <div class="about-content" data-aos="fade-left" data-aos-delay="100">
                         <header class="section-header">
                            <h3>Message<strong> from President</strong></h3>
@@ -736,7 +736,11 @@ $key_figures_content=$key_figures->post_content;
             </div>
     </section><!-- End Recent Blog Posts Section -->
 
-
+   <a href="/latest-event" target="_blank">
+   <section id="trend-event">
+       
+       </section>
+   </a>
 
     </main><!-- End #main -->
 <?php get_footer();?>
