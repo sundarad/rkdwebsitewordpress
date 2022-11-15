@@ -15,7 +15,7 @@
 } */
 :root{
     --primary-color:#09AA4E;
-    --secondary-color: #09aa4e63;
+    --secondary-color: #09aa4e47;
     --heading-color: #413e66;
     --text-color: #14141c;
     --bgcolor: #fff;
@@ -916,11 +916,13 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
     }
 }
 #hero {
-    width: 100%;
-    height: 62vh;
+    width: 90%;
+    margin: 2rem auto;
     background-color: rgba(63, 73, 83, 0.8);
     overflow: hidden;
     position: relative;
+    height: 62vh;
+    border-radius: 2rem;
   }
   
   #hero .carousel,
@@ -1005,16 +1007,16 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
   #hero .carousel-control-next-icon,
   #hero .carousel-control-prev-icon {
     background: none;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 0;
     width: auto;
     height: auto;
-    background: #09aa4e94;
+    background: var(--secondary-color);
     border-radius: 50px;
     transition: 0.3s;
     color: rgba(255, 255, 255, 0.5);
-    width: 54px;
-    height: 54px;
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1043,7 +1045,7 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
     background: var(--primary-color);
   }
   
-  #hero .btn-get-started {
+   .btn-get-started {
     /* font-weight: 500;
     font-size: 14px;
     letter-spacing: 1px;
@@ -1065,8 +1067,8 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
     transition: 0.5s;
     -webkit-animation: fadeInUp 1s both 0.6s;
     animation: fadeInUp 1s both 0.6s;
-    color: var(--bgcolor);
-    background-color: #09aa4e94;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
     
   }
   
@@ -1204,7 +1206,7 @@ section {
 #about  ul li::before{
     content: "\f598";
     display: inline-block;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-family: bootstrap-icons !important;
     font-style: normal;
     font-size: 19px;
@@ -1262,7 +1264,7 @@ section {
 /* Services Section
 --------------------------------*/
 
-.services.one{margin-top: -3rem; padding:0 0 45px 0; z-index: 9; position: relative;}
+.services.one{margin-top: -3.2rem; padding:0 0 45px 0; z-index: 9; position: relative;}
 .services.two{padding: 60px 0;}
 .services.two .services .details{height: 265px !important;}
 .services.two .services .details p{
@@ -2603,7 +2605,7 @@ span.price{color:  var(--primary-color);}
 }
 
 #footer .footer-top {
-    padding: 60px 0 30px 0;
+    padding: 60px 0 30px 0; border-top: 5px solid var(--secondary-color);
 }
 .footer-top ul li i{
     font-size: 0.7rem;
@@ -3068,7 +3070,7 @@ ul.footer-news li a{display: flex;}
     transition: 0.6s;
 }
 
-#services .services .details {
+ .services .details {
     padding: 40px 25px;
     margin: -35px 30px 0 30px;
     transition: all ease-in-out 0.3s;
@@ -3084,13 +3086,13 @@ ul.footer-news li a{display: flex;}
 .services .details .icon {
     width: 72px;
     height: 72px;
-    background: var(--primary-color);
+    background: var(--secondary-color);
     border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 0 20px 0;
-    color:#fff;
+    color: var(--primary-color);
     font-size: 28px;
     transition: ease-in-out 0.3s;
     position: absolute;

@@ -29,6 +29,11 @@
     <link href="<?php echo get_template_directory_uri();?>/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri();?>/assets/css/style.css" rel="stylesheet">
 
+    <!-- favicon links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
