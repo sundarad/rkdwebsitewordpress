@@ -1044,7 +1044,19 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
     opacity: 1;
     background: var(--primary-color);
   }
-  
+  #event-banner{background-image: url(../img/offers.jpg); background-size: cover; height: 55vh; display: flex; align-items: center; justify-content: center; position: relative;}
+  #event-banner:before{
+    position: absolute;  content: '';  width: 100%; height: 100%;
+    left: 0px;
+    /* top: 32px; */
+    background:linear-gradient(to right, #0071b08f 0%, #09aa4e6e 71%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$theme-color-1", endColorstr="$theme-color-2", GradientType=1 );
+    opacity: 0.3;
+  }
+    #event-video{padding: 60px 0; position: relative;  background: linear-gradient(to right, #0071b08f 0%, #09aa4e6e 71%);}
+    .carousel-nav-icon { height: 48px;  width: 48px; background-color: var(--secondary-color); color: var(--primary-color); border-radius: 50%;  display: flex;   justify-content: center;   align-items: center;   }
+       .carousel-item img{ width: 100%; margin: 8px; height: 250px;}
+      
    .btn-get-started {
     /* font-weight: 500;
     font-size: 14px;
@@ -1071,11 +1083,11 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
     background-color: var(--secondary-color);
     
   }
-  
-  #hero .btn-get-started:hover {
+  #contact-info{padding: 60px 0;}
+   .btn-get-started:hover {
     background: var(--secondary-color); color: var(--primary-color);
   }
-  #hero .btn-watch-video i {
+   .btn-watch-video i {
     font-size: 32px;
     transition: 0.3s;
     line-height: 0;
@@ -2412,7 +2424,7 @@ span.price{color:  var(--primary-color);}
     color: rgba(131, 136, 147, 0.8);
     font-size: 14px;
 }
-#inner-event{ padding: 80px 0;}
+#inner-event{ padding: 80px 0; background-color: #f5f8fd;}
 /* Team Section
 --------------------------------*/
 #team { padding: 80px 0;}
