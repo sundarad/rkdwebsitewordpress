@@ -291,11 +291,31 @@ if ($the_query->have_posts()) : ?>
     <!--        </section>-->
     <!-- End Services Section -->
     <!-- ======= Features Section ======= -->
-    <section id="features" class="features">
+    <section id="features" class="portfolio  features">
         <div class="container" data-aos="fade-up">
-            <header class="section-header">
+            <!-- <header class="section-header">
                 <h3>Investment <strong>By</strong></h3>
-            </header>
+            </header> -->
+            <div class="row d-flex align-items-center">
+                        <div class="col-lg-6 col-md-5 col-sm-12">
+                            <div class="item-heading-left">
+                                <h2 class="section-title">Investment <strong>By</strong></h2>
+                                <div class="bg-title-wrap" style="display: block;">
+                                    <span class="background-title solid">Investments</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-7 col-sm-12">
+                            <div class="isotope-classes-tab">
+                                <ul class="nav nav-tabs  d-flex justify-content-end " id="portfolio-flters">
+                                  <li class="nav-item nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1"> <?php echo $by_sector_title;?> </li><!-- End Tab 1 Nav -->
+                                  <li class="nav-item nav-link" data-bs-toggle="tab" data-bs-target="#tab-2"> <?php echo $by_business_platforms_title;?>  </li><!-- End Tab 2 Nav -->
+                                  <li class="nav-item nav-link"  data-bs-toggle="tab" data-bs-target="#tab-3"> <?php echo $by_asset_classes_title;?></li><!-- End Tab 3 Nav -->
+                                  <li class="nav-item nav-link" data-bs-toggle="tab" data-bs-target="#tab-4"> <?php echo $by_geography_title;?>  </li><!-- End Tab 4 Nav -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
             <?php
             $by_sector=get_post(161);
             $by_sector_content=$by_sector->post_content;
@@ -310,34 +330,7 @@ if ($the_query->have_posts()) : ?>
             $by_geography_content=$by_geography->post_content;
             $by_geography_title=$by_geography->post_title;
             ?>
-            <ul class="nav nav-tabs row gy-4 d-flex">
-
-                <li class="nav-item col-lg-3 col-sm-6 col-xs-12">
-                    <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
-                        <h4><?php echo $by_sector_title;?></h4>
-                    </a>
-                </li><!-- End Tab 1 Nav -->
-
-                <li class="nav-item col-lg-3 col-sm-6 col-xs-12">
-                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
-                        <h4><?php echo $by_business_platforms_title;?></h4>
-                    </a>
-                </li><!-- End Tab 2 Nav -->
-
-                <li class="nav-item col-lg-3 col-sm-6 col-xs-12">
-                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
-                        <h4><?php echo $by_asset_classes_title;?></h4>
-                    </a>
-                </li><!-- End Tab 3 Nav -->
-
-                <li class="nav-item col-lg-3 col-sm-6 col-xs-12">
-                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
-                        <h4><?php echo $by_geography_title;?></h4>
-                    </a>
-                </li><!-- End Tab 4 Nav -->
-
-
-            </ul>
+    
 
             <div class="tab-content">
 
@@ -408,10 +401,21 @@ $key_figures_content=$key_figures->post_content;
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio features">
         <div class="container" data-aos="fade-up">
-            <header class="section-header">
+            <!-- <header class="section-header">
                 <h3>Investment <strong>Portfolio</strong></h3>
-            </header>
-            <ul class="nav nav-tabs mt-3 d-flex justify-content-center" id="portfolio-flters">
+            </header> -->
+            <div class="row">
+                        <div class="col-lg-6 col-md-5 col-sm-12">
+                            <div class="item-heading-left">
+                                <h2 class="section-title">Investment <strong>Portfolio</strong></h2>
+                                <div class="bg-title-wrap" style="display: block;">
+                                    <span class="background-title solid">Portfolio</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-7 col-sm-12">
+                            <div class="isotope-classes-tab">
+                            <ul class="nav nav-tabs d-flex justify-content-center" id="portfolio-flters">
                 <li class="nav-item nav-link active show filter-active" data-bs-toggle="tab" data-bs-target="#tab-one">
                    All
                 </li><!-- End Tab 1 Nav -->
@@ -423,16 +427,8 @@ $key_figures_content=$key_figures->post_content;
                    Hospitality and Tourism
                 </li><!-- End Tab 3 Nav -->
             </ul>
-            <!-- <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul> -->
-
-            <div class="tab-content">
-
-                <div class="tab-pane active show" id="tab-one">
+                            </div>
+                        </div>
                     <?php $args = array(
                         'post_type' => 'post',
                         'category_name' => 'investment-portfolio',
@@ -443,7 +439,7 @@ $key_figures_content=$key_figures->post_content;
 
                     $the_query = new WP_Query($args);
                     if ($the_query->have_posts()) : ?>
-                        <section id="services" class="services one">
+                        <section id="services" class="services">
                             <div class="container">
                                 <div class="row gy-5 portfolio-container">
                                     <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
@@ -487,7 +483,7 @@ $key_figures_content=$key_figures->post_content;
 
                     $the_query = new WP_Query($args);
                     if ($the_query->have_posts()) : ?>
-                        <section id="services" class="services one">
+                        <section id="services" class="services">
                             <div class="container">
                                 <div class="row gy-5 portfolio-container">
                                     <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
@@ -528,7 +524,7 @@ $key_figures_content=$key_figures->post_content;
 
                     $the_query = new WP_Query($args);
                     if ($the_query->have_posts()) : ?>
-                        <section id="services" class="services one">
+                        <section id="services" class="services">
                             <div class="container">
                                 <div class="row gy-5">
                                     <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
@@ -571,7 +567,7 @@ $key_figures_content=$key_figures->post_content;
 
                     $the_query = new WP_Query($args);
                     if ($the_query->have_posts()) : ?>
-                        <section id="services" class="services one">
+                        <section id="services" class="services">
                             <div class="container">
                                 <div class="row gy-5">
                                     <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>

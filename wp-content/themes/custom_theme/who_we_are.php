@@ -67,11 +67,36 @@ $image_core_values= get_the_post_thumbnail_url(101);
         </div>
     </section>
     
-    <section id="features" class="features about-company">
+    <section id="features" class="features about-company portfolio features">
         <div class="container" data-aos="fade-up">
-            <header class="section-header">
+            <!-- <header class="section-header">
                 <h3>We Creating Solutions For <strong>Our Organization</strong></h3>
-            </header>
+            </header> -->
+            <div class="row">
+                        <div class="col-lg-6 col-md-5 col-sm-12">
+                            <div class="item-heading-left">
+                                <h2 class="section-title">About Us</h2>
+                                <div class="bg-title-wrap" style="display: block;">
+                                    <span class="background-title solid">Investments</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-7 col-sm-12">
+                            <div class="isotope-classes-tab">
+                            <ul class="nav nav-tabs d-flex justify-content-end" id="portfolio-flters">
+
+                           <!-- <li class="nav-item col-lg-4 col-sm-4 col-xs-12">
+                                   <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+                                     <h4><?php echo $title_our_mission;?></h4>
+                                   </a>
+                                </li> -->
+                        <!-- End Tab 1 Nav -->
+                              <li class="nav-item nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-newone">  About us  </li><!-- End Tab 2 Nav -->
+                              <li class="nav-item nav-link" data-bs-toggle="tab" data-bs-target="#tab-newtwo">   Investments  </li><!-- End Tab 3 Nav -->
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
             <?php
             $our_mission= get_post(133);
             $title_our_mission=$our_mission->post_title;
@@ -91,27 +116,6 @@ $image_core_values= get_the_post_thumbnail_url(101);
 
 
             ?>
-            <ul class="nav nav-tabs row gy-4 d-flex">
-
-                <!-- <li class="nav-item col-lg-4 col-sm-4 col-xs-12">
-                    <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
-                        <h4><?php echo $title_our_mission;?></h4>
-                    </a>
-                </li> -->
-                <!-- End Tab 1 Nav -->
-
-                <li class="nav-item col-lg-6 col-sm-4 col-xs-12">
-                    <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-newone">
-                        <h4>About us</h4>
-                    </a>
-                </li><!-- End Tab 2 Nav -->
-
-                <li class="nav-item col-lg-6 col-sm-4 col-xs-12">
-                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-newtwo">
-                        <h4>Investments</h4>
-                    </a>
-                </li><!-- End Tab 3 Nav -->
-            </ul>
 
             <div class="tab-content">
 
@@ -209,11 +213,30 @@ if ($the_query->have_posts()) : ?>
 <?php endif; ?>
 
 <!-- ======= Features Section ======= -->
-<section id="features" class="features strategy">
+<section id="features" class="features strategy portfolio features">
         <div class="container" data-aos="fade-up">
-            <header class="section-header">
+            <!-- <header class="section-header">
                 <h3>Our strategic <strong>pillars</strong></h3>
-            </header>
+            </header> -->
+            <div class="row">
+                        <div class="col-lg-6 col-md-5 col-sm-12">
+                            <div class="item-heading-left">
+                                <h2 class="section-title">Our strategic <strong>pillars</strong></h2>
+                                <div class="bg-title-wrap" style="display: block;">
+                                    <span class="background-title solid">Strategies</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-7 col-sm-12">
+                            <div class="isotope-classes-tab">
+                               <ul class="nav nav-tabs d-flex justify-content-end" id="portfolio-flters" >
+                                  <li class="nav-item nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1"> <?php echo $title_our_vision;?> </li><!-- End Tab 1 Nav -->
+                                  <li class="nav-item nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">  Policy & Program  </li>  <!-- End Tab 2 Nav -->
+                                  <li class="nav-item nav-link"  data-bs-toggle="tab" data-bs-target="#tab-3">  <?php echo $title_our_strategies;?> </li><!-- End Tab 3 Nav -->
+                               </ul>
+                            </div>
+                        </div>
+                    </div>
             <?php
             $our_mission= get_post(133);
             $title_our_mission=$our_mission->post_title;
@@ -233,26 +256,7 @@ if ($the_query->have_posts()) : ?>
 
 
             ?>
-            <ul class="nav nav-tabs row gy-4 d-flex">
-                <li class="nav-item col-lg-4 col-sm-4 col-xs-12">
-                    <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
-                        <h4><?php echo $title_our_vision;?></h4>
-                    </a>
-                </li><!-- End Tab 1 Nav -->
-                <li class="nav-item col-lg-4 col-sm-4 col-xs-12">
-                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
-                        <h4>Policy & Program</h4>
-                    </a>
-                </li>
-                <!-- End Tab 2 Nav -->
-
-                <li class="nav-item col-lg-4 col-sm-4 col-xs-12">
-                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
-                        <h4><?php echo $title_our_strategies;?></h4>
-                    </a>
-                </li><!-- End Tab 3 Nav -->
-            </ul>
-
+            
             <div class="tab-content">
 
                 <div class="tab-pane active show" id="tab-1">
