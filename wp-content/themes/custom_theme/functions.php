@@ -57,6 +57,15 @@ function custom_theme_setup() {
             'menu-2' => esc_html__( 'Footer', 'custom_theme' ),
         )
     );
+	function wdm_register_mobile_menu() {
+		add_theme_support( 'nav-menus' );
+		register_nav_menus( array('mobile-menu' => __( 'Mobile Menu', 'wdm' )) );
+	}
+	add_action( 'init', 'wdm_register_mobile_menu' );
+	function wdm_mm_toggle_scripts() {
+		wp_enqueue_script( 'wdm-mm-toggle', get_template_directory_uri() . '/js/mobile-menu-toggle.js', array('jquery') );
+	}
+	add_action( 'wp_enqueue_scripts', 'wdm_mm_toggle_scripts' );
 
 	/*
 		* Switch default core markup for search form, comment form, and comments

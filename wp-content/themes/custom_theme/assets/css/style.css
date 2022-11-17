@@ -645,6 +645,26 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
     }
 }
 
+.navbar  .mobile-menu{
+    display: none;
+}
+@media only screen and (min-width: 991px){
+    .desktop-menu{
+        display: block !important;
+    }
+    .navbar  .mobile-menu{
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .desktop-menu{
+        display: none !important;
+    }
+    .navbar  .mobile-menu{
+        display: block !important;
+    }
+}
 /**
 * Mobile Navigation
 */
