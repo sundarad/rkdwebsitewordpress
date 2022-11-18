@@ -420,11 +420,8 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
     color: var(--primary-color);
 }
 .site-branding {
-    float: none;
     text-align: center;
-    height: 117px;
     line-height: 117px;
-    position: relative;
     display: block;
     z-index: 1;
 }
@@ -694,14 +691,13 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
 
 @media (max-width: 991px) {
     .clients .client-logo{width: 100% !important;}
-    .mobile-nav-toggle {
-        display: block;
-    }
+
 
     .navbar ul {
         display: none;
     }
     .widget-left, .widget-right{display: none;}
+    .mobile-nav-toggle{display: block;}
 }
 
 .navbar-mobile , .mobile-menu{
@@ -716,9 +712,9 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
     z-index: 999;
 }
 
-.navbar-mobile .mobile-nav-toggle {
+ .mobile-nav-toggle {
     position: absolute;
-    top: 15px;
+    top: -80px;
     right: 15px;
 }
 
@@ -1133,6 +1129,7 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
     #hero .carousel-container {
       top: 8px;
     }
+    #about .about-content{padding-top: 2rem !important;}
   }
   
   @media (max-width: 768px) {
@@ -3180,8 +3177,7 @@ ul.footer-news li a{display: flex;}
 
 .services .details h3 {
     font-weight: 700;
-    margin: 10px 0 20px 0;
-
+    margin: 10px 0 10px 0;
     font-size: 22px;
     transition: ease-in-out 0.3s;
 }

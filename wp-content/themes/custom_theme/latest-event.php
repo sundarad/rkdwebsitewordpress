@@ -26,20 +26,29 @@
              <div class="embed-responsive embed-responsive-16by9 mt-4">
                        <iframe width="100%" height="450" src="https://www.youtube.com/embed/_c23FGU1Cao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
              </div> 
-             <div class="event-contact-info pt-4">
-                 <h3>Contact information:</h3>
+           </div>
+       </div>
+   </div>
+</section>
+
+<section id="contact-info">
+    <div class="container">
+        <div class="row">
+                <h3>Contact information:</h3>
                  <p>For further information kindly contact our representative at your convenience:</p>
+            <div class="col-lg-6">
                  <h4>For Nepal:</h4>
                  <p>9802815798 - Chintamani Sharma (Lumbini, Karnali, Sudurpaschim Area)</p>
                  <p>9802815794 - Dharma Raj Bhandari (Gandaki Province)</p>
                  <p>9802816969 - Prem Giri (Bagmati, Madhesh and Province 1)</p>
+            </div>
+             <div class="col-lg-6">
                  <h4>For Foreign Countries: </h4>
                  <p>00971504823072- Krishna Bahadur Dhakal (Asia Continent)</p>
                  <p>00610431443794- Santosh Adhikari (Australia and Africa Continent)</p>
+             </div>
              </div> 
-           </div>
-       </div>
-   </div>
+    </div>
 </section>
 
 

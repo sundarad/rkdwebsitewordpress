@@ -108,39 +108,29 @@
                                 <div class="site-header-menu-inner stickable-header ">
                                     <div class="container ">
                                         <!--site-navigation -->
-                                        <nav id=" navbar_top" class="navbar  d-flex justify-content-center">
-                                            <div class="ttm-rt-contact ">
-                                                <!-- header-icons -->
-                                                <!--                                                <div class="header-icons ">-->
-                                                <!--                                                    <div class="header-icon header-search-link">-->
-                                                <!--                                                        <a href="#" class="sclose"><i class="bi bi-search"></i></a>-->
-                                                <!--                                                    </div>-->
-                                                <!--                                                </div>-->
-                                                <!-- header-icons end -->
-                                            </div>
-
+                                        <nav id=" navbar" class="navbar  d-flex justify-content-center">
                                             <?php
                                             wp_nav_menu(
                                                 array(
                                                     'theme_location' => 'menu-1',
                                                     'menu_id'        => 'primary-menu',
-                                                    'menu_class'=>'navbar',
+                                                    // 'menu_class'=>'navbar',
                                                 )
                                             );
-                                            if ( function_exists('has_nav_menu') && has_nav_menu('mobile-menu') ) {
-                                                wp_nav_menu( array(
-                                                  'depth' => 6,
-                                                  'sort_column' => 'menu_order',
-                                                  'container' => 'ul',
-                                                  'menu_id' => 'main-nav',
-                                                  'menu_class' => 'nav mobile-menu',
-                                                  'theme_location' => 'mobile-menu'
-                                                ) );
-                                                } else {
-                                                   echo "<ul class='nav mobile-menu'> <font style='color:red'>Mobile Menu has not been set</font> </ul>";
-                                            }
+                                            // if ( function_exists('has_nav_menu') && has_nav_menu('mobile-menu') ) {
+                                            //     wp_nav_menu( array(
+                                            //       'depth' => 6,
+                                            //       'sort_column' => 'menu_order',
+                                            //       'container' => 'ul',
+                                            //       'menu_id' => 'main-nav',
+                                            //       'menu_class' => 'nav mobile-menu',
+                                            //       'theme_location' => 'mobile-menu'
+                                            //     ) );
+                                            //     } else {
+                                            //        echo "<ul class='nav mobile-menu'> <font style='color:red'>Mobile Menu has not been set</font> </ul>";
+                                            // }
                                             ?>
-                                            
+                                          <i class="bi-list mobile-nav-toggle"></i>
 
                                         </nav><!-- site-navigation end-->
                                     </div>

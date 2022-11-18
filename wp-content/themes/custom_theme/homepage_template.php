@@ -415,20 +415,16 @@ $key_figures_content=$key_figures->post_content;
                         </div>
                         <div class="col-lg-6 col-md-7 col-sm-12">
                             <div class="isotope-classes-tab">
-                            <ul class="nav nav-tabs d-flex justify-content-center" id="portfolio-flters">
-                <li class="nav-item nav-link active show filter-active" data-bs-toggle="tab" data-bs-target="#tab-one">
-                   All
-                </li><!-- End Tab 1 Nav -->
-                <li class="nav-item  nav-link" data-bs-toggle="tab" data-bs-target="#tab-two">
-                   Real Estate
-                </li><!-- End Tab 2 Nav -->
-
-                <li class="nav-item nav-link " data-bs-toggle="tab" data-bs-target="#tab-three">
-                   Hospitality and Tourism
-                </li><!-- End Tab 3 Nav -->
-            </ul>
+                              <ul class="nav nav-tabs d-flex justify-content-end" id="portfolio-flters">
+                                <li class="nav-item nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-one"> All </li><!-- End Tab 1 Nav -->
+                                <li class="nav-item  nav-link" data-bs-toggle="tab" data-bs-target="#tab-two"> Real Estate </li><!-- End Tab 2 Nav -->
+                                <li class="nav-item nav-link " data-bs-toggle="tab" data-bs-target="#tab-three">Hospitality and Tourism</li><!-- End Tab 3 Nav -->
+                              </ul>
                             </div>
                         </div>
+            </div>  
+            <div class="tab-content">   
+                <div class="tab-pane active show" id="tab-one">  
                     <?php $args = array(
                         'post_type' => 'post',
                         'category_name' => 'investment-portfolio',
@@ -598,10 +594,6 @@ $key_figures_content=$key_figures->post_content;
                         </section>
                     <?php endif; ?>
                 </div><!-- End Tab Content 3 -->
-
-
-
-
             </div>
         </div>
     </section><!-- End Features Section -->
