@@ -1307,6 +1307,8 @@ section {
 .services.one{margin-top: -4.5rem; padding:0 0 45px 0; z-index: 9; position: relative;}
 .services.two{padding: 60px 0;}
 .services.two .services .details{height: 265px !important;}
+.services.one .services .details{ height: 220px;}
+
 .services.two .services .details p{
     line-height: 24px;
     font-size: 14px;
