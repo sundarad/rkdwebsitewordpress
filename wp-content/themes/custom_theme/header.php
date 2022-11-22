@@ -102,58 +102,87 @@
                         </div>
                     </div>
                     <div class="col-lg-12">
-                        <!-- ttm-stickable-header-w -->
+                     
                         <div id="stickable-header" class="stickable-header clearfix">
-                            <div id="site-header-menu" class="site-header-menu ">
                                 <div class="site-header-menu-inner stickable-header ">
                                     <div class="container ">
-                                        <!--site-navigation -->
                                         <nav id=" navbar" class="navbar  d-flex justify-content-center">
                                             <?php
                                             wp_nav_menu(
                                                 array(
                                                     'theme_location' => 'menu-1',
                                                     'menu_id'        => 'primary-menu',
-                                                    // 'menu_class'=>'navbar',
+                                                    'menu_class'=>'navbar',
                                                 )
                                             );
-                                            // if ( function_exists('has_nav_menu') && has_nav_menu('mobile-menu') ) {
-                                            //     wp_nav_menu( array(
-                                            //       'depth' => 6,
-                                            //       'sort_column' => 'menu_order',
-                                            //       'container' => 'ul',
-                                            //       'menu_id' => 'main-nav',
-                                            //       'menu_class' => 'nav mobile-menu',
-                                            //       'theme_location' => 'mobile-menu'
-                                            //     ) );
-                                            //     } else {
-                                            //        echo "<ul class='nav mobile-menu'> <font style='color:red'>Mobile Menu has not been set</font> </ul>";
-                                            // }
+                                            if ( function_exists('has_nav_menu') && has_nav_menu('mobile-menu') ) {
+                                                wp_nav_menu( array(
+                                                  'depth' => 6,
+                                                  'sort_column' => 'menu_order',
+                                                  'container' => 'ul',
+                                                  'menu_id' => 'main-nav',
+                                                  'menu_class' => 'nav mobile-menu',
+                                                  'theme_location' => 'mobile-menu'
+                                                ) );
+                                                } else {
+                                                   echo "<ul class='nav mobile-menu'> <font style='color:red'>Mobile Menu has not been set</font> </ul>";
+                                            }
                                             ?>
                                           <i class="bi-list mobile-nav-toggle"></i>
 
-                                        </nav><!-- site-navigation end-->
+                                        </nav>
                                     </div>
                                 </div>
-                            </div>
-                        </div><!-- ttm-stickable-header-w end-->
-                    </div><!-- ttm-stickable-header-w end-->
+                           
+                        </div>
+                    </div> 
                 </div>
             </div>
-        </div><!--header-wrap end -->
+        </div>
     </header>
+    <header id="header-two" class="fixed-top ">
+     <div class="container"><!-- container-start -->
+          <div class="row"><!-- row-start -->
+            <div class="col-lg-3">
+               
+               <a class="home-link" href="index.html" title="rkd" rel="home">
+                                <?php
+                                the_custom_logo();
+
+                                ?>
+
+                            </a>
+               </div>
+                <div>
+                   <nav id="navbar" class="navbar order-last order-lg-0 ">
+                <ul>
+                  <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                  <li><a class="nav-link scrollto" href="#about">About</a></li>
+                  <li><a class="nav-link scrollto" href="#subsidiary-company">subsidiary company</a></li>
+                  <li><a class="nav-link scrollto" href="#team">board of directors</a></li>
+                  <li><a class="nav-link scrollto " href="#main-program">our programs</a></li>
+                  <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                </ul>
+                <i class="bi-list mobile-nav-toggle"></i>
+              </nav> <!-- .navbar -->     
+            </div>  <!-- col-end -->        
+          </div><!-- row-end -->
+     </div> <!-- container-end -->
+ </header><!-- End Header -->
+
+   
 <script>
     document.addEventListener("DOMContentLoaded", function(){
 		
 		window.addEventListener('scroll', function() {
 	       
 			if (window.scrollY > 200) {
-				document.getElementById('navbar_top').classList.add('fixed-top');
+				document.getElementById('stickable-header').classList.add('fixed-top');
 				// add padding top to show content behind navbar
-				navbar_height = document.querySelector('.navbar').offsetHeight;
+				navbar_height = document.querySelector('.stickable-header').offsetHeight;
 				document.body.style.paddingTop = navbar_height + 'px';
 			} else {
-			 	document.getElementById('navbar_top').classList.remove('fixed-top');
+			 	document.getElementById('stickable-header').classList.remove('fixed-top');
 				 // remove padding top from body
 				document.body.style.paddingTop = '0';
 			} 

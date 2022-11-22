@@ -28,7 +28,7 @@
       <div class="carousel-inner" role="listbox">
 
         <!-- Slide 1 -->
-        <div class="carousel-item active" style="background-image:url(<?php echo get_template_directory_uri();?>/assets/img/bg1.jpg)">
+        <div class="carousel-item active" style="background-image:url(<?php echo get_template_directory_uri();?>/assets/img/salami2.jpg)">
           <div class="carousel-container">
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">TIFL : A fund dedicated for entrepreneurs and innovative market disruptive <span> business ventures </span></h2>
@@ -291,6 +291,9 @@ if ($the_query->have_posts()) : ?>
     <!--        </section>-->
     <!-- End Services Section -->
     <!-- ======= Features Section ======= -->
+    <section id="counts" class="counts">
+        <?php echo $key_figures_content;?>
+   </section><!-- End Counts Section -->
     <section id="features" class="portfolio  features">
         <div class="container" data-aos="fade-up">
             <!-- <header class="section-header">
@@ -314,7 +317,7 @@ if ($the_query->have_posts()) : ?>
             <div class="row d-flex align-items-center">
                         <div class="col-lg-6 col-md-5 col-sm-12">
                             <div class="item-heading-left">
-                                <h2 class="section-title">Investment <strong>By</strong></h2>
+                                <h2 class="section-title">Investment <strong>On</strong></h2>
                                 <div class="bg-title-wrap" style="display: block;">
                                     <span class="background-title solid">Investments</span>
                                 </div>
@@ -361,9 +364,7 @@ if ($the_query->have_posts()) : ?>
 $key_figures=get_post(373);
 $key_figures_content=$key_figures->post_content;
 ?>
-    <section id="counts" class="counts">
-        <?php echo $key_figures_content;?>
-  </section><!-- End Counts Section -->
+
 
     <!-- ======= ceo Section ======= -->
     <section id="about" class="about">
@@ -725,10 +726,12 @@ $key_figures_content=$key_figures->post_content;
             </div>
     </section><!-- End Recent Blog Posts Section -->
 
-   <a href="/latest-event" target="_blank">
+   <a href="/special-offers" target="_blank" title="Special Offers">
    <section id="trend-event">
-       
-       </section>
+      <div class="container">
+              <img src="<?php echo get_template_directory_uri();?>/assets/img/ilami-banner.jpg" class="img-fluid" alt="">
+      </div>  
+   </section>
    </a>
 
     </main><!-- End #main -->

@@ -149,6 +149,19 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 </script>
+<script>
+	$(document).ready(function(){
+		$("#exampleModalCenter").modal('show');
+    $('#exampleModalCenter').modal({backdrop: 'static', keyboard: false})  
 
+	});
+</script>
+<script>
+  $("#exampleModalCenter").on("show", function () {
+  $("body").addClass("modal-open");
+}).on("hidden", function () {
+  $("body").removeClass("modal-open")
+});
+</script>
 </body>
 </html>

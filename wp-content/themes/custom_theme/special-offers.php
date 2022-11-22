@@ -98,7 +98,7 @@
 </section>
 <section id="event-video">
     <div class="container">
-    <div class="d-flex justify-content-center">
+    <div class="event-offer d-flex justify-content-center">
        <img src="<?php echo get_template_directory_uri();?>/assets/img/ilami-banner-2.webp" width="650px"  alt="">
        <img src="<?php echo get_template_directory_uri();?>/assets/img/ilami-flyer.jpg" width="650px"  alt="">
      </div>
@@ -107,6 +107,7 @@
                </div>
     </div>
 </section>
+<div class="sharethis-sticky-share-buttons"></div>
 <section id="contact-info">
     <div class="container">
         <div class="row">
@@ -126,4 +127,6 @@
              </div> 
     </div>
 </section>
+
 <?php get_footer();?>
+<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=637c6688ed9b4700195a73e8&product=sticky-share-buttons&source=platform" async="async"></script>
