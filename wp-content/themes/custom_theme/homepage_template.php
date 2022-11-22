@@ -295,6 +295,21 @@ if ($the_query->have_posts()) : ?>
         <div class="container" data-aos="fade-up">
             <!-- <header class="section-header">
                 <h3>Investment <strong>By</strong></h3>
+                <?php
+            $by_sector=get_post(161);
+            $by_sector_content=$by_sector->post_content;
+            $by_sector_title=$by_sector->post_title;
+            $by_business_platforms=get_post(104);
+            $by_business_platforms_content=$by_business_platforms->post_content;
+            $by_business_platforms_title=$by_business_platforms->post_title;
+            $by_asset_classes=get_post(111);
+            $by_asset_classes_content=$by_asset_classes->post_content;
+            $by_asset_classes_title=$by_asset_classes->post_title;
+            $by_geography=get_post(113);
+            $by_geography_content=$by_geography->post_content;
+            $by_geography_title=$by_geography->post_title;
+            ?>
+    
             </header> -->
             <div class="row d-flex align-items-center">
                         <div class="col-lg-6 col-md-5 col-sm-12">
@@ -316,21 +331,7 @@ if ($the_query->have_posts()) : ?>
                             </div>
                         </div>
                     </div>
-            <?php
-            $by_sector=get_post(161);
-            $by_sector_content=$by_sector->post_content;
-            $by_sector_title=$by_sector->post_title;
-            $by_business_platforms=get_post(104);
-            $by_business_platforms_content=$by_business_platforms->post_content;
-            $by_business_platforms_title=$by_business_platforms->post_title;
-            $by_asset_classes=get_post(111);
-            $by_asset_classes_content=$by_asset_classes->post_content;
-            $by_asset_classes_title=$by_asset_classes->post_title;
-            $by_geography=get_post(113);
-            $by_geography_content=$by_geography->post_content;
-            $by_geography_title=$by_geography->post_title;
-            ?>
-    
+          
 
             <div class="tab-content">
 
