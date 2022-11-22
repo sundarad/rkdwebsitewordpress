@@ -23,7 +23,7 @@
                 <header class="section-header">
                     <h2>Contact us</h2>
                 </header>
-                <ul class="nav nav-tabs row gy-4 d-flex mt-4 mb-4">
+                <ul class="nav nav-tabs row d-flex mt-4 mb-4">
 
                     <li class="nav-item col-lg-4 col-sm-3 col-xs-12">
                         <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
