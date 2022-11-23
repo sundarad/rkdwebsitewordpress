@@ -196,32 +196,51 @@ if ($the_query->have_posts()) : ?>
                <h3>Our  <strong>Company</strong></h3>
            </header>
            <div class="row clients-wrap justify-content-center clearfix aos-init aos-animate" data-aos="fade-up" >
-               <div class="col-lg-12 col-sm-12 col-xs-12">
+                <div class="col-lg-12 col-sm-12 col-xs-12">
                     <a href="index.php">
-                      <div class="client-logo"> <img src="<?php echo get_template_directory_uri();?>/assets/img/logo.png" class="img-fluid" alt=""></div>
+                      <div class="client-logo"> <img src="<?php echo get_template_directory_uri();?>/assets/img/logo.png" class="img-fluid" alt="">
+                          <div class="client-name">
+                                RKD Holdings
+                          </div>
+                      </div>
                     </a>
-               </div>
+                </div>
                <div class="col-lg-12 col-sm-12 col-xs-12">
                     <a href="https://tifl.com.np/" target="_blank">
-                      <div class="client-logo"> <img src="<?php echo get_template_directory_uri();?>/assets/img/tifl.png" class="img-fluid" alt=""></div>
+                      <div class="client-logo"> <img src="<?php echo get_template_directory_uri();?>/assets/img/tifl.png" class="img-fluid" alt="">
+                          <div class="client-name">
+                                 Tourism Investment Fund Limited
+                          </div>
+                      </div>
                     </a>
                </div>
                <div class="col-lg-4 col-sm-12 col-xs-12">
                   <a href="https://bandipurcablecar.com.np/" target="_blank">
-                    <div class=" client-logo" style="width: 440px;">
-                       <img src="<?php echo get_template_directory_uri();?>/assets/img/bandipur.png" class="img-fluid" alt="">
+                    <div class=" client-logo">
+                       <img src="<?php echo get_template_directory_uri();?>/assets/img/withoutbg.png" class="img-fluid" alt="">
+                          <div class="client-name">
+                             bandipur Cablecar & Tourism Limited
+                          </div>
                     </div>
                   </a>
                </div>
                <div class="col-lg-4 col-sm-12 col-xs-12">
-                   <div class="client-logo" style="width: 440px;">
+                   <a href="https://tifl.com.np/#subsidiary-company" target="_blank">
+                   <div class="client-logo">
                        <img src="<?php echo get_template_directory_uri();?>/assets/img/panchase.png" class="img-fluid" alt="">
+                          <div class="client-name">
+                             Panchase Cablecar
+                          </div>
                    </div>
+                   </a>
                </div>
                <div class="col-lg-4 col-sm-12 col-xs-12">
                   <a href="https://bizbazar.com.np/" target="_blank">
-                    <div class="client-logo" style="width: 416px;">
+                    <div class="client-logo">
                        <img src="<?php echo get_template_directory_uri();?>/assets/img/bizbazar.png" class="img-fluid" alt="">
+                          <div class="client-name">
+                             Bizbazar
+                          </div>
                     </div>
                   </a>
                </div>
@@ -734,6 +753,7 @@ $key_figures_content=$key_figures->post_content;
    </a>
 
     </main><!-- End #main -->
+    
 <?php get_footer();?>
 
 <script>
