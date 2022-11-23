@@ -89,7 +89,6 @@
                                 the_custom_logo();
 
                                 ?>
-
                             </a>
                         </div><!-- site-branding end -->
                     </div>

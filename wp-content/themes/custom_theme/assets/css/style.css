@@ -182,7 +182,7 @@ ul li{list-style: none;}
     top: 0;
 }
 .breadcrumbs:before {
-    position: absolute;
+   
     content: '';
     background: #09aa4e82;
     width: 100%;
@@ -218,7 +218,7 @@ ul li{list-style: none;}
 
 .breadcrumbs ol a {
     color: var(--heading-color);
-    transition: 0.3s;
+    transition: 0.3s; position: relative;
 }
 
 .breadcrumbs ol a:hover {
