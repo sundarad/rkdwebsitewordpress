@@ -112,9 +112,8 @@ if ($the_query->have_posts()) : ?>
         </div>
     </section>
 <?php endif; ?>
-    <section id="about" class="about">
-
-        <div class="container" data-aos="fade-up">
+<section id="about" class="about">
+    <div class="container" data-aos="fade-up">
             <div class="row">
                 <?php $page_who_we_are= get_post(43);
                 $title_who_we_are=$page_who_we_are->post_title;
@@ -143,7 +142,6 @@ if ($the_query->have_posts()) : ?>
             </div>
         </div>
         </div>
-
     </section><!-- End About Section -->
     <!--    <section id="why-us" class="why-us">-->
     <!--        <div class="container-fluid" data-aos="fade-up">-->
@@ -367,11 +365,10 @@ $key_figures_content=$key_figures->post_content;
 ?>
 <section id="counts" class="counts">
         <?php echo $key_figures_content;?>
-
+</section>
 
     <!-- ======= ceo Section ======= -->
     <section id="about" class="about">
-
         <div class="container" data-aos="fade-up">
             <div class="row">
                 <?php
