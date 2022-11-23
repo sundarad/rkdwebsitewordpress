@@ -1,23 +1,6 @@
 <?php /* Template Name: Home Page */ ?>
 <?php get_header();?>
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-toggle="modal">
-      <div class="modal-dialog">
-            <div class="modal-content" >
-                <div class="modal-header">
-                  <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" title="Close"></button>
-                </div>
-               <div class="modal-body">
-                     <!-- <img src="<?php echo get_template_directory_uri();?>/assets/img/ilami-program.jpg" width="100%"  alt=""> -->
-                      <h3 class="text-center">Salami and Ilami promo video</h3>
-                     <div class="embed-responsive embed-responsive-16by9">
-                       <iframe width="100%" height="350" src="https://www.youtube.com/embed/_c23FGU1Cao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
 
-	           </div>
-            </div>
-      </div>
-</div>
   
     <!-- Hero Section start -->
     <section id="hero">
@@ -421,6 +404,7 @@ $key_figures_content=$key_figures->post_content;
                                 <li class="nav-item nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-one"> All </li><!-- End Tab 1 Nav -->
                                 <li class="nav-item  nav-link" data-bs-toggle="tab" data-bs-target="#tab-two"> Real Estate </li><!-- End Tab 2 Nav -->
                                 <li class="nav-item nav-link " data-bs-toggle="tab" data-bs-target="#tab-three">Hospitality and Tourism</li><!-- End Tab 3 Nav -->
+                                <li class="nav-item nav-link " data-bs-toggle="tab" data-bs-target="#tab-four">Technology</li><!-- End Tab 3 Nav -->
                               </ul>
                             </div>
                         </div>
@@ -432,7 +416,7 @@ $key_figures_content=$key_figures->post_content;
                         'category_name' => 'investment-portfolio',
                         'posts_per_page' => -1,
                         'orderby' => 'date',
-                        'order' => 'DESC'
+                        'order' => 'ASC'
                     );
 
                     $the_query = new WP_Query($args);
@@ -476,7 +460,7 @@ $key_figures_content=$key_figures->post_content;
                         'category_name' => 'realstate',
                         'posts_per_page' => -1,
                         'orderby' => 'date',
-                        'order' => 'DESC'
+                        'order' => 'ASC'
                     );
 
                     $the_query = new WP_Query($args);
@@ -517,7 +501,7 @@ $key_figures_content=$key_figures->post_content;
                         'category_name' => 'hospitality-and-tourism',
                         'posts_per_page' => -1,
                         'orderby' => 'date',
-                        'order' => 'DESC'
+                        'order' => 'ASC'
                     );
 
                     $the_query = new WP_Query($args);
@@ -560,7 +544,7 @@ $key_figures_content=$key_figures->post_content;
                         'category_name' => 'technology',
                         'posts_per_page' => -1,
                         'orderby' => 'date',
-                        'order' => 'DESC'
+                        'order' => 'ASC'
                     );
 
                     $the_query = new WP_Query($args);
