@@ -38,14 +38,13 @@ get_header();
             //remove the paragraph tags
             $_content_e = strip_tags($_content_e);
 
-                    ?>
+    ?>
 
 
     <section id="search" class="values">
         <div class="container aos-init aos-animate" data-aos="fade-up">
             <div class="row">
-                <a href="<?php the_permalink(); ?>">
-                    
+                <a href="<?php the_permalink(); ?>">                    
                     <div class="col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
                         <div class="box">
                             <button class="btn btn-get-started">
@@ -54,12 +53,11 @@ get_header();
                             <h4>
                                 <?php echo the_title(); ?>
                             </h4>
-                        </div>
+                        </div>                        
+                    </div>
                 </a>
             </div>
-        </div>
-        
-
+        </div>      
     </section>
 
 
