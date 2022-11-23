@@ -220,7 +220,7 @@ if ($the_query->have_posts()) : ?>
                <div class="col-lg-4 col-sm-12 col-xs-12">
                   <a href="https://bizbazar.com.np/" target="_blank">
                     <div class="client-logo">
-                       <img src="<?php echo get_template_directory_uri();?>/assets/img/bizbazar.png" class="img-fluid" alt="">
+                       <img src="<?php echo get_template_directory_uri();?>/assets/img/bizbazar.png" style="width:170px" class="img-fluid" alt="">
                           <div class="client-name">
                              Bizbazar
                           </div>
@@ -317,7 +317,7 @@ if ($the_query->have_posts()) : ?>
     
             </header> -->
             <div class="row d-flex align-items-center">
-                        <div class="col-lg-6 col-md-5 col-sm-12">
+                        <div class="col-lg-5 col-md-5 col-sm-12">
                             <div class="item-heading-left">
                                 <h2 class="section-title">Investment <strong>On</strong></h2>
                                 <div class="bg-title-wrap" style="display: block;">
@@ -325,7 +325,7 @@ if ($the_query->have_posts()) : ?>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-7 col-sm-12">
+                        <div class="col-lg-7 col-md-7 col-sm-12">
                             <div class="isotope-classes-tab">
                                 <ul class="nav nav-tabs  d-flex justify-content-end " id="portfolio-flters">
                                   <li class="nav-item nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1"> <?php echo $by_sector_title;?> </li><!-- End Tab 1 Nav -->
@@ -729,7 +729,7 @@ $key_figures_content=$key_figures->post_content;
             </div>
     </section><!-- End Recent Blog Posts Section -->
 
-   <a href="/special-offers" target="_blank" title="Special Offers">
+   <a href="/special-offers/" target="_blank" title="Special Offers">
    <section id="trend-event">
       <div class="container">
               <img src="<?php echo get_template_directory_uri();?>/assets/img/ilami-banner.jpg" class="img-fluid" alt="">

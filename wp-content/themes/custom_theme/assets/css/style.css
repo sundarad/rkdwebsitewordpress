@@ -1246,7 +1246,7 @@ section {
 #about  ul li::before{
     content: "\f598";
     display: inline-block;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     font-family: bootstrap-icons !important;
     font-style: normal;
     font-size: 19px;
@@ -2210,18 +2210,11 @@ span.price{color:  var(--primary-color);}
 
 .blog .blog-details .meta-bottom {
     padding-top: 10px;
-    border-top: 1px solid rgba(82, 86, 94, 0.15);
+    border-top: 1px solid rgba(82, 86, 94, 0.15); display: flex;
 }
 
-.blog .blog-details .meta-bottom i {
-    color: #838893;
-    display: inline;
-}
-
-.blog .blog-details .meta-bottom a {
-    color: rgba(82, 86, 94, 0.8);
-    transition: 0.3s;
-}
+.blog .blog-details .meta-bottom i {  color: #838893; display: inline; margin-right: 0.5rem;}
+.blog .blog-details .meta-bottom a {    color: rgba(82, 86, 94, 0.8);  transition: 0.3s;}
 
 .blog .blog-details .meta-bottom a:hover {
     color: var(--primary-color);
@@ -2311,7 +2304,6 @@ span.price{color:  var(--primary-color);}
     font-weight: 700;
     padding: 0;
     margin: 0;
-    color: var(--text-color);
 }
 
 .blog .sidebar .sidebar-item+.sidebar-item {
@@ -2398,15 +2390,15 @@ span.price{color:  var(--primary-color);}
 
 .blog .sidebar .recent-posts h4 {
     font-size: 15px;
-    font-weight: bold;
+    font-weight: 500;
 }
 
-.blog .sidebar .recent-posts h4 a {
+/* .blog .sidebar .recent-posts h4 a {
     color: var(--text-color);
     transition: 0.3s;
-}
+} */
 
-.blog .sidebar .recent-posts h4 a:hover {
+.blog .sidebar .recent-posts .post-item:hover h4{
     color: var(--primary-color);
 }
 
@@ -2654,7 +2646,7 @@ span.price{color:  var(--primary-color);}
 .item-heading-left .bg-title-wrap .background-title {
     display: inline-block;
     font-family: "Quentin"; font-style: italic;
-    font-size: 100px;
+    font-size: 90px;
     line-height: 130px;
     color: #dceeea;
     pointer-events: none;
