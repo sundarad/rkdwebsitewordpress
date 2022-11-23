@@ -5,7 +5,7 @@
     <div class="container">
     <h2>What we do</h2>
         <ol>
-            <li><a href="/index.php"> <i class="bi bi-house-fill"></i> Home</a></li>
+            <li><a href="../index.php"> <i class="bi bi-house-fill"></i> Home</a></li>
             <li>What we do</li>
         </ol>
 
