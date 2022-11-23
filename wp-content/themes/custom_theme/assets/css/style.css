@@ -632,7 +632,7 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
 }
 
 @media (max-width: 1366px) {
-    .clients .client-logo{width: 100% !important;}
+    /* .clients .client-logo{width: 100% !important;} */
     .navbar .dropdown .dropdown ul {
         left: -90%;
     }
@@ -2516,19 +2516,14 @@ span.price{color:  var(--primary-color);}
 
 /* clients */
 .clients .client-logo {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-right: 1px solid #ececec;
-    border-bottom: 1px solid #ececec;
-    overflow: hidden;
-    background: #fff;
-    height: 100px;
-}
+    display: block; position: relative;
+    /* border-right: 1px solid #ececec; 
+    border-bottom: 1px solid #ececec; */
+    overflow: hidden; text-align: center; background: var(--bgcolor);  height: 150px; margin: 0 auto 1.5rem auto; padding: 0.7rem 0 0 0;}
+.client-name{background-color: var(--secondary-color); padding: 0.4rem 0.6rem 1rem 0.6rem; position: absolute; bottom: 0; width: 100%;}
 .clients .client-logo img {
     transition: all 0.3s ease-in-out;
-    width: 80px;
+    width: 100px;
     /* filter: grayscale(100%); */
 }
 .clients .client-logo:hover img {
