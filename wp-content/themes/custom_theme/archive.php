@@ -1,51 +1,95 @@
 <?php
 /**
- * The template for displaying archive pages
+ * The template for displaying all single posts
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
  * @package custom_theme
  */
 
 get_header();
 ?>
+    <main id="main">
+        <!-- ======= Breadcrumbs ======= -->
+        <section class="breadcrumbs">
+            <div class="container">
 
-	<main id="primary" class="site-main">
+                <ol>
+                    <li><a href="/index.php">Home</a></li>
+                    <li> <?php the_title();?></li>
+                </ol>
+            </div>
+        </section><!-- End Breadcrumbs -->
+        <!-- ======= Blog Details Section ======= -->
+        <section id="blog" class="blog">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-		<?php if ( have_posts() ) : ?>
+                <div class="row g-5">
 
-			<header class="page-header">
-				<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
-				the_archive_description( '<div class="archive-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
+                    <div class="col-lg-8">
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
+                        <article class="blog-details">
 
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
+                            <div class="post-img">
 
-			endwhile;
+                               <?php
+                               $image=get_the_post_thumbnail_url(get_the_ID());
+                               ?>
+                                <img src="<?php echo $image;?>" class="img-fluid" alt="">
 
-			the_posts_navigation();
+                            </div>
 
-		else :
+                            <h3><?php the_title(); ?></h3>
 
-			get_template_part( 'template-parts/content', 'none' );
+                            <div class="meta-top">
+                                <ul>
+                                    <li class="d-flex align-items-center"><i class="bi bi-person"></i>
+                                        <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>">
+                                            <?php the_author(); ?>
+                                        </a>
+                                   </li>
+                                    <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a>
+                                            <?php the_date(); ?>
+                                        </a></li>
+                                </ul>
+                            </div><!-- End meta top -->
 
-		endif;
-		?>
+                            <div class="content">
+                                <?php the_content(); ?>
 
-	</main><!-- #main -->
+                            </div><!-- End post content -->
+
+                            <div class="meta-bottom">
+                                <i class="bi bi-folder"></i>
+                                <ul class="cats"><?php the_category(); ?>
+                                </ul>
+
+                                <i class="bi bi-tags"></i>
+                                <ul class="tags">
+                                    <?php the_tags(); ?>
+                                </ul>
+                            </div><!-- End meta bottom -->
+
+                        </article><!-- End blog post -->
+
+
+                    </div>
+
+                    <div class="col-lg-4">
+                        <?php get_sidebar(); ?>
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End Blog Details Section -->
+
+
+
+
+
+    </main><!-- End #main -->
+
+
 
 <?php
-get_sidebar();
 get_footer();
