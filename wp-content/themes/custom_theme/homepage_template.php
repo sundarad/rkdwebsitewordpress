@@ -293,8 +293,7 @@ if ($the_query->have_posts()) : ?>
     <!--        </section>-->
     <!-- End Services Section -->
     <!-- ======= Features Section ======= -->
-    <section id="counts" class="counts">
-        <?php echo $key_figures_content;?>
+    
    </section><!-- End Counts Section -->
     <section id="features" class="portfolio  features">
         <div class="container" data-aos="fade-up">
@@ -366,6 +365,8 @@ if ($the_query->have_posts()) : ?>
 $key_figures=get_post(373);
 $key_figures_content=$key_figures->post_content;
 ?>
+<section id="counts" class="counts">
+        <?php echo $key_figures_content;?>
 
 
     <!-- ======= ceo Section ======= -->
