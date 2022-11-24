@@ -44,13 +44,12 @@ if ($the_query->have_posts()) : ?>
                                 <div class="icon">
                                     <i class="bi bi-bounding-box-circles"></i>
                                 </div>
-                                <a href="#" class="stretched-link">
+                                
                                     <h3>
                                         <?php the_title(); ?>
                                     </h3>
-                                </a>
+                                
                                 <p>  <?php the_content(); ?></p>
-                                <a href="#" class="stretched-link"></a>
                             </div>
                             </a>
                         </div>
