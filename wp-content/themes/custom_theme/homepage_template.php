@@ -393,6 +393,9 @@ $key_figures_content=$key_figures->post_content;
                         </header>
                         <p><?php echo $ceo_content?></p>
                         <div class="call-info">
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+  Tooltip on top
+</button>
                         </div>
                     </div>
                 </div>
@@ -407,7 +410,7 @@ $key_figures_content=$key_figures->post_content;
                 <h3>Investment <strong>Portfolio</strong></h3>
             </header> -->
             <div class="row">
-                        <div class="col-lg-6 col-md-5 col-sm-12">
+                        <div class="col-lg-5 col-md-5 col-sm-12">
                             <div class="item-heading-left">
                                 <h2 class="section-title">Investment <strong>Portfolio</strong></h2>
                                 <div class="bg-title-wrap" style="display: block;">
@@ -415,7 +418,7 @@ $key_figures_content=$key_figures->post_content;
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-7 col-sm-12">
+                        <div class="col-lg-7 col-md-7 col-sm-12">
                             <div class="isotope-classes-tab">
                               <ul class="nav nav-tabs d-flex justify-content-end" id="portfolio-flters">
                                 <li class="nav-item nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-one"> All </li><!-- End Tab 1 Nav -->
