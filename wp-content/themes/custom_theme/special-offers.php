@@ -15,6 +15,21 @@
 </section> -->
 <!-- End Breadcrumbs -->
 
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-toggle="modal">
+      <div class="modal-dialog">
+            <div class="modal-content" >
+                <div class="modal-header">
+                   <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" title="Close"></button>
+                </div>
+               <div class="modal-body  text-center">
+               		<h2>  Get extra 10% off on bizbazar from Khalti </h2>
+                     <img src="<?php echo get_template_directory_uri();?>/assets/img/discount.gif" class="img-fluid offer" alt="">			
+               </div>      
+            </div>
+      </div>
+</div>
+
 <!-- EVENT START -->
 <section id="event-banner">
     <div class="container">
@@ -130,3 +145,17 @@
 
 <?php get_footer();?>
 <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=637c6688ed9b4700195a73e8&product=sticky-share-buttons&source=platform" async="async"></script>
+<script>
+	$(document).ready(function(){
+		$("#exampleModalCenter").modal('show');
+    $('#exampleModalCenter').modal({backdrop: 'static', keyboard: false})  
+
+	});
+</script>
+<script>
+  $("#exampleModalCenter").on("show", function () {
+  $("body").addClass("modal-open");
+}).on("hidden", function () {
+  $("body").removeClass("modal-open")
+});
+</script>

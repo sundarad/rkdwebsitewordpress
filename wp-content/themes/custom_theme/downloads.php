@@ -82,6 +82,7 @@
                 <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                 <div class="accordion-body">
                     <ul>
+                    <li>   <a target="_blank" href="<?php echo get_template_directory_uri();?>/assets/img/5th.pdf" target="_blank" title=" Document" download>  <i class="bi bi-folder-minus file-icon"></i> 5th AGM of RKD Holdings Limited</a></li>
                       <li>   <a target="_blank" href="https://rkdrealestate.com.np/wp-content/uploads/2021/12/proxisi.jpg" target="_blank" title=" Document" download>  <i class="bi bi-folder-minus file-icon"></i> Call for Proxy for 5th AGM of RKD Holdings Limited</a></li>
                       <li>   <a target="_blank" href="https://drive.google.com/file/d/1G4zSOGFvWL96zEVjb2MPItFcEisz0VeH/view" target="_blank" title=" Document" download>  <i class="bi bi-folder-minus file-icon"></i>  Voter List with Voting Rights For AGM</a></li>
                     </ul>

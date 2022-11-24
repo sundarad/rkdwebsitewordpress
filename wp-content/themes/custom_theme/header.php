@@ -58,10 +58,8 @@
                             </ul>
                             <div class="ttm-social-links-wrapper list-inline">
                                 <ul class="social-icons">
-                                    <li><a href="https://www.facebook.com/rkdholdings"  target="_blank"><i class="bi bi-facebook me-2"></i></a>
-                                    </li>
-                                    <li><a href="https://www.youtube.com/channel/UCxh0z_rSb870U6gZ235uOmQ" target="_blank"><i class="bi bi-youtube" ></i></a>
-                                    </li>
+                                    <li><a href="https://www.facebook.com/rkdholdings"  target="_blank"><i class="bi bi-facebook me-2"></i></a>  </li>
+                                    <li><a href="https://www.youtube.com/channel/UCxh0z_rSb870U6gZ235uOmQ" target="_blank"><i class="bi bi-youtube" ></i></a> </li>
                                 </ul>
                             </div>
                         </div>
@@ -95,13 +93,11 @@
                     <div class="col-lg-3">
                         <div class="widget-right clearfix">
                             <div class="info-widget">
-
                                 <div class="info-widget-content"><a href="/contact-us-2/"><p>Request an</p> <h2>Appointment</h2></a> </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-12">
-                     
+                    <div class="col-lg-12"> 
                         <div id="stickable-header" class="stickable-header clearfix">
                                 <div class="site-header-menu-inner stickable-header ">
                                     <div class="container ">
@@ -114,27 +110,15 @@
                                                     'menu_class'=>'navbar',
                                                 )
                                             );
-                                            if ( function_exists('has_nav_menu') && has_nav_menu('mobile-menu') ) {
-                                                wp_nav_menu( array(
-                                                  'depth' => 6,
-                                                  'sort_column' => 'menu_order',
-                                                  'container' => 'ul',
-                                                  'menu_id' => 'main-nav',
-                                                  'menu_class' => 'nav mobile-menu',
-                                                  'theme_location' => 'mobile-menu'
-                                                ) );
-                                                } else {
-                                                   echo "<ul class='nav mobile-menu'> <font style='color:red'>Mobile Menu has not been set</font> </ul>";
-                                            }
+                                            
                                             ?>
-                                          <i class="bi-list mobile-nav-toggle"></i>
-
+                                         
                                         </nav>
                                     </div>
-                                </div>
-                           
-                        </div>
-                    </div> 
+                                    <!-- container end -->
+                                </div> <!-- siteheader end -->                             
+                        </div> <!-- stickable-header end -->
+                    </div>  <!-- col end -->
                 </div>
             </div>
         </div>
@@ -154,14 +138,23 @@
                </div>
                 <div>
                    <nav id="navbar" class="navbar order-last order-lg-0 ">
-                <ul>
+                <!-- <ul>
                   <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
                   <li><a class="nav-link scrollto" href="#about">About</a></li>
                   <li><a class="nav-link scrollto" href="#subsidiary-company">subsidiary company</a></li>
                   <li><a class="nav-link scrollto" href="#team">board of directors</a></li>
                   <li><a class="nav-link scrollto " href="#main-program">our programs</a></li>
                   <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-                </ul>
+                </ul> -->
+                <?php
+                                            wp_nav_menu(
+                                                array(
+                                                    'theme_location' => 'menu-1',
+                                                    'menu_id'        => 'primary-menu',
+                                                    'menu_class'=>'navbar',
+                                                )
+                                            );
+                                           ?> 
                 <i class="bi-list mobile-nav-toggle"></i>
               </nav> <!-- .navbar -->     
             </div>  <!-- col-end -->        

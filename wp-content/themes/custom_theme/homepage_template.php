@@ -20,9 +20,7 @@
                         <div
                             class="d-flex justify-content-center more-btn  animate__animated animate__fadeInUp scrollto">
                             <a href="/contact-us-2/" class="btn-get-started scrollto">Contact us</a>
-                            <a href="https://www.youtube.com/watch?v=IrX-Xd4gOHU"
-                                class="glightbox btn-watch-video d-flex align-items-center ms-4" target="_blank"><i
-                                    class="bi bi-play-circle"></i><span>Watch Video</span></a>
+                            <a href="https://drive.google.com/file/d/1MmXh9aZhnIeVcRO-rZ1gbkvugsjqCKfk/view?fbclid=IwAR0tO_khrngEXtSIU42ZyqoFWJC1S8pGeh82OZh3-zMw-5AvEKG9pUyHzTg" class="glightbox btn-watch-video d-flex align-items-center ms-4" target="_blank"><i class="bi bi-play-circle"></i><span >Watch Video</span></a>
                         </div>
                         <!-- <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p> -->
 
@@ -198,7 +196,7 @@ if ($the_query->have_posts()): ?>
            <div class="row clients-wrap justify-content-center clearfix aos-init aos-animate" data-aos="fade-up" >
                 <div class="col-lg-12 col-sm-12 col-xs-12">
                     <a href="index.php">
-                      <div class="client-logo"> <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" class="img-fluid" alt="">
+                      <div class="client-logo"> <img src="<?php echo get_template_directory_uri();?>/assets/img/logo.png" class="img-fluid" alt="" style="width:140px;">
                           <div class="client-name">
                                 RKD Holdings
                           </div>
@@ -217,7 +215,7 @@ if ($the_query->have_posts()): ?>
                <div class="col-lg-4 col-sm-12 col-xs-12">
                   <a href="https://bandipurcablecar.com.np/" target="_blank">
                     <div class=" client-logo">
-                       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/withoutbg.png" class="img-fluid" alt="">
+                       <img src="<?php echo get_template_directory_uri();?>/assets/img/withoutbg.png" class="img-fluid" alt="" style="width:140px;">
                           <div class="client-name">
                              Bandipur Cablecar & Tourism Limited
                           </div>
@@ -227,7 +225,7 @@ if ($the_query->have_posts()): ?>
                <div class="col-lg-4 col-sm-12 col-xs-12">
                    <a href="https://tifl.com.np/#subsidiary-company" target="_blank">
                    <div class="client-logo">
-                       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/panchase.png" class="img-fluid" alt="">
+                       <img src="<?php echo get_template_directory_uri();?>/assets/img/panchase.png" class="img-fluid" alt=""style="width:122px;">
                           <div class="client-name">
                              Panchase Cablecar
                           </div>
@@ -237,7 +235,7 @@ if ($the_query->have_posts()): ?>
                <div class="col-lg-4 col-sm-12 col-xs-12">
                   <a href="https://bizbazar.com.np/" target="_blank">
                     <div class="client-logo">
-                       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bizbazar.png" style="width:170px" class="img-fluid" alt="">
+                       <img src="<?php echo get_template_directory_uri();?>/assets/img/bizbazar.png" style="width:170px" class="img-fluid" alt=""style="width: 50%; margin-top: 1rem;">
                           <div class="client-name">
                              Bizbazar
                           </div>
