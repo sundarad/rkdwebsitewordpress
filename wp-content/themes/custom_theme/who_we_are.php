@@ -77,7 +77,7 @@ $image_core_values= get_the_post_thumbnail_url(101);
                             <div class="item-heading-left">
                                 <h2 class="section-title">About Us</h2>
                                 <div class="bg-title-wrap" style="display: block;">
-                                    <span class="background-title solid">Investments</span>
+                                    <span class="background-title solid">Our Company</span>
                                 </div>
                             </div>
                         </div>
