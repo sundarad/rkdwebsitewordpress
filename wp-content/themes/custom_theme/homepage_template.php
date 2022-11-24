@@ -91,13 +91,13 @@ if ($the_query->have_posts()) : ?>
                                     $_content_e = strip_tags($_content_e);
                                     ?>
                                     <img src="<?php echo $service_image; ?>" alt="<?php echo $_content_e?>">
-                                </a>
+                                
                             </div>
                             <div class="details position-relative">
                                 <div class="icon">
                                     <i class="bi bi-bounding-box-circles"></i>
                                 </div>
-                                <a href="#" class="stretched-link">
+                                
                                     <h3>
                                         <?php the_title(); ?>
                                     </h3>
@@ -200,7 +200,7 @@ if ($the_query->have_posts()) : ?>
                     <div class=" client-logo">
                        <img src="<?php echo get_template_directory_uri();?>/assets/img/withoutbg.png" class="img-fluid" alt="">
                           <div class="client-name">
-                             bandipur Cablecar & Tourism Limited
+                             Bandipur Cablecar & Tourism Limited
                           </div>
                     </div>
                   </a>
