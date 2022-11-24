@@ -308,6 +308,7 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
     #about .about-img img{height: 570px;}
     #header .logo {font-size: 28px;}
     #header.two{display: block;} #masthead{display: none;}
+    .portfolio #portfolio-flters li{width: 100%;}
 }
 .topbar-wrapper{background-color: var(--secondary-color);  line-height: 50px;}
 .topbar-wrapper .top-contact.text-left {
@@ -1285,7 +1286,7 @@ section {
     height: 92%;
     /*z-index: -1;*/
     content: "";
-    background-color: #ebf1fa;
+    background-color: #eaf7f4;
     transition: 0.5s;
 }
 
@@ -1297,7 +1298,7 @@ section {
     height: 92%;
     /*z-index: -1;*/
     content: "";
-    background-color: #ebf1fa;
+    background-color: #eaf7f4;
     transition: 0.5s;
 }
 
@@ -1381,15 +1382,8 @@ section {
     line-height: 0;
 }
 
-#services .title {
-    margin-bottom: 15px;
-    font-size: 18px;
-}
-
-#services .title a {
-    color:var(--heading-color);
-}
-
+#services .title {  margin-bottom: 15px; font-size: 18px; position: relative;}
+#services .title a { color:var(--heading-color);}
 #services .box:hover .title a {
     color: var(--primary-color);
 }
@@ -2523,6 +2517,31 @@ span.price{color:  var(--primary-color);}
     transform: scale(1.2);
 }
 
+#services .title .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  #services .title  .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+  #services .title:hover .tooltiptext {  visibility: visible; }
 
 /*--------------------------------------------------------------
 # Footer
@@ -2646,7 +2665,7 @@ span.price{color:  var(--primary-color);}
 .item-heading-left .bg-title-wrap .background-title {
     display: inline-block;
     font-family: "Quentin"; font-style: italic;
-    font-size: 90px;
+    font-size: 85px;
     line-height: 130px;
     color: #dceeea;
     pointer-events: none;
