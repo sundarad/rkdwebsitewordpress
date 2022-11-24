@@ -18,9 +18,9 @@ if (!is_active_sidebar('sidebar-1')) {
 
   <div class="sidebar-item search-form">
     <h3 class="sidebar-title">Search</h3>
-    <form action="" class="mt-3">
-      <input type="text">
-      <button type="submit"><i class="bi bi-search"></i></button>
+    <form action="<?php echo esc_url( home_url( '/' ) ); ?>" class="mt-3">
+      <input type="text" name="s" value="<?php the_search_query(); ?>">
+      <button type="submit" id="searchsubmit" value="'. esc_attr__( 'Search' ) .'" ><i class="bi bi-search"></i></button>
     </form>
   </div><!-- End sidebar search formn-->
 
