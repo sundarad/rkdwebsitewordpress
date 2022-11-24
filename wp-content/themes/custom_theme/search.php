@@ -44,11 +44,9 @@ get_header();
     <section id="search" class="values">
         <div class="container aos-init aos-animate" data-aos="fade-up">
             <div class="row">
-                <a href="<?php the_permalink(); ?>">
-                    
                     <div class="col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                     <a href="<?php the_permalink(); ?>">
                         <div class="box">
-                        <a href="<?php the_permalink(); ?>">
                             <button class="btn btn-get-started">
                                 <?php echo the_category(); ?>
                             </button>
@@ -56,15 +54,13 @@ get_header();
                                 <?php echo the_title(); ?>
                             </h4>
                         </div>
-                </a>
-            </div>
-        </div>      
+                     </a>
+                    </div>
+        </div>  
+      </div>    
     </section>
 
-
     <?php endwhile; ?>
-
-
 
     <?php
     endif;

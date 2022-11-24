@@ -392,10 +392,10 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
     background: url(../img/info-left-arrow.png);
     left: 0;
 }
-.widget-right .info-widget-content:after {
+/* .widget-right .info-widget-content:after {
     right: 0;
     background: url(../img/info-right-arrow.png);
-}
+} */
 .widget-right .info-widget-content:after {
     position: absolute;
     top: 42px;
@@ -1023,7 +1023,7 @@ ul.social-icons i:hover{background-color: var(--primary-color); color: var(--bgc
     opacity: 1;
     transition: 0.5s;
   }
-  #hero .carousel-indicators {bottom: 2.9rem;}
+  #hero .carousel-indicators {bottom: 3rem;}
   #hero .carousel-inner .carousel-item-next,
   #hero .carousel-inner .carousel-item-prev,
   #hero .carousel-inner .active.carousel-item-start,
@@ -1616,7 +1616,8 @@ img.offer{width: 350px;}
         align-items: center;
         justify-content: flex-end;
     }
-    .widget-right .info-widget {float: right;}
+    .widget-right .info-widget {float: right; display: flex;
+        align-items: end;}
     #masthead{display: block;}
 }
 
@@ -2040,6 +2041,110 @@ img.offer{width: 350px;}
     color: var(--primary-color);
 }
 span.price{color:  var(--primary-color);}
+
+  .notification-drop .item {
+    padding: 10px;
+    font-size: 18px;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    height: 65px;
+      width: 65px;
+      color: var(--primary-color);
+      border-radius: 4px;
+  }
+  .notification-drop .item:hover {
+    cursor: pointer;
+  }
+  .notification-drop .item i {
+    margin-left: 5px;
+  }
+  .notification-drop .item ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background: var(--theme-color);
+    color: var(--bg-color);
+    left: -200px;
+    right: 0;
+    z-index: 1;
+    border-top: 1px solid #ddd;
+  }
+  .notification-drop .item ul li {
+    font-size: 16px;
+    padding: 15px 0 15px 0;
+  }
+  .notification-drop .item ul li:hover {
+    color: var(--secondary-color);
+  }
+  
+  @media screen and (min-width: 500px) {
+    .notification-drop {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .notification-drop .item {
+      border: none;
+    }
+  }
+  
+  
+  
+  .notification-bell{
+    font-size: 20px;
+  }
+  
+  .btn__badge {
+    background: var(--primary-color);
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    top: -14px;
+    padding:  10px 10px;
+    border-radius: 50%;
+  }
+  
+  .pulse-button {
+    box-shadow: 0 0 0 0 rgba(63, 180, 139, 0.5);
+    -webkit-animation: pulse 1.5s infinite;
+    animation: pulse 1.5s infinite;
+  }
+  
+  .pulse-button:hover {
+    -webkit-animation: none;
+    animation: none;
+  }
+  
+  @-webkit-keyframes pulse {
+    0% {
+      -moz-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+    70% {
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      box-shadow: 0 0 0 50px rgba(255, 0, 0, 0);
+    }
+    100% {
+      -moz-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+      box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+    }
+  }
+  
+  .notification-text{
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .notification-text span{
+    float: right;
+  }
 /*--------------------------------------------------------------
 # Recent Blog Posts
 --------------------------------------------------------------*/
@@ -3195,7 +3300,41 @@ ul.footer-news li a{display: flex;}
 .services .service-item:hover .img img {
     transform: scale(1.2);
 }
-
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
 /*--------------------------------------------------------------
 # Service Details Section
 --------------------------------------------------------------*/

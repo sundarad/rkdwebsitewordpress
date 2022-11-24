@@ -93,7 +93,16 @@
                     <div class="col-lg-3">
                         <div class="widget-right clearfix">
                             <div class="info-widget">
-                                <div class="info-widget-content"><a href="/contact-us-2/"><p>Request an</p> <h2>Appointment</h2></a> </div>
+                            <a href="/special-offers/" target="_blank">
+                                <div class="info-widget-content">
+                                 <ul class="notification-drop">
+                                        <li class="item"> 
+                                                <i class="bt bi-bell" aria-hidden="true"></i>
+                                                <span class="btn__badge pulse-button ">Offers</span>          
+                                        </li>                                       
+                                 </ul>
+                             </div>
+                             </a>
                             </div>
                         </div>
                     </div>

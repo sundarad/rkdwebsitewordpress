@@ -235,7 +235,7 @@ if ($the_query->have_posts()): ?>
                <div class="col-lg-4 col-sm-12 col-xs-12">
                   <a href="https://bizbazar.com.np/" target="_blank">
                     <div class="client-logo">
-                       <img src="<?php echo get_template_directory_uri();?>/assets/img/bizbazar.png" style="width:170px" class="img-fluid" alt=""style="width: 50%; margin-top: 1rem;">
+                       <img src="<?php echo get_template_directory_uri();?>/assets/img/bizbazar.png" class="img-fluid" alt=""style="width: 35%; margin-top: 1.5rem;">
                           <div class="client-name">
                              Bizbazar
                           </div>
@@ -413,10 +413,6 @@ $key_figures_content = $key_figures->post_content;
             <?php echo $ceo_content ?>
         </p>
         <div class="call-info">
-            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
-                title="Tooltip on top">
-                Tooltip on top
-            </button>
         </div>
     </div>
 </div>
