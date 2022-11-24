@@ -147,7 +147,7 @@ $image_core_values= get_the_post_thumbnail_url(101);
                 <div class="row gy-4">
                         <div class="col-lg-12 order-2 order-lg-1">
                         <div class="d-flex justify-content-center">
-                                <img src="<?php echo get_template_directory_uri();?>/assets/img/summary.png" alt="">
+                                <img src="<?php echo get_template_directory_uri();?>/assets/img/summary2.jpg" alt="">
                              </div>
                         </div>
 
